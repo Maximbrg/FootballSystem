@@ -1,0 +1,49 @@
+UC-1:	Controller
+UC-2:	Controller
+UC-3:	Controller
+UC-4:	Controller
+UC-5:	Controller
+UC-6:	Controller
+UC-7:	PersonalPage
+UC-8:	PersonalPage
+UC-9:	Game
+UC-10:	Game
+UC-11:	User
+UC-12:	User
+UC-13:	User
+UC-14:	User
+UC-15:	Team
+UC-16:	Team
+UC-17:	Team
+UC-18:	Team
+UC-19:	Team
+UC-20:	Team
+UC-21:	Team
+UC-22:	Team
+UC-23:	TeamOwner
+UC-24:	TeamOwner
+UC-25:	SystemManager
+UC-26:	SystemManager
+UC-27:	Report
+UC-28:	SystemManager
+UC-29:	FootballAssosiation *
+UC-30:	FootballAssosiation *
+UC-31:	FootballAssosiation *
+UC-32:	Season *
+UC-33:	FootballAssosiation *
+UC-34:	FootballAssosiation *
+UC-35:	Season *
+UC-36:	FootballAssosiation *
+UC-37:	FootballAssosiation *
+UC-38:	Referee
+UC-39:	Referee
+UC-40:	Referee
+UC-41:	Referee
+-------------------------------------------------------------------------------------
+Changes in the class diagram :
+
+1. added a new interface "IPageAvailable" , all the objects that may have a personal page implemts it.
+2. interface "Event" changed to Abstract class.
+3. added new enum "Status" for Team.
+4. UC-30 "add referee" moved from Game to Football Assosiation.
+5. added class "BudgetRules".
