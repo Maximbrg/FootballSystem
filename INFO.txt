@@ -1,44 +1,44 @@
-UC-1:	Controller
-UC-2:	Controller
-UC-3:	Controller
-UC-4:	Controller
-UC-5:	Controller
-UC-6:	Controller
-UC-7:	PersonalPage
-UC-8:	PersonalPage
-UC-9:	Game
-UC-10:	Game
-UC-11:	User
-UC-12:	User
-UC-13:	User
-UC-14:	User
-UC-15:	Team
-UC-16:	Team
-UC-17:	Team
-UC-18:	Team
-UC-19:	Team
-UC-20:	Team
-UC-21:	Team
-UC-22:	Team
-UC-23:	TeamOwner
-UC-24:	TeamOwner
-UC-25:	SystemManager
-UC-26:	SystemManager
-UC-27:	Report
-UC-28:	SystemManager
-UC-29:	FootballAssosiation *
-UC-30:	FootballAssosiation *
-UC-31:	FootballAssosiation *
-UC-32:	Season *
-UC-33:	FootballAssosiation *
-UC-34:	FootballAssosiation *
-UC-35:	Season *
-UC-36:	FootballAssosiation *
-UC-37:	FootballAssosiation *
-UC-38:	Referee
-UC-39:	Referee
-UC-40:	Referee
-UC-41:	Referee
+UC-1:	Controller - maxim
+UC-2:	Controller - maxim
+UC-3:	Controller - maxim
+UC-4:	Controller - maxim
+UC-5:	Controller - maxim
+UC-6:	Controller - maxim
+UC-7:	PersonalPage - shiran
+UC-8:	PersonalPage - shrian
+UC-9:	Game  - shiran
+UC-10:	Game  - shiran
+UC-11:	User  - shiran
+UC-12:	User   - shiran
+UC-13:	User - shiran
+UC-14:	User - shiran
+UC-15:	Team - dana
+UC-16:	Team - dana
+UC-17:	Team - dana
+UC-18:	Team - dana
+UC-19:	Team - dana
+UC-20:	Team - dana
+UC-21:	Team - dana
+UC-22:	Team - dana
+UC-23:	TeamOwner - hen
+UC-24:	TeamOwner - hen
+UC-25:	SystemManager - hen
+UC-26:	SystemManager - hen
+UC-27:	Report - shiran
+UC-28:	SystemManager  - hen
+UC-29:	FootballAssosiation * - shachar
+UC-30:	FootballAssosiation * - shachar
+UC-31:	FootballAssosiation * - shachar
+UC-32:	Season * - shachar
+UC-33:	FootballAssosiation * - shachar
+UC-34:	FootballAssosiation * - shachar
+UC-35:	Season * - shachar
+UC-36:	FootballAssosiation * - shachar
+UC-37:	FootballAssosiation * - shachar
+UC-38:	Referee  - hen
+UC-39:	Referee - hen
+UC-40:	Referee - hen
+UC-41:	Referee - hen
 -------------------------------------------------------------------------------------
 Changes in the class diagram :
 
