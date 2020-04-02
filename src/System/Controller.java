@@ -8,17 +8,18 @@ import System.Users.Fan;
 import System.Users.SystemManager;
 import System.Users.User;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class Controller {
 
     private static int nextFreeID; // id that we give to a new user.
-    private List<User> users;
+    private HashMap<String,User> users;
     private List<League> leagues;
     private SystemManager systemManager;
     private ITeamAllocatePolicy iTeamAllocatePolicy; // the default method for allocate team for a season.
     private IScoreMethodPolicy iScoreMethodPolicy; //the default method for calculate the score of league.
-    private Season currentSeason;
+    private Season currentSeason; //need to update it every year
 
 
     //Constructor
@@ -46,11 +47,11 @@ public class Controller {
        return null;
     } //UC-2
 
-    public String showMenu(User user){ //UC-4
+    public String showMenu(User user ){ //UC-4
         return null;
     } //UC-4 /* instead of return String need to return an objects that have all elements for building a menu.
 
-    public String search(){ //UC-5
+    public String search(User user){ //UC-5
         return null;
     } //UC-5 /* same as UC-4 but also need to add to the arguments the object the we want to  search in the system.
 

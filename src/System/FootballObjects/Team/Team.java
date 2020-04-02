@@ -33,7 +33,7 @@ public class Team implements IPageAvailable, ISubjectTeam {
 
     public void editAsset(Asset asset /* need to add argument of the new Details */ ){} //UC-17
 
-    public void addTeamOwner(TeamOwner teamOwner){} //UC-18
+    public void addTeamOwner(TeamOwner teamOwner , TeamOwner teamOwnerNew){} //UC-18
 
     public void removeTeamOwner(TeamOwner teamOwner){} //UC-19
 

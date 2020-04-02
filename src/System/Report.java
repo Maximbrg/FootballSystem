@@ -1,8 +1,11 @@
 package System;
 
+import System.Users.User;
+
 public class Report {
 
-    private int id;
+    private User user;
+    private static int id;
     private String report;
     private String answer;
 

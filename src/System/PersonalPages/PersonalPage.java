@@ -14,7 +14,5 @@ public class PersonalPage {
 
     } //UC-7
 
-    public void unfollow(User user){
-
-    } //UC-8
+    public void unfollow(User user) { } //UC-8
 }

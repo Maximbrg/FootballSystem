@@ -7,9 +7,10 @@ import java.util.List;
 public class User {
 
     private  int id;
+
     private String password;
     private String userName;
-    private List<PersonalPage> personalPages;
+   // private List<PersonalPage> personalPages;
     private Status status;
 
     //Constructor
@@ -18,7 +19,10 @@ public class User {
 
     }
 
-    // Methods
+    public String getUserName() {
+        return userName;
+    }
+// Methods
 
     public boolean sumbitReport(String report){
         return true;

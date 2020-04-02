@@ -18,7 +18,7 @@ public class TeamOwner extends User implements Asset, IObserverTeam {
     public void openTeam(Team team){} //UC-23
 
     public void sendFinancialReport(Team team){
-    } //UC-24 /* need to open a class of financial reports and store their the financial reports and that all football association can vie it */
+    } //UC-24 /* need to open a class of financial reports and store their the financial reports and that all football association can view it */
 
     @Override
     public void edit() {

@@ -14,7 +14,8 @@ public class Game implements ISubjectGame {
     private Date date;
     private int hour;
     private String result;
-    private List<IObserverGame> iObserverGameList;
+    private List<IObserverGame> iObserverGameListForFans;
+    private List<IObserverGame> iObserverGameListForReferee;
     private Referee mainReferee;
     private Referee sideRefereeOne;
     private Referee getSideRefereeTwo;
