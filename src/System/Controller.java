@@ -1,14 +1,18 @@
 package System;
 
+import System.Exeptions.IllegalInputExeption;
+import System.Exeptions.noSuchAUserNamedException;
+import System.Exeptions.wrongPasswordException;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
+import System.FootballObjects.Team.DefualtAllocte;
+import System.FootballObjects.Team.DefualtMethod;
 import System.FootballObjects.Team.IScoreMethodPolicy;
 import System.FootballObjects.Team.ITeamAllocatePolicy;
-import System.Users.Fan;
-import System.Users.SystemManager;
-import System.Users.User;
+import System.Users.*;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Controller {
@@ -31,32 +35,77 @@ public class Controller {
     }
 
     private Controller() {
+        nextFreeID = 0;
+        users = new HashMap<>();
+        leagues =  new LinkedList<>();
+        systemManager = null;
+        iTeamAllocatePolicy = new DefualtAllocte();
+        iScoreMethodPolicy = new DefualtMethod();
+        currentSeason = new Season();
     }
 
     //Methods
 
-    public boolean initSystem(){ //UC-1
-        return false;
+    public SystemManager initSystem(){ //UC-1
+        System.out.println("log file : successful connection to accounting system.");
+        System.out.println("log file : successful connection to tax system.");
+        SystemManager systemManager = new SystemManager();
+        return systemManager;
     } //UC-1
 
-    public User login(String userName , String password){ //UC-3
-        return null;
+    public User login(String userName , String password) throws wrongPasswordException , noSuchAUserNamedException { //UC-3
+        System.out.println("log file : successful login.");
+        User user = users.get(userName);
+        if(user == null) {
+            throw new noSuchAUserNamedException();
+        }
+        if(user.getPassword().equals(password)) {
+            user.setStatus(Status.ACTIVE);
+            return user;
+        }
+        throw new wrongPasswordException();
     } //UC-3
 
-    public Fan signUp(/*Need to add to the function all relevant arguments for build new fan object*/){ //UC-2
-       return null;
+    public Fan signup(/*Need to add to the function all relevant arguments for build new fan object*/){ //UC-2
+        System.out.println("log file : successful signup .");
+        Fan fan = new Fan();
+        users.put(fan.getUserName(),fan);
+        return fan;
     } //UC-2
 
-    public String showMenu(User user ){ //UC-4
-        return null;
-    } //UC-4 /* instead of return String need to return an objects that have all elements for building a menu.
+    public Object showMenu(String name) throws IllegalInputExeption{ //UC-4
+        switch (name){
+            case "League": {
+                return leagues;
+            }
+            case "Player": {
+                List<Player> players = new LinkedList<>();
+                for(User user : users.values()){
+                    if(user instanceof Player) {
+                        players.add((Player) user);
+                    }
+                }
+                return players;
+            }
+            case "Couch": {
+                List<Couch> couches = new LinkedList<>();
+                for(User user : users.values()){
+                    if(user instanceof Couch) {
+                        couches.add((Couch) user);
+                    }
+                }
+                return couches;
+            }
+        }
+        throw new IllegalInputExeption();
+    } //UC-4
 
     public String search(User user){ //UC-5
         return null;
     } //UC-5 /* same as UC-4 but also need to add to the arguments the object the we want to  search in the system.
 
-    public boolean logOut(){ //UC-6
-        return false;
+    public void logOut(User user){ //UC-6
+        user.setStatus(Status.INACTIVE);
     } //UC-6
 
 }

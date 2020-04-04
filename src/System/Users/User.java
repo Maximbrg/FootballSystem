@@ -19,10 +19,15 @@ public class User {
 
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public String getUserName() {
         return userName;
     }
-// Methods
+
+    // Methods
 
     public boolean sumbitReport(String report){
         return true;
@@ -39,4 +44,8 @@ public class User {
     public void  editPersonalDetails(/* need to add arguments of the new details */ ){
 
     } //UC-14
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
 }
