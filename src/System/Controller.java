@@ -67,7 +67,7 @@ public class Controller {
     } //UC-3
 
     public Fan signup(/*Need to add to the function all relevant arguments for build new fan object*/){ //UC-2
-        System.out.println("log file : successful signup .");
+        System.out.println("log file : successful sign up.");
         Fan fan = new Fan();
         users.put(fan.getUserName(),fan);
         return fan;
@@ -106,6 +106,7 @@ public class Controller {
 
     public void logOut(User user){ //UC-6
         user.setStatus(Status.INACTIVE);
+        System.out.println("log file : successful logout.");
     } //UC-6
 
 }

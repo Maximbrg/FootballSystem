@@ -14,13 +14,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            <state relative-caret-position="524">
+              <caret line="107" column="40" lean-forward="true" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#showMenu#0;class#Controller#0" />
                 <element signature="method#search#0;class#Controller#0" />
-                <element signature="e#3663#3664#0" expanded="true" />
-                <element signature="e#3698#3699#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,7 +230,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586011404497" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586011808347" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -275,12 +274,12 @@
       <workItem from="1585663674327" duration="33158000" />
       <workItem from="1585826783581" duration="5902000" />
       <workItem from="1585907633141" duration="1568000" />
-      <workItem from="1585999746959" duration="5328000" />
+      <workItem from="1585999746959" duration="5809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45956000" />
+    <option name="totallyTimeSpent" value="46437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -731,13 +730,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        <state relative-caret-position="524">
+          <caret line="107" column="40" lean-forward="true" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#showMenu#0;class#Controller#0" />
             <element signature="method#search#0;class#Controller#0" />
-            <element signature="e#3663#3664#0" expanded="true" />
-            <element signature="e#3698#3699#0" expanded="true" />
           </folding>
         </state>
       </provider>
