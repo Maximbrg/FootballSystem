@@ -1,10 +1,15 @@
 package System.I_Observer;
 
+import System.Users.Fan;
+import System.Users.Referee;
 import System.Users.User;
 
 public interface ISubjectGame {
 
-    void registerAlert (User user);
-    void removeAlert (User user);
-    void notifyUsers (User user);
+    void registerFanToAlert(IObserverGame fan);
+    void registerRefereeToAlert(IObserverGame referee);
+    void removeAlertToFan(IObserverGame fan);
+    void removeAlertToReferee(IObserverGame referee);
+    void notifyFan ();
+    void notifyReferee ();
 }

@@ -1,18 +1,36 @@
 package System.PersonalPages;
 
+import System.Users.Fan;
 import System.Users.User;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class PersonalPage {
 
      private IPageAvailable pageAvailable;
-     private List <User> followers;
+     private List <Fan> followers;
 
-    //Methods
-    public void follow(User user){
+    public PersonalPage(IPageAvailable pageAvailable) {
+        this.pageAvailable = pageAvailable;
+        this.followers = new LinkedList<>();
+    }
 
+    /**
+     * Add follower to personal page
+     * @param fan
+     */
+    public void follow(Fan fan){
+        followers.add(fan);
+        fan.addFollowPage(this);
     } //UC-7
 
-    public void unfollow(User user) { } //UC-8
+    /**
+     * Remove follower to personal page
+     * @param fan
+     */
+    public void unfollow(Fan fan) {
+        followers.remove(fan);
+        fan.removeFollowPage(this);
+    } //UC-8
 }

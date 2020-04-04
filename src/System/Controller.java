@@ -59,4 +59,13 @@ public class Controller {
         return false;
     } //UC-6
 
+    /**
+     * Submit the report to system manager's report list
+     * @param report
+     */
+    public void submitReport(Report report){
+        systemManager.addReport(report);
+    }
+
 }
+
