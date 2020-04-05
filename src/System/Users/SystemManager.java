@@ -9,15 +9,26 @@ import System.Report;
 import System.Controller;
 import System.Log;
 
-public class SystemManager extends User implements IObserverTeam {
+public class SystemManager extends User {
 
-    private String name;
     private HashMap<Integer,Report> reportsHash;
-    private Controller  controller;
-    private Log log;
 
+
+    //<editor-fold desc="constructor- singleton">
+    private static SystemManager ourInstance = new SystemManager(111,"","111","systemM");
+
+    public static SystemManager getInstance() {
+        return ourInstance;
+    }
+
+    private SystemManager(int id, String name, String password, String userName){
+        super(id,name,password,userName);
+        reportsHash= new HashMap<>();
+    }
+    //</editor-fold>
 
     //Methods
+
     public void closeTeam(Team team){} //UC-25
 
     public void removeUser(User user){} //UC-26
@@ -26,16 +37,15 @@ public class SystemManager extends User implements IObserverTeam {
         return null;
     } //UC-28
 
-    @Override
-    public void update() {
-
-    }
-
     /**
      * Adding a new report to reportsHash
      * @param report
      */
     public void addReport(Report report) {
         reportsHash.put(report.getId(),report);
+    }
+
+    public void answerTheReport(Report report, String answer){
+        report.answer(answer);
     }
 }

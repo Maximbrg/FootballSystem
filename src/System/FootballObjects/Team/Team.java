@@ -50,6 +50,11 @@ public class Team implements IPageAvailable, ISubjectTeam {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void removeAlert(User user) {
 
     }
