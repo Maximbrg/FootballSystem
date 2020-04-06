@@ -28,7 +28,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="362">
               <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -336,7 +336,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586180840401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586181018664" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -376,7 +376,7 @@
       <workItem from="1585826783581" duration="4163000" />
       <workItem from="1585834235301" duration="17550000" />
       <workItem from="1586079127990" duration="18402000" />
-      <workItem from="1586165695926" duration="5372000" />
+      <workItem from="1586165695926" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -434,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586180764607</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="merge maxim hen and shiran 2">
+      <created>1586180981790</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586180981790</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78645000" />
+    <option name="totallyTimeSpent" value="78813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -551,7 +558,8 @@
     <MESSAGE value="write LOG" />
     <MESSAGE value="temp" />
     <MESSAGE value="merge maxim hen and shiran" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge maxim hen and shiran" />
+    <MESSAGE value="merge maxim hen and shiran 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge maxim hen and shiran 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java">
@@ -1042,7 +1050,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
+        <state relative-caret-position="362">
           <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="imports" expanded="true" />
