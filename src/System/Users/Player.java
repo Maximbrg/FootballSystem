@@ -8,10 +8,10 @@ import java.util.Date;
 
 public class Player extends User implements Asset, IPageAvailable {
 
-    private String name;
     private Date birthDate;
     private String role;
     private PersonalPage personalPage;
+    private int salary;
 
 
     @Override
@@ -22,5 +22,10 @@ public class Player extends User implements Asset, IPageAvailable {
     @Override
     public void edit() {
 
+    }
+
+    @Override
+    public int getSalary() {
+        return salary;
     }
 }

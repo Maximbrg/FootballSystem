@@ -1,6 +1,6 @@
-package System.FootballObjects.Team;
+package System.Enum;
 
-public enum Status {
+public enum TeamStatus {
 
         Active,
         Close,

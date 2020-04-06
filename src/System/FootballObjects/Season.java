@@ -17,4 +17,8 @@ public class Season {
     public void schedulingReferee(List<Referee> referees){} //UC-32
 
     public void schedulingGames(){} //UC-35
+
+    public List<Game> getGames() {
+        return games;
+    }
 }

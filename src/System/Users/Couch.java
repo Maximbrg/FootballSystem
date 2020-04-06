@@ -10,6 +10,7 @@ public class Couch extends User implements Asset, IPageAvailable {
     private String preparation;
     private String role;
     private PersonalPage personalPage;
+    private int salary;
 
 
     @Override
@@ -20,5 +21,10 @@ public class Couch extends User implements Asset, IPageAvailable {
     @Override
     public void edit() {
 
+    }
+
+    @Override
+    public int getSalary() {
+        return salary;
     }
 }

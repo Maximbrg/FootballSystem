@@ -1,25 +1,24 @@
 package System;
 
+import System.Exeptions.UserNameAlreadyExistException;
+import System.Exeptions.noSuchAUserNamedException;
+import System.Exeptions.wrongPasswordException;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
-import System.FootballObjects.Team.IScoreMethodPolicy;
-import System.FootballObjects.Team.ITeamAllocatePolicy;
-import System.Users.Fan;
-import System.Users.SystemManager;
-import System.Users.User;
+import System.FootballObjects.Team.*;
+import System.Users.*;
+import System.Users.UserStatus;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Controller {
 
-    private static int nextFreeID; // id that we give to a new user.
     private HashMap<String,User> users;
     private List<League> leagues;
-    private SystemManager systemManager;
-    private ITeamAllocatePolicy iTeamAllocatePolicy; // the default method for allocate team for a season.
-    private IScoreMethodPolicy iScoreMethodPolicy; //the default method for calculate the score of league.
     private Season currentSeason; //need to update it every year
+    private List<Team> teams;
 
 
     //Constructor
@@ -31,34 +30,117 @@ public class Controller {
     }
 
     private Controller() {
+        users = new HashMap<>();
+        leagues =  new LinkedList<>();
+        currentSeason = new Season();
     }
 
     //Methods
 
-    public boolean initSystem(){ //UC-1
-        return false;
+    public void initSystem(){ //UC-1
+        System.out.println("log file : successful connection to accounting system.");
+        System.out.println("log file : successful connection to tax system.");
     } //UC-1
 
-    public User login(String userName , String password){ //UC-3
-        return null;
+    public User login(String userName , String password) throws wrongPasswordException , noSuchAUserNamedException { //UC-3
+        System.out.println("log file : successful login.");
+        User user = users.get(userName);
+        if(user == null) {
+            throw new noSuchAUserNamedException();
+        }
+        if(user.getPassword().equals(password)) {
+            user.setStatus(UserStatus.ACTIVE);
+            return user;
+        }
+        throw new wrongPasswordException();
     } //UC-3
 
-    public Fan signUp(/*Need to add to the function all relevant arguments for build new fan object*/){ //UC-2
-       return null;
+    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
+        System.out.println("log file : successful sign up.");
+        User user = users.get(userName);
+        if(user != null) {
+            throw new UserNameAlreadyExistException();
+        }//more details
+        Fan fan = new Fan(id,name, password,userName);
+        users.put(fan.getUserName(),fan);
+        return fan;
     } //UC-2
 
-    public String showMenu(User user ){ //UC-4
-        return null;
-    } //UC-4 /* instead of return String need to return an objects that have all elements for building a menu.
+    public List<League> getAllLeagues(){ //UC-4
+        return leagues;
+    } //UC-4
 
-    public String search(User user){ //UC-5
-        return null;
-    } //UC-5 /* same as UC-4 but also need to add to the arguments the object the we want to  search in the system.
+    public List<Referee> getAllReferee(){
+        List <Referee> referees = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Referee){
+                referees.add((Referee)user);
+            }
+        }
+        return referees;
+    } //UC-4
 
-    public boolean logOut(){ //UC-6
-        return false;
+    public List<Player> getAllPlayers(){
+        List <Player> players = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Player){
+                players.add((Player)user);
+            }
+        }
+        return players;
+    } //UC-4
+
+    public List<Team> getAllTeams(){
+        return teams;
+    } //UC-4
+
+    public List<League> searchLeague(String name){
+        List<League> leagues = getAllLeagues();
+        List<League> results = new LinkedList<>();
+        for(League league : leagues){
+            if(league.getName().equals(name)){
+                results.add(league);
+            }
+        }
+        return results;
+    } //UC-5
+
+    public List<Referee> searchReferee(String name){
+        List<Referee> referees = getAllReferee();
+        List<Referee> results = new LinkedList<>();
+        for(Referee referee : referees){
+            if(referee.getName().equals(name)){
+                results.add(referee);
+            }
+        }
+        return results;
+    }
+
+    public List<Player> searchPlayers(String name){
+        List<Player> players = getAllPlayers();
+        List<Player> results = new LinkedList<>();
+        for(Player player : players){
+            if(player.getName().equals(name)){
+                results.add(player);
+            }
+        }
+        return results;
+    }
+
+    public List<Team> searchTeams(String name){
+        List<Team> teams = getAllTeams();
+        List<Team> results = new LinkedList<>();
+        for(Team team : teams){
+            if(team.getName().equals(name)){
+                results.add(team);
+            }
+        }
+        return results;
+    }
+
+    public void logOut(User user){ //UC-6
+        user.setStatus(UserStatus.INACTIVE);
+        System.out.println("log file : successful logout.");
     } //UC-6
 
-
 }
-

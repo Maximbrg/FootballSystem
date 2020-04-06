@@ -1,22 +1,15 @@
 package System;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.io.*;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 public class Log {
     //Implements a singleton logger instance
     private static final Log instance = new Log();
 
     //Retrieve the execution directory. Note that this is whereever this process was launched
-    public String logname = "Football_Association_System_Log";
+    public String logName = "Football_Association_System_Log";
     protected String env = System.getProperty("user.dir");
     private static File logFile;
     public static Log getInstance(){
@@ -37,8 +30,8 @@ public class Log {
         Calendar cal = Calendar.getInstance();
 
         //Create the name of the file from the path and current time
-        logname =  logname + ".log";
-        Log.logFile = new File(logsFolder.getName(),logname);
+        logName =  logName + ".log";
+        Log.logFile = new File(logsFolder.getName(), logName);
         try{
             if(logFile.createNewFile()){
                 //New file made
@@ -73,4 +66,36 @@ public class Log {
             System.err.println("ERROR: Could not write to log file");
         }
     }
+
+    /**
+     * present the log file
+     * @return
+     */
+    public String getLog() throws IOException {
+        String strLine="";
+        String logToString="";
+        try{
+            String path = System.getProperty("user.dir") + '/' + "logs/Football_Association_System_Log.log";
+            FileInputStream fstream = new FileInputStream(path);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+
+            /* read log line by line */
+            strLine = br.readLine();
+            while (strLine != null) {
+
+                /* parse strLine to obtain what you want */
+
+                logToString+= strLine;
+                logToString+="\n";
+                strLine = br.readLine();
+            }
+            fstream.close();
+
+        } catch (Exception e) {
+
+            System.err.println("Error: " + e.getMessage());
+        }
+
+        return logToString;
+    } //UC-28
 }

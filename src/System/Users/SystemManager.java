@@ -1,12 +1,11 @@
 package System.Users;
 
+import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 
+import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
-import System.I_Observer.IObserverTeam;
 import System.Report;
-import System.Controller;
 import System.Log;
 
 public class SystemManager extends User {
@@ -29,13 +28,30 @@ public class SystemManager extends User {
 
     //Methods
 
-    public void closeTeam(Team team){} //UC-25
+    /**
+     * close team
+     * @param team
+     */
+    public void closeTeam(Team team){
+        team.setTeamStatus(TeamStatus.PermantlyClose);
+        team.PermanentlyCloseTeam();
+        Log.getInstance().writeToLog("The team: "+team.getName()+",Id: " +team.getId()+" closed successfully.");
+    } //UC-25
 
-    public void removeUser(User user){} //UC-26
+    public void removeUser(User user){
 
-    public String showLog(){
-        return null;
+    } //UC-26//
+
+    /**
+     * present the log file
+     * @return
+     */
+    public String getLog() throws IOException {
+        Log.getInstance().writeToLog("Log introduced by the System Manager.");
+        return Log.getInstance().getLog();
+
     } //UC-28
+
 
     /**
      * Adding a new report to reportsHash
@@ -45,6 +61,10 @@ public class SystemManager extends User {
         reportsHash.put(report.getId(),report);
     }
 
+    /**
+     * Answer to report
+     * @param report
+     */
     public void answerTheReport(Report report, String answer){
         report.answer(answer);
     }

@@ -21,8 +21,8 @@ public class Game implements ISubjectGame {
     private int hour;
     private String result;
     private Referee mainReferee;
-    private Referee sideRefereeOne;
-    private Referee getSideRefereeTwo;
+    private Referee assistantRefereeOne;
+    private Referee assistantRefereeTwo;
     private Team away;
     private Team home;
     private EventLog eventLog;
@@ -30,14 +30,14 @@ public class Game implements ISubjectGame {
     private List<IObserverGame> iObserverGameListForReferees;
 
     //<editor-fold desc="constructor">
-    public Game(Date date, int hour, Referee mainReferee, Referee sideRefereeOne, Referee getSideRefereeTwo, Team away, Team home) {
+    public Game(Date date, int hour, Referee mainReferee, Referee assistantRefereeOne, Referee assistantRefereeTwo, Team away, Team home) {
         this.id= ID;
         ID++;
         this.date = date;
         this.hour = hour;
         this.mainReferee = mainReferee;
-        this.sideRefereeOne = sideRefereeOne;
-        this.getSideRefereeTwo = getSideRefereeTwo;
+        this.assistantRefereeOne = assistantRefereeOne;
+        this.assistantRefereeTwo = assistantRefereeTwo;
         this.away=away;
         this.home=home;
         this.eventLog = new EventLog();
@@ -67,12 +67,12 @@ public class Game implements ISubjectGame {
         return mainReferee;
     }
 
-    public Referee getSideRefereeOne() {
-        return sideRefereeOne;
+    public Referee getAssistantRefereeOne() {
+        return assistantRefereeOne;
     }
 
-    public Referee getGetSideRefereeTwo() {
-        return getSideRefereeTwo;
+    public Referee getAssistantRefereeTwo() {
+        return assistantRefereeTwo;
     }
 
     public Team getAway() {
@@ -113,12 +113,12 @@ public class Game implements ISubjectGame {
         this.mainReferee = mainReferee;
     }
 
-    public void setSideRefereeOne(Referee sideRefereeOne) {
-        this.sideRefereeOne = sideRefereeOne;
+    public void setAssistantRefereeOne(Referee assistantRefereeOne) {
+        this.assistantRefereeOne = assistantRefereeOne;
     }
 
-    public void setGetSideRefereeTwo(Referee getSideRefereeTwo) {
-        this.getSideRefereeTwo = getSideRefereeTwo;
+    public void setAssistantRefereeTwo(Referee assistantRefereeTwo) {
+        this.assistantRefereeTwo = assistantRefereeTwo;
     }
 
     public void setAway(Team away) {

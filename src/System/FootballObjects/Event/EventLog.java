@@ -1,5 +1,4 @@
 package System.FootballObjects.Event;
-import System.FootballObjects.Event.AEvent;
 import System.Log;
 import System.FootballObjects.Game;
 
@@ -14,20 +13,21 @@ public class EventLog {
     public EventLog(){
         aEventList=new ArrayList<AEvent>();
     }
+    public List<AEvent> getaEventList(){
+        return aEventList;
+    }
     public void addEventToLog(AEvent event){
         aEventList.add(event);
         sortEventLog();
         Log.getInstance().writeToLog("Event was added to eventLog. Id:"+event.getId());
     }
-    public void editEvent(AEvent event){
-        for(AEvent a :aEventList){
-            if(a.getId()==event.getId()){
-                aEventList.remove(a);
-                aEventList.add(event);
-            }
-        }
+    public void removeEvent(AEvent event){
+        aEventList.remove(event);
         sortEventLog();
+        Log.getInstance().writeToLog("Event was removed from eventLog. Id:"+event.getId());
+
     }
+
     public void sortEventLog(){
         Collections.sort(this.aEventList, new Comparator<AEvent>() {
             public int compare(AEvent o1, AEvent o2) {
