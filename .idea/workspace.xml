@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Referee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +20,20 @@
               <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#sumbitReport#0;class#User#0" />
+                <element signature="method#addSearchHistory#0;class#User#0" />
               </folding>
             </state>
           </provider>
@@ -55,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="164">
               <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -139,20 +152,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -204,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/System/Users/Guest.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Fan.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/User.java" />
         <option value="$PROJECT_DIR$/src/System/Report.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java" />
@@ -227,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/System/Enum/TeamStatus.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Season.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/User.java" />
       </list>
     </option>
   </component>
@@ -337,7 +336,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586180723182" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586180840401" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -377,7 +376,7 @@
       <workItem from="1585826783581" duration="4163000" />
       <workItem from="1585834235301" duration="17550000" />
       <workItem from="1586079127990" duration="18402000" />
-      <workItem from="1586165695926" duration="5060000" />
+      <workItem from="1586165695926" duration="5372000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -428,15 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586180193538</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merge maxim hen and shiran">
+      <created>1586180764607</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586180764607</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78333000" />
+    <option name="totallyTimeSpent" value="78645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -712,20 +717,6 @@
             <element signature="n#!!doc;n#setFollowPages#0;n#Fan#0" />
             <element signature="e#1713#1714#0" expanded="true" />
             <element signature="e#1758#1759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#User#1;n#User#0" />
-            <element signature="n#!!doc;n#getId#0;n#User#0" />
-            <element signature="method#sumbitReport#0;class#User#0" />
-            <element signature="method#addSearchHistory#0;class#User#0" />
           </folding>
         </state>
       </provider>
@@ -1037,7 +1028,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="164">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1045,6 +1036,18 @@
             <element signature="e#462#463#0" expanded="true" />
             <element signature="e#493#494#0" expanded="true" />
             <element signature="e#521#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sumbitReport#0;class#User#0" />
+            <element signature="method#addSearchHistory#0;class#User#0" />
           </folding>
         </state>
       </provider>
