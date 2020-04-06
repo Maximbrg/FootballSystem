@@ -46,6 +46,9 @@ public class Game implements ISubjectGame {
     }
     //</editor-fold>
 
+    //////////////////////////////
+    public void test(){}
+
     //<editor-fold desc="getter">
     public int getId(){
         return id;
