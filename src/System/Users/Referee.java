@@ -25,60 +25,8 @@ public class Referee extends User implements IObserverGame {
         this.type=type;
         games=new LinkedList<>();
     }
+
     //Methods
-
-    /**
-     * edit personal details of referee
-     * @param id id of user
-     * @param userName nickname
-     * @param pass password to change
-     */
-    public void editPersonalDeatails(int id,String userName,String pass){
-//        if(id!=-1){setId(id);}
-//        if(userName!=null){setUserName(userName);};
-//        if(pass!=null){setPassword(pass);}
-        //logger.writeToLog("Personal details of " + userName+" was updated.");
-
-    } //UC-38
-    public List<Game> getFutureGames(){
-        List<Game> futureGames = new ArrayList<>();
-        for(Game game:games){
-            long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
-            if(diffHours<=0){//to check it
-                futureGames.add(game);
-            }
-        }
-        return futureGames;
-    }
-
-//    /**
-//     * Referee get the games that he\she was scheduled for them in the season
-//     * @param season current season to get the relevant games
-//     * @return
-//     */
-//    public List<Game> getGames(Season season){
-//        List<Game> seasonGames= season.getGames();
-//        List<Game> relevantGames= new ArrayList<Game>();
-//
-//        for (int i = 0; i <seasonGames.size() ; i++) {
-//            Game game=seasonGames.get(i);
-//            if(game.getMainReferee().getUserName()==getUserName()){
-//                relevantGames.add(game);
-//            }else if(game.getAssistantRefereeOne().getUserName()==getUserName()){
-//                relevantGames.add(game);
-//            }else if(game.getAssistantRefereeTwo().getUserName()==getUserName()){
-//                relevantGames.add(game);
-//            }
-//        }
-//        //to check it
-//        Collections.sort(relevantGames, new Comparator<Game>() {
-//            public int compare(Game o1, Game o2) {
-//                return o1.getDate().compareTo(o2.getDate());
-//            }
-//        });
-//        Log.writeToLog("The referee "+getName()+"id: "+getId() +" pull his games for "+ season.getYear()+" season.");
-//        return relevantGames;
-//    } //UC-39
 
     public void addGame(Game g){
         games.add(g);
@@ -113,7 +61,6 @@ public class Referee extends User implements IObserverGame {
         }else{
             //////////to be continue
         }
-
     }
 
     /**
@@ -175,6 +122,55 @@ public class Referee extends User implements IObserverGame {
         return report;
     } //UC-41
 
+    /**
+     * return a list of future games of the referee
+     * @return games for future
+     */
+
+    public List<Game> getFutureGames(){
+        List<Game> futureGames = new ArrayList<>();
+        for(Game game:games){
+            long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
+            if(diffHours<=0){//to check it
+                futureGames.add(game);
+            }
+        }
+        Collections.sort(futureGames, new Comparator<Game>() {
+            public int compare(Game o1, Game o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+        Log.writeToLog("The referee "+getName()+"id: "+getId() +" pull his future games.");
+        return futureGames;
+    }
+    /**
+     * Referee get the games that he\she was scheduled for them in the season
+     * @param season current season to get the relevant games
+     * @return
+     */
+    public List<Game> getGamesForSeason(Season season){
+        List<Game> seasonGames= season.getGames();
+        List<Game> relevantGames= new ArrayList<Game>();
+
+        for (int i = 0; i <seasonGames.size() ; i++) {
+            Game game=seasonGames.get(i);
+            if(game.getMainReferee().getUserName()==getUserName()){
+                relevantGames.add(game);
+            }else if(game.getAssistantRefereeOne().getUserName()==getUserName()){
+                relevantGames.add(game);
+            }else if(game.getAssistantRefereeTwo().getUserName()==getUserName()){
+                relevantGames.add(game);
+            }
+        }
+        //to check it
+        Collections.sort(relevantGames, new Comparator<Game>() {
+            public int compare(Game o1, Game o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+        Log.writeToLog("The referee "+getName()+"id: "+getId() +" pull his games for "+ season.getYear()+" season.");
+        return relevantGames;
+    } //UC-39
     /**
      * show alert of event
      */

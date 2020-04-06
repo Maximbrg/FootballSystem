@@ -1,6 +1,7 @@
 package System.Users;
 import System.Report;
 import System.Log;
+import System.Users.UserStatus;
 
 import System.Controller;
 
@@ -14,7 +15,7 @@ public abstract class User extends Guest {
     private String password;
     private String userName;
     private List<String> searchHistory;
-    private Status status;
+    private UserStatus status;
     private HashMap<Integer, Report> myReports;
 
 
@@ -29,7 +30,7 @@ public abstract class User extends Guest {
         this.userName = userName;
         this.searchHistory= new LinkedList<>();
         this.myReports=new HashMap<Integer, Report>();
-        this.status=Status.ACTIVE;
+        this.status=UserStatus.ACTIVE;
     }
     //</editor-fold>
 
@@ -54,7 +55,7 @@ public abstract class User extends Guest {
         return searchHistory;
     }
 
-    public Status getStatus() {
+    public UserStatus getStatus() {
         return status;
     }
 
@@ -98,7 +99,7 @@ public abstract class User extends Guest {
         this.searchHistory = searchHistory;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(UserStatus status) {
         this.status = status;
         Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his status");
 

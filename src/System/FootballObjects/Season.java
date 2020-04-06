@@ -21,4 +21,8 @@ public class Season {
     public List<Game> getGames() {
         return games;
     }
+
+    public String getYear() {
+        return String.valueOf(year);
+    }
 }
