@@ -143,4 +143,6 @@ public class Controller {
         System.out.println("log file : successful logout.");
     } //UC-6
 
+    public void submitReport(Report report) {
+    }
 }
