@@ -1,4 +1,4 @@
-package System.Users;
+package System.Enum;
 
 public enum UserStatus {
 

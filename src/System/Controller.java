@@ -7,7 +7,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.*;
 import System.Users.*;
-import System.Users.UserStatus;
+import System.Enum.UserStatus;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -17,7 +17,7 @@ public class Controller {
 
     private HashMap<String,User> users;
     private List<League> leagues;
-    private Season currentSeason; //need to update it every year
+   // private Season currentSeason; //need to update it every year
     private List<Team> teams;
 
 
@@ -32,7 +32,6 @@ public class Controller {
     private Controller() {
         users = new HashMap<>();
         leagues =  new LinkedList<>();
-        currentSeason = new Season();
     }
 
     //Methods
@@ -142,5 +141,12 @@ public class Controller {
         user.setStatus(UserStatus.INACTIVE);
         System.out.println("log file : successful logout.");
     } //UC-6
+
+    public  HashMap<String,User> getUsers(){
+        return users;
+    }
+    public void addUser(String s,User u){
+        users.put(s,u);
+    }
 
 }

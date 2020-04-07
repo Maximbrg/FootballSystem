@@ -1,26 +1,26 @@
 package System.Users;
+import System.Enum.TeamStatus;
+import System.Enum.UserStatus;
 import System.Report;
 import System.Log;
-import System.Users.UserStatus;
-
-import System.Controller;
+import System.Users.User;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
 public abstract class User extends Guest {
-    private  int id;
-    private String name;
-    private String password;
-    private String userName;
+    protected int id;
+    protected String name;
+    protected String password;
+    protected String userName;
     private List<String> searchHistory;
-    private UserStatus status;
+    protected UserStatus status;
     private HashMap<Integer, Report> myReports;
 
 
     //Constructor
-    public User(){}//delete
+    public User(int id, String password, String userName, TeamStatus teamStatus){}//delete
 
     //<editor-fold desc="constructor">
     public User(int id, String name, String password, String userName) {
@@ -30,7 +30,7 @@ public abstract class User extends Guest {
         this.userName = userName;
         this.searchHistory= new LinkedList<>();
         this.myReports=new HashMap<Integer, Report>();
-        this.status=UserStatus.ACTIVE;
+        this.status= UserStatus.ACTIVE;
     }
     //</editor-fold>
 

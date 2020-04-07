@@ -19,7 +19,7 @@ public class Game implements ISubjectGame {
     private int id;
     private Date date;
     private int hour;
-    private String result;
+    private String result;//1:0 format
     private Referee mainReferee;
     private Referee assistantRefereeOne;
     private Referee assistantRefereeTwo;
@@ -140,6 +140,9 @@ public class Game implements ISubjectGame {
     public void setiObserverGameListForReferees(List<IObserverGame> iObserverGameListForReferees) {
         this.iObserverGameListForReferees = iObserverGameListForReferees;
     }
+
+    //public void setScore(){ }
+
     //</editor-fold>
 
     /**

@@ -2,18 +2,19 @@ package System.FootballObjects.Team;
 
 import System.FootballObjects.Game;
 import System.Log;
-import System.Users.Referee;
+
 import java.util.Date;
 import java.util.List;
 
-public class DefualtAllocte implements ITeamAllocatePolicy {
+public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
+
     /**
-     *Inaugural games for the league- home and away games for each league team
-     * @param team
+     * Inaugural games for the league - one game for each league team
+     * @param team list of team in the league
      * @param games
      */
     public void setTeamPolicy(List<Team> team, List<Game> games){
-        Date date=new Date();
+        Date date= new Date();
         for(int i=0;i<team.size();i++){
             for(int j=i+1; j<team.size();j++){
                 //add game1
@@ -24,18 +25,9 @@ public class DefualtAllocte implements ITeamAllocatePolicy {
 
                 home.getGamesOfTeams().add(game);
                 away.getGamesOfTeams().add(game);
-
-                //add game2
-                home= team.get(j);
-                away= team.get(i);
-                Game game2=new Game(date, 2000, null, null,null, away, home);
-                games.add(game2);
-
-                home.getGamesOfTeams().add(game2);
-                away.getGamesOfTeams().add(game2);
-
             }
         }
-        Log.getInstance().writeToLog("Inaugural games for the league- home and away games for each league team");
+        Log.getInstance().writeToLog("Inaugural games for the league - one game for each league team");
+
     }
 }

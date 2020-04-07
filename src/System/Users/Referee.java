@@ -150,7 +150,7 @@ public class Referee extends User implements IObserverGame {
      */
     public List<Game> getGamesForSeason(Season season){
         List<Game> seasonGames= season.getGames();
-        List<Game> relevantGames= new ArrayList<Game>();
+        List<Game> relevantGames= new ArrayList<>();
 
         for (int i = 0; i <seasonGames.size() ; i++) {
             Game game=seasonGames.get(i);
@@ -197,4 +197,9 @@ public class Referee extends User implements IObserverGame {
     public void removeAlert(ISubjectGame iSubjectGame) {
         subjectGame.remove(iSubjectGame);
     }
+
+    public RefereeType getType(){
+        return type;
+    }
+
 }
