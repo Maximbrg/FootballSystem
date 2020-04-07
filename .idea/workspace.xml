@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="303">
+              <caret line="139" column="24" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#sumbitReport#0;class#User#0" />
@@ -28,10 +28,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="72">
               <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -232,8 +232,8 @@
         <option value="$PROJECT_DIR$/src/System/Enum/TeamStatus.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Season.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/User.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Game.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/User.java" />
       </list>
     </option>
   </component>
@@ -274,51 +274,7 @@
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="Asset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="Enum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="Exeptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
               <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Team" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="I_Observer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -344,7 +300,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586181771180" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586267123748" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -384,7 +340,7 @@
       <workItem from="1585826783581" duration="4163000" />
       <workItem from="1585834235301" duration="17550000" />
       <workItem from="1586079127990" duration="18402000" />
-      <workItem from="1586165695926" duration="6302000" />
+      <workItem from="1586165695926" duration="8343000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -463,11 +419,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586181598709</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="merge maxim hen and shiran 5">
+      <created>1586181788814</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586181788814</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79575000" />
+    <option name="totallyTimeSpent" value="81616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -480,7 +443,7 @@
       <window_info id="Image Layers" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21700405" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" visible="true" weight="0.21669628" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.6412078" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50040483" side_tool="true" weight="0.3285968" />
@@ -584,7 +547,8 @@
     <MESSAGE value="merge maxim hen and shiran 2" />
     <MESSAGE value="merge maxim hen and shiran 3" />
     <MESSAGE value="merge maxim hen and shiran 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge maxim hen and shiran 4" />
+    <MESSAGE value="merge maxim hen and shiran 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge maxim hen and shiran 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java">
@@ -1050,21 +1014,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#sumbitReport#0;class#User#0" />
-            <element signature="method#addSearchHistory#0;class#User#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="72">
           <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1075,6 +1027,18 @@
             <element signature="e#3085#3086#0" expanded="true" />
             <element signature="e#3123#3124#0" expanded="true" />
             <element signature="e#3155#3156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="139" column="24" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sumbitReport#0;class#User#0" />
+            <element signature="method#addSearchHistory#0;class#User#0" />
           </folding>
         </state>
       </provider>

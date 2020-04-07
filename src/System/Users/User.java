@@ -136,7 +136,8 @@ public abstract class User extends Guest {
         return searchHistory;
     }
 
-
-
+//////////////////////////////////////////
+    public void test(){}
+/////////////////////////////////////////
 
 }
