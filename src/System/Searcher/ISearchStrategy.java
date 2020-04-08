@@ -1,0 +1,193 @@
+package System.Searcher;
+import System.Enum.SearchCategory;
+import System.FootballObjects.League;
+import System.FootballObjects.Season;
+import System.FootballObjects.Team.Team;
+import System.IShowable;
+import System.Users.Couch;
+import System.Users.Player;
+import System.Controller;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public abstract class ISearchStrategy {
+
+
+    /**
+     * Liste filter by category
+     * @param list
+     * @param filter
+     * @return
+     */
+    public List<IShowable> filter(List<IShowable> list, SearchCategory filter){
+        if(filter==SearchCategory.PLAYER){
+            return getPlayers(list);
+        }
+        else if(filter==SearchCategory.COACH){
+            return getCoaches(list);
+        }
+        else if (filter== SearchCategory.TEAM){
+            return  getTeams(list);
+        }
+        else if (filter== SearchCategory.LEAGUE){
+            return getLeagues(list);
+        }
+        else if(filter== SearchCategory.SEASON){
+            return getSeasons(list);
+        }
+
+        return list;
+    }
+
+    /**
+     * Get list by category
+     * @param category
+     * @return
+     */
+    public List<IShowable> getListByCategory(SearchCategory category){
+        Controller controller=Controller.getInstance();
+        List<IShowable> list= new LinkedList<IShowable>();
+        if(category==SearchCategory.PLAYER){
+            for (Player obj:controller.getAllPlayers()){
+                list.add(obj);
+            }
+            return list;
+        }
+        if(category==SearchCategory.COACH){
+            for (Couch obj:controller.getAllCoach()){
+                list.add(obj);
+            }
+            return list;
+        }
+        if(category==SearchCategory.TEAM){
+            for (Team obj:controller.getAllTeams()){
+                list.add(obj);
+            }
+            return list;
+        }
+        if(category==SearchCategory.LEAGUE){
+            for (League obj:controller.getAllLeagues()){
+                list.add(obj);
+            }
+            return list;
+        }
+        else {
+            for (Season obj:controller.getAllSeasons()){
+                list.add(obj);
+            }
+            return list;
+        }
+    }
+
+    /**
+     * Get list by default category
+     * @return
+     */
+    protected List<IShowable> getDefaultList(){
+        Controller controller= Controller.getInstance();
+        List<IShowable> list= new LinkedList<IShowable>();
+        List<Player> playerList= controller.getAllPlayers();
+        List<Couch> coachList= controller.getAllCoach();
+        List<Team> teamList= controller.getAllTeams();
+        List<League> leagueList= controller.getAllLeagues();
+        List<Season> seasonList=controller.getAllSeasons();
+
+        for(Player obj:playerList){
+            list.add(obj);
+        }
+        for(Couch obj: coachList){
+            list.add(obj);
+        }
+        for(Team obj: teamList){
+            list.add(obj);
+        }
+        for(League obj: leagueList){
+            list.add(obj);
+        }
+        for(Season obj: seasonList){
+            list.add(obj);
+        }
+        return list;
+    }
+    
+    abstract List<IShowable> search(SearchCategory category, String str);
+
+
+    //<editor-fold desc="private functions">
+    /**
+     * Get filtered list by player
+     * @param list
+     * @return
+     */
+    private List<IShowable> getPlayers(List<IShowable> list){
+        List<IShowable> filterList= new LinkedList<IShowable>();
+        for(IShowable obj: list){
+            if(obj instanceof Player){
+                filterList.add(obj);
+            }
+        }
+        return filterList;
+    }
+
+    /**
+     * Get filtered list by coach
+     * @param list
+     * @return
+     */
+    private List<IShowable> getCoaches(List<IShowable> list){
+        List<IShowable> filterList= new LinkedList<IShowable>();
+        for(IShowable obj: list){
+            if(obj instanceof Couch){
+                filterList.add(obj);
+            }
+        }
+        return filterList;
+    }
+
+    /**
+     * Get filtered list by team
+     * @param list
+     * @return
+     */
+    private List<IShowable> getTeams(List<IShowable> list){
+        List<IShowable> filterList= new LinkedList<IShowable>();
+        for(IShowable obj: list){
+            if(obj instanceof Team){
+                filterList.add(obj);
+            }
+        }
+        return filterList;
+    }
+
+    /**
+     * Get filtered list by season
+     * @param list
+     * @return
+     */
+    private List<IShowable> getSeasons(List<IShowable> list){
+        List<IShowable> filterList= new LinkedList<IShowable>();
+        for(IShowable obj: list){
+            if(obj instanceof Season){
+                filterList.add(obj);
+            }
+        }
+        return filterList;
+    }
+
+    /**
+     * Get filtered list by league
+     * @param list
+     * @return
+     */
+    private List<IShowable> getLeagues(List<IShowable> list){
+        List<IShowable> filterList= new LinkedList<IShowable>();
+        for(IShowable obj: list){
+            if(obj instanceof League){
+                filterList.add(obj);
+            }
+        }
+        return filterList;
+    }
+    //</editor-fold>
+}

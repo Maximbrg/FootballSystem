@@ -19,7 +19,6 @@ public class Controller {
     private List<League> leagues;
    // private Season currentSeason; //need to update it every year
     private List<Team> teams;
-    private List<Season> seasons;
 
 
     //Constructor
@@ -105,7 +104,7 @@ public class Controller {
     } //UC-4
 
     public List<Season> getAllSeasons(){
-        return seasons;
+        List<Res>
     } //UC-4
 
     public List<League> searchLeague(String name){
@@ -160,21 +159,8 @@ public class Controller {
     public  HashMap<String,User> getUsers(){
         return users;
     }
-
     public void addUser(String s,User u){
         users.put(s,u);
-    }
-
-    public void addSeason(Season season){
-        seasons.add(season);
-    }
-
-    public Season getSeason(String year){
-        for(Season s : seasons){
-            if(s.getYear().equals(year))
-                return s;
-        }
-        return null;
     }
 
 }
