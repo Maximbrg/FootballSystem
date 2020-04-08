@@ -79,6 +79,16 @@ public class Controller {
         return referees;
     } //UC-4
 
+    public List<Couch> getAllCoach(){
+        List <Couch> Coachs = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Couch){
+                Coachs.add((Couch)user);
+            }
+        }
+        return Coachs;
+    } //UC-4
+
     public List<Player> getAllPlayers(){
         List <Player> players = new LinkedList<>();
         for(User user : users.values()){
@@ -91,6 +101,10 @@ public class Controller {
 
     public List<Team> getAllTeams(){
         return teams;
+    } //UC-4
+
+    public List<Season> getAllSeasons(){
+        List<Res>
     } //UC-4
 
     public List<League> searchLeague(String name){

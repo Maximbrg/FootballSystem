@@ -51,7 +51,7 @@ public class FootballAssosiation extends User {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
         int year = calendar.get(Calendar.YEAR);
-//Add one to month {0 - 11}
+        //Add one to month {0 - 11}
         //int month = calendar.get(Calendar.MONTH) + 1;
         //int day = calendar.get(Calendar.DAY_OF_MONTH);
 
@@ -85,7 +85,6 @@ public class FootballAssosiation extends User {
         Log.getInstance().writeToLog("Add new referee. id:"+referee.getId());
 
     }   //UC-30
-
 
     /**
      * Remove referee- Before deleting,we check the referee has some games to judge.
@@ -139,7 +138,6 @@ public class FootballAssosiation extends User {
 
     }
     //UC-31
-
 
 
     //public void addBudgetRule(String rule){} //UC-33

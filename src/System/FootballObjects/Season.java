@@ -1,13 +1,12 @@
 package System.FootballObjects;
 
-import System.Enum.RefereeType;
 import System.FootballObjects.Team.Team;
 import System.Controller;
-import System.Log;
-import java.util.ArrayList;
+import System.IShowable;
+
 import java.util.List;
 
-public class Season {
+public class Season implements IShowable {
 
     private int year;
     //private String result;
@@ -31,6 +30,16 @@ public class Season {
     }
     public List<Team> getTeam(){
         return teams;
+    }
+
+    @Override
+    public String getName() {
+        return "Season:"+year;
+    }
+
+    @Override
+    public String getType() {
+        return "Season";
     }
 
 
