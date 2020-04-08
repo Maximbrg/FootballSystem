@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Enum/SearchCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Searcher/ISearchStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Searcher/SearchByKeyWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Searcher/SearchByName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestService/GustControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestService/GustControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestService/RefereeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestService/RefereeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/RefereeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/TeamContoller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/League.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/Couch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Couch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Referee.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="447">
-              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
               <folding>
                 <element signature="method#signup#0;class#GustController#0" />
                 <element signature="method#login#0;class#GustController#0" />
@@ -41,20 +38,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="477">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="method#initSystem#0;class#Controller#0" />
-                <element signature="method#login#0;class#Controller#0" />
-                <element signature="method#signup#0;class#Controller#0" />
-                <element signature="method#getAllPlayers#0;class#Controller#0" />
-                <element signature="method#searchLeague#0;class#Controller#0" />
-                <element signature="method#searchPlayers#0;class#Controller#0" />
-                <element signature="method#searchTeams#0;class#Controller#0" />
-                <element signature="method#logOut#0;class#Controller#0" />
                 <element signature="method#getSeason#0;class#Controller#0" />
               </folding>
             </state>
@@ -86,12 +73,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestService/GustControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+            <state relative-caret-position="462">
+              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#signup#0;class#GustControllerTest#0" />
-                <element signature="method#getInfoToShow#0;class#GustControllerTest#0" />
               </folding>
             </state>
           </provider>
@@ -143,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/TestService/RefereeControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -278,6 +263,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -486,11 +472,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95025000" />
+    <option name="totallyTimeSpent" value="95985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -499,14 +484,14 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.12567714" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.49946696" weight="0.12567714" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50040483" side_tool="true" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.12567714" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.13434453" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.35969663" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.35969663" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.25460455" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -1058,20 +1043,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="477">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="method#initSystem#0;class#Controller#0" />
-            <element signature="method#login#0;class#Controller#0" />
-            <element signature="method#signup#0;class#Controller#0" />
-            <element signature="method#getAllPlayers#0;class#Controller#0" />
-            <element signature="method#searchLeague#0;class#Controller#0" />
-            <element signature="method#searchPlayers#0;class#Controller#0" />
-            <element signature="method#searchTeams#0;class#Controller#0" />
-            <element signature="method#logOut#0;class#Controller#0" />
             <element signature="method#getSeason#0;class#Controller#0" />
           </folding>
         </state>
@@ -1097,7 +1072,7 @@
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
             <element signature="method#signup#0;class#GustController#0" />
             <element signature="method#login#0;class#GustController#0" />
@@ -1109,18 +1084,16 @@
     <entry file="file://$PROJECT_DIR$/TestService/RefereeControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestService/GustControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        <state relative-caret-position="462">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#signup#0;class#GustControllerTest#0" />
-            <element signature="method#getInfoToShow#0;class#GustControllerTest#0" />
           </folding>
         </state>
       </provider>
