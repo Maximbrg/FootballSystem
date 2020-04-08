@@ -19,6 +19,7 @@ public class Controller {
     private List<League> leagues;
    // private Season currentSeason; //need to update it every year
     private List<Team> teams;
+    private List<Player> players;
 
 
     //Constructor
