@@ -81,6 +81,12 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         return "Team";
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name;
+        return str;
+    }
+
     public List<Asset> getAssets() {
         return assets;
     }

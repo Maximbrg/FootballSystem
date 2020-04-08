@@ -121,7 +121,7 @@ public class FootballAssosiation extends User {
         for(Game game:listOfGame){
             for(Referee newReferee:referees){
                 if(newReferee.getType()==referee.getType()){
-                    if(referee.getType()==RefereeType.MainReferee){
+                    if(referee.getRefereeType()==RefereeType.MainReferee){
                         game.setMainReferee(newReferee);
                     }
                     else{

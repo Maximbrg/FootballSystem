@@ -31,6 +31,12 @@ public class League implements IShowable {
         return "League";
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name;
+        return str;
+    }
+
     public List<LeagueInformation> getLeagueInformation() {
         return leagueInformation;
     }

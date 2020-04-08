@@ -48,6 +48,12 @@ public class Player extends User implements Asset, IPageAvailable, IObserverTeam
         return "Player";
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name+"@birthday:"+birthDate.toString()+"@role:"+role+"@team:"+myTeam.getName()+"";
+        return str;
+    }
+
     public Date getBirthDate() {
         return birthDate;
     }

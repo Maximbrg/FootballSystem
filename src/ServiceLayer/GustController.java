@@ -5,6 +5,7 @@ import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.noSuchAUserNamedException;
 import System.Exeptions.wrongPasswordException;
 import System.Users.Fan;
+import System.Users.Referee;
 import System.Users.User;
 
 import java.util.LinkedList;
@@ -40,9 +41,17 @@ public class GustController {
                 result.add((IShowable)(Controller.getInstance().getAllLeagues()));
             }
             case "Season":{
-                result.add((IShowable)(Controller.getInstance().getAllSeasons));
+                result.add((IShowable)(Controller.getInstance().getAllSeasons()));
+            }
+            case "Referee":{
+                for(Referee referee : Controller.getInstance().getAllReferee()){
+                    result.add((IShowable)referee);
+                }
+
             }
         }
+        return result;
     }
+
 
 }

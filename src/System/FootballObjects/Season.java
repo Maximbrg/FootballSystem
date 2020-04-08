@@ -42,6 +42,12 @@ public class Season implements IShowable {
         return "Season";
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@year:"+year;
+        return str;
+    }
+
 
     //Methods
 

@@ -50,6 +50,12 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
         return "Coach";
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name+"@preparation:"+preparation+"@role:"+role+"@team:"+myTeam.getName()+"";
+        return str;
+    }
+
     public String getPreparation() {
         return preparation;
     }
