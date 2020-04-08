@@ -14,7 +14,7 @@ import java.util.List;
 
 //</editor-fold>
 
-public class Couch extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
+public class Coach extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
 
     private String name;
     private String preparation;
@@ -26,7 +26,7 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
     private List<ISubjectTeam> subjectTeam;
 
     //<editor-fold desc="Constructor">
-    public Couch(int id, String name, String password, String userName, String name1, String preparation, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
+    public Coach(int id, String name, String password, String userName, String name1, String preparation, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
         super(id, name, password, userName);
         this.name = name1;
         this.preparation = preparation;

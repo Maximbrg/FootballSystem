@@ -80,11 +80,11 @@ public class Controller {
         return referees;
     } //UC-4
 
-    public List<Couch> getAllCoach(){
-        List <Couch> Coachs = new LinkedList<>();
+    public List<Coach> getAllCoach(){
+        List <Coach> Coachs = new LinkedList<>();
         for(User user : users.values()){
-            if(user instanceof Couch){
-                Coachs.add((Couch)user);
+            if(user instanceof Coach){
+                Coachs.add((Coach)user);
             }
         }
         return Coachs;

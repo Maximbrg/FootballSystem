@@ -1,7 +1,6 @@
 package System.Users;
 //<editor-fold desc="imports">
 import System.FinancialReport;
-import System.Asset.Asset;
 import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
@@ -14,7 +13,7 @@ import java.util.List;
 public class TeamOwner extends User implements IObserverTeam {
 
     private String name;
-    private Couch selfCouch; // if he also Couch otherwise null
+    private Coach selfCoach; // if he also Coach otherwise null
     private TeamManager selfTeamManager; // if he also TeamManager otherwise null
     private Player selfPlayer; // if he also Player otherwise null
     private int salary;
@@ -23,10 +22,10 @@ public class TeamOwner extends User implements IObserverTeam {
     private HashMap<Team,List<TeamOwner>> teamOwnersWhichIappointed;
 
     //<editor-fold desc="Constructor">
-    public TeamOwner(int id, String password, String userName, TeamStatus status, String name, Couch selfCouch, TeamManager selfTeamManager, Player selfPlayer, int salary, List<Team> teamList, HashMap<Team, List<TeamOwner>> teamOwnersWhichIappointed) {
+    public TeamOwner(int id, String password, String userName, TeamStatus status, String name, Coach selfCoach, TeamManager selfTeamManager, Player selfPlayer, int salary, List<Team> teamList, HashMap<Team, List<TeamOwner>> teamOwnersWhichIappointed) {
         super(id, password, userName, status);
         this.name = name;
-        this.selfCouch = selfCouch;
+        this.selfCoach = selfCoach;
         this.selfTeamManager = selfTeamManager;
         this.selfPlayer = selfPlayer;
         this.salary = salary;
@@ -41,8 +40,8 @@ public class TeamOwner extends User implements IObserverTeam {
         return name;
     }
 
-    public Couch getSelfCouch() {
-        return selfCouch;
+    public Coach getSelfCoach() {
+        return selfCoach;
     }
 
     public TeamManager getSelfTeamManager() {
@@ -67,8 +66,8 @@ public class TeamOwner extends User implements IObserverTeam {
         this.name = name;
     }
 
-    public void setSelfCouch(Couch selfCouch) {
-        this.selfCouch = selfCouch;
+    public void setSelfCoach(Coach selfCoach) {
+        this.selfCoach = selfCoach;
     }
 
     public void setSelfTeamManager(TeamManager selfTeamManager) {
