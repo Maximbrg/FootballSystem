@@ -7,11 +7,14 @@ import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
+import System.IShowable;
+
 import java.util.LinkedList;
 import java.util.List;
+
 //</editor-fold>
 
-public class Couch extends User implements Asset, IPageAvailable, IObserverTeam {
+public class Couch extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
 
     private String name;
     private String preparation;
@@ -40,6 +43,11 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam 
     //<editor-fold desc="Getters">
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getType() {
+        return "Coach";
     }
 
     public String getPreparation() {

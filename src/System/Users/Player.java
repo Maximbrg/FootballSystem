@@ -6,12 +6,13 @@ import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
+import System.IShowable;
 
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Player extends User implements Asset, IPageAvailable, IObserverTeam {
+public class Player extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
 
     private String name;
     private Date birthDate;
@@ -40,6 +41,11 @@ public class Player extends User implements Asset, IPageAvailable, IObserverTeam
     //<editor-fold desc="Getters">
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getType() {
+        return "Player";
     }
 
     public Date getBirthDate() {

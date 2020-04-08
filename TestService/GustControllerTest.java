@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 
 public class GustControllerTest {
+
     @Test
     public void signup() throws UserNameAlreadyExistException { //Test ID: #1
         String name = "Maxim";

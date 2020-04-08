@@ -10,6 +10,7 @@ import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
 import System.Users.*;
 import System.FinancialReport;
+import System.IShowable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ import java.util.LinkedList;
 import java.util.List;
 //</editor-fold>
 
-public class Team implements IPageAvailable, ISubjectTeam {
+public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     private static int id;
     private String name;
@@ -73,6 +74,11 @@ public class Team implements IPageAvailable, ISubjectTeam {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getType() {
+        return "Team";
     }
 
     public List<Asset> getAssets() {
