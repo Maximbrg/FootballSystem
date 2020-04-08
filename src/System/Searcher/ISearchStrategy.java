@@ -13,7 +13,6 @@ import java.util.List;
 
 public abstract class ISearchStrategy {
 
-
     /**
      * Liste filter by category
      * @param list
@@ -45,9 +44,12 @@ public abstract class ISearchStrategy {
      * @param category
      * @return
      */
-    public List<IShowable> getListByCategory(SearchCategory category){
+    protected List<IShowable> getListByCategory(SearchCategory category){
         Controller controller=Controller.getInstance();
         List<IShowable> list= new LinkedList<IShowable>();
+        if(category==SearchCategory.Default){
+            return getDefaultList();
+        }
         if(category==SearchCategory.PLAYER){
             for (Player obj:controller.getAllPlayers()){
                 list.add(obj);
@@ -80,37 +82,8 @@ public abstract class ISearchStrategy {
         }
     }
 
-    /**
-     * Get list by default category
-     * @return
-     */
-    protected List<IShowable> getDefaultList(){
-        Controller controller= Controller.getInstance();
-        List<IShowable> list= new LinkedList<IShowable>();
-        List<Player> playerList= controller.getAllPlayers();
-        List<Couch> coachList= controller.getAllCoach();
-        List<Team> teamList= controller.getAllTeams();
-        List<League> leagueList= controller.getAllLeagues();
-        List<Season> seasonList=controller.getAllSeasons();
 
-        for(Player obj:playerList){
-            list.add(obj);
-        }
-        for(Couch obj: coachList){
-            list.add(obj);
-        }
-        for(Team obj: teamList){
-            list.add(obj);
-        }
-        for(League obj: leagueList){
-            list.add(obj);
-        }
-        for(Season obj: seasonList){
-            list.add(obj);
-        }
-        return list;
-    }
-    
+
     abstract List<IShowable> search(SearchCategory category, String str);
 
 
@@ -188,6 +161,37 @@ public abstract class ISearchStrategy {
             }
         }
         return filterList;
+    }
+
+    /**
+     * Get list by default category
+     * @return
+     */
+    private List<IShowable> getDefaultList(){
+        Controller controller= Controller.getInstance();
+        List<IShowable> list= new LinkedList<IShowable>();
+        List<Player> playerList= controller.getAllPlayers();
+        List<Couch> coachList= controller.getAllCoach();
+        List<Team> teamList= controller.getAllTeams();
+        List<League> leagueList= controller.getAllLeagues();
+        List<Season> seasonList=controller.getAllSeasons();
+
+        for(Player obj:playerList){
+            list.add(obj);
+        }
+        for(Couch obj: coachList){
+            list.add(obj);
+        }
+        for(Team obj: teamList){
+            list.add(obj);
+        }
+        for(League obj: leagueList){
+            list.add(obj);
+        }
+        for(Season obj: seasonList){
+            list.add(obj);
+        }
+        return list;
     }
     //</editor-fold>
 }
