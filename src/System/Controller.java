@@ -105,7 +105,7 @@ public class Controller {
     } //UC-4
 
     public List<Season> getAllSeasons(){
-        List<Res>
+        return null;
     } //UC-4
 
     public List<League> searchLeague(String name){
