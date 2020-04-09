@@ -16,16 +16,16 @@ import java.util.List;
 
 public class GustController {
 
-    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
-        Controller controller = Controller.getInstance();
-        Fan newFan = controller.signup(id,name,password,userName);
-        return newFan;
-    }
-
     public User login(String userName , String password) throws wrongPasswordException, noSuchAUserNamedException {
         Controller controller = Controller.getInstance();
         User existUser = controller.login(userName,password);
         return existUser;
+    }
+
+    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
+        Controller controller = Controller.getInstance();
+        Fan newFan = controller.signup(id,name,password,userName);
+        return newFan;
     }
 
     public List<IShowable> getInfoToShow(String name){
@@ -65,18 +65,15 @@ public class GustController {
         return result;
     }
 
-    public List<IShowable> searchShowables(ASearchStrategy aSearchStrategy, SearchCategory searchCategory, String query){
+    public List<IShowable> searchShowables(User user, ASearchStrategy aSearchStrategy, SearchCategory searchCategory, String query){
         List<IShowable> results = aSearchStrategy.search(searchCategory,query);
+        user.addSearchHistory(query);
         return results;
     }
 
     public List<IShowable> filterResults(ASearchStrategy aSearchStrategy, SearchCategory searchCategory, List<IShowable> iShowableList){
         List<IShowable> results = aSearchStrategy.filter(iShowableList, searchCategory);
         return results;
-    }
-
-    public void logOut(User user){
-        throw new UnsupportedOperationException();
     }
 
 }

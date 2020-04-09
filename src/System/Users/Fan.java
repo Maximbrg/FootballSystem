@@ -3,7 +3,6 @@ package System.Users;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
 import System.PersonalPages.PersonalPage;
-import System.Log;
 
 
 import java.util.LinkedList;

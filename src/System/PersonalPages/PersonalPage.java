@@ -2,7 +2,6 @@ package System.PersonalPages;
 
 import System.Users.Fan;
 import System.Log;
-import System.Users.User;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,11 +10,13 @@ public class PersonalPage {
 
      private IPageAvailable pageAvailable;
      private List <Fan> followers;
+     private String content;
 
     //<editor-fold desc="constructor">
     public PersonalPage(IPageAvailable pageAvailable) {
         this.pageAvailable = pageAvailable;
         this.followers = new LinkedList<>();
+        this.content = "";
     }
     //</editor-fold>
 
@@ -27,6 +28,10 @@ public class PersonalPage {
     public List<Fan> getFollowers() {
         return followers;
     }
+
+    public String getContent() {
+        return content;
+    }
     //</editor-fold>
 
     //<editor-fold desc="setter">
@@ -37,6 +42,11 @@ public class PersonalPage {
     public void setFollowers(List<Fan> followers) {
         this.followers = followers;
     }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     //</editor-fold>
 
     /**
