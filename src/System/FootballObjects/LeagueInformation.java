@@ -4,6 +4,8 @@ import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
 import System.Users.Referee;
 import System.Log;
+
+import javax.swing.*;
 import java.util.*;
 
 public class LeagueInformation {
@@ -14,6 +16,10 @@ public class LeagueInformation {
     HashMap<Team,Integer> leagueTable;
     ITeamAllocatePolicy iTeamAllocatePolicy;
     IScoreMethodPolicy iScoreMethodPolicy;
+    int WIN;
+    int LOSS;
+    int TIE;
+    Team Champion;
 
     //<editor-fold desc="constructor">
     public LeagueInformation(League league, Season season) {
@@ -30,7 +36,12 @@ public class LeagueInformation {
         iTeamAllocatePolicy.setTeamPolicy(season.getTeam(),season.getGames());
 
         iScoreMethodPolicy= new DefualtMethod();
-        iScoreMethodPolicy.setScorePolicy();
+        //get list of score for policy
+        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
+        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
+        WIN=setScore.get(0);
+        LOSS=setScore.get(1);
+        TIE=setScore.get(2);
     }
     //</editor-fold>
 
