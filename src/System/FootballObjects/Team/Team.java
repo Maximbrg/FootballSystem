@@ -2,6 +2,8 @@
 package System.FootballObjects.Team;
 import System.Asset.Asset;
 import System.Enum.TeamStatus;
+import System.Exeptions.HasTeamAlreadyException;
+import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Field;
 import System.FootballObjects.Game;
 import System.I_Observer.IObserverTeam;
@@ -25,13 +27,12 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private TeamStatus teamStatus;
     private PersonalPage personalPage;
     private List<Asset> assets;
-
+    private List<Player> players;
     private List<Game> gamesOfTeams;
 
-    private List<IObserverTeam> iObserverTeamListForPlayers;
-    private List<IObserverTeam> iObserverTeamListForFields;
-    private List<IObserverTeam> iObserverTeamListForTeamManagers;
-    private List<IObserverTeam> iObserverTeamListForFanCouches;
+    private List<IObserverTeam> iObserverTeamListForSystemManagers;
+    private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
+
 
     private List<TeamManager> teamManagersList;
     private HashMap<TeamOwner,List<TeamOwner>> teamOwnersWhichappointed;
@@ -55,13 +56,10 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.income = income;
         this.expense = expense;
         this.financialReport = financialReport;
-
-        this.iObserverTeamListForPlayers=new LinkedList<>();
-        this.iObserverTeamListForFields=new LinkedList<>();
-        this.iObserverTeamListForTeamManagers=new LinkedList<>();
-        this.iObserverTeamListForFanCouches=new LinkedList<>();
-
+        this.iObserverTeamListForSystemManagers=new LinkedList<>();
+        this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
         this.gamesOfTeams= new ArrayList<>();
+        this.players = new LinkedList<>();
 
     }
     //</editor-fold>
@@ -89,22 +87,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public List<Asset> getAssets() {
         return assets;
-    }
-
-    public List<IObserverTeam> getiObserverTeamListForPlayers() {
-        return iObserverTeamListForPlayers;
-    }
-
-    public List<IObserverTeam> getiObserverTeamListForFields() {
-        return iObserverTeamListForFields;
-    }
-
-    public List<IObserverTeam> getiObserverTeamListForTeamManagers() {
-        return iObserverTeamListForTeamManagers;
-    }
-
-    public List<IObserverTeam> getiObserverTeamListForFanCouches() {
-        return iObserverTeamListForFanCouches;
     }
 
     public List<TeamManager> getTeamManagersList() {
@@ -157,6 +139,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Setters">
+
     public static void setId(int id) {
         Team.id = id;
     }
@@ -175,22 +158,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public void setAssets(List<Asset> assets) {
         this.assets = assets;
-    }
-
-    public void setiObserverTeamListForPlayers(List<IObserverTeam> iObserverTeamListForPlayers) {
-        this.iObserverTeamListForPlayers = iObserverTeamListForPlayers;
-    }
-
-    public void setiObserverTeamListForFields(List<IObserverTeam> iObserverTeamListForFields) {
-        this.iObserverTeamListForFields = iObserverTeamListForFields;
-    }
-
-    public void setiObserverTeamListForTeamManagers(List<IObserverTeam> iObserverTeamListForTeamManagers) {
-        this.iObserverTeamListForTeamManagers = iObserverTeamListForTeamManagers;
-    }
-
-    public void setiObserverTeamListForFanCouches(List<IObserverTeam> iObserverTeamListForFanCouches) {
-        this.iObserverTeamListForFanCouches = iObserverTeamListForFanCouches;
     }
 
     public void setTeamManagersList(List<TeamManager> teamManagersList) {
@@ -230,7 +197,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * according to UC-15
      *
      */
-    public void addAsset(Asset asset){
+    public void addAsset(Asset asset) throws HasTeamAlreadyException {
         if(asset!=null) {
             this.assets.add(asset);
             asset.addMyTeam(this);//connect this team to the asset
@@ -281,6 +248,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void closeTeam(){
         this.setTeamStatus(TeamStatus.Close);
+        notifySystemManager();
+        notifyTeamOwnersAndManager();//needs another notify for this
+
     } //UC-22
 
     /**
@@ -291,6 +261,8 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         for (Asset a:assets) {
             a.resetMyTeam();
         }
+        notifyTeamOwnersAndManager();
+
     }
     //</editor-fold>
 
@@ -300,79 +272,62 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         return null;
     }
 
-
     @Override
-    public void registerPlayerToAlert(IObserverTeam player) {
-        this.iObserverTeamListForPlayers.add(player);
-        player.registerAlert(this);
+    public void registerSystemManagerToAlert(IObserverTeam systemManager) {
+        this.iObserverTeamListForSystemManagers.add(systemManager);
+        systemManager.registerAlert(this);
     }
 
     @Override
-    public void registerFieldToAlert(IObserverTeam field) {
-        this.iObserverTeamListForFields.add(field);
-        field.registerAlert(this);
+    public void registerAlert(IObserverTeam obs) {
+        this.iObserverTeamListForTeamOwnersAndManagers.add(obs);
+        obs.registerAlert(this);
     }
 
     @Override
-    public void registerTeamManagerToAlert(IObserverTeam teamManager) {
-        this.iObserverTeamListForTeamManagers.add(teamManager);
-        teamManager.registerAlert(this);
+    public void removeAlertToSystemManager(IObserverTeam systemManager) {
+        this.iObserverTeamListForSystemManagers.remove(systemManager);
+        systemManager.registerAlert(this);
     }
 
     @Override
-    public void registerCouchToAlert(IObserverTeam couch) {
-        this.iObserverTeamListForFanCouches.add(couch);
-        couch.registerAlert(this);
+    public void removeAlert(IObserverTeam obs) {
+        this.iObserverTeamListForTeamOwnersAndManagers.remove(obs);
+        obs.removeAlert(this);
     }
 
     @Override
-    public void removeAlertToPlayer(IObserverTeam player) {
-        this.iObserverTeamListForPlayers.remove(player);
-        player.removeAlert(this);
+    public void notifySystemManager() {
+        for(IObserverTeam observerTeam:this.iObserverTeamListForSystemManagers){
+            observerTeam.update();
+        }
     }
 
     @Override
-    public void removeAlertToField(IObserverTeam field) {
-        this.iObserverTeamListForFields.remove(field);
-        field.removeAlert(this);
+    public void notifyTeamOwnersAndManager() {
+        for (IObserverTeam observerTeam:this.iObserverTeamListForTeamOwnersAndManagers){
+            observerTeam.update();
+        }
     }
 
     @Override
-    public void removeAlertToTeamManager(IObserverTeam teamManager) {
-        this.iObserverTeamListForTeamManagers.remove(teamManager);
-        teamManager.removeAlert(this);
+    public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
+        if(personalPage!= null){
+            PersonalPage newPersonalPage= new PersonalPage(this);
+            this.personalPage=newPersonalPage;
+        }
+        throw new PersonalPageAlreadyExist();
     }
 
-    @Override
-    public void removeAlertToCouch(IObserverTeam couch) {
-        this.iObserverTeamListForFanCouches.remove(couch);
-        couch.removeAlert(this);
-    }
-
-    @Override
-    public void notifyPlayer() {
-        for (IObserverTeam player: this.iObserverTeamListForPlayers)
-            player.update();
-    }
-
-    @Override
-    public void notifyField() {
-        for (IObserverTeam field: this.iObserverTeamListForFields)
-            field.update();
-    }
-
-    @Override
-    public void notifyTeamManager() {
-        for (IObserverTeam teamManager: this.iObserverTeamListForTeamManagers)
-            teamManager.update();
-    }
-
-    @Override
-    public void notifyCouch() {
-        for (IObserverTeam couch: this.iObserverTeamListForFanCouches)
-            couch.update();
-    }
     //</editor-fold>
+
+    public void addPlayerToTeam(Player player) {
+        players.add(player);
+    }
+
+    public void removePlayerFromTeam(Player player){
+        players.remove(player);
+    }
 
 
 }

@@ -1,5 +1,6 @@
 package System.Asset;
 
+import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
 
 public interface Asset {
@@ -8,7 +9,7 @@ public interface Asset {
 
     void resetMyTeam();
 
-    void addMyTeam(Team team);
+    void addMyTeam(Team team) throws HasTeamAlreadyException;
 
     int getSalary();
 

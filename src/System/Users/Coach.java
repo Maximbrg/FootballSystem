@@ -2,6 +2,8 @@ package System.Users;
 
 //<editor-fold desc="imports">
 import System.Asset.Asset;
+import System.Exeptions.HasTeamAlreadyException;
+import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -14,9 +16,8 @@ import java.util.List;
 
 //</editor-fold>
 
-public class Coach extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
+public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
-    private String name;
     private String preparation;
     private String role;
     private PersonalPage personalPage;
@@ -26,14 +27,11 @@ public class Coach extends User implements Asset, IPageAvailable, IObserverTeam,
     private List<ISubjectTeam> subjectTeam;
 
     //<editor-fold desc="Constructor">
-    public Coach(int id, String name, String password, String userName, String name1, String preparation, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
+    public Coach(int id, String name, String password, String userName, String preparation, String role, int assetValue, int salary) {
         super(id, name, password, userName);
-        this.name = name1;
         this.preparation = preparation;
         this.role = role;
-        this.personalPage = personalPage;
         this.assetValue = assetValue;
-        this.myTeam = myTeam;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
 
@@ -115,32 +113,13 @@ public class Coach extends User implements Asset, IPageAvailable, IObserverTeam,
     }
 
     @Override
-    public void addMyTeam(Team team) {
-        this.myTeam=team;
-    }
-
-    @Override
-    public void update() {
-
-    }
-
-    /**
-     * Add a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void registerAlert(ISubjectTeam iSubjectTeam){
-        this.subjectTeam.add(iSubjectTeam);
-    }
-
-    /**
-     * Remove a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void removeAlert(ISubjectTeam iSubjectTeam) {
-        this.subjectTeam.remove(iSubjectTeam);
-
+    public void addMyTeam(Team team) throws HasTeamAlreadyException {
+       if(this.myTeam != null) {
+           throw new HasTeamAlreadyException();
+       }
+       else{
+           this.myTeam = team;
+       }
     }
 
     @Override
@@ -151,6 +130,15 @@ public class Coach extends User implements Asset, IPageAvailable, IObserverTeam,
     @Override
     public String showDetails() {
         return null;
+    }
+
+    @Override
+    public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
+        if(personalPage!= null){
+            PersonalPage newPersonalPage= new PersonalPage(this);
+            this.personalPage=newPersonalPage;
+        }
+        throw new PersonalPageAlreadyExist();
     }
     //</editor-fold>
 }

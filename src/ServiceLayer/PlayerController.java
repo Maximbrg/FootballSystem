@@ -4,6 +4,8 @@ import System.PersonalPages.PersonalPage;
 import System.Users.Player;
 import System.Exeptions.*;
 
+import java.util.Date;
+
 public class PlayerController extends MainUserController{
 
     private static PlayerController ourInstance = new PlayerController();
@@ -19,9 +21,20 @@ public class PlayerController extends MainUserController{
         return player.getDetails();
     }
 
-    public void createPersonalPage(Player player) throws alreadyHasPageException{
+    public void setDetails(Player player, int id, String name, String password, String userName, Date date, String role){
+        FanController fanController = FanController.getInstance();
+        fanController.editDetails(player,id,name,password,userName);
+        if(date!=null){
+            player.setBirthDate(date);
+        }
+        if(!role.equals("")){
+            player.setRole(role);
+        }
+    }
+
+    public void createPersonalPage(Player player) throws AlreadyHasPageException {
         if(player.getPersonalPage()!=null) {
-            throw new alreadyHasPageException();
+            throw new AlreadyHasPageException();
         }
         else{
             PersonalPage personalPage = new PersonalPage(player);
@@ -31,7 +44,7 @@ public class PlayerController extends MainUserController{
 
     public void editPersonalPage(Player player, String newContent){
         PersonalPage personalPage = player.getPersonalPage();
-        personalPage.setContent(newContent);
+        personalPage.upload(newContent);
     }
 
 }

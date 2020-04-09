@@ -13,6 +13,15 @@ import java.util.List;
 
 public class FanController extends GustController implements Observable {
 
+    private static FanController ourInstance = new FanController();
+
+    public static FanController getInstance() {
+        return ourInstance;
+    }
+
+    private FanController() {
+    }
+
     List<Observer> listeners;
 
     public List<PersonalPage> getAllpersonalPages() {
@@ -66,7 +75,7 @@ public class FanController extends GustController implements Observable {
         return "@id:"+fan.getId()+"@name:"+fan.getName()+"@UserStatus:"+fan.getStatus().toString();
     }
 
-    public void editDetails(Fan fan, int id, String name, String password, String useName){
+    public void editDetails(User fan, int id, String name, String password, String useName){
         if(id!=-1){
             fan.setId(id);
         }
@@ -85,7 +94,6 @@ public class FanController extends GustController implements Observable {
     public Fan signup(int id, String name, String password, String userName) {
         throw new UnsupportedOperationException();
     }
-
     @Override
     public void logOut(User user) {
         Controller controller = Controller.getInstance();
