@@ -125,6 +125,8 @@ public class Controller {
         seasons.add(season);
     }
 
+    public void addLeague(League league){leagues.add(league);}
+
     public Season getSeason(String year){
         for(Season s : seasons){
             if(s.getYear().equals(year))

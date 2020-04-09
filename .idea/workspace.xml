@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/TeamHasAFutureGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +16,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2178">
+            <state relative-caret-position="1848">
               <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,76 +33,80 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/SystemManager.java">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/coachController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state>
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#0#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/Exceptions/TeamHasAFutureGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="197" column="37" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="37" />
+            <state relative-caret-position="88">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java">
+        <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2211">
-              <caret line="233" column="59" selection-start-line="233" selection-start-column="59" selection-end-line="233" selection-end-column="59" />
+            <state relative-caret-position="308">
+              <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3101#3250#0" />
-                <element signature="e#3660#3690#0" />
-                <element signature="e#6203#6204#0" expanded="true" />
-                <element signature="e#6723#6762#0" />
+                <element signature="method#initSystem#0;class#Controller#0" />
+                <element signature="method#signup#0;class#Controller#0" />
+                <element signature="method#getAllReferee#0;class#Controller#0" />
+                <element signature="method#getAllCoach#0;class#Controller#0" />
+                <element signature="method#getAllPlayers#0;class#Controller#0" />
+                <element signature="method#logOut#0;class#Controller#0" />
+                <element signature="method#getSeason#0;class#Controller#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/Player.java">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+            <state relative-caret-position="22">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1401#1402#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="method#getDetails#0;class#Player#0" />
-                <element signature="n#!!doc;n#setName#0;n#Player#0" />
+                <element signature="e#1136#1147#0" expanded="true" />
+                <element signature="e#2798#2799#0" expanded="true" />
+                <element signature="e#2855#2856#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/PlayerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/MainUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#359#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,14 +115,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="811">
+              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FootballAssosiation#0;class#FootballAssosiation#0" />
                 <element signature="docComment;method#initLeague#0;class#FootballAssosiation#0" />
                 <element signature="docComment;method#addNewReferee#0;class#FootballAssosiation#0" />
-                <element signature="method#addNewReferee#0;class#FootballAssosiation#0" />
                 <element signature="docComment;method#removeReferee#0;class#FootballAssosiation#0" />
                 <element signature="method#removeReferee#0;class#FootballAssosiation#0" />
                 <element signature="docComment;method#manuallChangingReferee#0;class#FootballAssosiation#0" />
@@ -128,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/Coach.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="141">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,15 +143,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/Fan.java">
+        <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2825#2826#0" expanded="true" />
-                <element signature="e#2873#2874#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-44">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Users/Couch.java" />
         <option value="$PROJECT_DIR$/src/SubjectGame.java" />
         <option value="$PROJECT_DIR$/src/SubjectTeam.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPage.java" />
@@ -210,10 +206,8 @@
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Season.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/League.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" />
         <option value="$PROJECT_DIR$/TestService/RefereeControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/System/Controller.java" />
         <option value="$PROJECT_DIR$/src/System/Searcher/ISearchStrategy.java" />
         <option value="$PROJECT_DIR$/src/System/Searcher/SearchByCategory.java" />
         <option value="$PROJECT_DIR$/TestService/GustControllerTest.java" />
@@ -233,6 +227,9 @@
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
         <option value="$PROJECT_DIR$/src/System/Users/SystemManager.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java" />
+        <option value="$PROJECT_DIR$/src/System/Controller.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" />
+        <option value="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" />
       </list>
     </option>
   </component>
@@ -292,8 +289,7 @@
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Team" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +311,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586451282553" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586453414436" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -528,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586433115792</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="FootballAssosiationController">
+      <created>1586451337139</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586451337139</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -564,7 +567,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121986000" />
+    <option name="totallyTimeSpent" value="124120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -689,19 +692,10 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/Maximbrg/FootballSystem" />
     <MESSAGE value="1. PersonalPage- create, upload, remove post&#10;2. Team alert- changed interface &quot;SubjectTeam&quot;&#10;3. Submit report- moved from controller to fan, needs to check what to do with system manager" />
     <MESSAGE value="1. PersonalPage- create, upload, remove post&#10;2. Team alert- changed interface &quot;SubjectTeam&quot;&#10;3. Submit report- moved from controller to fan, needs to check what to do with system manager&#10;4. added PersonalPage exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. PersonalPage- create, upload, remove post&#10;2. Team alert- changed interface &quot;SubjectTeam&quot;&#10;3. Submit report- moved from controller to fan, needs to check what to do with system manager&#10;4. added PersonalPage exception" />
+    <MESSAGE value="FootballAssosiationController" />
+    <option name="LAST_COMMIT_MESSAGE" value="FootballAssosiationController" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="46" selection-start-line="46" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/League.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -797,15 +791,6 @@
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/MainUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,23 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initSystem#0;class#Controller#0" />
-            <element signature="method#signup#0;class#Controller#0" />
-            <element signature="method#getAllReferee#0;class#Controller#0" />
-            <element signature="method#getAllCoach#0;class#Controller#0" />
-            <element signature="method#getAllPlayers#0;class#Controller#0" />
-            <element signature="method#logOut#0;class#Controller#0" />
-            <element signature="method#getSeason#0;class#Controller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -999,59 +967,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/coachController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/SystemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#1136#1147#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
-            <element signature="e#2855#2856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1156,33 +1073,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/SystemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#FootballAssosiation#0;class#FootballAssosiation#0" />
-            <element signature="docComment;method#initLeague#0;class#FootballAssosiation#0" />
-            <element signature="docComment;method#addNewReferee#0;class#FootballAssosiation#0" />
-            <element signature="method#addNewReferee#0;class#FootballAssosiation#0" />
-            <element signature="docComment;method#removeReferee#0;class#FootballAssosiation#0" />
-            <element signature="method#removeReferee#0;class#FootballAssosiation#0" />
-            <element signature="docComment;method#manuallChangingReferee#0;class#FootballAssosiation#0" />
+            <element signature="e#0#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java">
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state>
+          <folding>
+            <element signature="e#0#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/MainUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
+        <state relative-caret-position="1848">
           <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1190,6 +1110,89 @@
             <element signature="e#1102#1103#0" expanded="true" />
             <element signature="e#1804#1805#0" expanded="true" />
             <element signature="e#1852#1853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/coachController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#1136#1147#0" expanded="true" />
+            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2855#2856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="127" column="61" selection-start-line="127" selection-start-column="61" selection-end-line="127" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initSystem#0;class#Controller#0" />
+            <element signature="method#signup#0;class#Controller#0" />
+            <element signature="method#getAllReferee#0;class#Controller#0" />
+            <element signature="method#getAllCoach#0;class#Controller#0" />
+            <element signature="method#getAllPlayers#0;class#Controller#0" />
+            <element signature="method#logOut#0;class#Controller#0" />
+            <element signature="method#getSeason#0;class#Controller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FootballAssosiation#0;class#FootballAssosiation#0" />
+            <element signature="docComment;method#initLeague#0;class#FootballAssosiation#0" />
+            <element signature="docComment;method#addNewReferee#0;class#FootballAssosiation#0" />
+            <element signature="docComment;method#removeReferee#0;class#FootballAssosiation#0" />
+            <element signature="method#removeReferee#0;class#FootballAssosiation#0" />
+            <element signature="docComment;method#manuallChangingReferee#0;class#FootballAssosiation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

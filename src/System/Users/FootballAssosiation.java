@@ -73,7 +73,7 @@ public class FootballAssosiation extends User {
      * @throws UserNameAlreadyExistException
      */
     //UC-30
-    public void addNewReferee(String name, RefereeType type, int id, String pass, String userName)  throws UserNameAlreadyExistException {
+    public Referee addNewReferee(String name, RefereeType type, int id, String pass, String userName)  throws UserNameAlreadyExistException {
         Referee referee= new Referee(name,type,id,pass,userName);
         Controller controller= Controller.getInstance();
         for (HashMap.Entry me : controller.getUsers().entrySet()) {
@@ -83,6 +83,7 @@ public class FootballAssosiation extends User {
         }
         controller.addUser(userName,referee);
         Log.getInstance().writeToLog("Add new referee. id:"+referee.getId());
+        return referee;
 
     }   //UC-30
 
