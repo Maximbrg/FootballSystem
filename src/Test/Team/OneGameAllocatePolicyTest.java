@@ -1,10 +1,9 @@
-package System.FootballObjects.Team;
 
+import System.FootballObjects.Team.OneGameAllocatePolicy;
+import System.FootballObjects.Team.Team;
 import org.junit.*;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -13,7 +12,7 @@ import System.Enum.TeamStatus;
 import System.FootballObjects.Game;
 
 
-public class DefualtAllocteTest extends DefualtAllocte {
+public class OneGameAllocatePolicyTest extends OneGameAllocatePolicy {
     List<Team> teams= new ArrayList<>();
     List<Game> games= new ArrayList<>();
     @Before
@@ -32,25 +31,17 @@ public class DefualtAllocteTest extends DefualtAllocte {
         assertEquals(teams.size(),3);
 
         setTeamPolicy(teams,games);
-
-        assertEquals(games.size(),6);
+        assertEquals(games.size(),3);
         assertEquals(teams.size(),3);
         assertEquals(games.get(0).getHome().getName(), "Arsenal");
         assertEquals(games.get(0).getAway().getName(), "Liverpool");
-        assertEquals(games.get(1).getHome().getName(), "Liverpool");
-        assertEquals(games.get(1).getAway().getName(), "Arsenal");
 
-        assertEquals(games.get(2).getHome().getName(), "Arsenal");
-        assertEquals(games.get(2).getAway().getName(), "Chelsea");
-        assertEquals(games.get(3).getHome().getName(), "Chelsea");
-        assertEquals(games.get(3).getAway().getName(), "Arsenal");
+        assertEquals(games.get(1).getHome().getName(), "Arsenal");
+        assertEquals(games.get(1).getAway().getName(), "Chelsea");
 
-        assertEquals(teams.get(0).getGamesOfTeams().size(), 4);
-        assertEquals(teams.get(1).getGamesOfTeams().size(), 4);
-        assertEquals(teams.get(2).getGamesOfTeams().size(), 4);
-
+        assertEquals(teams.get(0).getGamesOfTeams().size(), 2);
+        assertEquals(teams.get(1).getGamesOfTeams().size(), 2);
+        assertEquals(teams.get(2).getGamesOfTeams().size(), 2);
     }
 
 }
-
-

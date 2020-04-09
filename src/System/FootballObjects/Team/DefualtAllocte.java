@@ -33,7 +33,7 @@ public class DefualtAllocte implements ITeamAllocatePolicy {
                 Team away= team.get(j);
                 Game game=new Game(date, 2000, null, null,null, away, home);
                 calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
-                Date newDate = calendar.getTime();
+                date = calendar.getTime();
                 games.add(game);
 
                 home.getGamesOfTeams().add(game);
@@ -43,6 +43,8 @@ public class DefualtAllocte implements ITeamAllocatePolicy {
                 home= team.get(j);
                 away= team.get(i);
                 Game game2=new Game(date, 2000, null, null,null, away, home);
+                calendar.add(Calendar.DAY_OF_YEAR, noOfDays);
+                date = calendar.getTime();
                 games.add(game2);
 
                 home.getGamesOfTeams().add(game2);

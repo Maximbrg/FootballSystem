@@ -63,7 +63,7 @@ public class LeagueInformation {
             public int compare(Map.Entry<Team,Integer> o1,
                                Map.Entry<Team,Integer> o2)
             {
-                return (o1.getValue()).compareTo(o2.getValue());
+                return (o2.getValue()).compareTo(o1.getValue());
             }
         });
 
@@ -100,25 +100,25 @@ public class LeagueInformation {
         Referee R2;
         Referee R3;
         for(Game game:season.getGames()){
-            if( i<= mainReferee.size()){
+            if( i< mainReferee.size()){
                 R1=mainReferee.get(i++);
             }
             else{
                 i=0;
                 R1=mainReferee.get(i++);
             }
-            if( i<= assistentsReferee.size()){
+            if( j< assistentsReferee.size()){
                 R2= assistentsReferee.get(j++);
             }
             else{
-                i=0;
+                j=0;
                 R2= assistentsReferee.get(j++);
             }
-            if( i<= assistentsReferee.size()){
+            if( j< assistentsReferee.size()){
                 R3= assistentsReferee.get(j++);
             }
             else{
-                i=0;
+                j=0;
                 R3= assistentsReferee.get(j++);
             }
             game.setMainReferee(R1);
@@ -150,6 +150,10 @@ public class LeagueInformation {
      */
     public void editScoreSchedulingPolicy(IScoreMethodPolicy iScoreMethodPolicy){//UC-37
         this.iScoreMethodPolicy=iScoreMethodPolicy;
+    }
+
+    public void updateScoreTeamInLeageTable(Team t, int score){
+        leagueTable.replace(t,score);
     }
 
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
