@@ -24,6 +24,10 @@ public class SystemManager extends User {
         super(id,name,password,userName);
         reportsHash= new HashMap<>();
     }
+
+    public static HashMap<Integer,Report> getReports() {
+        return null;
+    }
     //</editor-fold>
 
     //Methods

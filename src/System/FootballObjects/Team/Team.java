@@ -21,22 +21,17 @@ import java.util.List;
 
 public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
-    private static int id;
+    private static int ID=1;
+    private int id;
     private String name;
     private TeamStatus teamStatus;
     private PersonalPage personalPage;
     private List<Asset> assets;
-
     private List<Game> gamesOfTeams;
-
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
-
-
     private List<TeamManager> teamManagersList;
     private HashMap<TeamOwner,List<TeamOwner>> teamOwnersWhichappointed;
-
-
     private Field field;
     private int income;
     private int expense;
@@ -45,6 +40,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     //<editor-fold desc="Constructor">
     public Team(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, List<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport) {
+        this.id=ID++;
         this.name = name;
         this.teamStatus = teamStatus;
         this.personalPage = personalPage;
@@ -63,7 +59,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Getters">
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
@@ -137,8 +133,8 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Setters">
-    public static void setId(int id) {
-        Team.id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setName(String name) {
