@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 //</editor-fold>
 
-public class Field implements Asset, IObserverTeam {
+public class Field implements Asset {
 
     private int id;
     private String name;
@@ -101,29 +101,6 @@ public class Field implements Asset, IObserverTeam {
         return 0;
     }
 
-    @Override
-    public void update() {
-
-    }
-
-    /**
-     * Add a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void registerAlert(ISubjectTeam iSubjectTeam){
-        this.subjectTeam.add(iSubjectTeam);
-    }
-
-    /**
-     * Remove a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void removeAlert(ISubjectTeam iSubjectTeam) {
-        this.subjectTeam.remove(iSubjectTeam);
-
-    }
     //</editor-fold>
 
 }

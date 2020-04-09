@@ -4,14 +4,14 @@ import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
 import System.IShowable;
-import System.Users.Couch;
+import System.Users.Coach;
 import System.Users.Player;
 import System.Controller;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class ISearchStrategy {
+public abstract class ASearchStrategy {
 
     /**
      * Liste filter by category
@@ -57,7 +57,7 @@ public abstract class ISearchStrategy {
             return list;
         }
         if(category==SearchCategory.COACH){
-            for (Couch obj:controller.getAllCoach()){
+            for (Coach obj:controller.getAllCoach()){
                 list.add(obj);
             }
             return list;
@@ -82,9 +82,7 @@ public abstract class ISearchStrategy {
         }
     }
 
-
-
-    abstract List<IShowable> search(SearchCategory category, String str);
+    public abstract List<IShowable> search(SearchCategory category, String str);
 
 
     //<editor-fold desc="private functions">
@@ -111,7 +109,7 @@ public abstract class ISearchStrategy {
     private List<IShowable> getCoaches(List<IShowable> list){
         List<IShowable> filterList= new LinkedList<IShowable>();
         for(IShowable obj: list){
-            if(obj instanceof Couch){
+            if(obj instanceof Coach){
                 filterList.add(obj);
             }
         }
@@ -171,7 +169,7 @@ public abstract class ISearchStrategy {
         Controller controller= Controller.getInstance();
         List<IShowable> list= new LinkedList<IShowable>();
         List<Player> playerList= controller.getAllPlayers();
-        List<Couch> coachList= controller.getAllCoach();
+        List<Coach> coachList= controller.getAllCoach();
         List<Team> teamList= controller.getAllTeams();
         List<League> leagueList= controller.getAllLeagues();
         List<Season> seasonList=controller.getAllSeasons();
@@ -179,7 +177,7 @@ public abstract class ISearchStrategy {
         for(Player obj:playerList){
             list.add(obj);
         }
-        for(Couch obj: coachList){
+        for(Coach obj: coachList){
             list.add(obj);
         }
         for(Team obj: teamList){

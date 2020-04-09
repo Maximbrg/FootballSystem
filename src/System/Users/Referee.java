@@ -6,15 +6,12 @@ import System.Log;
 import System.FootballObjects.Game;
 import System.FootballObjects.Season;
 import System.Enum.*;
+import System.IShowable;
 
-
-
-
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 
-public class Referee extends User implements IObserverGame {
+public class Referee extends User implements IObserverGame, IShowable {
 
     private RefereeType type;
     private List<ISubjectGame> subjectGame;
@@ -198,8 +195,18 @@ public class Referee extends User implements IObserverGame {
         subjectGame.remove(iSubjectGame);
     }
 
-    public RefereeType getType(){
+    public RefereeType getRefereeType(){
         return type;
+    }
+
+    @Override
+    public String getType(){
+        return "Referee";
+    }
+
+    @Override
+    public String getDetails() {
+        return null;
     }
 
 }

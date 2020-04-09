@@ -1,11 +1,15 @@
 package ServiceLayer;
 
 import System.*;
+import System.Enum.SearchCategory;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.noSuchAUserNamedException;
 import System.Exeptions.wrongPasswordException;
-import System.Users.Fan;
-import System.Users.User;
+import System.FootballObjects.League;
+import System.FootballObjects.Season;
+import System.FootballObjects.Team.Team;
+import System.Searcher.ASearchStrategy;
+import System.Users.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -28,21 +32,51 @@ public class GustController {
         List<IShowable> result = new LinkedList<IShowable>();
         switch (name){
             case "Player":{
-                result.add((IShowable)(Controller.getInstance().getAllPlayers()));
+                for(Player player : Controller.getInstance().getAllPlayers()){
+                    result.add(player);
+                }
             }
             case "Coach":{
-                result.add((IShowable)(Controller.getInstance().getAllCoach()));
+                for(Coach coach : Controller.getInstance().getAllCoach()){
+                    result.add(coach);
+                }
             }
             case "Team":{
-                result.add((IShowable)(Controller.getInstance().getAllTeams()));
+                for(Team team : Controller.getInstance().getAllTeams()){
+                    result.add(team);
+                }
             }
             case "League":{
-                result.add((IShowable)(Controller.getInstance().getAllLeagues()));
+                for(League league : Controller.getInstance().getAllLeagues()){
+                    result.add(league);
+                }
             }
             case "Season":{
-                result.add((IShowable)(Controller.getInstance().getAllSeasons));
+                for(Season season : Controller.getInstance().getAllSeasons()){
+                    result.add(season);
+                }
+            }
+            case "Referee":{
+               for(Referee referee : Controller.getInstance().getAllReferee()){
+                    result.add(referee);
+                }
             }
         }
+        return result;
+    }
+
+    public List<IShowable> searchShowables(ASearchStrategy aSearchStrategy, SearchCategory searchCategory, String query){
+        List<IShowable> results = aSearchStrategy.search(searchCategory,query);
+        return results;
+    }
+
+    public List<IShowable> filterResults(ASearchStrategy aSearchStrategy, SearchCategory searchCategory, List<IShowable> iShowableList){
+        List<IShowable> results = aSearchStrategy.filter(iShowableList, searchCategory);
+        return results;
+    }
+
+    public void logOut(User user){
+        throw new UnsupportedOperationException();
     }
 
 }

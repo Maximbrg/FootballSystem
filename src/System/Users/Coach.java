@@ -2,6 +2,7 @@ package System.Users;
 
 //<editor-fold desc="imports">
 import System.Asset.Asset;
+import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -14,7 +15,7 @@ import java.util.List;
 
 //</editor-fold>
 
-public class Couch extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
+public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
     private String name;
     private String preparation;
@@ -26,7 +27,7 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
     private List<ISubjectTeam> subjectTeam;
 
     //<editor-fold desc="Constructor">
-    public Couch(int id, String name, String password, String userName, String name1, String preparation, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
+    public Coach(int id, String name, String password, String userName, String name1, String preparation, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
         super(id, name, password, userName);
         this.name = name1;
         this.preparation = preparation;
@@ -48,6 +49,12 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
     @Override
     public String getType() {
         return "Coach";
+    }
+
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name+"@preparation:"+preparation+"@role:"+role+"@team:"+myTeam.getName()+"";
+        return str;
     }
 
     public String getPreparation() {
@@ -114,30 +121,6 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
     }
 
     @Override
-    public void update() {
-
-    }
-
-    /**
-     * Add a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void registerAlert(ISubjectTeam iSubjectTeam){
-        this.subjectTeam.add(iSubjectTeam);
-    }
-
-    /**
-     * Remove a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void removeAlert(ISubjectTeam iSubjectTeam) {
-        this.subjectTeam.remove(iSubjectTeam);
-
-    }
-
-    @Override
     public int getSalary() {
         return salary;
     }
@@ -145,6 +128,15 @@ public class Couch extends User implements Asset, IPageAvailable, IObserverTeam,
     @Override
     public String showDetails() {
         return null;
+    }
+
+    @Override
+    public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
+        if(personalPage!= null){
+            PersonalPage newPersonalPage= new PersonalPage(this);
+            this.personalPage=newPersonalPage;
+        }
+        throw new PersonalPageAlreadyExist();
     }
     //</editor-fold>
 }

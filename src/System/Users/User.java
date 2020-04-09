@@ -16,7 +16,7 @@ public abstract class User extends Guest {
     protected String userName;
     private List<String> searchHistory;
     protected UserStatus status;
-    private HashMap<Integer, Report> myReports;
+
 
 
     //Constructor
@@ -29,7 +29,6 @@ public abstract class User extends Guest {
         this.password = password;
         this.userName = userName;
         this.searchHistory= new LinkedList<>();
-        this.myReports=new HashMap<Integer, Report>();
         this.status= UserStatus.ACTIVE;
     }
     //</editor-fold>
@@ -59,9 +58,7 @@ public abstract class User extends Guest {
         return status;
     }
 
-    public HashMap<Integer, Report> getMyReports() {
-        return myReports;
-    }
+
 
     /**
      * Get string of personal details
@@ -105,26 +102,11 @@ public abstract class User extends Guest {
 
     }
 
-    public void setMyReports(HashMap<Integer, Report> myReports) {
-        this.myReports = myReports;
-    }
     //</editor-fold>
 
     // Methods
 
-    /**
-     * Create a new report and sensing to manager system
-     * @param reportTxt
-     * @return report
-     */
-    public Report sumbitReport(String reportTxt){
-        Report report= new Report(this, reportTxt);
-        this.myReports.put(report.getId(), report);
-        SystemManager systemManager=SystemManager.getInstance();
-        systemManager.addReport(report);
-        Log.getInstance().writeToLog(name +"(id: " + id + ") submit report (id: " + report.getId() + ") to system manager");
-        return report;
-    } //UC-11
+
 
     /**
      * Adding search to search history
@@ -135,9 +117,5 @@ public abstract class User extends Guest {
         this.searchHistory.add(line);
         return searchHistory;
     }
-
-//////////////////////////////////////////
-    public void test(){}
-/////////////////////////////////////////
 
 }

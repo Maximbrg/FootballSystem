@@ -1,6 +1,7 @@
 package System.Users;
 
 import System.Asset.Asset;
+import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Player extends User implements Asset, IPageAvailable, IObserverTeam, IShowable {
+public class Player extends User implements Asset, IPageAvailable, IShowable {
 
     private String name;
     private Date birthDate;
@@ -24,12 +25,12 @@ public class Player extends User implements Asset, IPageAvailable, IObserverTeam
     private int salary;
 
     //<editor-fold desc="Constructor">
-    public Player(int id, String name, String password, String userName, String name1, Date birthDate, String role, PersonalPage personalPage, int assetValue, Team myTeam, int salary) {
+    public Player(int id, String name, String password, String userName, String name1, Date birthDate, String role, int assetValue, Team myTeam, int salary) {
         super(id, name, password, userName);
         this.name = name1;
         this.birthDate = birthDate;
         this.role = role;
-        this.personalPage = personalPage;
+        this.personalPage = null;
         this.assetValue = assetValue;
         this.myTeam = myTeam;
         this.salary = salary;
@@ -46,6 +47,12 @@ public class Player extends User implements Asset, IPageAvailable, IObserverTeam
     @Override
     public String getType() {
         return "Player";
+    }
+
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name+"@birthday:"+birthDate.toString()+"@role:"+role+"@team:"+myTeam.getName()+"";
+        return str;
     }
 
     public Date getBirthDate() {
@@ -122,27 +129,13 @@ public class Player extends User implements Asset, IPageAvailable, IObserverTeam
     }
 
     @Override
-    public void update() {
-
+    public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
+        if(personalPage!= null){
+            PersonalPage newPersonalPage= new PersonalPage(this);
+            this.personalPage=newPersonalPage;
+        }
+        throw new PersonalPageAlreadyExist();
     }
 
-    /**
-     * Add a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void registerAlert(ISubjectTeam iSubjectTeam){
-        this.subjectTeam.add(iSubjectTeam);
-    }
-
-    /**
-     * Remove a team to get alert (adding to subjectGame list)
-     * @param iSubjectTeam
-     */
-    @Override
-    public void removeAlert(ISubjectTeam iSubjectTeam) {
-        this.subjectTeam.remove(iSubjectTeam);
-
-    }
     //</editor-fold>
 }

@@ -19,8 +19,7 @@ public class Controller {
     private List<League> leagues;
    // private Season currentSeason; //need to update it every year
     private List<Team> teams;
-    private List<Player> players;
-
+    private List<Season> seasons;
 
     //Constructor
 
@@ -50,6 +49,7 @@ public class Controller {
         }
         if(user.getPassword().equals(password)) {
             user.setStatus(UserStatus.ACTIVE);
+            Log.getInstance().writeToLog("User log in to the system. id("+user.getId()+").");
             return user;
         }
         throw new wrongPasswordException();
@@ -80,11 +80,11 @@ public class Controller {
         return referees;
     } //UC-4
 
-    public List<Couch> getAllCoach(){
-        List <Couch> Coachs = new LinkedList<>();
+    public List<Coach> getAllCoach(){
+        List <Coach> Coachs = new LinkedList<>();
         for(User user : users.values()){
-            if(user instanceof Couch){
-                Coachs.add((Couch)user);
+            if(user instanceof Coach){
+                Coachs.add((Coach)user);
             }
         }
         return Coachs;
@@ -105,63 +105,36 @@ public class Controller {
     } //UC-4
 
     public List<Season> getAllSeasons(){
-        return null;
+        return seasons;
     } //UC-4
-
-    public List<League> searchLeague(String name){
-        List<League> leagues = getAllLeagues();
-        List<League> results = new LinkedList<>();
-        for(League league : leagues){
-            if(league.getName().equals(name)){
-                results.add(league);
-            }
-        }
-        return results;
-    } //UC-5
-
-    public List<Referee> searchReferee(String name){
-        List<Referee> referees = getAllReferee();
-        List<Referee> results = new LinkedList<>();
-        for(Referee referee : referees){
-            if(referee.getName().equals(name)){
-                results.add(referee);
-            }
-        }
-        return results;
-    }
-
-    public List<Player> searchPlayers(String name){
-        List<Player> players = getAllPlayers();
-        List<Player> results = new LinkedList<>();
-        for(Player player : players){
-            if(player.getName().equals(name)){
-                results.add(player);
-            }
-        }
-        return results;
-    }
-
-    public List<Team> searchTeams(String name){
-        List<Team> teams = getAllTeams();
-        List<Team> results = new LinkedList<>();
-        for(Team team : teams){
-            if(team.getName().equals(name)){
-                results.add(team);
-            }
-        }
-        return results;
-    }
 
     public void logOut(User user){ //UC-6
         user.setStatus(UserStatus.INACTIVE);
-        System.out.println("log file : successful logout.");
+        Log.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
     } //UC-6
 
     public  HashMap<String,User> getUsers(){
         return users;
     }
+
     public void addUser(String s,User u){
         users.put(s,u);
+    }
+
+    public void addSeason(Season season){
+        seasons.add(season);
+    }
+
+    public Season getSeason(String year){
+        for(Season s : seasons){
+            if(s.getYear().equals(year))
+                return s;
+        }
+        return null;
+    }
+
+    public void addTeam(Team team){
+        teams.add(team);
     }
 
 }

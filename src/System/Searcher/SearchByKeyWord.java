@@ -5,7 +5,7 @@ import System.IShowable;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SearchByKeyWord extends ISearchStrategy {
+public class SearchByKeyWord extends ASearchStrategy {
 
     @Override
     public List<IShowable> search(SearchCategory category, String str) {

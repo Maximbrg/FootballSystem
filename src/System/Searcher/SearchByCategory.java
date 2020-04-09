@@ -4,11 +4,11 @@ import System.Enum.SearchCategory;
 
 import java.util.List;
 
-public class SearchByCategory extends ISearchStrategy {
+public class SearchByCategory extends ASearchStrategy {
 
 
     @Override
-    List<IShowable> search(SearchCategory category, String str) {
+    public List<IShowable> search(SearchCategory category, String str) {
         return getListByCategory(category);
     }
 }
