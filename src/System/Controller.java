@@ -140,7 +140,7 @@ public class Controller {
 
     public void addTeam(Team team){
         teams.add(team);
-    }
+    } //fff
 
     public void removeTeam(Team team){ teams.remove(team); }
 
