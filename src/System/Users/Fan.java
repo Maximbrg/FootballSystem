@@ -21,31 +21,10 @@ public class Fan extends User implements IObserverGame {
         this.subjectGame=new LinkedList<>();
     }
     //</editor-fold>
-
-    //<editor-fold desc="getter">
-    public List<PersonalPage> getFollowPages() {
-        return FollowPages;
-    }
-
-    public List<ISubjectGame> getSubjectGame() {
-        return subjectGame;
-    }
-    //</editor-fold>
-
-    //<editor-fold desc="setter">
-    public void setFollowPages(List<PersonalPage> followPages) {
-        FollowPages = followPages;
-    }
-
-    public void setSubjectGame(List<ISubjectGame> subjectGame) {
-        this.subjectGame = subjectGame;
-    }
-    //</editor-fold>
-
-    //method
+    //<editor-fold desc="Methods">
     /**
      * Add a personal page for follow
-      * @param personalPage
+     * @param personalPage
      */
     public void addFollowPage(PersonalPage personalPage){
         this.FollowPages.add(personalPage);
@@ -84,5 +63,26 @@ public class Fan extends User implements IObserverGame {
         //showAlert
         //log
     }
+    //</editor-fold>
+    //<editor-fold desc="setter">
+    public void setFollowPages(List<PersonalPage> followPages) {
+        FollowPages = followPages;
+    }
+
+    public void setSubjectGame(List<ISubjectGame> subjectGame) {
+        this.subjectGame = subjectGame;
+    }
+    //</editor-fold>
+    //<editor-fold desc="getter">
+    public List<PersonalPage> getFollowPages() {
+        return FollowPages;
+    }
+
+    public List<ISubjectGame> getSubjectGame() {
+        return subjectGame;
+    }
+    //</editor-fold>
+
+
 
 }

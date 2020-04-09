@@ -7,7 +7,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.*;
 import System.Users.*;
-import System.Users.UserStatus;
+import System.Enum.UserStatus;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -17,9 +17,9 @@ public class Controller {
 
     private HashMap<String,User> users;
     private List<League> leagues;
-    private Season currentSeason; //need to update it every year
+    // private Season currentSeason; //need to update it every year
     private List<Team> teams;
-
+    private List<Season> seasons;
 
     //Constructor
 
@@ -32,7 +32,6 @@ public class Controller {
     private Controller() {
         users = new HashMap<>();
         leagues =  new LinkedList<>();
-        currentSeason = new Season();
     }
 
     //Methods
@@ -43,19 +42,19 @@ public class Controller {
     } //UC-1
 
     public User login(String userName , String password) throws wrongPasswordException , noSuchAUserNamedException { //UC-3
-        System.out.println("log file : successful login.");
         User user = users.get(userName);
         if(user == null) {
             throw new noSuchAUserNamedException();
         }
         if(user.getPassword().equals(password)) {
             user.setStatus(UserStatus.ACTIVE);
+            Log.getInstance().writeToLog("User log in to the system. id("+user.getId()+").");
             return user;
         }
         throw new wrongPasswordException();
     } //UC-3
 
-    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
+    public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
         System.out.println("log file : successful sign up.");
         User user = users.get(userName);
         if(user != null) {
@@ -80,6 +79,16 @@ public class Controller {
         return referees;
     } //UC-4
 
+    public List<Couch> getAllCoach(){
+        List <Couch> Coachs = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Couch){
+                Coachs.add((Couch)user);
+            }
+        }
+        return Coachs;
+    } //UC-4
+
     public List<Player> getAllPlayers(){
         List <Player> players = new LinkedList<>();
         for(User user : users.values()){
@@ -94,55 +103,37 @@ public class Controller {
         return teams;
     } //UC-4
 
-    public List<League> searchLeague(String name){
-        List<League> leagues = getAllLeagues();
-        List<League> results = new LinkedList<>();
-        for(League league : leagues){
-            if(league.getName().equals(name)){
-                results.add(league);
-            }
-        }
-        return results;
-    } //UC-5
-
-    public List<Referee> searchReferee(String name){
-        List<Referee> referees = getAllReferee();
-        List<Referee> results = new LinkedList<>();
-        for(Referee referee : referees){
-            if(referee.getName().equals(name)){
-                results.add(referee);
-            }
-        }
-        return results;
-    }
-
-    public List<Player> searchPlayers(String name){
-        List<Player> players = getAllPlayers();
-        List<Player> results = new LinkedList<>();
-        for(Player player : players){
-            if(player.getName().equals(name)){
-                results.add(player);
-            }
-        }
-        return results;
-    }
-
-    public List<Team> searchTeams(String name){
-        List<Team> teams = getAllTeams();
-        List<Team> results = new LinkedList<>();
-        for(Team team : teams){
-            if(team.getName().equals(name)){
-                results.add(team);
-            }
-        }
-        return results;
-    }
+    public List<Season> getAllSeasons(){
+        return seasons;
+    } //UC-4
 
     public void logOut(User user){ //UC-6
         user.setStatus(UserStatus.INACTIVE);
-        System.out.println("log file : successful logout.");
+        Log.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
     } //UC-6
 
-    public void submitReport(Report report) {
+    public  HashMap<String,User> getUsers(){
+        return users;
     }
+
+    public void addUser(String s,User u){
+        users.put(s,u);
+    }
+
+    public void addSeason(Season season){
+        seasons.add(season);
+    }
+
+    public Season getSeason(String year){
+        for(Season s : seasons){
+            if(s.getYear().equals(year))
+                return s;
+        }
+        return null;
+    }
+
+    public void addTeam(Team team){
+        teams.add(team);
+    }
+
 }

@@ -5,8 +5,7 @@ import System.I_Observer.ISubjectGame;
 import System.Log;
 import System.FootballObjects.Game;
 import System.FootballObjects.Season;
-import System.Enum.*;
-
+import System.Enum.RefereeType;
 
 
 
@@ -18,9 +17,12 @@ public class Referee extends User implements IObserverGame {
 
     private RefereeType type;
     private List<ISubjectGame> subjectGame;
+
+
+
     private List<Game> games;
 
-    public Referee(String name,RefereeType type,int id,String pass,String userName){
+    public Referee(String name, RefereeType type, int id, String pass, String userName){
         super(id,name,pass,userName);
         this.type=type;
         games=new LinkedList<>();
@@ -38,8 +40,8 @@ public class Referee extends User implements IObserverGame {
      * @param type type of event
      */
     public void editEventAfterGame(Game game , AEvent oldEvent,String type){
-        long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
-        if(diffHours<=6.5 && this.type==RefereeType.MainReferee){// 1.5 hours after the beginning
+        long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
+        if(diffHours<=6.5 && this.type== RefereeType.MainReferee){// 1.5 hours after the beginning
             AEvent editedEvent = createEvent(type,oldEvent.getMinute());
             game.getEventLog().removeEvent(oldEvent);
             game.getEventLog().addEventToLog(editedEvent);
@@ -54,7 +56,7 @@ public class Referee extends User implements IObserverGame {
      * @param min min of the occasion
      */
     public void addEventMidGame(Game game,String type,int min){
-        long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
+        long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
         if(diffHours<1.5 &&(game.getMainReferee().getId()==getId() || game.getAssistantRefereeTwo().getId()==getId() ||game.getAssistantRefereeOne().getId()==getId() )) {
             game.addEventToLogEvent(createEvent(type, min));
             Log.writeToLog("Event was add to the log event game "+game.getId()+"by the referee " + getName()+"." );
@@ -106,7 +108,7 @@ public class Referee extends User implements IObserverGame {
      */
     public String createGameReport(Game game){
         String report="";
-        long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
+        long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
         if(diffHours>=1.5 &&type==RefereeType.MainReferee) {
             report = "Report for the game:" + game.getHome().getName() + " vs " + game.getAway().getName() + "\n";
             report += "Main Referee:" + game.getMainReferee().getName() + ".\n";
@@ -130,7 +132,7 @@ public class Referee extends User implements IObserverGame {
     public List<Game> getFutureGames(){
         List<Game> futureGames = new ArrayList<>();
         for(Game game:games){
-            long diffHours = (game.getDate().getTime() - new Date(System.currentTimeMillis()).getTime()) / (60 * 60 * 1000);
+            long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
             if(diffHours<=0){//to check it
                 futureGames.add(game);
             }
@@ -150,7 +152,7 @@ public class Referee extends User implements IObserverGame {
      */
     public List<Game> getGamesForSeason(Season season){
         List<Game> seasonGames= season.getGames();
-        List<Game> relevantGames= new ArrayList<Game>();
+        List<Game> relevantGames= new ArrayList<>();
 
         for (int i = 0; i <seasonGames.size() ; i++) {
             Game game=seasonGames.get(i);
@@ -197,4 +199,12 @@ public class Referee extends User implements IObserverGame {
     public void removeAlert(ISubjectGame iSubjectGame) {
         subjectGame.remove(iSubjectGame);
     }
+
+    public RefereeType getType(){
+        return type;
+    }
+    public List<Game> getGames() {
+        return games;
+    }
+
 }

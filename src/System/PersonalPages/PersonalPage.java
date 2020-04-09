@@ -20,6 +20,9 @@ public class PersonalPage {
     //</editor-fold>
 
     //<editor-fold desc="getter">
+    public int getId(){
+        return pageAvailable.getId();
+    }
     public IPageAvailable getPageAvailable() {
         return pageAvailable;
     }

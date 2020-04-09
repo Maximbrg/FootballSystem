@@ -10,7 +10,7 @@ import System.Log;
 
 public class SystemManager extends User {
 
-    private HashMap<Integer,Report> reportsHash;
+    private static HashMap<Integer,Report> reportsBox;
 
 
     //<editor-fold desc="constructor- singleton">
@@ -22,18 +22,18 @@ public class SystemManager extends User {
 
     private SystemManager(int id, String name, String password, String userName){
         super(id,name,password,userName);
-        reportsHash= new HashMap<>();
+        reportsBox= new HashMap<>();
     }
     //</editor-fold>
 
     //Methods
 
+    //<editor-fold desc="Methods">
     /**
      * close team
      * @param team
      */
     public void closeTeam(Team team){
-        team.setTeamStatus(TeamStatus.PermantlyClose);
         team.PermanentlyCloseTeam();
         Log.getInstance().writeToLog("The team: "+team.getName()+",Id: " +team.getId()+" closed successfully.");
     } //UC-25
@@ -58,7 +58,7 @@ public class SystemManager extends User {
      * @param report
      */
     public void addReport(Report report) {
-        reportsHash.put(report.getId(),report);
+        reportsBox.put(report.getId(),report);
     }
 
     /**
@@ -68,4 +68,13 @@ public class SystemManager extends User {
     public void answerTheReport(Report report, String answer){
         report.answer(answer);
     }
+    //</editor-fold>
+
+
+    //<editor-fold desc="getters">
+    public HashMap<Integer, Report> getReportsBox() {
+        return reportsBox;
+    }
+    //</editor-fold>
+
 }

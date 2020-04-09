@@ -1,20 +1,37 @@
 package System.FootballObjects;
 
-public class Field {
+//<editor-fold desc="imports">
+import System.Asset.Asset;
+import System.FootballObjects.Team.Team;
+import System.I_Observer.IObserverTeam;
+import System.I_Observer.ISubjectTeam;
+import java.util.LinkedList;
+import java.util.List;
+//</editor-fold>
+
+public class Field implements Asset, IObserverTeam {
 
     private int id;
     private String name;
+    private List<Team> homeTeams;
+    private  int assetValue;
+    private Team myTeam;
+    private List<ISubjectTeam> subjectTeam;
     private int maintenanceCost;
 
-    //<editor-fold desc="constructor">
-    public Field(int id, String name, int maintenanceCost) {
+    //<editor-fold desc="Constructor">
+    public Field(int id, String name, List<Team> homeTeams, int assetValue, Team myTeam,int maintCost) {
         this.id = id;
         this.name = name;
-        this.maintenanceCost = maintenanceCost;
+        this.homeTeams = homeTeams;
+        this.assetValue = assetValue;
+        this.myTeam = myTeam;
+        this.subjectTeam=new LinkedList<>();
+        this.maintenanceCost=maintCost;
     }
     //</editor-fold>
 
-    //<editor-fold desc="getter">
+    //<editor-fold desc="Getters">
     public int getId() {
         return id;
     }
@@ -23,12 +40,22 @@ public class Field {
         return name;
     }
 
-    public int getMaintenanceCost() {
-        return maintenanceCost;
+    public List<Team> getHomeTeams() {
+        return homeTeams;
     }
+
+    public int getAssetValue() {
+        return assetValue;
+    }
+
+    public Team getMyTeam() {
+        return myTeam;
+    }
+
+    public int getMaintenanceCost() {  return maintenanceCost; }
     //</editor-fold>
 
-    //<editor-fold desc="setter">
+    //<editor-fold desc="Setters">
     public void setId(int id) {
         this.id = id;
     }
@@ -37,12 +64,66 @@ public class Field {
         this.name = name;
     }
 
-    public void setMaintenanceCost(int maintenanceCost) {
-        this.maintenanceCost = maintenanceCost;
+    public void setHomeTeams(List<Team> homeTeams) {
+        this.homeTeams = homeTeams;
     }
+
+    public void setAssetValue(int assetValue) {
+        this.assetValue = assetValue;
+    }
+
+    public void setMyTeam(Team myTeam) {
+        this.myTeam = myTeam;
+    }
+
+    public void setMaintenanceCost(int maintenanceCost) {  this.maintenanceCost = maintenanceCost;  }
+
     //</editor-fold>
 
+    //<editor-fold desc="Override Methods">
+    @Override
+    public void editAssetValue(int newVal) {
+        this.setAssetValue(newVal);
+    }
 
+    @Override
+    public void resetMyTeam() {
+        this.myTeam=null;
+    }
 
+    @Override
+    public void addMyTeam(Team team) {
+        this.myTeam=team;
+    }
+
+    @Override
+    public int getSalary() {
+        return 0;
+    }
+
+    @Override
+    public void update() {
+
+    }
+
+    /**
+     * Add a team to get alert (adding to subjectGame list)
+     * @param iSubjectTeam
+     */
+    @Override
+    public void registerAlert(ISubjectTeam iSubjectTeam){
+        this.subjectTeam.add(iSubjectTeam);
+    }
+
+    /**
+     * Remove a team to get alert (adding to subjectGame list)
+     * @param iSubjectTeam
+     */
+    @Override
+    public void removeAlert(ISubjectTeam iSubjectTeam) {
+        this.subjectTeam.remove(iSubjectTeam);
+
+    }
+    //</editor-fold>
 
 }
