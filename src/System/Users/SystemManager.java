@@ -6,7 +6,8 @@ import java.util.List;
 
 import System.Asset.Asset;
 import System.Enum.TeamStatus;
-import System.Exeptions.noSuchAUserNamedException;
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.NoSuchAUserNamedException;
 import System.FootballObjects.Field;
 import System.FootballObjects.Team.Team;
 import System.PersonalPages.PersonalPage;
@@ -22,6 +23,7 @@ public class SystemManager extends User {
     //<editor-fold desc="constructor- singleton">
     public SystemManager(int id, String name, String password, String userName){
         super(id,name,password,userName);
+        reportsBox= new HashMap<>();
     }
     //</editor-fold>
 
@@ -40,13 +42,13 @@ public class SystemManager extends User {
     /**
      * System manager command to remove system by the conroller
      * @param userName to remove
-     * @throws noSuchAUserNamedException
+     * @throws NoSuchAUserNamedException
      */
-    public void removeUser(String userName) throws noSuchAUserNamedException {
+    public void removeUser(String userName) throws NoSuchAUserNamedException {
         Controller.getInstance().removeUser(userName);
     } //UC-26//
 
-    public void restartRemovedUser(String userName) throws noSuchAUserNamedException{
+    public void restartRemovedUser(String userName) throws NoSuchAUserNamedException{
         Controller.getInstance().restartRemvoeUser(userName);
     }
 

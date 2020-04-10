@@ -23,7 +23,7 @@ public class TeamOwner extends User implements IObserverTeam {
 
     //<editor-fold desc="Constructor">
     public TeamOwner(int id, String password, String userName, TeamStatus status, String name, Coach selfCoach, TeamManager selfTeamManager, Player selfPlayer, int salary, List<Team> teamList, HashMap<Team, List<TeamOwner>> teamOwnersWhichIappointed) {
-        super(id, password, userName, status);
+        super(id,name, password, userName);
         this.name = name;
         this.selfCoach = selfCoach;
         this.selfTeamManager = selfTeamManager;

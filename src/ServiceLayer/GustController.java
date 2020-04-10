@@ -3,8 +3,8 @@ package ServiceLayer;
 import System.*;
 import System.Enum.SearchCategory;
 import System.Exeptions.UserNameAlreadyExistException;
-import System.Exeptions.noSuchAUserNamedException;
-import System.Exeptions.wrongPasswordException;
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
@@ -14,18 +14,18 @@ import System.Users.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class GustController {
+public class GustController extends MainUserController {
+
+    public User login(String userName , String password) throws WrongPasswordException, NoSuchAUserNamedException {
+        Controller controller = Controller.getInstance();
+        User existUser = controller.login(userName,password);
+        return existUser;
+    }
 
     public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         Controller controller = Controller.getInstance();
         Fan newFan = controller.signUp(id,name,password,userName);
         return newFan;
-    }
-
-    public User login(String userName , String password) throws wrongPasswordException, noSuchAUserNamedException {
-        Controller controller = Controller.getInstance();
-        User existUser = controller.login(userName,password);
-        return existUser;
     }
 
     public List<IShowable> getInfoToShow(String name){
@@ -65,8 +65,9 @@ public class GustController {
         return result;
     }
 
-    public List<IShowable> searchShowables(ASearchStrategy aSearchStrategy, SearchCategory searchCategory, String query){
+    public List<IShowable> searchShowables(User user, ASearchStrategy aSearchStrategy, SearchCategory searchCategory, String query){
         List<IShowable> results = aSearchStrategy.search(searchCategory,query);
+        user.addSearchHistory(query);
         return results;
     }
 
@@ -75,6 +76,7 @@ public class GustController {
         return results;
     }
 
+    @Override
     public void logOut(User user){
         throw new UnsupportedOperationException();
     }

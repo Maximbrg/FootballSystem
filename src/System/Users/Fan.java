@@ -3,9 +3,7 @@ package System.Users;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
 import System.PersonalPages.PersonalPage;
-import System.Log;
-import System.Report;
-
+import System.*;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -62,6 +60,7 @@ public class Fan extends User implements IObserverGame {
      */
     public void addFollowPage(PersonalPage personalPage){
         this.FollowPages.add(personalPage);
+
     }
 
     /**

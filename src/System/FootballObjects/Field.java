@@ -15,17 +15,16 @@ public class Field implements Asset {
     private String name;
     private List<Team> homeTeams;
     private  int assetValue;
-    private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int maintenanceCost;
 
     //<editor-fold desc="Constructor">
-    public Field(int id, String name, List<Team> homeTeams, int assetValue, Team myTeam,int maintCost) {
+    public Field(int id, String name, int assetValue, /*Team myTeam,*/int maintCost) {
         this.id = id;
         this.name = name;
-        this.homeTeams = homeTeams;
+        this.homeTeams = new LinkedList<>();
         this.assetValue = assetValue;
-        this.myTeam = myTeam;
+       // this.myTeam = myTeam;
         this.subjectTeam=new LinkedList<>();
         this.maintenanceCost=maintCost;
     }
@@ -48,9 +47,6 @@ public class Field implements Asset {
         return assetValue;
     }
 
-    public Team getMyTeam() {
-        return myTeam;
-    }
 
     public int getMaintenanceCost() {  return maintenanceCost; }
     //</editor-fold>
@@ -72,10 +68,6 @@ public class Field implements Asset {
         this.assetValue = assetValue;
     }
 
-    public void setMyTeam(Team myTeam) {
-        this.myTeam = myTeam;
-    }
-
     public void setMaintenanceCost(int maintenanceCost) {  this.maintenanceCost = maintenanceCost;  }
 
     //</editor-fold>
@@ -88,12 +80,12 @@ public class Field implements Asset {
 
     @Override
     public void resetMyTeam() {
-        this.myTeam=null;
+      //  this.myTeam=null;
     }
 
     @Override
     public void addMyTeam(Team team) {
-        this.myTeam=team;
+      homeTeams.add(team);
     }
 
     @Override

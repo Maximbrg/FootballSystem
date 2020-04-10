@@ -2,6 +2,7 @@ package System.Users;
 
 //<editor-fold desc="imports">
 import System.Asset.Asset;
+import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -11,18 +12,15 @@ import java.util.List;
 
 public class TeamManager extends User implements Asset, IObserverTeam {
 
-    private String name;
     private  int assetValue;
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
 
     //<editor-fold desc="Constructor">
-    public TeamManager(int id, String name, String password, String userName, String name1, int assetValue, Team myTeam, int salary) {
+    public TeamManager(int id, String name, String password, String userName, int assetValue, int salary) {
         super(id, name, password, userName);
-        this.name = name1;
         this.assetValue = assetValue;
-        this.myTeam = myTeam;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
 
@@ -69,8 +67,13 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     }
 
     @Override
-    public void addMyTeam(Team team) {
-        this.myTeam=team;
+    public void addMyTeam(Team team) throws HasTeamAlreadyException{
+        if(this.myTeam != null) {
+            throw new HasTeamAlreadyException();
+        }
+        else{
+            this.myTeam = team;
+        }
     }
 
     @Override

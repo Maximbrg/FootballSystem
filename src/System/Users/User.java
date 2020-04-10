@@ -20,7 +20,6 @@ public abstract class User extends Guest {
 
 
     //Constructor
-    public User(int id, String password, String userName, TeamStatus teamStatus){}//delete
 
     //<editor-fold desc="constructor">
     public User(int id, String name, String password, String userName) {

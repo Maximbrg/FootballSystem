@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="tested folder added">
-      <change afterPath="$PROJECT_DIR$/Tests/ControllerStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/ControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tests/Event/EventLogStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/LogStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Users/FanStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Users/RefereeStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Users/SystemManagerStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Users/FanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Users/RefereeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Users/SystemManagerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/System/Enum/GameStatus.java" afterDir="false" />
@@ -50,8 +50,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FootballSystem$RefereeStub.ic" NAME="RefereeStub Coverage Results" MODIFIED="1586353105994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/FootballSystem$ControllerStub.ic" NAME="ControllerStub Coverage Results" MODIFIED="1586353034968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FootballSystem$RefereeTest.ic" NAME="RefereeTest Coverage Results" MODIFIED="1586353105994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FootballSystem$ControllerTest.ic" NAME="ControllerTest Coverage Results" MODIFIED="1586353034968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="236" />
@@ -189,20 +189,20 @@
         <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
         <option value="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/Tests/Users/RefereeStub.java" />
+        <option value="$PROJECT_DIR$/Tests/Users/RefereeTest.java" />
         <option value="$PROJECT_DIR$/src/System/Report.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Fan.java" />
-        <option value="$PROJECT_DIR$/Tests/Users/SystemManagerStub.java" />
+        <option value="$PROJECT_DIR$/Tests/Users/SystemManagerTest.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Player.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
         <option value="$PROJECT_DIR$/src/System/Users/User.java" />
         <option value="$PROJECT_DIR$/Tests/LogTest.java" />
-        <option value="$PROJECT_DIR$/Tests/LogStub.java" />
-        <option value="$PROJECT_DIR$/Tests/Users/FanStub.java" />
+        <option value="$PROJECT_DIR$/Tests/LogTest.java" />
+        <option value="$PROJECT_DIR$/Tests/Users/FanTest.java" />
         <option value="$PROJECT_DIR$/src/System/Controller.java" />
-        <option value="$PROJECT_DIR$/Tests/ControllerStub.java" />
+        <option value="$PROJECT_DIR$/Tests/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/System/Users/SystemManager.java" />
       </list>
     </option>
@@ -311,62 +311,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerStub.getSeasonTest">
-    <configuration name="ControllerStub.addSeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ControllerTest.getSeasonTest">
+    <configuration name="ControllerTest.addSeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSys" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <option name="METHOD_NAME" value="addSeasonTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerStub.addTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.addTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSys" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <option name="METHOD_NAME" value="addTeamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerStub.getAllCouchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.getAllCouchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSys" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <option name="METHOD_NAME" value="getAllCouchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerStub.getSeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.getSeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSys" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <option name="METHOD_NAME" value="getSeasonTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RefereeStub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RefereeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSys" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RefereeStub" />
+      <option name="MAIN_CLASS_NAME" value="RefereeTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ControllerStub.getSeasonTest" />
-        <item itemvalue="JUnit.ControllerStub.addTeamTest" />
-        <item itemvalue="JUnit.ControllerStub.addSeasonTest" />
-        <item itemvalue="JUnit.ControllerStub.getAllCouchTest" />
-        <item itemvalue="JUnit.RefereeStub" />
+        <item itemvalue="JUnit.ControllerTest.getSeasonTest" />
+        <item itemvalue="JUnit.ControllerTest.addTeamTest" />
+        <item itemvalue="JUnit.ControllerTest.addSeasonTest" />
+        <item itemvalue="JUnit.ControllerTest.getAllCouchTest" />
+        <item itemvalue="JUnit.RefereeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -482,34 +482,34 @@
   </component>
   <component name="TestHistory">
     <history-entry file="ControllerStub_getAllCouchTest - 2020.04.08 at 16h 52m 16s.xml">
-      <configuration name="ControllerStub.getAllCouchTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.getAllCouchTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_getAllCouchTest - 2020.04.08 at 16h 52m 53s.xml">
-      <configuration name="ControllerStub.getAllCouchTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.getAllCouchTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addSeasonTest - 2020.04.08 at 16h 54m 52s.xml">
-      <configuration name="ControllerStub.addSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addSeasonTest - 2020.04.08 at 16h 55m 27s.xml">
-      <configuration name="ControllerStub.addSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addSeasonTest - 2020.04.08 at 16h 55m 44s.xml">
-      <configuration name="ControllerStub.addSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addSeasonTest - 2020.04.08 at 16h 58m 16s.xml">
-      <configuration name="ControllerStub.addSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addSeasonTest - 2020.04.08 at 18h 17m 05s.xml">
-      <configuration name="ControllerStub.addSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_addTeamTest - 2020.04.08 at 18h 17m 41s.xml">
-      <configuration name="ControllerStub.addTeamTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.addTeamTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_getSeasonTest - 2020.04.08 at 18h 32m 12s.xml">
-      <configuration name="ControllerStub.getSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.getSeasonTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ControllerStub_getSeasonTest - 2020.04.09 at 13h 00m 14s.xml">
-      <configuration name="ControllerStub.getSeasonTest" configurationId="JUnit" />
+      <configuration name="ControllerTest.getSeasonTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -665,7 +665,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Tests/ControllerStub.java</url>
+          <url>file://$PROJECT_DIR$/Tests/ControllerTest.java</url>
           <line>176</line>
           <properties />
           <option name="timeStamp" value="33" />
@@ -1054,7 +1054,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/LogStub.java">
+    <entry file="file://$PROJECT_DIR$/Tests/LogTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="30" />
@@ -1064,7 +1064,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Users/SystemManagerStub.java">
+    <entry file="file://$PROJECT_DIR$/Tests/Users/SystemManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="31" />
@@ -1074,7 +1074,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Users/FanStub.java">
+    <entry file="file://$PROJECT_DIR$/Tests/Users/FanTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="32" />
@@ -1101,7 +1101,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Users/RefereeStub.java">
+    <entry file="file://$PROJECT_DIR$/Tests/Users/RefereeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="44" selection-end-column="85" />
@@ -1130,7 +1130,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ControllerStub.java">
+    <entry file="file://$PROJECT_DIR$/Tests/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="176" selection-start-line="176" selection-end-line="176" />

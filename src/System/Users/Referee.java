@@ -168,7 +168,7 @@ public class Referee extends User implements IObserverGame,IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.writeToLog("The referee "+getName()+"id: "+getId() +" pull his games for "+ season.getYear()+" season.");
+        Log.writeToLog("The referee pull his games for "+ season.getYear()+" season. "+"("+getId() +","+getUserName());
         return relevantGames;
     } //UC-39
     /**
@@ -218,5 +218,6 @@ public class Referee extends User implements IObserverGame,IShowable {
 //    public String getDetails() {
 //        return null;
 //    }
+
 
 }

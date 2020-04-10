@@ -2,51 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="Merge branch 'master' of https://github.com/Maximbrg/FootballSystem&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;FootballSys.iml&#10;#&#9;logs/Football_Association_System_Log.log&#10;#&#9;src/System/Controller.java&#10;#&#9;src/System/PersonalPages/IPageAvailable.java&#10;#&#9;src/System/Users/Fan.java&#10;#&#9;src/System/Users/Referee.java&#10;#&#9;src/System/Users/User.java">
-      <change afterPath="$PROJECT_DIR$/Test/Users/SystemManagerStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestService/GustControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestService/RefereeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/FanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/MainUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/coachController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Enum/SearchCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/PersonalPageAlreadyExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/IShowable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Searcher/ASearchStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Searcher/SearchByCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Searcher/SearchByKeyWord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Searcher/SearchByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/META-INF/FootballSys.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/ServiceLayer/FanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/ServiceLayer/GustController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Asset/Asset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/BudgetRules.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Enum/GameStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Enum/RefereeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Enum/SearchCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Enum/TeamStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Enum/UserStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Exeptions/IllegalInputException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Exeptions/PersonalPageAlreadyExist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Exeptions/UserNameAlreadyExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Exeptions/noSuchAUserNamedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Exeptions/wrongPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FanOfTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FinancialReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Budget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/AEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/EventLog$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/EventLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/Goal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/Injury.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/Offense.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/Offside.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/RedCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Event/YellowCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/League.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/LeagueInformation$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/LeagueInformation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Season.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/DefualtAllocte.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/DefualtMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/IScoreMethodPolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/ITeamAllocatePolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/OneGameAllocatePolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/FootballObjects/Team/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/IShowable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/I_Observer/IObserverGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/I_Observer/IObserverTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/I_Observer/ISubjectGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/I_Observer/ISubjectTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/PersonalPages/IPageAvailable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/PersonalPages/PersonalPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Report.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Searcher/ASearchStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Searcher/SearchByCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Searcher/SearchByKeyWord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Searcher/SearchByName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Coach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Fan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/FootballAssosiation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Guest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Referee$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Referee$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/Referee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/SystemManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/TeamManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/TeamOwner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSys/System/Users/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSys/GustControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/DefualtAllocteTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/DefualtMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/OneGameAllocatePolicyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/CoachController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/AlreadyHasPageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/HasTeamAlreadyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/NoSuchAUserNamedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/NotHisTeamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/WrongPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/FootballObjects/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueInformationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/FootballObjects/SeasonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Team/DefualtAllocteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Team/DefualtMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Team/OneGameAllocatePolicyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Users/FootballAssosiationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ControllerStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ControllerStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Event/EventLogStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Event/EventLogStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/LogStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/LogStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Users/FanStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Users/FanStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Users/RefereeStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Users/RefereeStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Users/SystemManagerStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/ControllerStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Event/EventLogStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/LogStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Users/FanStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Users/RefereeStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Users/SystemManagerStub.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestService/GustControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestService/GustControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/FanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/FanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MainUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MainUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/SystemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/coachController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Asset/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Asset/Asset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Enum/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Enum/UserStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Exeptions/noSuchAUserNamedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Exeptions/wrongPasswordException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/League.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtAllocte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtAllocte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/IScoreMethodPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/IScoreMethodPolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/OneGameAllocatePolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/OneGameAllocatePolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/I_Observer/ISubjectTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/I_Observer/ISubjectTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/Couch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Coach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Users/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Coach.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Fan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Referee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Users/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/TeamManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/TeamOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/TeamOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,15 +138,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test/Users/FanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+            <state relative-caret-position="314">
+              <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="method#addSearchHistory#0;class#User#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#870#1063#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/System/Users/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,101 +190,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/Users/Fan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+            <state relative-caret-position="161">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
                 <element signature="n#!!doc;n#setFollowPages#0;n#Fan#0" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#1860#1861#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Users/SystemManagerStub.java">
+        <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1298">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="153">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="n#!!doc;n#setPageAvailable#0;n#PersonalPage#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Users/FanStub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Users/RefereeStub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2420">
-              <caret line="136" column="18" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#update#0;class#TeamOwner#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -201,6 +245,8 @@
       <find>addR</find>
       <find>cre</find>
       <find>register</find>
+      <find>set</find>
+      <find>foll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,13 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/Event.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/YellowCard.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/RedCard.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/Offside.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/Oddense.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/Injury.java" />
-        <option value="$PROJECT_DIR$/src/FootballObjects/Event/Goal.java" />
         <option value="$PROJECT_DIR$/src/ObserverTeam.java" />
         <option value="$PROJECT_DIR$/src/ObserverGame.java" />
         <option value="$PROJECT_DIR$/src/Users/Couch.java" />
@@ -244,7 +283,6 @@
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Game.java" />
         <option value="$PROJECT_DIR$/src/System/Asset/Asset.java" />
         <option value="$PROJECT_DIR$/src/System/Users/TeamOwner.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/Player.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Couch.java" />
         <option value="$PROJECT_DIR$/src/System/Users/TeamManager.java" />
         <option value="$PROJECT_DIR$/src/System/Log.java" />
@@ -254,18 +292,26 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/System/Users/User.java" />
         <option value="$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java" />
-        <option value="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" />
         <option value="$PROJECT_DIR$/src/System/Enum/UserStatus.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
         <option value="$PROJECT_DIR$/Tests/Users/FanStub.java" />
         <option value="$PROJECT_DIR$/Tests/Users/SystemManagerStub.java" />
-        <option value="$PROJECT_DIR$/src/System/Controller.java" />
         <option value="$PROJECT_DIR$/Tests/ControllerStub.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/SystemManager.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/Fan.java" />
         <option value="$PROJECT_DIR$/Test/Event/EventLogStub.java" />
+        <option value="$PROJECT_DIR$/src/Test/LogStub.java" />
+        <option value="$PROJECT_DIR$/src/System/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Test/Users/SystemManagerStub.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/SystemManager.java" />
+        <option value="$PROJECT_DIR$/src/Test/Users/RefereeStub.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
+        <option value="$PROJECT_DIR$/src/Test/Users/FanStub.java" />
+        <option value="$PROJECT_DIR$/src/Test/ControllerStub.java" />
+        <option value="$PROJECT_DIR$/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/System/Users/Fan.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/Player.java" />
+        <option value="$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java" />
+        <option value="$PROJECT_DIR$/src/Test/Users/FanTest.java" />
       </list>
     </option>
   </component>
@@ -298,29 +344,26 @@
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
+              <item name="Team" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -339,7 +382,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586514483546" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586519133763" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -354,72 +400,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SystemManagerStub.createTeamTest">
-    <configuration name="ControllerStub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FanTest.removeFollowPageTest">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerStub.getSeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FanTest.addFollowPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
-      <option name="METHOD_NAME" value="getSeasonTest" />
+      <option name="MAIN_CLASS_NAME" value="FanTest" />
+      <option name="METHOD_NAME" value="addFollowPageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerStub.restartRemvoeUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FanTest.removeFollowPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerStub" />
-      <option name="METHOD_NAME" value="restartRemvoeUserTest" />
+      <option name="MAIN_CLASS_NAME" value="FanTest" />
+      <option name="METHOD_NAME" value="removeFollowPageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemManagerStub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Users.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.SystemManagerStub" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemManagerStub.createTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Users.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.SystemManagerStub" />
-      <option name="METHOD_NAME" value="createTeamTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SystemManagerTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SystemManagerStub.createTeamTest" />
-        <item itemvalue="JUnit.SystemManagerStub" />
-        <item itemvalue="JUnit.ControllerStub" />
-        <item itemvalue="JUnit.ControllerStub.getSeasonTest" />
-        <item itemvalue="JUnit.ControllerStub.restartRemvoeUserTest" />
+        <item itemvalue="JUnit.FanTest.removeFollowPageTest" />
+        <item itemvalue="JUnit.FanTest.addFollowPageTest" />
+        <item itemvalue="JUnit.LogTest" />
+        <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.SystemManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -514,49 +546,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerStub_getSeasonTest - 2020.04.10 at 11h 24m 05s.xml">
-      <configuration name="ControllerStub.getSeasonTest" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 30m 07s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerStub_getSeasonTest - 2020.04.10 at 11h 24m 29s.xml">
-      <configuration name="ControllerStub.getSeasonTest" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 34m 25s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SystemManagerStub_createTeamTest_(1) - 2020.04.10 at 11h 24m 29s.xml">
-      <configuration name="SystemManagerStub.createTeamTest (1)" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 34m 29s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerStub - 2020.04.10 at 11h 24m 39s.xml">
-      <configuration name="ControllerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 36m 00s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerStub - 2020.04.10 at 11h 25m 36s.xml">
-      <configuration name="ControllerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 36m 26s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerStub - 2020.04.10 at 11h 26m 07s.xml">
-      <configuration name="ControllerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 37m 23s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerStub - 2020.04.10 at 11h 26m 09s.xml">
-      <configuration name="ControllerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 37m 27s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SystemManagerStub - 2020.04.10 at 11h 26m 35s.xml">
-      <configuration name="SystemManagerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 39m 28s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SystemManagerStub - 2020.04.10 at 11h 31m 29s.xml">
-      <configuration name="SystemManagerStub" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 41m 12s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SystemManagerStub_createTeamTest - 2020.04.10 at 11h 38m 14s.xml">
-      <configuration name="SystemManagerStub.createTeamTest" configurationId="JUnit" />
+    <history-entry file="FanTest_removeFollowPageTest - 2020.04.10 at 14h 41m 26s.xml">
+      <configuration name="FanTest.removeFollowPageTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97598000" />
+    <option name="totallyTimeSpent" value="101514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22371638" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.22371638" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.69865525" weight="0.4580067" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
@@ -564,8 +597,8 @@
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.30134475" side_tool="true" weight="0.4580067" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49938875" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3281075" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49938875" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -587,20 +620,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22306238" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22371638" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.69865525" weight="0.4580067" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.30134475" side_tool="true" weight="0.4580067" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3281075" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49938875" weight="0.32922733" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49959514" weight="0.26651737" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -708,7 +742,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/System/Users/SystemManager.java</url>
-          <line>45</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -736,82 +770,34 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/Users/RefereeTest.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/ControllerTest.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/System/Users/Player.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/Users/FanTest.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/Injury.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/Oddense.java" />
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/Offside.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/Offense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Asset/Asset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/Couch.java" />
-    <entry file="file://$PROJECT_DIR$/src/System/Users/TeamManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FinancialReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -904,7 +890,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/coachController.java">
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/CoachController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -937,39 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-577">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#PersonalPage#0;n#PersonalPage#0" />
-            <element signature="n#!!doc;n#setPageAvailable#0;n#PersonalPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#870#1063#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -991,25 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1017,33 +951,6 @@
           <folding>
             <element signature="e#6484#6648#0" expanded="true" />
             <element signature="e#6647#6648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#3800#3801#0" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#3908#3909#0" expanded="true" />
-            <element signature="e#4180#4181#0" expanded="true" />
-            <element signature="e#4214#4215#0" expanded="true" />
-            <element signature="e#4125#4126#0" expanded="true" />
-            <element signature="e#4156#4157#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1069,20 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
           <caret line="205" column="16" selection-start-line="205" selection-start-column="16" selection-end-line="205" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/SystemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#539#556#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#2873#2874#0" expanded="true" />
-            <element signature="e#2906#2907#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,14 +1012,14 @@
     <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/IPageAvailable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Users/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1187#1188#0" expanded="true" />
@@ -1135,37 +1028,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/Fan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="n#!!doc;n#setFollowPages#0;n#Fan#0" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/Users/FanStub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1184,8 +1051,252 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="136" column="18" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+        <state relative-caret-position="132">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#2310#2311#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2380#2381#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2658#2659#0" expanded="true" />
+            <element signature="e#2712#2713#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="e#2909#2910#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2967#2968#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#3146#3147#0" expanded="true" />
+            <element signature="e#3342#3343#0" expanded="true" />
+            <element signature="e#3375#3376#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3649#3650#0" expanded="true" />
+            <element signature="e#3684#3685#0" expanded="true" />
+            <element signature="e#4146#4147#0" expanded="true" />
+            <element signature="e#4221#4222#0" expanded="true" />
+            <element signature="e#4453#4454#0" expanded="true" />
+            <element signature="e#4481#4482#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4553#4554#0" expanded="true" />
+            <element signature="e#4609#4610#0" expanded="true" />
+            <element signature="e#4653#4654#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4763#4764#0" expanded="true" />
+            <element signature="e#4812#4813#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+            <element signature="e#4923#4924#0" expanded="true" />
+            <element signature="e#4979#4980#0" expanded="true" />
+            <element signature="e#5201#5202#0" expanded="true" />
+            <element signature="e#5235#5236#0" expanded="true" />
+            <element signature="e#5276#5277#0" expanded="true" />
+            <element signature="e#5312#5313#0" expanded="true" />
+            <element signature="e#5355#5356#0" expanded="true" />
+            <element signature="e#5393#5394#0" expanded="true" />
+            <element signature="e#5464#5465#0" expanded="true" />
+            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="e#6489#6490#0" expanded="true" />
+            <element signature="e#6530#6531#0" expanded="true" />
+            <element signature="e#6678#6679#0" expanded="true" />
+            <element signature="e#6735#6736#0" expanded="true" />
+            <element signature="e#6879#6880#0" expanded="true" />
+            <element signature="e#6936#6937#0" expanded="true" />
+            <element signature="e#7566#7567#0" expanded="true" />
+            <element signature="e#7593#7594#0" expanded="true" />
+            <element signature="e#9112#9113#0" expanded="true" />
+            <element signature="e#9147#9148#0" expanded="true" />
+            <element signature="e#9201#9202#0" expanded="true" />
+            <element signature="e#9239#9240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/GustController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Users/FootballAssosiationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/SystemManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="170" column="117" selection-start-line="170" selection-start-column="117" selection-end-line="170" selection-end-column="117" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#7522#7523#0" expanded="true" />
+            <element signature="e#7550#7551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Users/RefereeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Users/SystemManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1517">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/ControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="1056" column="51" selection-start-line="1056" selection-start-column="51" selection-end-line="1056" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/LogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/Fan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="n#!!doc;n#setFollowPages#0;n#Fan#0" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/PersonalPages/PersonalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="n#!!doc;n#setPageAvailable#0;n#PersonalPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Users/FanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
