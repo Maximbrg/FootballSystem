@@ -1,5 +1,6 @@
 package ServiceLayer;
 
+import ServiceLayer.Exceptions.IsNotStartOFSeason;
 import System.Enum.RefereeType;
 import System.Exeptions.IllegalInputException;
 import System.Exeptions.UserNameAlreadyExistException;
@@ -7,6 +8,8 @@ import System.FootballObjects.League;
 import System.Controller;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
+import System.FootballObjects.Team.IScoreMethodPolicy;
+import System.FootballObjects.Team.ITeamAllocatePolicy;
 import System.Users.FootballAssosiation;
 import System.Users.Referee;
 
@@ -32,6 +35,22 @@ public class FootballAssosiationController {
     public Referee addReferee(FootballAssosiation footballAssosiation,String name, RefereeType type, int id, String pass, String userName) throws UserNameAlreadyExistException {
         Referee referee=footballAssosiation.addNewReferee(name,type,id,pass,userName);
         return referee;
+    }
+
+    public void editScorePolicy(LeagueInformation leagueInformation, IScoreMethodPolicy policy) throws IsNotStartOFSeason {
+        if(isStartOfSeason(leagueInformation.getSeason())){
+            leagueInformation.editScoreSchedulingPolicy(policy);
+        }
+        throw new IsNotStartOFSeason();
+    }
+
+    public void editTeamAllocatePolicy(LeagueInformation leagueInformation, ITeamAllocatePolicy policy){
+        leagueInformation.editGameSchedulingPolicy(policy);
+    }
+
+    //how to check this???
+    private boolean isStartOfSeason(Season season){
+        return true;
     }
 
 

@@ -36,6 +36,27 @@ public class LeagueInformation {
 
     //<editor-fold desc="Getters">
 
+
+    public int getId() {
+        return id;
+    }
+
+    public League getLeague() {
+        return league;
+    }
+
+    public Season getSeason() {
+        return season;
+    }
+
+    public ITeamAllocatePolicy getiTeamAllocatePolicy() {
+        return iTeamAllocatePolicy;
+    }
+
+    public IScoreMethodPolicy getiScoreMethodPolicy() {
+        return iScoreMethodPolicy;
+    }
+
     /**
      *
      * @return the league table sorted by the high scoring team.

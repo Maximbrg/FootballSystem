@@ -18,8 +18,6 @@ import java.util.*;
 
 public class FootballAssosiation extends User {
 
-    private String name;
-    private Controller controller;
     private BudgetRules budgetRules;
 
 
