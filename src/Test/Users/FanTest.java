@@ -58,7 +58,5 @@ public class FanTest {
 //        Controller.getInstance().addUser(fTest.getUserName(),fTest);
 //        fTest.submitReport("HelloWorld!");
 
-
-
     }
 }
