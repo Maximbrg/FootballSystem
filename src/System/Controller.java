@@ -23,6 +23,9 @@ public class Controller {
     private List<Season> seasons;
     private List<Field> fields;
 
+
+    private HashMap<String,User> removedUser;
+
     //Constructor
 
     private static Controller ourInstance = new Controller();
@@ -34,6 +37,7 @@ public class Controller {
     private Controller() {
         users = new HashMap<>();
         leagues =  new LinkedList<>();
+        removedUser =  new HashMap<>();
         teams = new LinkedList<>();
         seasons = new LinkedList<>();
         fields = new LinkedList<>();
@@ -46,8 +50,7 @@ public class Controller {
         System.out.println("log file : successful connection to tax system.");
     } //UC-1
 
-    public User login(String userName , String password) throws WrongPasswordException, NoSuchAUserNamedException { //UC-3
-        System.out.println("log file : successful login.");
+    public User login(String userName , String password) throws WrongPasswordException , NoSuchAUserNamedException { //UC-3
         User user = users.get(userName);
         if(user == null) {
             throw new NoSuchAUserNamedException();
@@ -60,14 +63,15 @@ public class Controller {
         throw new WrongPasswordException();
     } //UC-3
 
-    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
-        System.out.println("log file : successful sign up.");
+    public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
         User user = users.get(userName);
-        if(user != null) {
+        User user1 = removedUser.get(userName);
+        if(user != null || user != null) {
             throw new UserNameAlreadyExistException();
         }//more details
         Fan fan = new Fan(id,name, password,userName);
         users.put(fan.getUserName(),fan);
+        Log.getInstance().writeToLog("A new user signUp to the system. ("+fan.getId()+","+fan.getUserName()+").");
         return fan;
     } //UC-2
 
@@ -121,7 +125,6 @@ public class Controller {
     public  HashMap<String,User> getUsers(){
         return users;
     }
-
     public void addUser(String s,User u){
         users.put(s,u);
     }
@@ -137,11 +140,41 @@ public class Controller {
         }
         return null;
     }
+    public HashMap<String, User> getRemovedUsers() {
+        return removedUser;
+    }
+
 
     public void addTeam(Team team){
         teams.add(team);
     } //fff
 
+    /**
+     * add the removed users to a list of users
+     * @param userName unique nickname
+     */
+    public void removeUser(String userName) throws NoSuchAUserNamedException {
+        if(users.get(userName)==null){
+            throw new NoSuchAUserNamedException();
+        }
+        removedUser.put(userName,users.get(userName));
+        users.remove(userName);
+        Log.getInstance().writeToLog("User removed from the system. userName("+userName+").");
+    }
+
+    /**
+     * restart a removed user to the system
+     * @param userName
+     */
+    public void restartRemvoeUser(String userName) throws NoSuchAUserNamedException {
+        if(removedUser.get(userName)==null){
+            throw new NoSuchAUserNamedException();
+        }
+        users.put(userName,removedUser.get(userName));
+        removedUser.remove(userName);
+        Log.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
+
+    }
     public void removeTeam(Team team){ teams.remove(team); }
 
     public void addField(Field field){

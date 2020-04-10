@@ -60,6 +60,7 @@ public class Fan extends User implements IObserverGame {
      */
     public void addFollowPage(PersonalPage personalPage){
         this.FollowPages.add(personalPage);
+
     }
 
     /**
@@ -77,10 +78,9 @@ public class Fan extends User implements IObserverGame {
      */
     public Report sumbitReport(String reportTxt){
         Report report= new Report(this, reportTxt);
-        this.myReports.put(report.getId(), report);
-        SystemManager systemManager=SystemManager.getInstance();
-        systemManager.addReport(report);
-        Log.getInstance().writeToLog(name +"(id: " + id + ") submit report (id: " + report.getId() + ") to system manager");
+        myReports.put(report.getId(), report);
+        SystemManager.addReport(report);
+        Log.getInstance().writeToLog("User submit report. (userId:"+getId()+"reportId"+report.getId()+")");
         return report;
     } //UC-11
 

@@ -1,7 +1,6 @@
+
 package System.PersonalPages;
-
 import System.Exeptions.PersonalPageAlreadyExist;
-
 public interface IPageAvailable {
 
     PersonalPage getPersonalPage();

@@ -24,7 +24,7 @@ public class GustController extends MainUserController {
 
     public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         Controller controller = Controller.getInstance();
-        Fan newFan = controller.signup(id,name,password,userName);
+        Fan newFan = controller.signUp(id,name,password,userName);
         return newFan;
     }
 

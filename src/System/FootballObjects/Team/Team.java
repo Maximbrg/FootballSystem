@@ -13,11 +13,9 @@ import System.PersonalPages.PersonalPage;
 import System.Users.*;
 import System.FinancialReport;
 import System.IShowable;
+import System.Log;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 //</editor-fold>
 
 public class Team implements IPageAvailable, ISubjectTeam, IShowable {
@@ -65,7 +63,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Getters">
-    public static int getId() {
+    public  int getId() {
         return id;
     }
 
@@ -135,6 +133,23 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public List<Game> getGamesOfTeams(){
         return gamesOfTeams;
+    }
+
+    public List<Game> getFutureGames(){
+        List<Game> futureGames = new ArrayList<>();
+        for(Game game:gamesOfTeams){
+            long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
+            if(diffHours<=0){
+                futureGames.add(game);
+            }
+        }
+        Collections.sort(futureGames, new Comparator<Game>() {
+            public int compare(Game o1, Game o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+        Log.writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
+        return futureGames;
     }
     //</editor-fold>
 

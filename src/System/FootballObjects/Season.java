@@ -11,32 +11,23 @@ public class Season implements IShowable {
 
     private int year;
     //private String result;
-    private List<Game> games;
-    private List<Team> teams;
-    private Controller controller;
+
+    private List<LeagueInformation> leagueInformations;
+
 
     //<editor-fold desc="constractur">
-    public Season(int year, List<Team> teams){
+    public Season(int year){
         this.year=year;
-        this.teams=teams;
-        this.games=new ArrayList<>();
+        leagueInformations=new ArrayList<>();
+
         //iTeamAllocatePolicy= new DefualtAllocte();
 
     }
     //</editor-fold>
-    public List<Game> getGames() {
-        return games;
-    }
     public String getYear() {
         return String.valueOf(year);
     }
-    public List<Team> getTeam(){
-        return teams;
-    }
 
-    public void setGameToGames(Game g){
-        games.add(g);
-    }
 
     @Override
     public String getName() {
@@ -52,6 +43,10 @@ public class Season implements IShowable {
     public String getDetails() {
         String str = "@year:"+year;
         return str;
+    }
+
+    public void addLeagueInformation(LeagueInformation leagueInformation) {
+        this.leagueInformations.add(leagueInformation);
     }
 
 
