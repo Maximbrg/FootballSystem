@@ -2,9 +2,6 @@ package System.Users;
 
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
-import System.FootballObjects.Team.IScoreMethodPolicy;
-import System.FootballObjects.Team.ITeamAllocatePolicy;
-import System.FootballObjects.Team.Team;
 import System.Controller;
 import System.BudgetRules;
 import System.FootballObjects.Game;
@@ -19,6 +16,7 @@ import java.util.*;
 public class FootballAssosiation extends User {
 
     private String name;
+    private HashMap<Integer,LeagueInformation> leagueInformations;
     private Controller controller;
     private BudgetRules budgetRules;
 
@@ -26,45 +24,57 @@ public class FootballAssosiation extends User {
     //<editor-fold desc="contractur">
     public FootballAssosiation(int id, String name, String password, String userName) {
         super(id,name,password,userName);
+        leagueInformations=new HashMap<>();
     }
     //</editor-fold>
-
-
 
     //Methods
 
     /**
      * Init new League
-     * @param teams
-     * @param referees
+     * @param season
+     * @param league
      */
     //UC-29
-    public void initLeague(List<Team> teams, List<Referee> referees, Season season) {
-        //1-5
-        String name="";
-        League league= new League(name);
-        for (Team t : teams) {
-            league.addTeam(t);
-        }
-        //6
-        //Initialize your Date however you like it.
-       // Date date = new Date();
-        //Calendar calendar = Calendar.getInstance();
-        //calendar.setTime(date);
-        //int year = calendar.get(Calendar.YEAR);
-        LeagueInformation leagueInformation= new LeagueInformation(league,season);
-        leagueInformation.schedulingReferee(referees);
+    public LeagueInformation initLeague(Season season, League league) {
+        //init League Information with league, season from service Layer
+        LeagueInformation leagueInformation= new LeagueInformation(league,season, this);
+        //add new leagueInformation to list
+        leagueInformations.put(leagueInformation.getId(), leagueInformation);
 
+        //update pointers
+        season.addLeagueInformation(leagueInformation);
+        league.addLeagueInformation(leagueInformation);
+
+        //add to log
         Log.getInstance().writeToLog("Init new League. Name:"+ league.getName());
+
+        //return to service Layer
+        return leagueInformation;
     } //UC-29
 
-    public void addSeason(int year, List<Team> teams){
-        Season season=new Season(year, teams);
-        controller.addSeason(season);
+    /**
+     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
+     * @param leagueInformation
+     */
+    public void initLeagueInformation(LeagueInformation leagueInformation){
+        leagueInformation.initLeagueInformation();
     }
-    public void getSeasonFromController(String year){
-        controller.getSeason(year);
+
+    /**
+     * init scheduling Referee for league Information.
+     * MUST USE THIS FUNCTION AFTER  initLeagueInformation!!! (schedulingReferee need that list of game dont be empty)
+     * @param leagueInformation
+     * @param referees
+     */
+    public void schedulingReferee(LeagueInformation leagueInformation, List<Referee> referees){
+        leagueInformation.schedulingReferee(referees);
     }
+
+
+
+
+
 
     /**
      *  Add New Referee
@@ -142,7 +152,13 @@ public class FootballAssosiation extends User {
     }
     //UC-31
 
-
+    public void addSeason(int year){
+        Season season=new Season(year);
+        controller.addSeason(season);
+    }
+    public void getSeasonFromController(String year){
+        controller.getSeason(year);
+    }
     //public void addBudgetRule(String rule){} //UC-33
 
     //public void editGameSchedulingPolicy(ITeamAllocatePolicy iTeamAllocatePolicy){} //UC-34
