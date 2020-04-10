@@ -101,11 +101,10 @@ public abstract class User extends Guest {
 
     }
 
+
     //</editor-fold>
 
     // Methods
-
-
 
     /**
      * Adding search to search history
@@ -116,5 +115,6 @@ public abstract class User extends Guest {
         this.searchHistory.add(line);
         return searchHistory;
     }
+
 
 }

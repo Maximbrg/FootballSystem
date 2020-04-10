@@ -22,18 +22,22 @@ import java.util.List;
 
 public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
-    private static int ID=1;
-    private int id;
+    private static int id;
     private String name;
     private TeamStatus teamStatus;
     private PersonalPage personalPage;
     private List<Asset> assets;
     private List<Player> players;
     private List<Game> gamesOfTeams;
+
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
+
+
     private List<TeamManager> teamManagersList;
     private HashMap<TeamOwner,List<TeamOwner>> teamOwnersWhichappointed;
+
+
     private Field field;
     private int income;
     private int expense;
@@ -42,7 +46,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     //<editor-fold desc="Constructor">
     public Team(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, List<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport) {
-        this.id=ID++;
         this.name = name;
         this.teamStatus = teamStatus;
         this.personalPage = personalPage;
@@ -132,6 +135,23 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public List<Game> getGamesOfTeams(){
         return gamesOfTeams;
+    }
+
+    public List<Game> getFutureGames(){
+        List<Game> futureGames = new ArrayList<>();
+        for(Game game:gamesOfTeams){
+            long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
+            if(diffHours<=0){
+                futureGames.add(game);
+            }
+        }
+        Collections.sort(futureGames, new Comparator<Game>() {
+            public int compare(Game o1, Game o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
+        Log.writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
+        return futureGames;
     }
     //</editor-fold>
 

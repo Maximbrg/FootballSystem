@@ -1,6 +1,5 @@
 package System.Users;
 
-import System.Enum.RefereeType;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.IScoreMethodPolicy;
@@ -13,6 +12,7 @@ import System.FootballObjects.LeagueInformation;
 import System.Log;
 import System.Exeptions.*;
 import System.Enum.UserStatus;
+import System.Enum.RefereeType;
 
 import java.util.*;
 

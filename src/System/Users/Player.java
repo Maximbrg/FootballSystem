@@ -15,6 +15,7 @@ import java.util.List;
 
 public class Player extends User implements Asset, IPageAvailable, IShowable {
 
+
     private String name;
     private Date birthDate;
     private String role;
@@ -39,6 +40,9 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     //<editor-fold desc="Getters">
     public String getName() {
         return name;
+    }
+    public int getId(){
+        return id;
     }
 
     @Override
@@ -132,9 +136,10 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
 
     @Override
     public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
-        if(personalPage!= null){
+        if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
+            return personalPage;
         }
         throw new PersonalPageAlreadyExist();
     }

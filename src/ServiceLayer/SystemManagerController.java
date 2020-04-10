@@ -1,6 +1,7 @@
 package ServiceLayer;
 
 import ServiceLayer.Exceptions.TeamHasAFutureGame;
+import System.Exeptions.NoSuchAUserNamedException;
 import System.FootballObjects.Team.Team;
 import System.Users.SystemManager;
 import System.Controller;
@@ -17,6 +18,7 @@ import java.util.Map;
 
 public class SystemManagerController {
 
+    //<editor-fold desc="Getters">
     /**
      * Get all teams in the system
      * @return
@@ -40,12 +42,28 @@ public class SystemManagerController {
     }
 
     /**
+     * Get all inactive users in the system
+     * @return
+     */
+    public List<User> getAllInactiveUsers(){
+        List<User> users= new LinkedList<>();
+        for(Map.Entry user:Controller.getInstance().getRemovedUsers().entrySet()){
+            users.add((User)user.getValue());
+        }
+        return users;
+    }
+
+    /**
      * Gets all open reports in system
      * @return
      */
-    public HashMap<Integer,Report> getAllReports(){
-        return SystemManager.getReports();
+    public HashMap<Integer,Report> getAllOpenReports(SystemManager systemManager){
+
+        return systemManager.getOpenReports();
     }
+
+    //</editor-fold>
+
 
     /**
      * Permanently close a team
@@ -53,12 +71,15 @@ public class SystemManagerController {
      * @param team
      */
     public void permanentlyCloseTeam(SystemManager systemManager, Team team) throws TeamHasAFutureGame {
-        if(isAFutureGame(team)){
+        if(!isAFutureGame(team)){
             throw new TeamHasAFutureGame();
         }
-        team.PermanentlyCloseTeam();
+        systemManager.closeTeam(team);
     }
 
+    public void restartUser(SystemManager systemManager, User user) throws NoSuchAUserNamedException {
+        systemManager.restartRemovedUser(user.getUserName());
+    }
     /**
      * Removes user from the system
      * @param systemManager
@@ -77,7 +98,6 @@ public class SystemManagerController {
     public String showReport(Report report){
         return report.getReportDetails();
     }
-
     /**
      * Answer report
      * @param systemManager
@@ -108,8 +128,7 @@ public class SystemManagerController {
      * @return
      */
     private boolean isAFutureGame(Team team){
-        //?????????????
-        return true;
+        return team.getFutureGames().isEmpty();
     }
 
 
