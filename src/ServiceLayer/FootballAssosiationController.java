@@ -38,7 +38,7 @@ public class FootballAssosiationController {
     }
 
     public void editScorePolicy(LeagueInformation leagueInformation, IScoreMethodPolicy policy) throws IsNotStartOFSeason {
-        if(isStartOfSeason(leagueInformation.getSeason())){
+        if(!isStartOfSeason(leagueInformation.getSeason())){
             leagueInformation.editScoreSchedulingPolicy(policy);
         }
         throw new IsNotStartOFSeason();

@@ -1,9 +1,9 @@
 package System.Users;
 
 import System.Asset.Asset;
+import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
-import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
@@ -19,20 +19,17 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     private Date birthDate;
     private String role;
     private PersonalPage personalPage;
-    private  int assetValue;
+    private int assetValue;
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
 
     //<editor-fold desc="Constructor">
-    public Player(int id, String name, String password, String userName, String name1, Date birthDate, String role, int assetValue, Team myTeam, int salary) {
+    public Player(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary) {
         super(id, name, password, userName);
-        this.name = name1;
         this.birthDate = birthDate;
         this.role = role;
-        this.personalPage = null;
         this.assetValue = assetValue;
-        this.myTeam = myTeam;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
 
@@ -124,8 +121,13 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     }
 
     @Override
-    public void addMyTeam(Team team) {
-        this.myTeam=team;
+    public void addMyTeam(Team team) throws HasTeamAlreadyException{
+        if(this.myTeam != null) {
+            throw new HasTeamAlreadyException();
+        }
+        else{
+            this.myTeam = team;
+        }
     }
 
     @Override

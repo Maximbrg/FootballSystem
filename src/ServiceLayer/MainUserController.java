@@ -1,10 +1,12 @@
-/*public abstract class MainUserController {
+package ServiceLayer;
 
-    public abstract void login(String userName, String password) throws Exception;
-    public void logOut(User user);
-    public List<Object> getListInfo(String name);
-    public String getInfo(Object object);
-    //--------------search-------------//
-    public abstract List<String> showDetails(User user);
+import System.*;
+import System.Users.User;
+
+public abstract class MainUserController {
+
+    public void logOut(User user) {
+        Controller controller = Controller.getInstance();
+        controller.logOut(user);
+    }
 }
-*/

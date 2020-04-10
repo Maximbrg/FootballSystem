@@ -1,8 +1,9 @@
 package System;
 
 import System.Exeptions.UserNameAlreadyExistException;
-import System.Exeptions.noSuchAUserNamedException;
-import System.Exeptions.wrongPasswordException;
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.WrongPasswordException;
+import System.FootballObjects.Field;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.*;
@@ -20,6 +21,7 @@ public class Controller {
    // private Season currentSeason; //need to update it every year
     private List<Team> teams;
     private List<Season> seasons;
+    private List<Field> fields;
 
     //Constructor
 
@@ -32,6 +34,9 @@ public class Controller {
     private Controller() {
         users = new HashMap<>();
         leagues =  new LinkedList<>();
+        teams = new LinkedList<>();
+        seasons = new LinkedList<>();
+        fields = new LinkedList<>();
     }
 
     //Methods
@@ -41,18 +46,18 @@ public class Controller {
         System.out.println("log file : successful connection to tax system.");
     } //UC-1
 
-    public User login(String userName , String password) throws wrongPasswordException , noSuchAUserNamedException { //UC-3
+    public User login(String userName , String password) throws WrongPasswordException, NoSuchAUserNamedException { //UC-3
         System.out.println("log file : successful login.");
         User user = users.get(userName);
         if(user == null) {
-            throw new noSuchAUserNamedException();
+            throw new NoSuchAUserNamedException();
         }
         if(user.getPassword().equals(password)) {
             user.setStatus(UserStatus.ACTIVE);
             Log.getInstance().writeToLog("User log in to the system. id("+user.getId()+").");
             return user;
         }
-        throw new wrongPasswordException();
+        throw new WrongPasswordException();
     } //UC-3
 
     public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
@@ -137,6 +142,16 @@ public class Controller {
 
     public void addTeam(Team team){
         teams.add(team);
+    }
+
+    public void removeTeam(Team team){ teams.remove(team); }
+
+    public void addField(Field field){
+        fields.add(field);
+    }
+
+    public void removeField(Field field){
+        fields.remove(field);
     }
 
 }

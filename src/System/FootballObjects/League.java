@@ -3,6 +3,7 @@ package System.FootballObjects;
 import System.FootballObjects.Team.Team;
 import System.IShowable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class League implements IShowable {
@@ -17,6 +18,8 @@ public class League implements IShowable {
         this.id= ID;
         ID++;
         this.name=name;
+        this.teams= new ArrayList<>();
+        this.leagueInformation= new ArrayList<>();
 
     }
 
@@ -41,6 +44,9 @@ public class League implements IShowable {
         return leagueInformation;
     }
 
+    public List<Team> getTeams(){
+        return teams;
+    }
     public void addTeam(Team t){
         teams.add(t);
     }

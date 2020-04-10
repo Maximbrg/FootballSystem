@@ -10,7 +10,7 @@ import System.Log;
 
 public class SystemManager extends User {
 
-    private HashMap<Integer,Report> reportsHash;
+    private static HashMap<Integer,Report> reportsHash;
 
 
     //<editor-fold desc="constructor- singleton">
@@ -61,7 +61,7 @@ public class SystemManager extends User {
      * Adding a new report to reportsHash
      * @param report
      */
-    public void addReport(Report report) {
+    public static void addReport(Report report) {
         reportsHash.put(report.getId(),report);
     }
 

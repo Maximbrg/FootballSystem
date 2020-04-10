@@ -1,8 +1,8 @@
 import ServiceLayer.GustController;
 import System.Enum.RefereeType;
 import System.Exeptions.UserNameAlreadyExistException;
-import System.Exeptions.noSuchAUserNamedException;
-import System.Exeptions.wrongPasswordException;
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.WrongPasswordException;
 import System.Users.Fan;
 import System.Users.FootballAssosiation;
 import System.Users.User;
@@ -91,10 +91,10 @@ public class GustControllerTest {
             User user = gustController.login("****", password);
             fail();
         }
-        catch (noSuchAUserNamedException e){
+        catch (NoSuchAUserNamedException e){
 
         }
-        catch (wrongPasswordException e){
+        catch (WrongPasswordException e){
             fail();
         }
     } //Test ID:    #2.3.2 -- checks if can login with wrong user name
@@ -116,10 +116,10 @@ public class GustControllerTest {
             User user = gustController.login(username, "12");
             fail();
         }
-        catch (noSuchAUserNamedException e){
+        catch (NoSuchAUserNamedException e){
             fail();
         }
-        catch (wrongPasswordException e){
+        catch (WrongPasswordException e){
 
         }
     } //Test ID:    #2.3.3 -- checks if can login with wrong password

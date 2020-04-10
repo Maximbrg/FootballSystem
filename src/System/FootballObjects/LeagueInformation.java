@@ -4,16 +4,24 @@ import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
 import System.Users.Referee;
 import System.Log;
+
+import javax.swing.*;
 import java.util.*;
 
 public class LeagueInformation {
+
     private static int ID=1;
     private int id;
+
     League league;
     Season season;
     HashMap<Team,Integer> leagueTable;
     ITeamAllocatePolicy iTeamAllocatePolicy;
     IScoreMethodPolicy iScoreMethodPolicy;
+    int WIN;
+    int LOSS;
+    int TIE;
+    Team Champion;
 
     //<editor-fold desc="constructor">
     public LeagueInformation(League league, Season season) {
@@ -30,8 +38,13 @@ public class LeagueInformation {
         iTeamAllocatePolicy.setTeamPolicy(season.getTeam(),season.getGames());
 
         iScoreMethodPolicy= new DefualtMethod();
-        iScoreMethodPolicy.setScorePolicy();
-    }
+    //get list of score for policy
+    //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
+    List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
+    WIN=setScore.get(0);
+    LOSS=setScore.get(1);
+    TIE=setScore.get(2);
+}
     //</editor-fold>
 
     //<editor-fold desc="Getters">
@@ -73,7 +86,7 @@ public class LeagueInformation {
             public int compare(Map.Entry<Team,Integer> o1,
                                Map.Entry<Team,Integer> o2)
             {
-                return (o1.getValue()).compareTo(o2.getValue());
+                return (o2.getValue()).compareTo(o1.getValue());
             }
         });
 
@@ -110,25 +123,25 @@ public class LeagueInformation {
         Referee R2;
         Referee R3;
         for(Game game:season.getGames()){
-            if( i<= mainReferee.size()){
+            if( i< mainReferee.size()){
                 R1=mainReferee.get(i++);
             }
             else{
                 i=0;
                 R1=mainReferee.get(i++);
             }
-            if( i<= assistentsReferee.size()){
+            if( j< assistentsReferee.size()){
                 R2= assistentsReferee.get(j++);
             }
             else{
-                i=0;
+                j=0;
                 R2= assistentsReferee.get(j++);
             }
-            if( i<= assistentsReferee.size()){
+            if( j< assistentsReferee.size()){
                 R3= assistentsReferee.get(j++);
             }
             else{
-                i=0;
+                j=0;
                 R3= assistentsReferee.get(j++);
             }
             game.setMainReferee(R1);
@@ -160,6 +173,10 @@ public class LeagueInformation {
      */
     public void editScoreSchedulingPolicy(IScoreMethodPolicy iScoreMethodPolicy){//UC-37
         this.iScoreMethodPolicy=iScoreMethodPolicy;
+    }
+
+    public void updateScoreTeamInLeageTable(Team t, int score){
+        leagueTable.replace(t,score);
     }
 
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37

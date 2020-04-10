@@ -2,6 +2,7 @@
 package System.FootballObjects.Team;
 import System.Asset.Asset;
 import System.Enum.TeamStatus;
+import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Field;
 import System.FootballObjects.Game;
@@ -27,6 +28,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private TeamStatus teamStatus;
     private PersonalPage personalPage;
     private List<Asset> assets;
+    private List<Player> players;
     private List<Game> gamesOfTeams;
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
@@ -54,6 +56,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.iObserverTeamListForSystemManagers=new LinkedList<>();
         this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
         this.gamesOfTeams= new ArrayList<>();
+        this.players = new LinkedList<>();
 
     }
     //</editor-fold>
@@ -190,7 +193,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * according to UC-15
      *
      */
-    public void addAsset(Asset asset){
+    public void addAsset(Asset asset) throws HasTeamAlreadyException {
         if(asset!=null) {
             this.assets.add(asset);
             asset.addMyTeam(this);//connect this team to the asset
@@ -313,6 +316,14 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     }
 
     //</editor-fold>
+
+    public void addPlayerToTeam(Player player) {
+        players.add(player);
+    }
+
+    public void removePlayerFromTeam(Player player){
+        players.remove(player);
+    }
 
 
 }

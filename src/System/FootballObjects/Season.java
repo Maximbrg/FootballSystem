@@ -4,6 +4,7 @@ import System.FootballObjects.Team.Team;
 import System.Controller;
 import System.IShowable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Season implements IShowable {
@@ -15,9 +16,10 @@ public class Season implements IShowable {
     private Controller controller;
 
     //<editor-fold desc="constractur">
-    public Season(int year, List<Game> games){
+    public Season(int year, List<Team> teams){
         this.year=year;
-        this.games=games;
+        this.teams=teams;
+        this.games=new ArrayList<>();
         //iTeamAllocatePolicy= new DefualtAllocte();
 
     }
@@ -30,6 +32,10 @@ public class Season implements IShowable {
     }
     public List<Team> getTeam(){
         return teams;
+    }
+
+    public void setGameToGames(Game g){
+        games.add(g);
     }
 
     @Override
