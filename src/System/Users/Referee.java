@@ -209,4 +209,8 @@ public class Referee extends User implements IObserverGame, IShowable {
         return null;
     }
 
+    public List<Game> getGames(){
+        return games;
+    }
+
 }

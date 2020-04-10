@@ -30,6 +30,7 @@ public class FootballAssosiation extends User {
     //</editor-fold>
 
 
+
     //Methods
 
     /**
@@ -38,7 +39,7 @@ public class FootballAssosiation extends User {
      * @param referees
      */
     //UC-29
-    public void initLeague(List<Team> teams, List<Referee> referees) {
+    public void initLeague(List<Team> teams, List<Referee> referees, Season season) {
         //1-5
         String name="";
         League league= new League(name);
@@ -47,21 +48,23 @@ public class FootballAssosiation extends User {
         }
         //6
         //Initialize your Date however you like it.
-        Date date = new Date();
-        Calendar calendar = new GregorianCalendar();
-        calendar.setTime(date);
-        int year = calendar.get(Calendar.YEAR);
-        //Add one to month {0 - 11}
-        //int month = calendar.get(Calendar.MONTH) + 1;
-        //int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        Season season=new Season(year, null);
-
+       // Date date = new Date();
+        //Calendar calendar = Calendar.getInstance();
+        //calendar.setTime(date);
+        //int year = calendar.get(Calendar.YEAR);
         LeagueInformation leagueInformation= new LeagueInformation(league,season);
         leagueInformation.schedulingReferee(referees);
 
         Log.getInstance().writeToLog("Init new League. Name:"+ league.getName());
     } //UC-29
+
+    public void addSeason(int year, List<Team> teams){
+        Season season=new Season(year, teams);
+        controller.addSeason(season);
+    }
+    public void getSeasonFromController(String year){
+        controller.getSeason(year);
+    }
 
     /**
      *  Add New Referee
