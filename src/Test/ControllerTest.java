@@ -178,7 +178,7 @@ public class ControllerTest {
     }
     @Test
     public void getSeasonTest(){
-        Season s= new Season(2019,null);
+        Season s= new Season(2019);
         cTest.addSeason(s);
         assertEquals("2019",cTest.getSeason("2019").getYear());
     }

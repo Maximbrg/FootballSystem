@@ -13,11 +13,9 @@ import System.PersonalPages.PersonalPage;
 import System.Users.*;
 import System.FinancialReport;
 import System.IShowable;
+import System.Log;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 //</editor-fold>
 
 public class Team implements IPageAvailable, ISubjectTeam, IShowable {

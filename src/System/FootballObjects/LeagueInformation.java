@@ -2,6 +2,7 @@ package System.FootballObjects;
 
 import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
+import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import System.Log;
 
@@ -10,13 +11,15 @@ import java.util.*;
 
 
 public class LeagueInformation {
-
     private static int ID=1;
     private int id;
-
     League league;
     Season season;
+    FootballAssosiation footballAssosiation;
+    String name;
     HashMap<Team,Integer> leagueTable;
+    private List<Game> games;
+
     ITeamAllocatePolicy iTeamAllocatePolicy;
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
@@ -25,32 +28,25 @@ public class LeagueInformation {
     Team Champion;
 
     //<editor-fold desc="constructor">
-    public LeagueInformation(League league, Season season) {
+    public LeagueInformation(League league, Season season, FootballAssosiation footballAssosiation) {
         this.id= ID;
         ID++;
         this. league=league;
         this. season= season;
-        leagueTable= new LinkedHashMap<>();
-        for(int i=0;i<season.getTeam().size();i++){
-            leagueTable.put(season.getTeam().get(i),0);
-        }
-
+        name= season.getName()+" "+league.getName();
+        this.footballAssosiation=footballAssosiation;
         iTeamAllocatePolicy= new DefualtAllocte();
-        iTeamAllocatePolicy.setTeamPolicy(season.getTeam(),season.getGames());
-
+        leagueTable= new LinkedHashMap<>();
         iScoreMethodPolicy= new DefualtMethod();
-    //get list of score for policy
-    //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
-    List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
-    WIN=setScore.get(0);
-    LOSS=setScore.get(1);
-    TIE=setScore.get(2);
-}
-    //</editor-fold>
+
+        games=new ArrayList<>();
+        //init league Table with 0 points to all the team.
+        for(int i=0;i<league.getTeams().size();i++){
+            leagueTable.put(league.getTeams().get(i),0);
+        }
+    }
 
     //<editor-fold desc="Getters">
-
-
     public int getId() {
         return id;
     }
@@ -63,6 +59,14 @@ public class LeagueInformation {
         return season;
     }
 
+    public FootballAssosiation getFootballAssosiation() {
+        return footballAssosiation;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public ITeamAllocatePolicy getiTeamAllocatePolicy() {
         return iTeamAllocatePolicy;
     }
@@ -70,6 +74,28 @@ public class LeagueInformation {
     public IScoreMethodPolicy getiScoreMethodPolicy() {
         return iScoreMethodPolicy;
     }
+
+    public Team getChampion() {
+        return Champion;
+    }
+    //</editor-fold>
+
+    /**
+     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
+     */
+    public void initLeagueInformation(){
+        iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
+        //get list of score for policy
+        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
+        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
+        WIN=setScore.get(0);
+        LOSS=setScore.get(1);
+        TIE=setScore.get(2);
+    }
+
+    //</editor-fold>
+
+
 
     /**
      *
@@ -98,7 +124,7 @@ public class LeagueInformation {
         }
         return temp;
     }
-    //</editor-fold>
+
 
 
 
@@ -123,7 +149,7 @@ public class LeagueInformation {
         Referee R1;
         Referee R2;
         Referee R3;
-        for(Game game:season.getGames()){
+        for(Game game:games){
             if( i< mainReferee.size()){
                 R1=mainReferee.get(i++);
             }
@@ -180,6 +206,10 @@ public class LeagueInformation {
         leagueTable.replace(t,score);
     }
 
+
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
+    public List<Game> getGames() {
+        return games;
+    }
 }

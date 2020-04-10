@@ -45,7 +45,7 @@ public class SystemManagerTest {
     @Test
     public void addReportTest(){
         systemMTest.addReport(reportTest);
-        assertEquals(reportTest.getId(),systemMTest.getReportsBox().get(reportTest.getId()).getId());
+        assertEquals(reportTest.getId(),systemMTest.getOpenReports().get(reportTest.getId()).getId());
     }
 
 

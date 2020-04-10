@@ -24,23 +24,23 @@ public class TeamOwnerController extends MainUserController  {
     private TeamOwnerController() {
     }
 
-    public Player signup(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary){
-        Player player = new Player(id, name, password, userName, birthDate,  role,  assetValue,  salary) ;
-        Controller.getInstance().addUser(userName,player);
-        return player;
-    }
-
-    public Coach signup(int id, String name, String password, String userName, String preparation, String role){
-        Coach coach = new Coach(id, name, password, userName, preparation, role, 0,0 );
-        Controller.getInstance().addUser(userName,coach);
-        return coach;
-    }
-
-    public TeamManager signup(int id, String name, String password, String userName, String name1, Team myTeam){
-        TeamManager teamManager = new TeamManager(id, name, password, userName, 0,0 );
-        Controller.getInstance().addUser(userName,teamManager);
-        return teamManager;
-    }
+//    public Player signup(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary){
+//        Player player = new Player(id, name, password, userName, birthDate,  role,  assetValue,  salary) ;
+//        Controller.getInstance().addUser(userName,player);
+//        return player;
+//    }
+//
+//    public Coach signup(int id, String name, String password, String userName, String preparation, String role){
+//        Coach coach = new Coach(id, name, password, userName, preparation, role, 0,0 );
+//        Controller.getInstance().addUser(userName,coach);
+//        return coach;
+//    }
+//
+//    public TeamManager signup(int id, String name, String password, String userName, String name1, Team myTeam){
+//        TeamManager teamManager = new TeamManager(id, name, password, userName, 0,0 );
+//        Controller.getInstance().addUser(userName,teamManager);
+//        return teamManager;
+//    }
 
     public Field createField(int id, String name){
         Field field = new Field(id, name, 0, 0);

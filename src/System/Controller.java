@@ -1,5 +1,4 @@
 package System;
-
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.WrongPasswordException;
@@ -9,7 +8,6 @@ import System.FootballObjects.Season;
 import System.FootballObjects.Team.*;
 import System.Users.*;
 import System.Enum.UserStatus;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -76,7 +74,7 @@ public class Controller {
     } //UC-2
 
     /**
-     * Check if user name exist in the system
+     * Checks if user name exist in the system
      * @param userName
      * @return
      */
@@ -85,6 +83,34 @@ public class Controller {
         User user1 = removedUser.get(userName);
         if(user != null || user1 != null) {
             return true;
+        }
+        return false;
+    }
+
+    /**
+     * Checks if league name already exist
+     * @param name
+     * @return
+     */
+    public boolean isLeagueExist(String name){
+        for(League l: this.leagues){
+            if(name.equals(l.getName())){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Checks if Season exist by compering years
+     * @param year
+     * @return
+     */
+    public boolean isSeasonExsit(int year){
+        for(Season season:seasons){
+            if(season.getIntYear()==year){
+                return true;
+            }
         }
         return false;
     }
@@ -160,7 +186,6 @@ public class Controller {
         return removedUser;
     }
 
-
     public void addTeam(Team team){
         teams.add(team);
     }
@@ -173,6 +198,7 @@ public class Controller {
         if(users.get(userName)==null){
             throw new NoSuchAUserNamedException();
         }
+        users.get(userName).setStatus(UserStatus.REMOVED);
         removedUser.put(userName,users.get(userName));
         users.remove(userName);
         Log.getInstance().writeToLog("User removed from the system. userName("+userName+").");
@@ -191,6 +217,7 @@ public class Controller {
         Log.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
 
     }
+
     public void removeTeam(Team team){ teams.remove(team); }
 
     public void addField(Field field){
@@ -200,5 +227,7 @@ public class Controller {
     public void removeField(Field field){
         fields.remove(field);
     }
+
+
 
 }
