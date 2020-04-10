@@ -1,5 +1,6 @@
 package System;
 
+import System.Exeptions.IllegalInputException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.WrongPasswordException;
@@ -22,8 +23,6 @@ public class Controller {
     private List<Team> teams;
     private List<Season> seasons;
     private List<Field> fields;
-
-
     private HashMap<String,User> removedUser;
 
     //Constructor
