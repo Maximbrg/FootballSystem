@@ -10,19 +10,18 @@ import java.util.List;
 public class PersonalPage {
 
      private IPageAvailable pageAvailable;
+     private List<String> posts;
      private List <Fan> followers;
 
     //<editor-fold desc="constructor">
     public PersonalPage(IPageAvailable pageAvailable) {
         this.pageAvailable = pageAvailable;
         this.followers = new LinkedList<>();
+        this.posts= new LinkedList<>();
     }
     //</editor-fold>
 
     //<editor-fold desc="getter">
-    public int getId(){
-        return pageAvailable.getId();
-    }
     public IPageAvailable getPageAvailable() {
         return pageAvailable;
     }
@@ -62,4 +61,16 @@ public class PersonalPage {
         Log.getInstance().writeToLog(fan.getName() +" (id: "+ fan.getId()+") unfollow "+ this.pageAvailable.getName());
 
     } //UC-8
+
+    /**
+     * Add a new post to a personal page
+     * @param post
+     */
+    public void upload(String post){
+        this.posts.add(post);
+
+    }
+
+    public void removePost(String post){}
+
 }

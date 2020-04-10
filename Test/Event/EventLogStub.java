@@ -1,3 +1,5 @@
+package Event;
+
 import System.FootballObjects.Event.*;
 import org.junit.*;
 import org.junit.Before;
@@ -5,6 +7,7 @@ import org.junit.Test;
 
 import java.awt.*;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class EventLogStub {

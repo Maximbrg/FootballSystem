@@ -585,3 +585,124 @@ Wed Apr 08 16:38:47 IDT 2020 FootballObjects.Event.EventLog: Event was added to 
 Wed Apr 08 16:38:47 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
 Wed Apr 08 16:38:47 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
 Wed Apr 08 16:38:47 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Fri Apr 10 11:02:26 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:02:55 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:03:02 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:03:49 IDT 2020 Report: system manager receive to report 1
+Fri Apr 10 11:03:49 IDT 2020 Users.SystemManager: A answer to report set. report id(1).
+Fri Apr 10 11:03:49 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:03:49 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Fri Apr 10 11:03:49 IDT 2020 Users.SystemManager: A new report added to the System. id(5).
+Fri Apr 10 11:05:45 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 10 11:05:51 IDT 2020 Report: system manager receive to report 1
+Fri Apr 10 11:05:51 IDT 2020 Users.SystemManager: A answer to report set. report id(1).
+Fri Apr 10 11:05:51 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:05:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123).
+Fri Apr 10 11:05:51 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Fri Apr 10 11:05:51 IDT 2020 Users.SystemManager: A new report added to the System. id(5).
+Fri Apr 10 11:11:31 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:11:31 IDT 2020 Controller: User restart to the system. userName(theBigAvi123).
+Fri Apr 10 11:16:32 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:16:56 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:19:48 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:20:33 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:20:33 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:20:33 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:20:33 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:20:33 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:20:33 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:20:33 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:20:33 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:20:33 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:20:33 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:20:33 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:20:33 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:20:33 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:20:33 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:22:19 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:22:19 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:22:19 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:22:19 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:22:19 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:22:19 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:22:19 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:22:19 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:22:19 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:22:19 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:22:19 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:22:19 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:22:19 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:22:19 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:24:38 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:24:38 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:24:38 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:24:38 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:24:38 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:24:38 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:24:38 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:24:38 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:24:38 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:24:38 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:24:38 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:24:38 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:24:38 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:24:38 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:25:34 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:25:34 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:25:34 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:25:34 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:34 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:25:34 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:34 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:25:34 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:25:34 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:25:34 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:25:34 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:34 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:25:34 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:25:34 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:25:35 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:25:35 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:25:35 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:25:35 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:35 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:25:35 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:35 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:25:35 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:25:35 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:25:35 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:25:35 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:25:35 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:25:35 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:25:35 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:26:09 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:26:09 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol).
+Fri Apr 10 11:26:09 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:26:09 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:26:09 IDT 2020 Users.User: Itzik(id: 205) update his status
+Fri Apr 10 11:26:09 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:26:09 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Fri Apr 10 11:26:09 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Fri Apr 10 11:26:09 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Fri Apr 10 11:26:09 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:26:09 IDT 2020 Controller: User log in to the system. id(205).
+Fri Apr 10 11:26:09 IDT 2020 Users.User: shmulik(id: 205) update his status
+Fri Apr 10 11:26:09 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Fri Apr 10 11:26:09 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Fri Apr 10 11:26:35 IDT 2020 Report: system manager receive to report 1
+Fri Apr 10 11:26:35 IDT 2020 Users.SystemManager: A answer to report set. report id(1).
+Fri Apr 10 11:26:35 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:26:35 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123).
+Fri Apr 10 11:26:35 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Fri Apr 10 11:26:35 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:26:35 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Fri Apr 10 11:26:35 IDT 2020 Users.SystemManager: A new report added to the System. id(6).
+Fri Apr 10 11:31:28 IDT 2020 Report: system manager receive to report 1
+Fri Apr 10 11:31:28 IDT 2020 Users.SystemManager: A answer to report set. report id(1).
+Fri Apr 10 11:31:28 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:31:28 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123).
+Fri Apr 10 11:31:28 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Fri Apr 10 11:31:28 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Fri Apr 10 11:31:28 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Fri Apr 10 11:31:28 IDT 2020 Users.SystemManager: A new report added to the System. id(6).
+Fri Apr 10 11:38:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)

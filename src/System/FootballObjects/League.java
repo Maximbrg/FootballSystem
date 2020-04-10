@@ -1,10 +1,11 @@
 package System.FootballObjects;
 
 import System.FootballObjects.Team.Team;
+import System.IShowable;
 
 import java.util.List;
 
-public class League {
+public class League implements IShowable {
 
     private static int ID=1;
     private int id;
@@ -24,6 +25,18 @@ public class League {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String getType() {
+        return "League";
+    }
+
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name;
+        return str;
+    }
+
     public List<LeagueInformation> getLeagueInformation() {
         return leagueInformation;
     }

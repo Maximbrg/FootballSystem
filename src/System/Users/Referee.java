@@ -1,3 +1,4 @@
+//<editor-fold desc="imports">
 package System.Users;
 import System.FootballObjects.Event.*;
 import System.I_Observer.IObserverGame;
@@ -6,23 +7,20 @@ import System.Log;
 import System.FootballObjects.Game;
 import System.FootballObjects.Season;
 import System.Enum.RefereeType;
-
-
-
+import System.Enum.*;
+import System.IShowable;
 import java.awt.*;
 import java.util.*;
 import java.util.List;
+//</editor-fold>
 
-public class Referee extends User implements IObserverGame {
+public class Referee extends User implements IObserverGame,IShowable {
 
     private RefereeType type;
     private List<ISubjectGame> subjectGame;
-
-
-
     private List<Game> games;
 
-    public Referee(String name, RefereeType type, int id, String pass, String userName){
+    public Referee(String name,RefereeType type,int id,String pass,String userName){
         super(id,name,pass,userName);
         this.type=type;
         games=new LinkedList<>();
@@ -200,11 +198,25 @@ public class Referee extends User implements IObserverGame {
         subjectGame.remove(iSubjectGame);
     }
 
-    public RefereeType getType(){
+    public RefereeType getRefereeType(){
         return type;
     }
     public List<Game> getGames() {
         return games;
     }
+
+    public String getType(){
+        return "Referee";
+    }
+
+    @Override
+    public String getDetails() {
+        return null;
+    }
+//
+//    @Override
+//    public String getDetails() {
+//        return null;
+//    }
 
 }

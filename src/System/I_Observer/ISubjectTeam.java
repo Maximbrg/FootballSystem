@@ -5,18 +5,16 @@ import System.Users.User;
 
 public interface ISubjectTeam {
 
-    void registerPlayerToAlert(IObserverTeam player);
-    void registerFieldToAlert(IObserverTeam field);
-    void registerTeamManagerToAlert(IObserverTeam teamManager);
-    void registerCouchToAlert(IObserverTeam couch);
+    void registerSystemManagerToAlert(IObserverTeam systemManager);
+    void registerAlert(IObserverTeam obs);
 
-    void removeAlertToPlayer(IObserverTeam player);
-    void removeAlertToField(IObserverTeam field);
-    void removeAlertToTeamManager(IObserverTeam teamManager);
-    void removeAlertToCouch(IObserverTeam couch);
 
-    void notifyPlayer ();
-    void notifyField ();
-    void notifyTeamManager ();
-    void notifyCouch ();
+    void removeAlertToSystemManager(IObserverTeam systemManager);
+    void removeAlert(IObserverTeam obs);
+
+
+    void notifySystemManager ();
+
+    void notifyTeamOwnersAndManager();
+
 }

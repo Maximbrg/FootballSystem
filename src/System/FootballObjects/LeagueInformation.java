@@ -77,7 +77,7 @@ public class LeagueInformation {
         List <Referee> assistentsReferee= new ArrayList<>();
 
         for(Referee referee:referees){
-            if(referee.getType()== RefereeType.MainReferee){
+            if(referee.getRefereeType()== RefereeType.MainReferee){
                 mainReferee.add(referee);
             }
             else {

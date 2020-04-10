@@ -21,6 +21,9 @@ public class Controller {
     private List<Team> teams;
     private List<Season> seasons;
 
+
+    private HashMap<String,User> removedUser;
+
     //Constructor
 
     private static Controller ourInstance = new Controller();
@@ -32,6 +35,9 @@ public class Controller {
     private Controller() {
         users = new HashMap<>();
         leagues =  new LinkedList<>();
+        removedUser =  new HashMap<>();
+        teams=new LinkedList<>();
+        seasons=new LinkedList<>();
     }
 
     //Methods
@@ -55,13 +61,14 @@ public class Controller {
     } //UC-3
 
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
-        System.out.println("log file : successful sign up.");
         User user = users.get(userName);
-        if(user != null) {
+        User user1 = removedUser.get(userName);
+        if(user != null || user != null) {
             throw new UserNameAlreadyExistException();
         }//more details
         Fan fan = new Fan(id,name, password,userName);
         users.put(fan.getUserName(),fan);
+        Log.getInstance().writeToLog("A new user signUp to the system. ("+fan.getId()+","+fan.getUserName()+").");
         return fan;
     } //UC-2
 
@@ -79,11 +86,11 @@ public class Controller {
         return referees;
     } //UC-4
 
-    public List<Couch> getAllCoach(){
-        List <Couch> Coachs = new LinkedList<>();
+    public List<Coach> getAllCoach(){
+        List <Coach> Coachs = new LinkedList<>();
         for(User user : users.values()){
-            if(user instanceof Couch){
-                Coachs.add((Couch)user);
+            if(user instanceof Coach){
+                Coachs.add((Coach)user);
             }
         }
         return Coachs;
@@ -115,7 +122,6 @@ public class Controller {
     public  HashMap<String,User> getUsers(){
         return users;
     }
-
     public void addUser(String s,User u){
         users.put(s,u);
     }
@@ -131,9 +137,39 @@ public class Controller {
         }
         return null;
     }
+    public HashMap<String, User> getRemovedUsers() {
+        return removedUser;
+    }
+
 
     public void addTeam(Team team){
         teams.add(team);
     }
 
+    /**
+     * add the removed users to a list of users
+     * @param userName unique nickname
+     */
+    public void removeUser(String userName) throws noSuchAUserNamedException {
+        if(users.get(userName)==null){
+            throw new noSuchAUserNamedException();
+        }
+        removedUser.put(userName,users.get(userName));
+        users.remove(userName);
+        Log.getInstance().writeToLog("User removed from the system. userName("+userName+").");
+    }
+
+    /**
+     * restart a removed user to the system
+     * @param userName
+     */
+    public void restartRemvoeUser(String userName) throws noSuchAUserNamedException {
+        if(removedUser.get(userName)==null){
+            throw new noSuchAUserNamedException();
+        }
+        users.put(userName,removedUser.get(userName));
+        removedUser.remove(userName);
+        Log.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
+
+    }
 }

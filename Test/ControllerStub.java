@@ -30,6 +30,7 @@ public class ControllerStub {
         //fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
         //cTest.signUp(10,"Hen Debi","123123","xyl");
 
+
     }
     @Test
     public void initSystemTest(){
@@ -89,7 +90,7 @@ public class ControllerStub {
         }
 
         cTest.logOut(fanLogOut);
-        assertEquals("INACTIVE",cTest.getUsers().get("ShmuelSG").getUserStatus().toString());
+        assertEquals("INACTIVE",cTest.getUsers().get("ShmuelSG").getStatus().toString());
 
     }
 
@@ -128,19 +129,20 @@ public class ControllerStub {
     }
     @Test
     public void getAllCoachTest(){
-        Couch couchTest= new Couch(208,"MaorMelichson","aa","maori1","maorit","CHampionLEague","Forward",null,150,null,10);
+        Coach couchTest= new Coach(208,"MaorMelichson","aa","maori1","maorit","CHampionLEague","Forward",null,150,null,10);
         cTest.addUser(couchTest.getUserName(),couchTest);
         int count =0;
-        for(Couch r:cTest.getAllCoach()){
+        for(Coach r:cTest.getAllCoach()){
             count++;
-            assertEquals("Couch",r.getClass().toString().substring(r.getClass().toString().length()-5));
+            assertEquals("Coach",r.getClass().toString().substring(r.getClass().toString().length()-5));
         }
         assertEquals(1,cTest.getAllCoach().size());
     }
     @Test
     public void getAllPlayersTest(){
-        Player playerTest= new Player(208,"MaorMelichson","aa","maori1","maorit",new Date(System.currentTimeMillis()),"Forward",null,150,null,10);
-        Player playerTest1= new Player(207,"ElyanivBarda","aa","maorit54","maorit",new Date(System.currentTimeMillis()),"Forward",null,150,null,10);
+        Team t=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Player playerTest= new Player(208,"MaorMelichson","aa","maori1","maorit",new Date(System.currentTimeMillis()),"Forward",100,t,200);
+        Player playerTest1= new Player(207,"ElyanivBarda","aa","maorit54","maorit",new Date(System.currentTimeMillis()),"Forward",100,t,10);
         Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee123");
         Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee1234");
         Fan fTest0= new Fan(201,"Itzik","h124","ItzikHaGadol54");
@@ -168,15 +170,58 @@ public class ControllerStub {
 
     @Test
     public void addUserTest(){
-        Player playerTest= new Player(208,"MaorMelichson","aa","shoshana","maorit",new Date(System.currentTimeMillis()),"Forward",null,150,null,10);
+        Team t=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Player playerTest= new Player(208,"MaorMelichson","aa","shoshana","maorit",new Date(System.currentTimeMillis()),"Forward",10,t,10);
         cTest.addUser(playerTest.getUserName(),playerTest);
         assertEquals(playerTest.getId(),cTest.getUsers().get("shoshana").getId());
     }
     @Test
     public void getSeasonTest(){
-        cTest.addSeason(new Season(2019,null));
-        assertEquals(2019,cTest.getSeason("2019").getYear());
+        Season s= new Season(2019,null);
+        cTest.addSeason(s);
+        assertEquals("2019",cTest.getSeason("2019").getYear());
     }
 
+    @Test
+    public void removeUserTest(){
+        Fan fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
+        cTest.addUser(fTest.getUserName(),fTest);
+        //remove user that not exist
+        try {
+            cTest.removeUser(fTest.getUserName()+"blabla");
+        } catch (noSuchAUserNamedException e) {
+            assert(true);
+        }
+        //remove exist user
+        try {
+            cTest.removeUser(fTest.getUserName());
+            assertNull(cTest.getUsers().get(fTest.getUserName()));
+            assertNotNull(cTest.getRemovedUsers().get(fTest.getUserName()));
+        } catch (noSuchAUserNamedException e) {
+            assert(false);
+        }
+
+    }
+    @Test
+    public void restartRemvoedUserTest(){
+        Fan fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
+
+        cTest.addUser(fTest.getUserName(),fTest);
+        //user name not found
+        try {
+            cTest.removeUser(fTest.getUserName() +"blabla");
+        } catch (noSuchAUserNamedException e) {
+            assert(true);
+        }
+        try {
+            cTest.removeUser(fTest.getUserName());
+            assertNotNull(cTest.getRemovedUsers().get(fTest.getUserName()));
+            assertNull(cTest.getUsers().get(fTest.getUserName()));
+        } catch (noSuchAUserNamedException e) {
+            assert(false);
+        }
+
+
+    }
 
 }

@@ -3,6 +3,7 @@ package System.FootballObjects.Event;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import System.Log;
 
 public abstract class AEvent {
     private static int ID=1;
@@ -16,6 +17,7 @@ public abstract class AEvent {
         this.minute = minuteInTheGame;
         id=ID++;
         date=new Date(System.currentTimeMillis());
+        Log.getInstance().writeToLog("New Event was created. ("+id+")");
     }
 
     public int getId() {

@@ -1,8 +1,10 @@
-package System.PersonalPages;
 
+package System.PersonalPages;
+import System.Exeptions.PersonalPageAlreadyExist;
 public interface IPageAvailable {
 
+    PersonalPage getPersonalPage();
     String showDetails();
     String getName();
-    int getId();
+    PersonalPage createPersonalPage() throws PersonalPageAlreadyExist;
 }
