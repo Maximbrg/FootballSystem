@@ -1,3 +1,4 @@
+/*
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.FootballObjects.League;
@@ -77,3 +78,4 @@ public class FootballAssosiationTest {
     public void manuallChangingReferee() {
     }
 }
+*/

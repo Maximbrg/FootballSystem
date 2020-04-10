@@ -11,10 +11,11 @@ public class SeasonTest {
     Season season;
 
     @Before
+    /*
     public void setUp() throws Exception {
         season=new Season(2000,null);
     }
-
+*/
     @Test
     public void getGames() {
 

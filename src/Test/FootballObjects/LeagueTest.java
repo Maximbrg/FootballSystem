@@ -1,3 +1,4 @@
+/*
 import System.Enum.TeamStatus;
 import System.FootballObjects.League;
 import System.FootballObjects.Team.Team;
@@ -25,3 +26,5 @@ public class LeagueTest  {
         assertEquals(PremierLeague.getTeams().get(0).getName(),"Liverpool");
     }
 }
+
+*/

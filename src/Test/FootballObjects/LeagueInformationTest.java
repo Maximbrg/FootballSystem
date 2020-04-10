@@ -1,3 +1,4 @@
+/*
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.FootballObjects.Game;
@@ -139,3 +140,4 @@ public class LeagueInformationTest {
     public void editScoreSchedulingPolicy() {
     }
 }
+*/
