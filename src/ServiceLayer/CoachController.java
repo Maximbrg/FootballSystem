@@ -20,9 +20,9 @@ public class CoachController extends MainUserController {
         return coach.getDetails();
     }
 
-    public void setDetails(Coach coach, int id, String name, String password, String userName,String preparation){
+    public void setDetails(Coach coach, int id, String name, String password,String preparation){
         FanController fanController = FanController.getInstance();
-        fanController.editDetails(coach,id,name,password,userName);
+        fanController.editDetails(coach,id,name,password);
         if(!preparation.equals("")){
             coach.setPreparation(preparation);
         }

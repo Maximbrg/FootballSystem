@@ -4,9 +4,12 @@ import System.Exeptions.PersonalPageAlreadyExist;
 import System.PersonalPages.PersonalPage;
 import System.Users.Fan;
 import System.Users.Player;
+import System.Users.SystemManager;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import System.Report;
+import System.Controller;
 
 import java.util.Date;
 
@@ -46,5 +49,14 @@ public class FanTest {
         for (int i = 0; i <fTest.getFollowPages().size() ; i++) {
             assertNotEquals(playerTest1.getPersonalPage(),fTest.getFollowPages().get(i));
         }
+
+    }
+
+    @Test
+    public void submitReportTest(){
+//        SystemManager s=new SystemManager(1,"aa","bb","sys");
+//        Controller.getInstance().addUser(fTest.getUserName(),fTest);
+//        fTest.submitReport("HelloWorld!");
+
     }
 }

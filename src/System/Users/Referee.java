@@ -1,6 +1,7 @@
 //<editor-fold desc="imports">
 package System.Users;
 import System.FootballObjects.Event.*;
+import System.FootballObjects.LeagueInformation;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
 import System.Log;
@@ -149,17 +150,21 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @return
      */
     public List<Game> getGamesForSeason(Season season){
-        List<Game> seasonGames= season.getGames();
+        List<LeagueInformation> seasonGames= season.getLeagueInformations();
         List<Game> relevantGames= new ArrayList<>();
 
         for (int i = 0; i <seasonGames.size() ; i++) {
-            Game game=seasonGames.get(i);
-            if(game.getMainReferee().getUserName()==getUserName()){
-                relevantGames.add(game);
-            }else if(game.getAssistantRefereeOne().getUserName()==getUserName()){
-                relevantGames.add(game);
-            }else if(game.getAssistantRefereeTwo().getUserName()==getUserName()){
-                relevantGames.add(game);
+            LeagueInformation leagueInformation=seasonGames.get(i);
+
+            for (int j = 0; j <leagueInformation.getGames().size() ; j++) {
+                Game game = leagueInformation.getGames().get(j);
+                if (game.getMainReferee().getUserName() == getUserName()) {
+                    relevantGames.add(game);
+                } else if (game.getAssistantRefereeOne().getUserName() == getUserName()) {
+                    relevantGames.add(game);
+                } else if (game.getAssistantRefereeTwo().getUserName() == getUserName()) {
+                    relevantGames.add(game);
+                }
             }
         }
         //to check it

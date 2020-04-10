@@ -15,6 +15,10 @@ public class Season implements IShowable {
     private List<LeagueInformation> leagueInformations;
 
 
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
+
     //<editor-fold desc="constractur">
     public Season(int year){
         this.year=year;

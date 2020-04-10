@@ -21,6 +21,11 @@ public class LeagueInformation {
     private List<Game> games;
 
     ITeamAllocatePolicy iTeamAllocatePolicy;
+
+    public List<Game> getGames() {
+        return games;
+    }
+
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
     int LOSS;
@@ -209,7 +214,4 @@ public class LeagueInformation {
 
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
-    public List<Game> getGames() {
-        return games;
-    }
 }

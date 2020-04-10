@@ -76,7 +76,7 @@ public class Fan extends User implements IObserverGame {
      * @param reportTxt
      * @return report
      */
-    public Report sumbitReport(String reportTxt){
+    public Report submitReport(String reportTxt){
         Report report= new Report(this, reportTxt);
         myReports.put(report.getId(), report);
         SystemManager.addReport(report);

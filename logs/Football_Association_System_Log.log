@@ -830,3 +830,37 @@ Fri Apr 10 14:20:23 IDT 2020 Users.User: shmulik(id: 205) update his status
 Fri Apr 10 14:20:23 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
 Fri Apr 10 14:22:15 IDT 2020 : !!!TEST!!!
 Fri Apr 10 14:22:30 IDT 2020 : !!!TEST!!!
+Fri Apr 10 17:38:14 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:38:14 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:38:14 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:38:14 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:38:38 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:39:00 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:39:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:39:04 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:39:04 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:39:04 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:39:24 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:39:24 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:39:24 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:39:24 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:39:39 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:39:39 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:39:39 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:39:39 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:41:06 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:41:06 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:41:06 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:41:06 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:41:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:41:51 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:41:51 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:41:51 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 17:42:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 17:42:04 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 17:42:04 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 17:42:04 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Fri Apr 10 18:02:31 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW).
+Fri Apr 10 18:02:31 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Fri Apr 10 18:02:31 IDT 2020 Controller: User log in to the system. id(205695612).
+Fri Apr 10 18:02:31 IDT 2020 Users.FootballAssosiation: Add new referee. id:1

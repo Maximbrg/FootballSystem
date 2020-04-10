@@ -126,8 +126,8 @@ public class GustControllerTest {
 
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
-        FootballAssosiation assosiation = new FootballAssosiation(205695612,"Max","123","MaxFTW");
-        assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
+        FootballAssosiation association = new FootballAssosiation(205695612,"Max","123","MaxFTW");
+        association.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
         GustController gustController = new GustController();
         List<IShowable> iShowables =  gustController.getInfoToShow("Referee");
         String string = iShowables.get(0).getName()+iShowables.get(0).getType();
