@@ -42,12 +42,10 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     /**
      * Initialize variables
      * @param name
-     * @param field
-     * @param income
-     * @param expense
+
      */
     //<editor-fold desc="Constructor">
-    public Team(String name/*, Field field, int income, int expense,*/,TeamOwner teamOwner) {//********************
+    public Team(String name,TeamOwner teamOwner) {
         this.name = name;
         this.field = null;
         this.teamStatus = TeamStatus.Active;
@@ -62,26 +60,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.gamesOfTeams= new ArrayList<>();
         this.players = new LinkedList<>();
     }
-    //</editor-fold>
-
-    /**
-     * Another constructor
-     * @return
-     */
-    //<editor-fold desc="Another constructor">
-    public Team(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, LinkedList<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport) {
-        this.name = name;
-        this.teamStatus = teamStatus;
-        this.personalPage = personalPage;
-        this.assets = assets;
-        this.teamManagersList = teamManagersList;
-        this.teamOwners = teamOwnersWhichappointed;
-        this.field = field;
-        this.income = income;
-        this.expense = expense;
-        this.financialReport = financialReport;
-    }
-    //</editor-fold>
 
     //<editor-fold desc="Getters">
     public int getId() {
@@ -132,6 +110,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     }
 
     public int getExpense() {
+        int sum =0;
+        sum+=getPaymentSalary();
+        sum+=field.getMaintenanceCost();
+
+
         return expense;
     }
 
@@ -285,6 +268,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     } //UC-17
 
+    public void addIncome(int income){
+        this.income+=income;
+        Log.writeToLog("A new income added to the incomes of the team id: "+ getId());
+
+    }
 
     /**
      *Team can have more then one manager, this function add a new manager to the list of the managers
@@ -313,8 +301,8 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void closeTeam(){
         this.setTeamStatus(TeamStatus.Close);
-        notifySystemManager();
-        notifyTeamOwnersAndManager();//needs another notify for this
+        notifySystemManager("Team Closed :"+ getName());
+        notifyTeamOwnersAndManager("Team Closed :"+ getName());//needs another notify for this
 
     } //UC-22
 
@@ -327,8 +315,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         for (Asset a:assets) {
             a.resetMyTeam();
         }
-        notifyTeamOwnersAndManager();
-
+        notifyTeamOwnersAndManager("Team Closed permanently:"+ getName());
+        for(IObserverTeam ioT:iObserverTeamListForSystemManagers){
+            ioT.removeAlert(this);
+        }
+        iObserverTeamListForSystemManagers=new LinkedList<>();
     }
 
     /**
@@ -403,9 +394,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * This function update each observer of this team observers
      */
     @Override
-    public void notifySystemManager() {
+    public void notifySystemManager(String msg) {
         for(IObserverTeam observerTeam:this.iObserverTeamListForSystemManagers){
-            observerTeam.update();
+            observerTeam.update(msg);
         }
     }
 
@@ -413,9 +404,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * This function update the teamOwner and the system manager in changes of this team
      */
     @Override
-    public void notifyTeamOwnersAndManager() {
+    public void notifyTeamOwnersAndManager(String msg) {
         for (IObserverTeam observerTeam:this.iObserverTeamListForTeamOwnersAndManagers){
-            observerTeam.update();
+            observerTeam.update(msg);
         }
     }
 

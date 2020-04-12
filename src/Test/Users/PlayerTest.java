@@ -32,7 +32,7 @@ public class PlayerTest {
 
     @Test
     public void editAssetValueTest() {
-        p1.setAssetValue(555);
+        p1.editAssetValue(555);
         assertTrue(p1.getAssetValue()==555);
     }
 

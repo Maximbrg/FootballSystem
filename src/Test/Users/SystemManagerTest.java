@@ -14,8 +14,6 @@ import System.Report;
 import java.awt.*;
 import java.util.LinkedList;
 
-
-
 import java.awt.*;
 
 public class SystemManagerTest {
@@ -28,7 +26,7 @@ public class SystemManagerTest {
     @Before
     public void init(){
         systemMTest=new SystemManager(111,"Sys","123","bestSystemManager");
-        tTest=new Team("HBS", TeamStatus.Active,null,new LinkedList<>(),null,null,null,100,2000,null);
+        tTest=new Team("HBS",null);
          reportTest=new Report(new Fan(1234,"Avi","abc1234","theBigAvi"),"You are the best SystemManger in the world");
 
     }
@@ -57,7 +55,7 @@ public class SystemManagerTest {
 
     @Test
     public void createTeamTest(){
-        systemMTest.createTeam("Hap123",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        systemMTest.createTeam("Hap123",null);
         assertEquals("Hap123",Controller.getInstance().getAllTeams().get(0).getName());
     }
 

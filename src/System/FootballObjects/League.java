@@ -21,7 +21,7 @@ public class League implements IShowable {
         this.teams= new ArrayList<>();
         this.leagueInformations= new ArrayList<>();
         for (Team t : teams) {
-            teams.add(t);
+            this.teams.add(t);
         }
     }
 

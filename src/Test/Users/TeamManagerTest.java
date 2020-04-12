@@ -31,7 +31,7 @@ public class TeamManagerTest {
 
     @Test
     public void editAssetValueTest() {
-        t1.setAssetValue(555);
+        t1.editAssetValue(555);
         assertTrue(t1.getAssetValue()==555);
     }
 

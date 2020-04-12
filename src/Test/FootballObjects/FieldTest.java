@@ -27,7 +27,7 @@ public class FieldTest {
 
     @Test
     public void editAssetValueTest() {
-        f1.setAssetValue(555);
+        f1.editAssetValue(555);
         assertTrue(f1.getAssetValue()==555);
     }
 

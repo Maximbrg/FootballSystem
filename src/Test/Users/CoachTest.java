@@ -30,7 +30,7 @@ public class CoachTest {
 
     @Test
     public void editAssetValueTest() {
-        c1.setAssetValue(555);
+        c1.editAssetValue(555);
         assertTrue(c1.getAssetValue()==555);
     }
 

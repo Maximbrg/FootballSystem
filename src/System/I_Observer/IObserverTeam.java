@@ -2,7 +2,7 @@ package System.I_Observer;
 
 public interface IObserverTeam {
 
-    void update();
+    void update(String s);
     void registerAlert(ISubjectTeam iSubjectTeam);
     void removeAlert(ISubjectTeam iSubjectTeam) ;
 }

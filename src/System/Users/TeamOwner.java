@@ -1,6 +1,7 @@
 package System.Users;
 //<editor-fold desc="imports">
 import System.Exeptions.StillNoAppointedOwner;
+import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
 import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
@@ -140,9 +141,15 @@ public class TeamOwner extends User implements IObserverTeam {
      * Restart team status - reopen team
      * @param team - to restart
      */
-    public void RestartTeam(Team team){
-        team.setTeamStatus(TeamStatus.Active);
-
+    public void RestartTeam(Team team) throws TeamStatusException {
+        if(team.getTeamStatus()==TeamStatus.Close) {
+            team.setTeamStatus(TeamStatus.Active);
+            team.notifyTeamOwnersAndManager(getName() + " was open again.");
+            Log.getInstance().writeToLog(getName() + " was open again");
+        }else{
+            Log.getInstance().writeToLog(getName() + " try to restart a open/permanently team");
+            throw new TeamStatusException();
+        }
     } //UC-23
 
     /**
@@ -165,7 +172,8 @@ public class TeamOwner extends User implements IObserverTeam {
 
     //<editor-fold desc="Override Methods">
     @Override
-    public void update() {
+    public void update(String msg) {
+        Log.getInstance().writeToLog("TeamOwner was updated about :"+msg+". id's TeamOwner:"+getId());
 
     }
 

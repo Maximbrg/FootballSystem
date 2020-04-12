@@ -17,14 +17,12 @@ public class Controller {
 
     private HashMap<String,User> users;
     private List<League> leagues;
-   // private Season currentSeason; //need to update it every year
     private List<Team> teams;
     private List<Season> seasons;
     private List<Field> fields;
     private HashMap<String,User> removedUser;
 
-    //Constructor
-
+    //<editor-fold desc="Constructor">
     private static Controller ourInstance = new Controller();
 
     public static Controller getInstance() {
@@ -39,12 +37,54 @@ public class Controller {
         seasons = new LinkedList<>();
         fields = new LinkedList<>();
     }
+    //</editor-fold>
+    //<editor-fold desc="getters">
+    public List<League> getAllLeagues(){ //UC-4
+        return leagues;
+    } //UC-4
+    public List<Team> getAllTeams(){
+        return teams;
+    } //UC-4
+    public List<Season> getAllSeasons(){
+        return seasons;
+    } //UC-4
+    public  HashMap<String,User> getUsers(){
+        return users;
+    }
+    public void addUser(String s,User u){
+        users.put(s,u);
+    }
+    public void addSeason(Season season){
+        seasons.add(season);
+    }
+    //</editor-fold>
+    //<editor-fold desc="setters">
+    public void setUsers(HashMap<String, User> users) {
+        this.users = users;
+    }
 
-    //Methods
+    public void setLeagues(List<League> leagues) {
+        this.leagues = leagues;
+    }
 
+    public void setTeams(List<Team> teams) {
+        this.teams = teams;
+    }
+
+    public void setSeasons(List<Season> seasons) {
+        this.seasons = seasons;
+    }
+
+    public void setFields(List<Field> fields) {
+        this.fields = fields;
+    }
+
+    public void setRemovedUser(HashMap<String, User> removedUser) {
+        this.removedUser = removedUser;
+    }
+    //</editor-fold>
+    //<editor-fold desc="methods">
     public void initSystem(){ //UC-1
-        System.out.println("log file : successful connection to accounting system.");
-        System.out.println("log file : successful connection to tax system.");
     } //UC-1
 
     public User login(String userName , String password) throws WrongPasswordException , NoSuchAUserNamedException { //UC-3
@@ -60,6 +100,11 @@ public class Controller {
         throw new WrongPasswordException();
     } //UC-3
 
+    public void logOut(User user){ //UC-6
+        user.setStatus(UserStatus.INACTIVE);
+        Log.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
+    } //UC-6
+
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
         User user = users.get(userName);
         User user1 = removedUser.get(userName);
@@ -72,6 +117,14 @@ public class Controller {
         return fan;
     } //UC-2
 
+
+    public void addField(Field field){
+        fields.add(field);
+    }
+
+    public void removeField(Field field){
+        fields.remove(field);
+    }
     /**
      * Checks if user name exist in the system
      * @param userName
@@ -114,9 +167,7 @@ public class Controller {
         return false;
     }
 
-    public List<League> getAllLeagues(){ //UC-4
-        return leagues;
-    } //UC-4
+
 
     public List<Referee> getAllReferee(){
         List <Referee> referees = new LinkedList<>();
@@ -138,39 +189,6 @@ public class Controller {
         return Coachs;
     } //UC-4
 
-    public List<Player> getAllPlayers(){
-        List <Player> players = new LinkedList<>();
-        for(User user : users.values()){
-            if(user instanceof Player){
-                players.add((Player)user);
-            }
-        }
-        return players;
-    } //UC-4
-
-    public List<Team> getAllTeams(){
-        return teams;
-    } //UC-4
-
-    public List<Season> getAllSeasons(){
-        return seasons;
-    } //UC-4
-
-    public void logOut(User user){ //UC-6
-        user.setStatus(UserStatus.INACTIVE);
-        Log.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
-    } //UC-6
-
-    public  HashMap<String,User> getUsers(){
-        return users;
-    }
-    public void addUser(String s,User u){
-        users.put(s,u);
-    }
-
-    public void addSeason(Season season){
-        seasons.add(season);
-    }
 
     public void addLeague(League league){leagues.add(league);}
 
@@ -185,9 +203,10 @@ public class Controller {
         return removedUser;
     }
 
+
     public void addTeam(Team team){
         teams.add(team);
-    } //fff
+    }
 
     /**
      * add the removed users to a list of users
@@ -219,13 +238,32 @@ public class Controller {
 
     public void removeTeam(Team team){ teams.remove(team); }
 
-    public void addField(Field field){
-        fields.add(field);
+
+
+    public List<Player> getAllPlayers(){
+        List <Player> players = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Player){
+                players.add((Player)user);
+            }
+        }
+        return players;
+    } //UC-4
+
+    public List<SystemManager> getAllSystemManager() {
+        List <SystemManager> sysList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof SystemManager){
+                sysList.add((SystemManager) user);
+            }
+        }
+        return sysList;
     }
 
-    public void removeField(Field field){
-        fields.remove(field);
-    }
+    //</editor-fold>
+
+
+
 
 
 

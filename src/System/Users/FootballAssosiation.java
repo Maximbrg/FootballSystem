@@ -6,10 +6,11 @@ import System.Controller;
 import System.BudgetRules;
 import System.FootballObjects.Game;
 import System.FootballObjects.LeagueInformation;
+import System.FootballObjects.Team.Team;
 import System.Log;
 import System.Exeptions.*;
-import System.Enum.UserStatus;
 import System.Enum.RefereeType;
+import System.FinancialReport;
 
 import java.util.*;
 
@@ -107,10 +108,13 @@ public class FootballAssosiation extends User {
         Controller controller = Controller.getInstance();
         String userName = referee.getUserName();
 
+        for(Game g:referee.getGames()) {
+            referee.removeAlert(g);
+        }
+
         if (referee.getFutureGames().size() > 0) {
             throw new IllegalInputException();
         }
-
         controller.removeUser(userName);
     }
 
@@ -152,6 +156,20 @@ public class FootballAssosiation extends User {
     public void getSeasonFromController(String year){
         controller.getSeason(year);
     }
+
+    /**
+     * financial report by the order of the association football
+     * @param team to get financial report about it
+     * @return
+     */
+    public FinancialReport getFinancialReport(Team team){
+        Log.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
+        return team.getFinancialReport();
+    }
+
+
+
+
     //public void addBudgetRule(String rule){} //UC-33
 
     //public void editGameSchedulingPolicy(ITeamAllocatePolicy iTeamAllocatePolicy){} //UC-34

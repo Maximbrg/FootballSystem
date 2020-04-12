@@ -10,6 +10,7 @@ public class FinancialReport {
     private int income;
     private int expanse;
 
+    //<editor-fold desc="constructor">
     public FinancialReport(Team team){
         this.team=team;
         maintenanceFieldCost=team.getField().getMaintenanceCost();
@@ -17,8 +18,7 @@ public class FinancialReport {
         expanse=team.getExpense();
         payingSalary=team.getPaymentSalary();
     }
-
-
+    //</editor-fold>
     //<editor-fold desc="getters">
 
     public int getIncomeFromGame() {

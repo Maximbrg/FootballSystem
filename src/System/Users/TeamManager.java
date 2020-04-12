@@ -123,8 +123,8 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     }
 
     @Override
-    public void update() {
-
+    public void update(String msg) {
+        Log.getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
     }
 
     /**

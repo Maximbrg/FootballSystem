@@ -50,7 +50,7 @@ public class Report {
     } //UC-27
     //</editor-fold>
 
-    //Methods
+    //<editor-fold desc="methods">
     /**
      * Answer to report
      * @param answer
@@ -60,5 +60,6 @@ public class Report {
         Log.getInstance().writeToLog("system manager receive to report "+ id);
 
     } //UC-27
+    //</editor-fold>
 
 }

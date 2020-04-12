@@ -10,16 +10,10 @@ import java.util.List;
 public class Season implements IShowable {
 
     private int year;
-    //private String result;
-
     private List<LeagueInformation> leagueInformations;
 
 
-    public List<LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
-    }
-
-    //<editor-fold desc="constractur">
+    //<editor-fold desc="constructor">
     public Season(int year){
         this.year=year;
         leagueInformations=new ArrayList<>();
@@ -33,6 +27,10 @@ public class Season implements IShowable {
     }
     public int getIntYear() {
         return year;
+    }
+
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
     }
 
 
@@ -55,6 +53,7 @@ public class Season implements IShowable {
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
+
 
 
     //Methods

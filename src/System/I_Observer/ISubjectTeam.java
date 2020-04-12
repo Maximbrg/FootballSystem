@@ -13,8 +13,8 @@ public interface ISubjectTeam {
     void removeAlert(IObserverTeam obs);
 
 
-    void notifySystemManager ();
+    void notifySystemManager (String s);
 
-    void notifyTeamOwnersAndManager();
+    void notifyTeamOwnersAndManager(String s);
 
 }

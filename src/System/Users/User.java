@@ -28,7 +28,7 @@ public abstract class User extends Guest {
         this.password = password;
         this.userName = userName;
         this.searchHistory= new LinkedList<>();
-        this.status= UserStatus.ACTIVE;
+        this.status= UserStatus.INACTIVE;
     }
     //</editor-fold>
 
