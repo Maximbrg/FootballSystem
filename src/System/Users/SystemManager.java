@@ -3,6 +3,7 @@ package System.Users;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import System.Asset.Asset;
 import System.Enum.TeamStatus;
@@ -93,7 +94,7 @@ public class SystemManager extends User {
 
     }
 
-    public void createTeam(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, List<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport ){
+    public void createTeam(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, LinkedList<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport ){
         Team newTeam = new Team(name,teamStatus,personalPage,assets,teamManagersList,teamOwnersWhichappointed,field,income,expense,financialReport);
         Controller.getInstance().addTeam(newTeam);
         Log.getInstance().writeToLog("New team added to the system. ("+newTeam.getId()+", "+newTeam.getName()+")");

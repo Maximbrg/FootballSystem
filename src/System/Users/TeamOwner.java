@@ -1,5 +1,6 @@
 package System.Users;
 //<editor-fold desc="imports">
+import System.Exeptions.StillNoAppointedOwner;
 import System.FinancialReport;
 import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
@@ -8,30 +9,37 @@ import System.I_Observer.ISubjectTeam;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import System.Log;
 //</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
 
-    private String name;
     private Coach selfCoach; // if he also Coach otherwise null
     private TeamManager selfTeamManager; // if he also TeamManager otherwise null
     private Player selfPlayer; // if he also Player otherwise null
     private int salary;
     private List<ISubjectTeam> subjectTeam;
     private List<Team> teamList;
-    private HashMap<Team,List<TeamOwner>> teamOwnersWhichIappointed;
+    private HashMap<Team,LinkedList<TeamOwner>> teamOwnersWhichIappointed;
 
+    /**
+     * Initialize variables
+     * @param id
+     * @param password
+     * @param userName
+     * @param name
+     * @param salary
+     */
     //<editor-fold desc="Constructor">
-    public TeamOwner(int id, String password, String userName, TeamStatus status, String name, Coach selfCoach, TeamManager selfTeamManager, Player selfPlayer, int salary, List<Team> teamList, HashMap<Team, List<TeamOwner>> teamOwnersWhichIappointed) {
+    public TeamOwner(int id, String name, String password, String userName,int salary) {
         super(id,name, password, userName);
-        this.name = name;
-        this.selfCoach = selfCoach;
-        this.selfTeamManager = selfTeamManager;
-        this.selfPlayer = selfPlayer;
+        this.selfCoach = null;
+        this.selfTeamManager = null;
+        this.selfPlayer = null;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
-        this.teamList = teamList;
-        this.teamOwnersWhichIappointed = teamOwnersWhichIappointed;
+        this.teamList = new LinkedList<>();
+        this.teamOwnersWhichIappointed = new HashMap<>();
     }
     //</editor-fold>
 
@@ -85,34 +93,51 @@ public class TeamOwner extends User implements IObserverTeam {
 
     //<editor-fold desc="Methods">
     /**
-     *
+     * This function allows the owner to appoint a group of other owners according to UC 18.
      * @param team
      * @param newTeamOwner
      */
     public void addTeamOwner(Team team, TeamOwner newTeamOwner){
-        List<TeamOwner> teamOwnersList=team.getTeamOwnerList(this);
-        teamOwnersList.add(newTeamOwner);
-        team.setListOfOwnersWhichIappoint(this,teamOwnersList);
-        this.teamOwnersWhichIappointed.remove(team);
+        newTeamOwner.addTeamToMyTeamList(team);
+        LinkedList<TeamOwner> teamOwnersList=this.teamOwnersWhichIappointed.get(team);
+        if(teamOwnersList!=null)
+            teamOwnersList.add(newTeamOwner);
+        else {
+            teamOwnersList = new LinkedList<TeamOwner>();
+            teamOwnersList.add(newTeamOwner);
+        }
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
+        team.setListOfOwnersWhichIappoint(this,teamOwnersWhichIappointed.get(team));
+
+        Log.writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
+        +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
+                " , owner id : " + newTeamOwner.getId()+" .");
+
     }//---UC 18
 
     /**
-     *
+     * This function allows the owner to remove team owner which his appointed - according to UC 19.
      * @param team
      * @param teamOwnerToRemove
      */
-    public void removeTeamOwner(Team team, TeamOwner teamOwnerToRemove){
-        List<TeamOwner> teamOwnersList=team.getTeamOwnerList(this);
+    public void removeTeamOwner(Team team, TeamOwner teamOwnerToRemove) throws StillNoAppointedOwner {
+        LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerList(this);
+        if(teamOwnersList!=null && teamOwnersList.size()!=0){
         teamOwnersList.remove(teamOwnerToRemove);
         team.setListOfOwnersWhichIappoint(this,teamOwnersList);
         this.teamOwnersWhichIappointed.remove(team);
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
+        Log.writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
+                    +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was removed : "+ teamOwnerToRemove.getName()+
+                    " , owner id : " + teamOwnerToRemove.getId()+" .");
+        }
+        else
+            throw new StillNoAppointedOwner();
     }//---UC 19
 
 
     /**
-     * restart a team status - open a team
+     * Restart team status - reopen team
      * @param team - to restart
      */
     public void RestartTeam(Team team){
@@ -120,13 +145,21 @@ public class TeamOwner extends User implements IObserverTeam {
     } //UC-23
 
     /**
-     * team owner create financial report
+     * Team owner create financial report
      * @param team to produce financial report
      */
-    public void getFinancialReport(Team team){
+    public FinancialReport getFinancialReport(Team team){
         FinancialReport fReport = new FinancialReport(team);
         team.setFinancialReport(fReport);
-    } //UC-24 /* need to open a class of financial reports and store their the financial reports and that all football association can view it */
+        Log.writeToLog("A new financial report was set to team : "+ team.getName()+" , id :"+ team.getId());
+        return fReport;
+    } //UC-24
+
+    public void addTeamToMyTeamList(Team t){
+        this.teamList.add(t);
+        Log.writeToLog("Team : "+ t.getName()+" , id :"+ t.getId()+ "was added to the teams list of : "+ this.getName()+
+                " , id :"+ this.getId());
+    }
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
