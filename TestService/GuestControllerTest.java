@@ -1,16 +1,20 @@
 import ServiceLayer.GuestController;
 import ServiceLayer.GuestController;
 import System.Enum.RefereeType;
+import System.Enum.SearchCategory;
 import System.Enum.TeamStatus;
 import System.Enum.UserStatus;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Team.Team;
+import System.Searcher.ASearchStrategy;
+import System.Searcher.SearchByCategory;
 import System.Users.*;
 import org.junit.*;
 import System.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -156,7 +160,7 @@ public class GuestControllerTest {
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
         FootballAssosiation assosiation = new FootballAssosiation(205695612,"Max","123","MaxFTW");
-        Team t=new Team("Hap", TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Team t=new Team("Hap",null);
         Controller.getInstance().addTeam(t);
         assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
         GuestController gustController = new GuestController();
@@ -166,9 +170,41 @@ public class GuestControllerTest {
         iShowables =  gustController.getInfoToShow("Team");
         string = iShowables.get(0).getName()+iShowables.get(0).getType();
         assertEquals("HapTeam",string);
-
-
-
-
     } //Test ID:    #3.1
+
+
+    @Test
+    public void searchShowablesTest(){
+        GuestController gustController = new GuestController();
+        Player p = new Player(12,"hende","abcd","xyl",null,"",100,150);
+        Controller.getInstance().addUser(p.getUserName(),p);
+        ASearchStrategy a=new SearchByCategory();
+        Fan f=new Fan(123,"aviki","","aviviki");
+        List<IShowable> list =gustController.searchShowables(f,a,SearchCategory.PLAYER,"xy");
+        assertEquals("hende",list.get(0).getName());
+        assertEquals("xy",f.getSearchHistory().get(0));
+    }
+    @Test
+    public void filterResultsTest(){
+        GuestController gustController = new GuestController();
+        Player p = new Player(12,"hende","abcd","poco",null,"",100,150);
+        Coach p2 = new Coach(12,"hendebi","abcd","shoco","","",10,20);
+        Controller.getInstance().addUser(p.getUserName(),p);
+        Controller.getInstance().addUser(p2.getUserName(),p2);
+        ASearchStrategy a=new SearchByCategory();
+        List<IShowable> listTest=new ArrayList<IShowable>();
+        listTest.add(p);
+        listTest.add(p2);
+        List<IShowable> list =gustController.filterResults(a,SearchCategory.PLAYER,listTest);
+        for(IShowable l:list){
+            if(l.getType()!="Player"){
+                assert(false);
+            }
+        }
+
+
+
+
+
+    }
 }

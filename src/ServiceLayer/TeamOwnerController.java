@@ -1,15 +1,13 @@
 package ServiceLayer;
 
+
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.NotHisTeamException;
 import System.FootballObjects.Field;
 import System.FootballObjects.Team.Team;
-import System.Users.Coach;
-import System.Users.Player;
+import System.Users.*;
 import System.*;
-import System.Users.TeamManager;
-import System.Users.TeamOwner;
 
 import java.util.Date;
 
@@ -24,23 +22,23 @@ public class TeamOwnerController extends MainUserController  {
     private TeamOwnerController() {
     }
 
-    public Player signup(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary){
-        Player player = new Player(id, name, password, userName, birthDate,  role,  assetValue,  salary) ;
-        Controller.getInstance().addUser(userName,player);
-        return player;
-    }
-
-    public Coach signup(int id, String name, String password, String userName, String preparation, String role){
-        Coach coach = new Coach(id, name, password, userName, preparation, role, 0,0 );
-        Controller.getInstance().addUser(userName,coach);
-        return coach;
-    }
-
-    public TeamManager signup(int id, String name, String password, String userName, String name1, Team myTeam){
-        TeamManager teamManager = new TeamManager(id, name, password, userName, 0,0 );
-        Controller.getInstance().addUser(userName,teamManager);
-        return teamManager;
-    }
+//    public Player signup(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary){
+//        Player player = new Player(id, name, password, userName, birthDate,  role,  assetValue,  salary) ;
+//        Controller.getInstance().addUser(userName,player);
+//        return player;
+//    }
+//
+//    public Coach signup(int id, String name, String password, String userName, String preparation, String role){
+//        Coach coach = new Coach(id, name, password, userName, preparation, role, 0,0 );
+//        Controller.getInstance().addUser(userName,coach);
+//        return coach;
+//    }
+//
+//    public TeamManager signup(int id, String name, String password, String userName, String name1, Team myTeam){
+//        TeamManager teamManager = new TeamManager(id, name, password, userName, 0,0 );
+//        Controller.getInstance().addUser(userName,teamManager);
+//        return teamManager;
+//    }
 
     public Field createField(int id, String name){
         Field field = new Field(id, name, 0, 0);
@@ -68,6 +66,32 @@ public class TeamOwnerController extends MainUserController  {
         }
     }
 
-   /* public void editAssetOfTeam(TeamOwner teamOwner, Asset asset, ) */
+    public void editAssetOfTeam(TeamOwner teamOwner, Team team,  Asset asset, int value) throws NotHisTeamException{
+        if(!teamOwner.getTeamList().contains(team)){
+            throw new NotHisTeamException();
+        }
+        asset.editAssetValue(value);
+    }
+
+    public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException{
+    }
+
+    public void removeTeamOwner(TeamOwner teamOwner, TeamOwner teamOwnerToRemove, Team team){
+
+    }
+
+    public void getMyTeamOwner(TeamOwner teamOwner, Team team){
+
+    }
+
+    public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager){
+
+    }
+
+    public void removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager){
+
+    }
+
+
 
 }

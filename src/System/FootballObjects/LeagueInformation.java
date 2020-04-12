@@ -21,6 +21,7 @@ public class LeagueInformation {
     private List<Game> games;
 
     ITeamAllocatePolicy iTeamAllocatePolicy;
+
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
     int LOSS;

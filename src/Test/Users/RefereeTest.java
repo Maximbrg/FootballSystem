@@ -4,10 +4,13 @@ import System.Enum.TeamStatus;
 import System.FootballObjects.Event.Goal;
 import System.FootballObjects.Event.YellowCard;
 import System.FootballObjects.Game;
+import System.FootballObjects.League;
+import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
 import System.PersonalPages.PersonalPage;
 import System.Users.Fan;
+import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import System.Users.TeamManager;
 import org.junit.*;
@@ -18,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
-
+import java.util.List;
 
 
 public class RefereeTest {
@@ -27,6 +30,7 @@ public class RefereeTest {
     Goal goal0,goal1;
     Date d1,d2;
     Team t,t2;
+    ArrayList<Referee> rList;
     @Before
     public void init(){
         rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
@@ -41,12 +45,17 @@ public class RefereeTest {
          d2=new Date(System.currentTimeMillis());
         d2.setHours(castHours+3);
         //</editor-fold>
-         t=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
-         t2=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+         t=new Team("Hap",null);
+         t2=new Team("Hap",null);
          g0 = new Game(d1,10,rTest1,rTest0,rTest2,t,t2);
          g1 = new Game(d2,10,rTest1,rTest0,rTest2,t,t2);
          goal0= new Goal(22);
          rTest0.addEventToLogEvent(g0,"Goal",22);
+         rList=new ArrayList<>();
+         rList.add(rTest1);
+         rList.add(rTest3);
+         rList.add(rTest0);
+         rList.add(rTest2);
          //goal1= new Goal(50);
     }
     @Test
@@ -108,26 +117,18 @@ public class RefereeTest {
     }
     @Test
     public void getGamesForSeasonTest(){
-        Date d11=new Date(2021-1900,6,15,10,10);
-        Date d22=new Date(2010-1900,6,15,10,10);
-        Date d3=new Date(2020-1900,7,15,10,10);
-        Date d4=new Date(2022-1900,8,15,10,10);
-        Game g00 = new Game(d11,10,rTest1,rTest0,rTest2,t,t2);
-        Game g11 = new Game(d22,10,rTest1,rTest0,rTest2,t,t2);
-        Game g2 = new Game(d3,10,rTest1,rTest0,rTest2,t,t2);
-        Game g3 = new Game(d4,10,rTest1,rTest0,rTest2,t,t2);
         ArrayList<Team> teamList=  new ArrayList<>();
         teamList.add(t);
         teamList.add(t2);
         Season s=new Season(2019);
-        s.getLeagueInformations().get(0);
-//        s.setGameToGames(g00);
-//        s.setGameToGames(g3);
-//        s.setGameToGames(g11);
-//        s.setGameToGames(g2);
-        assertEquals(g11.getId(),rTest1.getGamesForSeason(s).get(0).getId());
-        assertEquals(g2.getId(),rTest1.getGamesForSeason(s).get(1).getId());
-        assertEquals(g00.getId(),rTest1.getGamesForSeason(s).get(2).getId());
-        assertEquals(g3.getId(),rTest1.getGamesForSeason(s).get(3).getId());
+        League leaugueTest=new League("champions",teamList);
+        LeagueInformation lTest=new LeagueInformation(leaugueTest,s,new FootballAssosiation(123,"avile","345345","avileHaGadol"));
+        s.addLeagueInformation(lTest);
+        lTest.initLeagueInformation();
+        lTest.schedulingReferee(rList);
+        List<Game> gamesForRef=rList.get(0).getGamesForSeason(s);
+        assertEquals(rList.get(0).getId(),gamesForRef.get(0).getMainReferee().getId());
+        assertEquals(rList.get(0).getId(),gamesForRef.get(1).getMainReferee().getId());
+
     }
 }

@@ -17,9 +17,9 @@ public class OneGameAllocatePolicyTest extends OneGameAllocatePolicy {
     List<Game> games= new ArrayList<>();
     @Before
     public void init() throws Exception {
-        Team Arsenal= new Team("Arsenal", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-        Team Liverpool = new Team("Liverpool", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-        Team Chelsea= new Team("Chelsea", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
+        Team Arsenal= new Team("Arsenal", null);
+        Team Liverpool = new Team("Liverpool", null);
+        Team Chelsea= new Team("Chelsea", null);
         teams.add(Arsenal);
         teams.add(Liverpool);
         teams.add(Chelsea);

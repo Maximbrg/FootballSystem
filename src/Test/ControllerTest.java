@@ -40,25 +40,27 @@ public class ControllerTest {
 
     @Test
     public void loginTest() throws UserNameAlreadyExistException {
-        Controller.getInstance().signUp(205,"Itzik","h123","ItzikHaGadol");
+        Controller.getInstance().signUp(205,"Itzik","h123","ItzikHaGadol**");
         //try to login with wrong password
         try {
-            cTest.login("ItzikHaGadol","h124");
+            cTest.login("ItzikHaGadol**","h124");
         } catch (WrongPasswordException e) {
             assert(true);
         } catch (NoSuchAUserNamedException e) {
+            assert(false);
         }
 
         //login with wrong username
         try {
             cTest.login("ItzikHaGadol123","h123");
         } catch (WrongPasswordException e) {
+            assert(false);
         } catch (NoSuchAUserNamedException e) {
             assert(true);
         }
         //successful login
         try {
-            cTest.login("ItzikHaGadol","h123");
+            cTest.login("ItzikHaGadol**","h123");
         } catch (WrongPasswordException e) {
             assert(false);
         } catch (NoSuchAUserNamedException e) {
@@ -67,13 +69,13 @@ public class ControllerTest {
         //get the right user
         Fan f=null;
         try {
-            f=(Fan)cTest.login("ItzikHaGadol","h123");
+            f=(Fan)cTest.login("ItzikHaGadol**","h123");
         } catch (WrongPasswordException e) {
             e.printStackTrace();
         } catch (NoSuchAUserNamedException e) {
             e.printStackTrace();
         }
-        assertEquals(f.getId(),cTest.getUsers().get("ItzikHaGadol").getId());
+        assertEquals(f.getId(),cTest.getUsers().get("ItzikHaGadol**").getId());
     }
     @Test
     public void logoutTest(){
@@ -141,7 +143,7 @@ public class ControllerTest {
     }
     @Test
     public void getAllPlayersTest(){
-        Team t=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Team t=new Team("Hap",null);
         Player playerTest= new Player(208,"MaorMelichson","aa","maori1",new Date(System.currentTimeMillis()),"Forward",100,10);
         Player playerTest1= new Player(207,"ElyanivBarda","aa","maorit54",new Date(System.currentTimeMillis()),"Forward",10,100);
         Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee123");
@@ -171,7 +173,7 @@ public class ControllerTest {
 
     @Test
     public void addUserTest(){
-        Team t=new Team("Hap",TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Team t=new Team("Hap",null);
         Player playerTest= new Player(208,"MaorMelichson","aa","maori1",new Date(System.currentTimeMillis()),"Forward",100,10);
         cTest.addUser(playerTest.getUserName(),playerTest);
         assertEquals(playerTest.getId(),cTest.getUsers().get("maori1").getId());

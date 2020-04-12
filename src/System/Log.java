@@ -12,6 +12,8 @@ public class Log {
     public String logName = "Football_Association_System_Log";
     protected String env = System.getProperty("user.dir");
     private static File logFile;
+
+
     public static Log getInstance(){
         return instance;
     }

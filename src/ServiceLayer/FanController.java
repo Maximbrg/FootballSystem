@@ -75,7 +75,7 @@ public class FanController extends GuestController implements Observable {
         return "@id:"+fan.getId()+"@name:"+fan.getName()+"@UserStatus:"+fan.getStatus().toString();
     }
 
-    public void editDetails(User fan, int id, String name, String password, String useName){
+    public void editDetails(User fan, int id, String name, String password){
         if(id!=-1){
             fan.setId(id);
         }
@@ -84,9 +84,6 @@ public class FanController extends GuestController implements Observable {
         }
         if(!password.equals("")){
             fan.setPassword(password);
-        }
-        if(!useName.equals("")){
-            fan.setUserName(useName);
         }
     }
 

@@ -1,5 +1,6 @@
 //<editor-fold desc="imports">
 package System.Users;
+import System.Exeptions.NoRefereePermissions;
 import System.FootballObjects.Event.*;
 import System.FootballObjects.LeagueInformation;
 import System.I_Observer.IObserverGame;
@@ -22,7 +23,12 @@ public class Referee extends User implements IObserverGame,IShowable {
     private List<ISubjectGame> subjectGame;
     private List<Game> games;
     //</editor-fold>
-
+    //<editor-fold desc="Constructor">
+    public Referee(String name,RefereeType type,int id,String pass,String userName){
+        super(id,name,pass,userName);
+        this.type=type;
+        games=new LinkedList<>();
+    }
     //<editor-fold desc="getters">
     public List<ISubjectGame> getSubjectGame() {
         return subjectGame;
@@ -48,15 +54,16 @@ public class Referee extends User implements IObserverGame,IShowable {
         this.games = games;
     }
     //</editor-fold>
-    //<editor-fold desc="Constructor">
-    public Referee(String name,RefereeType type,int id,String pass,String userName){
-        super(id,name,pass,userName);
-        this.type=type;
-        games=new LinkedList<>();
-    }
+
     //</editor-fold>
     //<editor-fold desc="Methods">
+
+    /**
+     * add game to the games and register the referee to alerts from the game
+     * @param g
+     */
     public void addGame(Game g){
+        g.registerRefereeToAlert(this);
         games.add(g);
     }
     /**
@@ -67,14 +74,22 @@ public class Referee extends User implements IObserverGame,IShowable {
      */
     public void editEventAfterGame(Game game , AEvent oldEvent,String type){
         long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
-        if(diffHours<=6.5 && this.type== RefereeType.MainReferee){// 1.5 hours after the beginning
-            AEvent editedEvent = createEvent(type,oldEvent.getMinute());
-            game.getEventLog().removeEvent(oldEvent);
-            game.getEventLog().addEventToLog(editedEvent);
-            Log.writeToLog("The referee "+getName()+" edited event"+"(event Id:"+oldEvent.getId()+")." );
-        }
-    } //UC-40
 
+            try {
+                if(diffHours<=6.5 && this.type== RefereeType.MainReferee){// 1.5 hours after the beginning
+                    AEvent editedEvent = createEvent(type,oldEvent.getMinute());
+                    game.getEventLog().removeEvent(oldEvent);
+                    game.getEventLog().addEventToLog(editedEvent);
+                    Log.getInstance().writeToLog("The referee "+getName()+" edited event"+"(event Id:"+oldEvent.getId()+")." );
+                }
+                else {
+                    throw new NoRefereePermissions();
+                }
+            } catch (NoRefereePermissions noRefereePermissions) {
+                Log.writeToLog("Referee no have permissions to editEventAfterGame. id's Referee:"+getId());
+            }
+        }
+     //UC-40
     /**
      * add new event in the middle of the game - by every referee while it is in the middle of the game
      * @param game current game
@@ -83,13 +98,19 @@ public class Referee extends User implements IObserverGame,IShowable {
      */
     public void addEventMidGame(Game game,String type,int min){
         long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
-        if(diffHours<1.5 &&(game.getMainReferee().getId()==getId() || game.getAssistantRefereeTwo().getId()==getId() ||game.getAssistantRefereeOne().getId()==getId() )) {
-            game.addEventToLogEvent(createEvent(type, min));
-            Log.writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getUserName()+"." );
-        }else{
-            //////////to be continue
+
+            try {
+                if(diffHours<1.5 &&(game.getMainReferee().getId()==getId() || game.getAssistantRefereeTwo().getId()==getId() ||game.getAssistantRefereeOne().getId()==getId() )) {
+                    game.addEventToLogEvent(createEvent(type, min));
+                    Log.writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getUserName()+"." );
+                }else {
+                    throw new NoRefereePermissions();
+                }
+            } catch (NoRefereePermissions noRefereePermissions) {
+                Log.writeToLog("Referee no have permissions to addEventMidGame. id's Referee:"+getId());
+            }
         }
-    }
+
 
     /**
      * add event to the game log event
@@ -112,27 +133,32 @@ public class Referee extends User implements IObserverGame,IShowable {
      */
     public String createGameReport(Game game){
         String report="";
-        long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
-        if(diffHours>=1.5 &&type==RefereeType.MainReferee) {
-            report = "Report for the game:" + game.getHome().getName() + " vs " + game.getAway().getName() + "\n";
-            report += "Main Referee:" + game.getMainReferee().getName() + ".\n";
-            report += "Assistant Referee:" + game.getAssistantRefereeOne().getName() + ".\n";
-            report += "Assistant Referee:" + game.getAssistantRefereeTwo().getName() + ".\n";
-            for (AEvent a : game.getEventLog().getaEventList()) {
-                report += a.getMinute() + ". " + a.getClass().toString().substring(35, a.getClass().toString().length()) + "\n";
+
+            try {
+                if(type==RefereeType.MainReferee) {
+                    report = "Report for the game:" + game.getHome().getName() + " vs " + game.getAway().getName() + "\n";
+                    report += "Main Referee:" + game.getMainReferee().getName() + ".\n";
+                    report += "Assistant Referee:" + game.getAssistantRefereeOne().getName() + ".\n";
+                    report += "Assistant Referee:" + game.getAssistantRefereeTwo().getName() + ".\n";
+                    for (AEvent a : game.getEventLog().getaEventList()) {
+                        report += a.getMinute() + ". " + a.getClass().toString().substring(35, a.getClass().toString().length()) + "\n";
+                    }
+                    Log.writeToLog("Report for the game:" + game.getHome().getName() + "vs" + game.getAway().getName() + "was created by the referee " + getUserName() + ".");
+                    return report;
+                }else{
+                    throw new NoRefereePermissions();
+                }
+
+            } catch (NoRefereePermissions noRefereePermissions) {
+                Log.writeToLog("Referee no have permissions to createGameReport. id's Referee:"+getId());
             }
-        }else{
-            /////to be continue
-        }
-        Log.writeToLog("Report for the game:"+game.getHome().getName() + "vs" +game.getAway().getName()+"was created by the referee " + getUserName()+".");
-        return report;
+        return null;
     } //UC-41
 
     /**
      * return a list of future games of the referee
      * @return games for future
      */
-
     public List<Game> getFutureGames(){
         List<Game> futureGames = new ArrayList<>();
         for(Game game:games){
@@ -183,13 +209,10 @@ public class Referee extends User implements IObserverGame,IShowable {
     } //UC-39
     //</editor-fold>
     //<editor-fold desc="Override methods">
-    /**
-     * show alert of event
-     */
+
     @Override
     public void update() {
-
-
+        Log.getInstance().writeToLog("Referee was updated by a game. Referee's id:"+getId());
     }
 
     /**
@@ -218,7 +241,7 @@ public class Referee extends User implements IObserverGame,IShowable {
 
     @Override
     public String getDetails() {
-        return null;
+        return "@name:"+this.name+"@role:"+type.toString();
     }
     //</editor-fold>
     //<editor-fold desc="private methods">

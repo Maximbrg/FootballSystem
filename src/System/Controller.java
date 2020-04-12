@@ -1,5 +1,4 @@
 package System;
-
 import System.Exeptions.IllegalInputException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
@@ -10,7 +9,6 @@ import System.FootballObjects.Season;
 import System.FootballObjects.Team.*;
 import System.Users.*;
 import System.Enum.UserStatus;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -110,7 +108,7 @@ public class Controller {
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
         User user = users.get(userName);
         User user1 = removedUser.get(userName);
-        if(user != null || user != null) {
+        if(user != null || user1 != null) {
             throw new UserNameAlreadyExistException();
         }//more details
         Fan fan = new Fan(id,name, password,userName);
@@ -119,7 +117,6 @@ public class Controller {
         return fan;
     } //UC-2
 
-    public void removeTeam(Team team){ teams.remove(team); }
 
     public void addField(Field field){
         fields.add(field);
@@ -128,6 +125,49 @@ public class Controller {
     public void removeField(Field field){
         fields.remove(field);
     }
+    /**
+     * Checks if user name exist in the system
+     * @param userName
+     * @return
+     */
+    public boolean isUserNameExist(String userName){
+        User user = users.get(userName);
+        User user1 = removedUser.get(userName);
+        if(user != null || user1 != null) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Checks if league name already exist
+     * @param name
+     * @return
+     */
+    public boolean isLeagueExist(String name){
+        for(League l: this.leagues){
+            if(name.equals(l.getName())){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Checks if Season exist by compering years
+     * @param year
+     * @return
+     */
+    public boolean isSeasonExsit(int year){
+        for(Season season:seasons){
+            if(season.getIntYear()==year){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
     public List<Referee> getAllReferee(){
         List <Referee> referees = new LinkedList<>();
@@ -137,7 +177,7 @@ public class Controller {
             }
         }
         return referees;
-    }
+    } //UC-4
 
     public List<Coach> getAllCoach(){
         List <Coach> Coachs = new LinkedList<>();
@@ -149,6 +189,8 @@ public class Controller {
         return Coachs;
     } //UC-4
 
+
+    public void addLeague(League league){leagues.add(league);}
 
     public Season getSeason(String year){
         for(Season s : seasons){
@@ -174,6 +216,7 @@ public class Controller {
         if(users.get(userName)==null){
             throw new NoSuchAUserNamedException();
         }
+        users.get(userName).setStatus(UserStatus.REMOVED);
         removedUser.put(userName,users.get(userName));
         users.remove(userName);
         Log.getInstance().writeToLog("User removed from the system. userName("+userName+").");
@@ -193,6 +236,8 @@ public class Controller {
 
     }
 
+    public void removeTeam(Team team){ teams.remove(team); }
+
 
 
     public List<Player> getAllPlayers(){
@@ -205,7 +250,19 @@ public class Controller {
         return players;
     } //UC-4
 
+    public List<SystemManager> getAllSystemManager() {
+        List <SystemManager> sysList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof SystemManager){
+                sysList.add((SystemManager) user);
+            }
+        }
+        return sysList;
+    }
+
     //</editor-fold>
+
+
 
 
 

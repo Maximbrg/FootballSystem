@@ -21,9 +21,9 @@ public class PlayerController extends MainUserController{
         return player.getDetails();
     }
 
-    public void setDetails(Player player, int id, String name, String password, String userName, Date date, String role){
+    public void setDetails(Player player, int id, String name, String password, Date date, String role){
         FanController fanController = FanController.getInstance();
-        fanController.editDetails(player,id,name,password,userName);
+        fanController.editDetails(player,id,name,password);
         if(date!=null){
             player.setBirthDate(date);
         }

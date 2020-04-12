@@ -943,3 +943,583 @@ Fri Apr 10 19:37:31 IDT 2020 Controller: A new user signUp to the system. (20569
 Fri Apr 10 19:38:00 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
 Fri Apr 10 19:39:17 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
 Fri Apr 10 19:39:37 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: Event was added to the log event game 17 by the referee Max.
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:10
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
+Sun Apr 12 15:50:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Sun Apr 12 15:50:02 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Sun Apr 12 15:50:37 IDT 2020 Report: system manager receive to report 1
+Sun Apr 12 15:50:37 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Sun Apr 12 15:50:37 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 15:50:37 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 15:50:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Sun Apr 12 15:50:37 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Sun Apr 12 15:50:37 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 15:50:37 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 15:50:37 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Sun Apr 12 15:50:37 IDT 2020 Users.SystemManager: A new report added to the System. id(6).
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:3
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:1
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 15:50:45 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:7
+Sun Apr 12 15:50:51 IDT 2020 : !!!TEST!!!
+Sun Apr 12 15:55:29 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:55:29 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:55:29 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:55:29 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:56:22 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:56:22 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:56:22 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:56:22 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:56:46 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:56:46 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:56:47 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:56:47 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:57:08 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:57:08 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:57:08 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:57:08 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:57:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:57:45 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:57:45 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:57:45 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:58:38 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:58:38 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:58:38 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:58:38 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:59:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:59:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:59:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:59:34 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 15:59:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 15:59:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 15:59:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 15:59:43 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:04:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:04:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:04:40 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:04:40 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:08:49 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 16:08:49 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 16:08:49 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 16:08:49 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 16:08:49 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Sun Apr 12 16:08:49 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Sun Apr 12 16:08:49 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Sun Apr 12 16:08:49 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 16:08:49 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:08:49 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 16:08:49 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Sun Apr 12 16:10:34 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Sun Apr 12 16:10:34 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 16:10:34 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:10:34 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 16:10:34 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 16:10:40 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:10:40 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Sun Apr 12 16:10:40 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Sun Apr 12 16:10:40 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 16:10:40 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 16:10:40 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Sun Apr 12 16:11:41 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sun Apr 12 16:11:51 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sun Apr 12 16:11:51 IDT 2020 Controller: User log in to the system. id(205695612).
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sun Apr 12 16:11:51 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 16:11:51 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Sun Apr 12 16:24:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:24:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:24:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:24:02 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:24:02 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:24:02 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:24:02 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:24:26 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:24:26 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:24:26 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:24:26 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:24:26 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:24:26 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:24:34 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:25:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:25:02 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:25:02 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:25:02 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:25:02 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:25:02 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:25:57 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:26:03 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:26:03 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:26:03 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:26:03 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:26:15 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:26:17 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:26:17 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:27:26 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:27:26 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:27:26 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:27:26 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:27:37 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:27:38 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:30:02 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:33:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:33:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:33:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:33:25 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:33:33 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:35:30 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:35:30 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:35:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:35:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:35:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:35:34 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:36:18 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:36:18 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:36:18 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:37:05 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:37:05 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:37:05 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:37:05 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:37:05 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:37:05 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:37:05 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:37:15 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:37:15 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:37:15 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:37:15 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:37:15 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:37:15 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:37:15 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:37:36 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:37:36 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:37:36 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:37:36 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:37:38 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:37:39 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:37:45 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:39:01 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:39:01 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:39:01 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:39:01 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:39:01 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:39:01 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:39:01 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (206,KillerReferee)
+Sun Apr 12 16:39:42 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:39:42 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:39:42 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:39:42 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:39:42 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:39:42 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:39:42 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Sun Apr 12 16:40:46 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 16:40:46 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 16:40:46 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 16:40:46 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 16:40:46 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 16:40:46 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 16:40:46 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Sun Apr 12 17:34:12 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sun Apr 12 17:34:12 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sun Apr 12 17:34:12 IDT 2020 Controller: User log in to the system. id(205695612).
+Sun Apr 12 17:34:12 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sun Apr 12 17:34:12 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sun Apr 12 17:34:12 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sun Apr 12 17:34:13 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sun Apr 12 17:34:13 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 17:34:13 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Sun Apr 12 17:38:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sun Apr 12 17:38:04 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sun Apr 12 17:38:04 IDT 2020 Controller: User log in to the system. id(205695612).
+Sun Apr 12 17:38:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sun Apr 12 17:38:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sun Apr 12 17:38:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sun Apr 12 17:38:04 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sun Apr 12 17:38:05 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 17:38:05 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sun Apr 12 17:39:15 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sun Apr 12 17:39:15 IDT 2020 Controller: User log in to the system. id(205695612).
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sun Apr 12 17:39:15 IDT 2020 Users.FootballAssosiation: Add new referee. id:1
+Sun Apr 12 17:39:15 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Sun Apr 12 17:41:18 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 17:41:18 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 17:41:18 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 17:41:18 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 17:41:18 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 17:41:18 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 17:41:37 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Sun Apr 12 18:16:56 IDT 2020 Report: system manager receive to report 1
+Sun Apr 12 18:16:56 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Sun Apr 12 18:16:56 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 18:16:56 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 18:16:56 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Sun Apr 12 18:16:56 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Sun Apr 12 18:16:56 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 18:16:56 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 18:16:56 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Sun Apr 12 18:16:56 IDT 2020 Users.SystemManager: A new report added to the System. id(6).
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 20:37:39 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 20:37:39 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:10
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
+Sun Apr 12 20:37:40 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Sun Apr 12 20:37:40 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207
+Sun Apr 12 20:38:58 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 20:38:58 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 20:38:58 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 20:38:58 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:10
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
+Sun Apr 12 20:39:14 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Sun Apr 12 20:39:14 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:10
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
+Sun Apr 12 20:40:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Sun Apr 12 20:40:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207
+Sun Apr 12 20:41:25 IDT 2020 : !!!TEST!!!
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : harel , id :123
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamOwner: Team owner : dana, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : harel , owner id : 123 .
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : shiran , id :123
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamOwner: Team owner : dana, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : shiran , owner id : 123 .
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamOwner: A new financial report was set to team : Hapoel Beer Sheva , id :0
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was restart.
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The asset value for player : Ben Saar id : 123was edit.
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: Team manager : Harel sror, id :456
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:was remove from team :Maccabi Tel Aviv , id :0
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: The PersonalPage for team : Hapoel Beer Sheva id : 0was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 20:41:25 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:3
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:1
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:7
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Itzik(id: 201) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Sun Apr 12 20:41:25 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Itzik(id: 205) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 20:41:25 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Sun Apr 12 20:41:25 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Sun Apr 12 20:41:25 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User log in to the system. id(205).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: shmulik(id: 205) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: Inaugural games for the league - one game for each league team
+Sun Apr 12 20:41:25 IDT 2020 Report: system manager receive to report 1
+Sun Apr 12 20:41:25 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 20:41:25 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Sun Apr 12 20:41:25 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Sun Apr 12 20:41:25 IDT 2020 Users.User: Avi(id: 1234) update his status
+Sun Apr 12 20:41:25 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Sun Apr 12 20:41:25 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Sun Apr 12 20:41:25 IDT 2020 Users.SystemManager: A new report added to the System. id(6).
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 10 by the referee Max.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 15) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 13) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 14) alert
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (13)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:13
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 16 by the referee Max.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (14)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:14
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 17 by the referee KillerReferee.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (15)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (16)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:16
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 18 by the referee Max.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 20) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 20) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 20) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 21) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 21) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 21) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (17)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (18)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:18
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 22 by the referee Max.
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 22) alert
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (19)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (20)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:20
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Event was added to the log event game 24 by the referee Max.
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:19
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (21)
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:19
+Sun Apr 12 20:41:25 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:21
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: The referee Hen edited event(event Id:19).
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Sun Apr 12 20:41:25 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207

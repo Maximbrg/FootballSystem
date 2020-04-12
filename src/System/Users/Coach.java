@@ -10,7 +10,7 @@ import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
 import System.IShowable;
-
+import System.Log;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -26,6 +26,17 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     private int salary;
     private List<ISubjectTeam> subjectTeam;
 
+    /**
+     * Initialize variables
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @param preparation
+     * @param role
+     * @param assetValue
+     * @param salary
+     */
     //<editor-fold desc="Constructor">
     public Coach(int id, String name, String password, String userName, String preparation, String role, int assetValue, int salary) {
         super(id, name, password, userName);
@@ -34,7 +45,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         this.assetValue = assetValue;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
-
+        this.myTeam=null;
     }
     //</editor-fold>
 
@@ -50,7 +61,9 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
     @Override
     public String getDetails() {
-        String str = "@name:"+name+"@preparation:"+preparation+"@role:"+role+"@team:"+myTeam.getName()+"";
+        String str = "@name:"+name+"@preparation:"+preparation+"@role:"+role+"@team:";
+        if(this.myTeam!=null)
+            str=str+myTeam.getName()+"";
         return str;
     }
 
@@ -66,10 +79,12 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         return personalPage;
     }
 
+    @Override
     public int getAssetValue() {
         return assetValue;
     }
 
+    @Override
     public Team getMyTeam() {
         return myTeam;
     }
@@ -92,7 +107,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         this.personalPage = personalPage;
     }
 
-    public void setAssetValue(int assetValue) {
+    protected void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 
@@ -102,16 +117,38 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
+    /**
+     * Edit the asset value with a new value
+     * @param newVal
+     */
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
+        Log.writeToLog("The asset value for coach : "+getName()+" id : "+getId() +"was edit.");
     }
 
+    /**
+     * Every asset connect to team , when this function call the team of the asset restart
+     */
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
+        Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+
     }
 
+    @Override
+    public void resetMyTeam(Team team) {
+        this.myTeam=null;
+        Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+
+    }
+
+    /**
+     * Every asset should be connect to team , when this function call the team which we get as parameter set as the asset team
+     * @param team
+     * @throws HasTeamAlreadyException
+     */
     @Override
     public void addMyTeam(Team team) throws HasTeamAlreadyException {
        if(this.myTeam != null) {
@@ -119,9 +156,14 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
        }
        else{
            this.myTeam = team;
+           Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was added.");
+
        }
     }
-
+    /**
+     * This function return the asset salary
+     * @return
+     */
     @Override
     public int getSalary() {
         return salary;
@@ -129,14 +171,21 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
     @Override
     public String showDetails() {
-        return null;
+        return this.getDetails();
     }
 
+    /**
+     * This function create a new personal page to the coach
+     * @return
+     * @throws PersonalPageAlreadyExist
+     */
     @Override
     public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
-        if(personalPage!= null){
+        if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
+            Log.writeToLog("The PersonalPage for coach : "+getName()+" id : "+getId() +"was created.");
+            return this.personalPage;
         }
         throw new PersonalPageAlreadyExist();
     }
