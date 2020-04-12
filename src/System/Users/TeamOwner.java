@@ -142,6 +142,7 @@ public class TeamOwner extends User implements IObserverTeam {
      */
     public void RestartTeam(Team team){
         team.setTeamStatus(TeamStatus.Active);
+
     } //UC-23
 
     /**
