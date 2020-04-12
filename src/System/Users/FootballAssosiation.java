@@ -157,6 +157,11 @@ public class FootballAssosiation extends User {
         controller.getSeason(year);
     }
 
+    public HashMap<Integer, LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
+
+
     /**
      * financial report by the order of the association football
      * @param team to get financial report about it
@@ -179,7 +184,5 @@ public class FootballAssosiation extends User {
     //public void editScoreSchedulingPolicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
 
-    public HashMap<Integer, LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
-    }
+
 }

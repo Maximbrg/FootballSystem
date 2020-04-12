@@ -1,4 +1,4 @@
-/*
+
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.FootballObjects.Game;
@@ -6,6 +6,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
+import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import org.junit.Before;
 import org.junit.Test;
@@ -41,24 +42,25 @@ public class LeagueInformationTest {
 
     @Before
     public void setUp() throws Exception {
-        PremierLeague= new League("PremierLeague");
+
         List<Team> teams= new ArrayList<>();
 
         teams.add(Arsenal);
         teams.add(Liverpool);
         teams.add(Chelsea);
-        season= new Season(2000,teams);
-//        season.setGameToGames(game);
-//        season.setGameToGames(game1);
-//        season.setGameToGames(game2);
-        leagueInformation= new LeagueInformation(PremierLeague,season);
+        PremierLeague= new League("PremierLeague",teams);
+        season= new Season(2000);
+        FootballAssosiation footballAssosiation= new FootballAssosiation(1, "Shachar", "111", "Sha");
+        leagueInformation= new LeagueInformation(PremierLeague,season,footballAssosiation);
+        leagueInformation.initLeagueInformation();
+
     }
 
     @Test
     public void getLeagueTable() {
-        leagueInformation.updateScoreTeamInLeageTable(season.getTeam().get(0),5);
-        leagueInformation.updateScoreTeamInLeageTable(season.getTeam().get(1),3);
-        leagueInformation.updateScoreTeamInLeageTable(season.getTeam().get(2),1);
+        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(0),5);
+        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(1),3);
+        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(2),1);
 
         Team [] teams= new Team[3];
         int i=0;
@@ -75,7 +77,7 @@ public class LeagueInformationTest {
 
         assertArrayEquals(teams,teams2);
 
-        leagueInformation.updateScoreTeamInLeageTable(season.getTeam().get(1),10);
+        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(1),10);
 
         i=0;
         HashMap<Team,Integer> temp2= leagueInformation.getLeagueTable();
@@ -100,29 +102,29 @@ public class LeagueInformationTest {
         referees.add(rTest3);
         leagueInformation.schedulingReferee(referees);
 
-        assertEquals(season.getGames().get(0).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(0).getAssistantRefereeOne().getName(),"Max");
-        assertEquals(season.getGames().get(0).getAssistantRefereeTwo().getName(),"Dana");
+        assertEquals(leagueInformation.getGames().get(0).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(0).getAssistantRefereeOne().getName(),"Max");
+        assertEquals(leagueInformation.getGames().get(0).getAssistantRefereeTwo().getName(),"Dana");
 
-        assertEquals(season.getGames().get(1).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(1).getAssistantRefereeOne().getName(),"Shachar");
-        assertEquals(season.getGames().get(1).getAssistantRefereeTwo().getName(),"Max");
+        assertEquals(leagueInformation.getGames().get(1).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(1).getAssistantRefereeOne().getName(),"Shachar");
+        assertEquals(leagueInformation.getGames().get(1).getAssistantRefereeTwo().getName(),"Max");
 
-        assertEquals(season.getGames().get(2).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(2).getAssistantRefereeOne().getName(),"Dana");
-        assertEquals(season.getGames().get(2).getAssistantRefereeTwo().getName(),"Shachar");
+        assertEquals(leagueInformation.getGames().get(2).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(2).getAssistantRefereeOne().getName(),"Dana");
+        assertEquals(leagueInformation.getGames().get(2).getAssistantRefereeTwo().getName(),"Shachar");
 
-        assertEquals(season.getGames().get(3).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(3).getAssistantRefereeOne().getName(),"Max");
-        assertEquals(season.getGames().get(3).getAssistantRefereeTwo().getName(),"Dana");
+        assertEquals(leagueInformation.getGames().get(3).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(3).getAssistantRefereeOne().getName(),"Max");
+        assertEquals(leagueInformation.getGames().get(3).getAssistantRefereeTwo().getName(),"Dana");
 
-        assertEquals(season.getGames().get(4).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(4).getAssistantRefereeOne().getName(),"Shachar");
-        assertEquals(season.getGames().get(4).getAssistantRefereeTwo().getName(),"Max");
+        assertEquals(leagueInformation.getGames().get(4).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(4).getAssistantRefereeOne().getName(),"Shachar");
+        assertEquals(leagueInformation.getGames().get(4).getAssistantRefereeTwo().getName(),"Max");
 
-        assertEquals(season.getGames().get(5).getMainReferee().getName(),"Hen");
-        assertEquals(season.getGames().get(5).getAssistantRefereeOne().getName(),"Dana");
-        assertEquals(season.getGames().get(5).getAssistantRefereeTwo().getName(),"Shachar");
+        assertEquals(leagueInformation.getGames().get(5).getMainReferee().getName(),"Hen");
+        assertEquals(leagueInformation.getGames().get(5).getAssistantRefereeOne().getName(),"Dana");
+        assertEquals(leagueInformation.getGames().get(5).getAssistantRefereeTwo().getName(),"Shachar");
 
         assertEquals(rTest1.getGames().size(),6);
         assertEquals(rTest0.getGames().size(),4);
@@ -140,4 +142,3 @@ public class LeagueInformationTest {
     public void editScoreSchedulingPolicy() {
     }
 }
-*/

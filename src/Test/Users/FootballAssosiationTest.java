@@ -1,6 +1,7 @@
-/*
+
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
+import System.Exeptions.NoSuchAUserNamedException;
 import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
@@ -36,8 +37,7 @@ public class FootballAssosiationTest {
     @Before
     public void setUp() throws Exception {
         footballAssosiation= new FootballAssosiation(1, "Shachar", "123", "sha");
-        season=new Season(2000,teams);
-
+        season=new Season(2000);
         teams.add(Arsenal);
         teams.add(Liverpool);
         teams.add(Chelsea);
@@ -45,12 +45,18 @@ public class FootballAssosiationTest {
         referees.add(rTest1);
         referees.add(rTest2);
         referees.add(rTest3);
+        PremierLeague= new League("PremierLeague",teams);
 
     }
 
     @Test
     public void initLeague() {
+        footballAssosiation.initLeague(season,PremierLeague);
+        assertEquals(footballAssosiation.getLeagueInformations().size(),1);
+        assertEquals(footballAssosiation.getLeagueInformations().get(1).getId(),1);
 
+        assertEquals(season.getLeagueInformations().size(),1);
+        assertEquals(PremierLeague.getLeagueInformation().size(),1);
     }
 
     @Test
@@ -68,6 +74,20 @@ public class FootballAssosiationTest {
         }catch (Exception e){
 
         }
+
+//        //user not found , username not exist in the system
+//        try {
+//            systemMTest1.removeUser("theBigAvi1234");
+//        } catch (Exception e) {
+//            assert(true);
+//        }
+//        //user found
+//        try {
+//            systemMTest1.removeUser("theBigAvi123");
+//            assertNull(Controller.getInstance().getUsers().get("theBigAvi123"));
+//        } catch (NoSuchAUserNamedException e) {
+//            assert(false);
+//        }
     }
 
     @Test
@@ -76,6 +96,9 @@ public class FootballAssosiationTest {
 
     @Test
     public void manuallChangingReferee() {
+        LeagueInformation leagueInformation=new LeagueInformation(PremierLeague,season,footballAssosiation);
+        leagueInformation.initLeagueInformation();
+        leagueInformation.schedulingReferee(referees);
+        footballAssosiation.manualChangingReferee(leagueInformation,referees,rTest0);
     }
 }
-*/

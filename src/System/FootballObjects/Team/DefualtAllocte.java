@@ -14,7 +14,6 @@ import java.util.List;
 
 public class DefualtAllocte implements ITeamAllocatePolicy {
 
-
     /**
      *Inaugural games for the league- home and away games for each league team
      * @param team

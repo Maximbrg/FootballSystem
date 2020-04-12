@@ -13,13 +13,12 @@ import java.util.*;
 public class LeagueInformation {
     private static int ID=1;
     private int id;
+    private List<Game> games;
     League league;
     Season season;
     FootballAssosiation footballAssosiation;
     String name;
     HashMap<Team,Integer> leagueTable;
-    private List<Game> games;
-
     ITeamAllocatePolicy iTeamAllocatePolicy;
 
     IScoreMethodPolicy iScoreMethodPolicy;
@@ -46,6 +45,7 @@ public class LeagueInformation {
             leagueTable.put(league.getTeams().get(i),0);
         }
     }
+    //</editor-fold>
 
     //<editor-fold desc="Getters">
     public int getId() {
@@ -83,7 +83,11 @@ public class LeagueInformation {
     public Team getChampion() {
         return Champion;
     }
+
+
     //</editor-fold>
+
+
 
     /**
      * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
@@ -97,10 +101,6 @@ public class LeagueInformation {
         LOSS=setScore.get(1);
         TIE=setScore.get(2);
     }
-
-    //</editor-fold>
-
-
 
     /**
      *

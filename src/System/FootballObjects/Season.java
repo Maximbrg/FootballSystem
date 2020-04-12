@@ -13,7 +13,11 @@ public class Season implements IShowable {
     private List<LeagueInformation> leagueInformations;
 
 
-    //<editor-fold desc="constructor">
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
+
+    //<editor-fold desc="constractur">
     public Season(int year){
         this.year=year;
         leagueInformations=new ArrayList<>();
@@ -29,9 +33,7 @@ public class Season implements IShowable {
         return year;
     }
 
-    public List<LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
-    }
+
 
 
     @Override
@@ -53,13 +55,11 @@ public class Season implements IShowable {
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
+    //</editor-fold>
 
 
 
     //Methods
-
-
-    //public void schedulingGames(){} //UC-35
 
 
 }
