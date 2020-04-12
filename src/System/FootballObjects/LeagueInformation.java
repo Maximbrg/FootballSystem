@@ -51,6 +51,10 @@ public class LeagueInformation {
         return id;
     }
 
+    public List<Game> getGames() {
+        return games;
+    }
+
     public League getLeague() {
         return league;
     }

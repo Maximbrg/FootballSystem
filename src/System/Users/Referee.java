@@ -17,18 +17,45 @@ import java.util.List;
 
 public class Referee extends User implements IObserverGame,IShowable {
 
+    //<editor-fold desc="attributes">
     private RefereeType type;
     private List<ISubjectGame> subjectGame;
     private List<Game> games;
+    //</editor-fold>
 
+    //<editor-fold desc="getters">
+    public List<ISubjectGame> getSubjectGame() {
+        return subjectGame;
+    }
+    public RefereeType getRefereeType(){
+        return type;
+    }
+
+    public List<Game> getGames() {
+        return games;
+    }
+    //</editor-fold>
+    //<editor-fold desc="setters">
+    public void setType(RefereeType type) {
+        this.type = type;
+    }
+
+    public void setSubjectGame(List<ISubjectGame> subjectGame) {
+        this.subjectGame = subjectGame;
+    }
+
+    public void setGames(List<Game> games) {
+        this.games = games;
+    }
+    //</editor-fold>
+    //<editor-fold desc="Constructor">
     public Referee(String name,RefereeType type,int id,String pass,String userName){
         super(id,name,pass,userName);
         this.type=type;
         games=new LinkedList<>();
     }
-
-    //Methods
-
+    //</editor-fold>
+    //<editor-fold desc="Methods">
     public void addGame(Game g){
         games.add(g);
     }
@@ -58,7 +85,7 @@ public class Referee extends User implements IObserverGame,IShowable {
         long diffHours =  (new Date(System.currentTimeMillis()).getTime()-game.getDate().getTime() ) / (60 * 60 * 1000);
         if(diffHours<1.5 &&(game.getMainReferee().getId()==getId() || game.getAssistantRefereeTwo().getId()==getId() ||game.getAssistantRefereeOne().getId()==getId() )) {
             game.addEventToLogEvent(createEvent(type, min));
-            Log.writeToLog("Event was add to the log event game "+game.getId()+"by the referee " + getName()+"." );
+            Log.writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getUserName()+"." );
         }else{
             //////////to be continue
         }
@@ -73,32 +100,10 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void addEventToLogEvent(Game game,String type, int minute){
         AEvent newEvent = createEvent(type,minute);
         game.addEventToLogEvent(newEvent);
-        Log.writeToLog("Event was add to the log event game "+game.getId()+"by the referee " + getName()+"." );
+        Log.writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getName()+"." );
     }
 
-    /**
-     * create new event
-     * @param type of the event
-     * @param minute of the occasion
-     * @return new AEvent by his type and his minute
-     */
-    private AEvent createEvent(String type, int minute){
-        switch (type){
-            case "Goal":
-                return new Goal(minute);
-            case "Injury":
-                return new Injury(minute);
-            case "Offense":
-                return new Offense(minute);
-            case "Offside":
-                return new Offside(minute);
-            case "RedCard":
-                return new RedCard(minute);
-            case "YellowCard":
-                return new YellowCard(minute);
-        }
-        return null;
-    }
+
 
     /**
      * create gameReport
@@ -119,7 +124,7 @@ public class Referee extends User implements IObserverGame,IShowable {
         }else{
             /////to be continue
         }
-        Log.writeToLog("Report for the game:"+game.getHome().getName() + "vs" +game.getAway().getName()+"was created by the referee " + this.getName()+".");
+        Log.writeToLog("Report for the game:"+game.getHome().getName() + "vs" +game.getAway().getName()+"was created by the referee " + getUserName()+".");
         return report;
     } //UC-41
 
@@ -141,7 +146,7 @@ public class Referee extends User implements IObserverGame,IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.writeToLog("The referee "+getName()+"id: "+getId() +" pull his future games.");
+        Log.writeToLog("The referee "+getUserName()+" (id: "+getId() +")pull his future games.");
         return futureGames;
     }
     /**
@@ -173,9 +178,11 @@ public class Referee extends User implements IObserverGame,IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.writeToLog("The referee pull his games for "+ season.getYear()+" season. "+"("+getId() +","+getUserName());
+        Log.writeToLog("The referee pull his games for "+ season.getYear()+" season. "+"("+getId() +","+getUserName()+")");
         return relevantGames;
     } //UC-39
+    //</editor-fold>
+    //<editor-fold desc="Override methods">
     /**
      * show alert of event
      */
@@ -203,14 +210,9 @@ public class Referee extends User implements IObserverGame,IShowable {
         subjectGame.remove(iSubjectGame);
     }
 
-    public RefereeType getRefereeType(){
-        return type;
-    }
-    public List<Game> getGames() {
-        return games;
-    }
 
-    public String getType(){
+    @Override
+    public String getType() {
         return "Referee";
     }
 
@@ -218,11 +220,30 @@ public class Referee extends User implements IObserverGame,IShowable {
     public String getDetails() {
         return null;
     }
-//
-//    @Override
-//    public String getDetails() {
-//        return null;
-//    }
-
-
+    //</editor-fold>
+    //<editor-fold desc="private methods">
+    /**
+     * create new event
+     * @param type of the event
+     * @param minute of the occasion
+     * @return new AEvent by his type and his minute
+     */
+    private AEvent createEvent(String type, int minute){
+        switch (type){
+            case "Goal":
+                return new Goal(minute);
+            case "Injury":
+                return new Injury(minute);
+            case "Offense":
+                return new Offense(minute);
+            case "Offside":
+                return new Offside(minute);
+            case "RedCard":
+                return new RedCard(minute);
+            case "YellowCard":
+                return new YellowCard(minute);
+        }
+        return null;
+    }
+    //</editor-fold>
 }

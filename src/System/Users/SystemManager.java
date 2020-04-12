@@ -20,10 +20,16 @@ public class SystemManager extends User {
 
     private static HashMap<Integer,Report> reportsBox = new HashMap<Integer, Report>();
 
-    //<editor-fold desc="constructor- singleton">
+    //<editor-fold desc="constructor">
     public SystemManager(int id, String name, String password, String userName){
         super(id,name,password,userName);
         reportsBox= new HashMap<>();
+    }
+    //</editor-fold>
+
+    //<editor-fold desc="setters">
+    public static void setReportsBox(HashMap<Integer, Report> reportsBox) {
+        SystemManager.reportsBox = reportsBox;
     }
     //</editor-fold>
 
@@ -46,6 +52,7 @@ public class SystemManager extends User {
      */
     public void removeUser(String userName) throws NoSuchAUserNamedException {
         Controller.getInstance().removeUser(userName);
+
     } //UC-26//
 
     public void restartRemovedUser(String userName) throws NoSuchAUserNamedException{
@@ -69,7 +76,7 @@ public class SystemManager extends User {
      */
     public static void addReport(Report report) {
         reportsBox.put(report.getId(),report);
-        Log.getInstance().writeToLog("A new report added to the System. id("+report.getId()+").");
+        Log.getInstance().writeToLog("A new report added to the System. reportId("+report.getId()+").");
     }
 
     /**
@@ -78,14 +85,14 @@ public class SystemManager extends User {
      */
     public void answerTheReport(Report report, String answer){
         report.answer(answer);
-        Log.getInstance().writeToLog("A answer to report set. ("+report.getId()+").");
+        Log.getInstance().writeToLog("A answer to report set. reportId("+report.getId()+").");
 
     }
 
     public void createTeam(String name, TeamStatus teamStatus, PersonalPage personalPage, List<Asset> assets, List<TeamManager> teamManagersList, HashMap<TeamOwner, List<TeamOwner>> teamOwnersWhichappointed, Field field, int income, int expense, FinancialReport financialReport ){
             Team newTeam = new Team(name,teamStatus,personalPage,assets,teamManagersList,teamOwnersWhichappointed,field,income,expense,financialReport);
         Controller.getInstance().addTeam(newTeam);
-        Log.getInstance().writeToLog("New team added to the system. ("+newTeam.getId()+", "+newTeam.getName()+")");
+        Log.getInstance().writeToLog("New team added to the system. (id:"+newTeam.getId()+" ,name: "+newTeam.getName()+")");
     }
 
 

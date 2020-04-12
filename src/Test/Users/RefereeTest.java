@@ -49,7 +49,6 @@ public class RefereeTest {
          rTest0.addEventToLogEvent(g0,"Goal",22);
          //goal1= new Goal(50);
     }
-
     @Test
     public void addGameTest(){
         rTest0.addGame(g0);
@@ -120,11 +119,12 @@ public class RefereeTest {
         ArrayList<Team> teamList=  new ArrayList<>();
         teamList.add(t);
         teamList.add(t2);
-        Season s=new Season(2019,teamList);
-        s.setGameToGames(g00);
-        s.setGameToGames(g3);
-        s.setGameToGames(g11);
-        s.setGameToGames(g2);
+        Season s=new Season(2019);
+        s.getLeagueInformations().get(0);
+//        s.setGameToGames(g00);
+//        s.setGameToGames(g3);
+//        s.setGameToGames(g11);
+//        s.setGameToGames(g2);
         assertEquals(g11.getId(),rTest1.getGamesForSeason(s).get(0).getId());
         assertEquals(g2.getId(),rTest1.getGamesForSeason(s).get(1).getId());
         assertEquals(g00.getId(),rTest1.getGamesForSeason(s).get(2).getId());

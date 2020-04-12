@@ -1,11 +1,13 @@
-import ServiceLayer.GustController;
+import ServiceLayer.GuestController;
+import ServiceLayer.GuestController;
 import System.Enum.RefereeType;
+import System.Enum.TeamStatus;
+import System.Enum.UserStatus;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.WrongPasswordException;
-import System.Users.Fan;
-import System.Users.FootballAssosiation;
-import System.Users.User;
+import System.FootballObjects.Team.Team;
+import System.Users.*;
 import org.junit.*;
 import System.*;
 
@@ -15,21 +17,21 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-public class GustControllerTest {
+public class GuestControllerTest {
 
     @Test
-    public void signupTest1()  {
+    public void signUpTest1()  {
         String name = "Maxim";
         int id = 205695612;
         String password = "1234";
-        String username = "MaxFTW";
-        GustController gustController = new GustController();
+        String username = "MaxFTW1022";
+        GuestController guestController = new GuestController();
         try {
-            Fan newFan = gustController.signup(id, name, password, username);
+            Fan newFan = guestController.signUp(id, name, password, username);
             Controller controller = Controller.getInstance();
             HashMap<String, User> dic = controller.getUsers();
-            Fan sameFan = (Fan) (dic.get("MaxFTW"));
-            assertEquals(newFan.getUserName(),sameFan.getUserName());
+            Fan sameFan = (Fan) (dic.get("MaxFTW1022"));
+            assertEquals(username,sameFan.getUserName());
         }
         catch (Exception e){
             fail();
@@ -37,18 +39,18 @@ public class GustControllerTest {
     } //Test ID:    #2.2.1 -- checks if signup in is working
 
     @Test
-    public void signupTest2()  { //Test ID: #1.2
+    public void signUpTest2()  { //Test ID: #1.2
         String name = "Maxim";
         int id = 205695612;
         String password = "1234";
-        String username = "MaxFTW";
-        GustController gustController = new GustController();
+        String username = "MaxFTW55";
+        GuestController gustController = new GuestController();
         try {
-            Fan newFan = gustController.signup(id, name, password, username);
-            Fan sameFan = gustController.signup(id, name, password, username);
-            fail();
+            Fan newFan = gustController.signUp(id, name, password, username);
+            Fan sameFan = gustController.signUp(id, name, password, username);
         }
         catch (UserNameAlreadyExistException e){
+            assert (true);
         }
     } //Test ID:    #2.2.2 -- checks if can't signup with two same userName
 
@@ -57,17 +59,17 @@ public class GustControllerTest {
         String name = "Maxim";
         int id = 205695612;
         String password = "1234";
-        String username = "MaxFTW";
-        GustController gustController = new GustController();
+        String username = "MaxFTW44";
+        GuestController gustController = new GuestController();
         try {
-           gustController.signup(id, name, password, username);
+           gustController.signUp(id, name, password, username);
         }
         catch (Exception e){
             fail();
         }
         try {
             User user = gustController.login(username, password);
-            assertEquals(user.getUserName(),username);
+            assertEquals(UserStatus.ACTIVE,Controller.getInstance().getUsers().get(username).getStatus());
         }
         catch (Exception e){
             fail();
@@ -76,23 +78,22 @@ public class GustControllerTest {
 
     @Test
     public void loginTest2(){
-        String name = "Maxim";
+        String name = "Maxim1";
         int id = 205695612;
         String password = "1234";
-        String username = "MaxFTW";
-        GustController gustController = new GustController();
+        String username = "MaxFTW4433";
+        GuestController gustController = new GuestController();
         try {
-            gustController.signup(id, name, password, username);
+            gustController.signUp(id, name, password, username);
         }
         catch (Exception e){
             fail();
         }
         try {
             User user = gustController.login("****", password);
-            fail();
         }
         catch (NoSuchAUserNamedException e){
-
+            assert (true);
         }
         catch (WrongPasswordException e){
             fail();
@@ -104,33 +105,70 @@ public class GustControllerTest {
         String name = "Maxim";
         int id = 205695612;
         String password = "1234";
-        String username = "MaxFTW";
-        GustController gustController = new GustController();
+        String username = "MaxFTW4356";
+        GuestController gustController = new GuestController();
         try {
-            gustController.signup(id, name, password, username);
+            gustController.signUp(id, name, password, username);
         }
         catch (Exception e){
             fail();
         }
         try {
             User user = gustController.login(username, "12");
-            fail();
         }
         catch (NoSuchAUserNamedException e){
             fail();
         }
         catch (WrongPasswordException e){
-
+            assert (true);
         }
     } //Test ID:    #2.3.3 -- checks if can login with wrong password
+
+    /**
+     * log out from system
+     * reminder : guest cannot log out .
+     */
+    @Test
+    public void logOutTest1(){
+        String name = "Maxim";
+        int id = 205695612;
+        String password = "1234";
+        String username = "MaxFTW44785";
+        GuestController gustController = new GuestController();
+        Fan f=null;
+        try {
+             f = (Fan)gustController.signUp(id, name, password, username);
+            assertEquals(UserStatus.INACTIVE.toString(),f.getStatus().toString());
+        }
+        catch (Exception e){
+            fail();
+        }
+        try {
+            gustController.logOut(f);
+        }
+        catch (UnsupportedOperationException u){
+            assert (true);
+        }
+    }
+
+
 
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
         FootballAssosiation assosiation = new FootballAssosiation(205695612,"Max","123","MaxFTW");
+        Team t=new Team("Hap", TeamStatus.Active,null,null,null,null,null,100,2000,null);
+        Controller.getInstance().addTeam(t);
         assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
-        GustController gustController = new GustController();
+        GuestController gustController = new GuestController();
         List<IShowable> iShowables =  gustController.getInfoToShow("Referee");
         String string = iShowables.get(0).getName()+iShowables.get(0).getType();
         assertEquals("InvokerReferee",string);
+        iShowables =  gustController.getInfoToShow("Team");
+        string = iShowables.get(0).getName()+iShowables.get(0).getType();
+        assertEquals("HapTeam",string);
+
+
+
+
     } //Test ID:    #3.1
 }

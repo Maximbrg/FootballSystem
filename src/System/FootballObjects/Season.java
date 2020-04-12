@@ -12,10 +12,12 @@ public class Season implements IShowable {
     private int year;
     //private String result;
 
+
+
     private List<LeagueInformation> leagueInformations;
 
 
-    //<editor-fold desc="constractur">
+    //<editor-fold desc="constructor">
     public Season(int year){
         this.year=year;
         leagueInformations=new ArrayList<>();
@@ -26,6 +28,10 @@ public class Season implements IShowable {
     //</editor-fold>
     public String getYear() {
         return String.valueOf(year);
+    }
+
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
     }
 
 
