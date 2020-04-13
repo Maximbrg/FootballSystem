@@ -29,6 +29,31 @@ public class FootballAssosiation extends User {
     }
     //</editor-fold>
 
+
+
+    //<editor-fold desc="Getters">
+    public void getSeasonFromController(String year){
+        controller.getSeason(year);
+    }
+
+    public HashMap<Integer, LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
+
+
+    /**
+     * financial report by the order of the association football
+     * @param team to get financial report about it
+     * @return
+     */
+    public List<FinancialReport> getFinancialReport(Team team){
+        Log.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
+        return team.getFinancialReport();
+    }
+    //</editor-fold>
+
+
+
     //Methods
 
     /**
@@ -48,7 +73,7 @@ public class FootballAssosiation extends User {
         league.addLeagueInformation(leagueInformation);
 
         //add to log
-        Log.getInstance().writeToLog("Init new League. Name:"+ league.getName());
+        Log.getInstance().writeToLog("Football assosiation -Init new League. Name:"+ league.getName());
 
         //return to service Layer
         return leagueInformation;
@@ -92,7 +117,7 @@ public class FootballAssosiation extends User {
             }
         }
         controller.addUser(userName,referee);
-        Log.getInstance().writeToLog("Add new referee. id:"+referee.getId());
+        Log.getInstance().writeToLog("Football assosiation -Add new referee. id: "+referee.getId()+ "name: "+ referee.getName());
         return referee;
 
     }   //UC-30
@@ -106,8 +131,11 @@ public class FootballAssosiation extends User {
     //UC-31
     public void removeReferee(Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
         Controller controller = Controller.getInstance();
-        String userName = referee.getUserName();
 
+        if(!(controller.getAllReferee().contains(referee))){
+            throw new IllegalInputException();
+        }
+        String userName = referee.getUserName();
         for(Game g:referee.getGames()) {
             referee.removeAlert(g);
         }
@@ -116,6 +144,7 @@ public class FootballAssosiation extends User {
             throw new IllegalInputException();
         }
         controller.removeUser(userName);
+        Log.getInstance().writeToLog("Football assosiation -remove referee. id: "+referee.getId()+ "name: "+ referee.getName());
     }
 
     /**
@@ -126,45 +155,51 @@ public class FootballAssosiation extends User {
      */
     public void manualChangingReferee(LeagueInformation leagueInformation, List<Referee> referees, Referee referee){
         for(Game game:leagueInformation.getGames()){
+            // If the referee is not in the specific game
+            if(game.getMainReferee().getId()!=referee.getId() && game.getAssistantRefereeOne().getId()!=referee.getId() && game.getAssistantRefereeTwo().getId()!=referee.getId() ){
+                continue;
+            }
             for(Referee newReferee:referees){
                 if(newReferee.equals(referee)){//skip the old referee!
                     continue;
                 }
-                if(newReferee.getType()==referee.getType()){
+
+                if(newReferee.getRefereeType().equals(referee.getRefereeType())){
                     if(referee.getRefereeType()==RefereeType.MainReferee){
                         game.setMainReferee(newReferee);
+                        newReferee.addGame(game);
+                        referee.removeGame(game);
+                        break;
+
                     }
                     else{
-                        if(referee.getId()==game.getAssistantRefereeOne().getId()) {
+                        if(referee.getId()==game.getAssistantRefereeOne().getId() && game.getAssistantRefereeTwo().getId()!=newReferee.getId()) {
                             game.setAssistantRefereeOne(newReferee);
+                            newReferee.addGame(game);
+                            referee.removeGame(game);
+                            break;
+
                         }
-                        else{
+                        else if(referee.getId()==game.getAssistantRefereeTwo().getId()&& game.getAssistantRefereeOne().getId()!=newReferee.getId()){
                             game.setAssistantRefereeTwo(newReferee);
+                            newReferee.addGame(game);
+                            referee.removeGame(game);
+                            break;
+
                         }
                     }
                 }
             }
+
         }
+
 
     }
     //UC-31
 
-    public void addSeason(int year){
-        Season season=new Season(year);
+    public void addSeason(int year) {
+        Season season = new Season(year);
         controller.addSeason(season);
-    }
-    public void getSeasonFromController(String year){
-        controller.getSeason(year);
-    }
-
-    /**
-     * financial report by the order of the association football
-     * @param team to get financial report about it
-     * @return
-     */
-    public List<FinancialReport> getFinancialReports(Team team){
-        Log.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
-        return team.getFinancialReport();
     }
 
 
@@ -179,7 +214,5 @@ public class FootballAssosiation extends User {
     //public void editScoreSchedulingPolicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
 
-    public HashMap<Integer, LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
-    }
+
 }

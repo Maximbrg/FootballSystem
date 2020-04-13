@@ -16,10 +16,9 @@ public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
      */
     public void setTeamPolicy(List<Team> team, List<Game> games){
         Date date=new Date();
-        int noOfDays = 7; //i.e two weeks
+        int noOfDays = 7;
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        //System.out.println(date.toString());
         for(int i=0;i<team.size();i++){
             for(int j=i+1; j<team.size();j++){
                 //add game1
@@ -34,7 +33,7 @@ public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
                 away.getGamesOfTeams().add(game);
             }
         }
-        Log.getInstance().writeToLog("Inaugural games for the league - one game for each league team");
+        Log.getInstance().writeToLog("League Information inaugural games for the league - one game for each league team");
 
     }
 }

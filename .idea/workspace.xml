@@ -5,67 +5,139 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestService/GuestControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/CantSchedulingRefereeWithoutGames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/IsNotStartOFSeason.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/LeagueNameAlreadyExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/NotHisManagerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/RefereeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/TeamHasAFutureGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/Exceptions/TeamIsClosedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/NoRefereePermissions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/StillNoAppointedOwner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/Exeptions/TeamStatusException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/FootballObjects/FieldTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Team/TeamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Users/CoachTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Users/PlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Users/TeamManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/META-INF/FootballSystem.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/CoachController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Exceptions/CantSchedulingRefereeWithoutGames.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Exceptions/IsNotStartOFSeason.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Exceptions/LeagueNameAlreadyExist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Exceptions/TeamHasAFutureGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/FanController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/FootballAssosiationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/GuestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/MainUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Observable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/PlayerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/SystemManagerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/TeamOwnerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Asset/Asset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/BudgetRules.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Enum/GameStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Enum/RefereeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Enum/SearchCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Enum/TeamStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Enum/UserStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/AlreadyHasPageException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/HasTeamAlreadyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/IllegalInputException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/NoRefereePermissions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/NoSuchAUserNamedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/NotHisTeamException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/PersonalPageAlreadyExist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/StillNoAppointedOwner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/TeamStatusException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/UserNameAlreadyExistException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Exeptions/WrongPasswordException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FanOfTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FinancialReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Budget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/AEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/EventLog$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/EventLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Goal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Injury.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offense.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offside.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/RedCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/YellowCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/League.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/LeagueInformation$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/LeagueInformation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Season.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/DefualtAllocte.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/DefualtMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/IScoreMethodPolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/ITeamAllocatePolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/OneGameAllocatePolicy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/Team$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Team/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/IShowable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/I_Observer/IObserverGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/I_Observer/IObserverTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/I_Observer/ISubjectGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/I_Observer/ISubjectTeam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/PersonalPages/IPageAvailable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/PersonalPages/PersonalPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Report.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Searcher/ASearchStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Searcher/SearchByCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Searcher/SearchByKeyWord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Searcher/SearchByName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Coach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Fan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/FootballAssosiation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Guest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Referee$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Referee$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Referee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/SystemManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/TeamManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/TeamOwner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/CoachTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/ControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/DefualtAllocteTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/DefualtMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/EventLogStub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/FieldTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/FootballAssosiationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/GameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/GuestControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/LeagueInformationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/LeagueTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/META-INF/FootballSystem.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/OneGameAllocatePolicyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/PlayerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/RefereeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/SeasonTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/SystemManagerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/TeamManagerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/TeamOwnerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/FootballSystem/TeamTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INFO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/INFO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/GustControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSys/META-INF/FootballSys.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSys/META-INF/FootballSys.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/DefualtAllocteTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/DefualtMethodTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSys/System/FootballObjects/Team/OneGameAllocatePolicyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/FanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/FanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/GustController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/GuestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Asset/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Asset/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FinancialReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FinancialReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/League.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/League.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtAllocte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtAllocte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/IScoreMethodPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/IScoreMethodPolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/ITeamAllocatePolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/ITeamAllocatePolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/OneGameAllocatePolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/OneGameAllocatePolicy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/I_Observer/IObserverTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/I_Observer/IObserverTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/I_Observer/ISubjectTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/I_Observer/ISubjectTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Coach.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/Referee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/SystemManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/TeamManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/System/Users/TeamOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/TeamOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Event/EventLogStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Event/EventLogStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Team/DefualtAllocteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Team/DefualtAllocteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Team/OneGameAllocatePolicyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Team/OneGameAllocatePolicyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Users/RefereeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/RefereeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Users/SystemManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/SystemManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueInformationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/FootballObjects/LeagueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/FootballObjects/SeasonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/FootballObjects/SeasonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/LogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Users/CoachTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/CoachTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Users/FanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/FanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Users/FootballAssosiationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/FootballAssosiationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,16 +165,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="440">
+              <caret line="94" column="29" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#428#472#0" />
                 <element signature="method#TeamOwnerController#0;class#TeamOwnerController#0" />
-                <element signature="e#717#747#0" />
                 <element signature="method#createField#0;class#TeamOwnerController#0" />
                 <element signature="method#addAssetToTeam#0;class#TeamOwnerController#0" />
                 <element signature="method#removeAssetFromTeam#0;class#TeamOwnerController#0" />
@@ -111,14 +182,85 @@
                 <element signature="method#removeTeamOwner#0;class#TeamOwnerController#0" />
                 <element signature="method#addTeamMenegar#0;class#TeamOwnerController#0" />
                 <element signature="method#removeTeamMenegar#0;class#TeamOwnerController#0" />
-                <element signature="method#closeTeam#0;class#TeamOwnerController#0" />
-                <element signature="method#openTeam#0;class#TeamOwnerController#0" />
                 <element signature="method#sumbitReport#0;class#TeamOwnerController#0" />
                 <element signature="e#3939#3970#0" />
                 <element signature="method#addObserver#0;class#TeamOwnerController#0" />
                 <element signature="method#removeObserver#0;class#TeamOwnerController#0" />
                 <element signature="method#notifyUI#0;class#TeamOwnerController#0" />
                 <element signature="method#checkInputs#0;class#TeamOwnerController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestService/RefereeControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1047">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestService/GuestControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+              <folding>
+                <element signature="method#signUpTest1#0;class#GuestControllerTest#0" />
+                <element signature="method#signUpTest2#0;class#GuestControllerTest#0" />
+                <element signature="method#loginTest1#0;class#GuestControllerTest#0" />
+                <element signature="method#loginTest2#0;class#GuestControllerTest#0" />
+                <element signature="method#loginTest3#0;class#GuestControllerTest#0" />
+                <element signature="docComment;method#logOutTest1#0;class#GuestControllerTest#0" />
+                <element signature="method#logOutTest1#0;class#GuestControllerTest#0" />
+                <element signature="method#getInfoToShow#0;class#GuestControllerTest#0" />
+                <element signature="method#searchShowablesTest#0;class#GuestControllerTest#0" />
+                <element signature="method#filterResultsTest#0;class#GuestControllerTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1518">
+              <caret line="167" column="42" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+              <folding>
+                <element signature="e#22#52#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#getName#0;n#TeamOwner#0" />
+                <element signature="n#!!doc;n#setName#0;n#TeamOwner#0" />
+                <element signature="docComment;method#addTeamOwner#0;class#TeamOwner#0" />
+                <element signature="method#addTeamOwner#0;class#TeamOwner#0" />
+                <element signature="e#2995#3110#1" />
+                <element signature="docComment;method#removeTeamOwner#0;class#TeamOwner#0" />
+                <element signature="method#removeTeamOwner#0;class#TeamOwner#0" />
+                <element signature="docComment;method#getFinancialReport#0;class#TeamOwner#0" />
+                <element signature="n#!!doc;n#update#0;n#TeamOwner#0" />
+                <element signature="method#update#0;class#TeamOwner#0" />
               </folding>
             </state>
           </provider>
@@ -199,20 +341,20 @@
         <option value="$PROJECT_DIR$/src/ServiceLayer/SystemManagerController.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/Exceptions/RefereeController.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Referee.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" />
-        <option value="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/TeamOwner.java" />
         <option value="$PROJECT_DIR$/src/System/FinancialReport.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/FootballAssosiation.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/TeamOwner.java" />
+        <option value="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="492" />
-    <option name="y" value="-14" />
-    <option name="width" value="1064" />
-    <option name="height" value="876" />
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -274,6 +416,32 @@
             <path>
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="System" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="TestService" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -293,7 +461,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586786861870" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586787968679" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -311,7 +479,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuestControllerTest">
+  <component name="RunManager" selected="JUnit.TeamOwnerTest.getFinancialReportTest">
     <configuration name="GuestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
@@ -360,8 +528,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GuestControllerTest" />
         <item itemvalue="JUnit.TeamOwnerTest.getFinancialReportTest" />
+        <item itemvalue="JUnit.GuestControllerTest" />
         <item itemvalue="JUnit.TeamTest" />
         <item itemvalue="JUnit.TeamOwnerTest" />
         <item itemvalue="JUnit.TeamManagerTest" />
@@ -528,9 +696,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TeamOwnerTest_getFinancialReportTest - 2020.04.13 at 16h 43m 26s.xml">
-      <configuration name="TeamOwnerTest.getFinancialReportTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TeamOwnerTest_getFinancialReportTest - 2020.04.13 at 16h 43m 51s.xml">
       <configuration name="TeamOwnerTest.getFinancialReportTest" configurationId="JUnit" />
     </history-entry>
@@ -558,12 +723,15 @@
     <history-entry file="TeamOwnerTest_getFinancialReportTest - 2020.04.13 at 16h 47m 25s.xml">
       <configuration name="TeamOwnerTest.getFinancialReportTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TeamOwnerTest_getFinancialReportTest - 2020.04.13 at 17h 23m 09s.xml">
+      <configuration name="TeamOwnerTest.getFinancialReportTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168074000" />
+    <option name="totallyTimeSpent" value="168656000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="952" y="-8" width="976" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -571,9 +739,9 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2249467" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12117904" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.23796034" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.23726977" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.45771813" side_tool="true" visible="true" weight="0.14730878" />
@@ -586,7 +754,6 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49878544" weight="0.33044422" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.15138593" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -596,6 +763,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.03275109" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -693,19 +861,6 @@
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586523986836" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/League.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1069,25 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestService/GuestControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
-          <folding>
-            <element signature="method#signUpTest1#0;class#GuestControllerTest#0" />
-            <element signature="method#signUpTest2#0;class#GuestControllerTest#0" />
-            <element signature="method#loginTest1#0;class#GuestControllerTest#0" />
-            <element signature="method#loginTest2#0;class#GuestControllerTest#0" />
-            <element signature="method#loginTest3#0;class#GuestControllerTest#0" />
-            <element signature="docComment;method#logOutTest1#0;class#GuestControllerTest#0" />
-            <element signature="method#logOutTest1#0;class#GuestControllerTest#0" />
-            <element signature="method#getInfoToShow#0;class#GuestControllerTest#0" />
-            <element signature="method#searchShowablesTest#0;class#GuestControllerTest#0" />
-            <element signature="method#filterResultsTest#0;class#GuestControllerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Users/Fan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1139,53 +1275,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1451">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="163" column="27" lean-forward="true" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
-          <folding>
-            <element signature="e#22#52#0" />
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!doc;n#getName#0;n#TeamOwner#0" />
-            <element signature="n#!!doc;n#setName#0;n#TeamOwner#0" />
-            <element signature="docComment;method#addTeamOwner#0;class#TeamOwner#0" />
-            <element signature="method#addTeamOwner#0;class#TeamOwner#0" />
-            <element signature="e#2995#3110#1" />
-            <element signature="docComment;method#removeTeamOwner#0;class#TeamOwner#0" />
-            <element signature="method#removeTeamOwner#0;class#TeamOwner#0" />
-            <element signature="e#3992#4568#1" />
-            <element signature="e#5071#5224#1" />
-            <element signature="docComment;method#getFinancialReport#0;class#TeamOwner#0" />
-            <element signature="n#!!doc;n#update#0;n#TeamOwner#0" />
-            <element signature="method#update#0;class#TeamOwner#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,13 +1344,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="440">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#428#472#0" />
             <element signature="method#TeamOwnerController#0;class#TeamOwnerController#0" />
-            <element signature="e#717#747#0" />
             <element signature="method#createField#0;class#TeamOwnerController#0" />
             <element signature="method#addAssetToTeam#0;class#TeamOwnerController#0" />
             <element signature="method#removeAssetFromTeam#0;class#TeamOwnerController#0" />
@@ -1266,14 +1358,75 @@
             <element signature="method#removeTeamOwner#0;class#TeamOwnerController#0" />
             <element signature="method#addTeamMenegar#0;class#TeamOwnerController#0" />
             <element signature="method#removeTeamMenegar#0;class#TeamOwnerController#0" />
-            <element signature="method#closeTeam#0;class#TeamOwnerController#0" />
-            <element signature="method#openTeam#0;class#TeamOwnerController#0" />
             <element signature="method#sumbitReport#0;class#TeamOwnerController#0" />
             <element signature="e#3939#3970#0" />
             <element signature="method#addObserver#0;class#TeamOwnerController#0" />
             <element signature="method#removeObserver#0;class#TeamOwnerController#0" />
             <element signature="method#notifyUI#0;class#TeamOwnerController#0" />
             <element signature="method#checkInputs#0;class#TeamOwnerController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestService/RefereeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestService/GuestControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+          <folding>
+            <element signature="method#signUpTest1#0;class#GuestControllerTest#0" />
+            <element signature="method#signUpTest2#0;class#GuestControllerTest#0" />
+            <element signature="method#loginTest1#0;class#GuestControllerTest#0" />
+            <element signature="method#loginTest2#0;class#GuestControllerTest#0" />
+            <element signature="method#loginTest3#0;class#GuestControllerTest#0" />
+            <element signature="docComment;method#logOutTest1#0;class#GuestControllerTest#0" />
+            <element signature="method#logOutTest1#0;class#GuestControllerTest#0" />
+            <element signature="method#getInfoToShow#0;class#GuestControllerTest#0" />
+            <element signature="method#searchShowablesTest#0;class#GuestControllerTest#0" />
+            <element signature="method#filterResultsTest#0;class#GuestControllerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="167" column="42" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+          <folding>
+            <element signature="e#22#52#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#getName#0;n#TeamOwner#0" />
+            <element signature="n#!!doc;n#setName#0;n#TeamOwner#0" />
+            <element signature="docComment;method#addTeamOwner#0;class#TeamOwner#0" />
+            <element signature="method#addTeamOwner#0;class#TeamOwner#0" />
+            <element signature="e#2995#3110#1" />
+            <element signature="docComment;method#removeTeamOwner#0;class#TeamOwner#0" />
+            <element signature="method#removeTeamOwner#0;class#TeamOwner#0" />
+            <element signature="docComment;method#getFinancialReport#0;class#TeamOwner#0" />
+            <element signature="n#!!doc;n#update#0;n#TeamOwner#0" />
+            <element signature="method#update#0;class#TeamOwner#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/FootballAssosiation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

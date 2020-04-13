@@ -85,7 +85,7 @@ public class TeamOwnerTest {
 
     @Test
     public void getFinancialReportTest(){
-        fReport= owner1.addFinancialReport(team1,new Date());
+        fReport= owner1.addFinancialReport(team1);
         assertTrue(fReport!=null);
     }
 

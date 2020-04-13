@@ -13,7 +13,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import System.Log;
-import javafx.scene.chart.PieChart;
 //</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
@@ -113,7 +112,7 @@ public class TeamOwner extends User implements IObserverTeam {
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
         team.setListOfOwnersWhichIappoint(this,teamOwnersWhichIappointed.get(team));
 
-        Log.writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
+        Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
 
@@ -131,7 +130,7 @@ public class TeamOwner extends User implements IObserverTeam {
         team.setListOfOwnersWhichIappoint(this,teamOwnersList);
         this.teamOwnersWhichIappointed.remove(team);
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
-        Log.writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
+        Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
                     +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was removed : "+ teamOwnerToRemove.getName()+
                     " , owner id : " + teamOwnerToRemove.getId()+" .");
         }
@@ -148,9 +147,9 @@ public class TeamOwner extends User implements IObserverTeam {
         if(team.getTeamStatus()==TeamStatus.Close) {
             team.setTeamStatus(TeamStatus.Active);
             team.notifyTeamOwnersAndManager(getName() + " was open again.");
-            Log.getInstance().writeToLog(getName() + " was open again");
+            Log.getInstance().getInstance().writeToLog(getName() + " was open again");
         }else{
-            Log.getInstance().writeToLog(getName() + " try to restart a open/permanently team");
+            Log.getInstance().getInstance().writeToLog(getName() + " try to restart a open/permanently team");
             throw new TeamStatusException();
         }
     } //UC-23
@@ -159,16 +158,16 @@ public class TeamOwner extends User implements IObserverTeam {
      * Team owner create financial report
      * @param team to produce financial report
      */
-    public FinancialReport addFinancialReport(Team team, Date date){
-        FinancialReport fReport = new FinancialReport(team,date);
+    public FinancialReport addFinancialReport(Team team){
+        FinancialReport fReport = new FinancialReport(team, new Date());
         team.addFinancialReport(fReport);
-        Log.writeToLog("A new financial report was added to the team : "+ team.getName()+" , id :"+ team.getId());
+        Log.getInstance().writeToLog("A new financial report was set to team : "+ team.getName()+" , id :"+ team.getId());
         return fReport;
     } //UC-24
 
     public void addTeamToMyTeamList(Team t){
         this.teamList.add(t);
-        Log.writeToLog("Team : "+ t.getName()+" , id :"+ t.getId()+ "was added to the teams list of : "+ this.getName()+
+        Log.getInstance().writeToLog("Team : "+ t.getName()+" , id :"+ t.getId()+ "was added to the teams list of : "+ this.getName()+
                 " , id :"+ this.getId());
     }
     //</editor-fold>
