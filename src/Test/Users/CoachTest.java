@@ -8,7 +8,7 @@ import System.Users.TeamOwner;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CoachTest {
 

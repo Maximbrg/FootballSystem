@@ -124,7 +124,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.writeToLog("The asset value for coach : "+getName()+" id : "+getId() +"was edit.");
+        Log.getInstance().writeToLog("The asset value for coach : "+getName()+" id : "+getId() +"was edit.");
     }
 
     /**
@@ -133,14 +133,14 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
-        Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+        Log.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
     @Override
     public void resetMyTeam(Team team) {
         this.myTeam=null;
-        Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+        Log.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -156,7 +156,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
        }
        else{
            this.myTeam = team;
-           Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was added.");
+           Log.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was added.");
 
        }
     }
@@ -184,7 +184,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
-            Log.writeToLog("The PersonalPage for coach : "+getName()+" id : "+getId() +"was created.");
+            Log.getInstance().writeToLog("The PersonalPage for coach : "+getName()+" id : "+getId() +"was created.");
             return this.personalPage;
         }
         throw new PersonalPageAlreadyExist();

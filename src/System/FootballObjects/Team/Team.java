@@ -167,7 +167,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
+        Log.getInstance().writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
         return futureGames;
     }
     //</editor-fold>
@@ -237,7 +237,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(asset!=null) {
             this.assets.add(asset);
             asset.addMyTeam(this);//connect this team to the asset
-            Log.writeToLog("New asset wae added to team :"+this.getName()+" , id :"+this.getId()+"Asset details : "+ asset.getDetails());
+            Log.getInstance().writeToLog("New asset wae added to team :"+this.getName()+" , id :"+this.getId()+"Asset details : "+ asset.getDetails());
         }
     } //UC-15
 
@@ -252,7 +252,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(asset!=null){
             this.assets.remove(asset);
             asset.resetMyTeam();//delete this team from the asset
-            Log.writeToLog("Asset details : "+ asset.getDetails()+"was remove from team :"+this.getName()+" , id :"+this.getId());
+            Log.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was remove from team :"+this.getName()+" , id :"+this.getId());
 
         }
     } //UC-16
@@ -264,13 +264,13 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void editAsset(Asset asset ,int val){
         asset.editAssetValue(val);
-        Log.writeToLog("Asset details : "+ asset.getDetails()+"was update value.");
+        Log.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was update value.");
 
     } //UC-17
 
     public void addIncome(int income){
         this.income+=income;
-        Log.writeToLog("A new income added to the incomes of the team id: "+ getId());
+        Log.getInstance().writeToLog("A new income added to the incomes of the team id: "+ getId());
 
     }
 
@@ -282,7 +282,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void addTeamManager(TeamManager teamManagerNew){
         this.teamManagersList.add(teamManagerNew);
         teamManagerNew.setMyTeam(this);
-        Log.writeToLog("Team manager : "+teamManagerNew.getName() +", id :"+ teamManagerNew.getId());
+        Log.getInstance().writeToLog("Team manager : "+teamManagerNew.getName() +", id :"+ teamManagerNew.getId());
 
     } //UC-20
 
@@ -420,7 +420,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
-            Log.writeToLog("The PersonalPage for team : "+getName()+" id : "+getId() +"was created.");
+            Log.getInstance().writeToLog("The PersonalPage for team : "+getName()+" id : "+getId() +"was created.");
             return this.personalPage;
         }
         throw new PersonalPageAlreadyExist();
