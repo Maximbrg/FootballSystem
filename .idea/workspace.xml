@@ -49,11 +49,6 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="195" />
-    <option name="width" value="1485" />
-    <option name="height" value="1035" />
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
@@ -356,10 +351,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1.League information test update&#10;2.Football assosiation test update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="631" y="0" key="CommitChangelistDialog2" timestamp="1586782981838">
+    <state x="631" y="0" key="CommitChangelistDialog2" timestamp="1586783051569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="631" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586782981838" />
+    <state x="631" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586783051569" />
     <state width="447" height="466" key="DebuggerActiveHint" timestamp="1586782510979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -416,10 +411,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586778207757" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586782987830">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586783056367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586782987830" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586783056367" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586522900196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
