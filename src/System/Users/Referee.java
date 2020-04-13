@@ -45,17 +45,18 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void setType(RefereeType type) {
         this.type = type;
     }
-
-    public void setSubjectGame(List<ISubjectGame> subjectGame) {
+    private void setSubjectGame(List<ISubjectGame> subjectGame) {
         this.subjectGame = subjectGame;
     }
-
     public void setGames(List<Game> games) {
         this.games = games;
     }
     //</editor-fold>
 
     //</editor-fold>
+
+
+
     //<editor-fold desc="Methods">
 
     /**
@@ -66,6 +67,17 @@ public class Referee extends User implements IObserverGame,IShowable {
         g.registerRefereeToAlert(this);
         games.add(g);
     }
+
+    /**
+     * remove game from his games and remove alerts
+     * @param g
+     */
+    public void removeGame(Game g){
+        g.removeAlertToReferee(this);
+        games.remove(g);
+    }
+
+
     /**
      * edit an event in the game and till 5 hours from the end of the game . only by the main Referee
      * @param game concret game
