@@ -1,6 +1,8 @@
 import System.Asset.Asset;
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
+import System.Exeptions.NoRefereePermissions;
+import System.Exeptions.NoSuchEventException;
 import System.FootballObjects.Event.Goal;
 import System.FootballObjects.Event.YellowCard;
 import System.FootballObjects.Game;
@@ -32,7 +34,7 @@ public class RefereeTest {
     Team t,t2;
     ArrayList<Referee> rList;
     @Before
-    public void init(){
+    public void init() throws NoSuchEventException {
         rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
         rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee");
         rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","KillerReferee");
@@ -64,7 +66,7 @@ public class RefereeTest {
         assertEquals(g0.getId(),rTest0.getGames().get(0).getId());
     }
     @Test
-    public void editEventAfterGameTest(){
+    public void editEventAfterGameTest() throws NoRefereePermissions, NoSuchEventException {
         // too late for changing in the event log
         rTest1.editEventAfterGame(g0,g0.getEventLog().getaEventList().get(0),"RedCard");
         assertEquals(g0.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"Goal");
@@ -80,7 +82,7 @@ public class RefereeTest {
         assertNotEquals(g1.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
     }
     @Test
-    public void addEventMidGameTest(){
+    public void addEventMidGameTest() throws NoRefereePermissions, NoSuchEventException {
         //in middle of the game
         int hours =new Date(System.currentTimeMillis()).getHours()-1;
         d2.setHours(hours);
@@ -121,8 +123,8 @@ public class RefereeTest {
         teamList.add(t);
         teamList.add(t2);
         Season s=new Season(2019);
-        League leaugueTest=new League("champions",teamList);
-        LeagueInformation lTest=new LeagueInformation(leaugueTest,s,new FootballAssosiation(123,"avile","345345","avileHaGadol"));
+        League leagueTest=new League("champions",teamList);
+        LeagueInformation lTest=new LeagueInformation(leagueTest,s,new FootballAssosiation(123,"avile","345345","avileHaGadol"));
         s.addLeagueInformation(lTest);
         lTest.initLeagueInformation();
         lTest.schedulingReferee(rList);
