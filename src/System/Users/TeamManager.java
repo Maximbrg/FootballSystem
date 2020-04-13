@@ -84,7 +84,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.writeToLog("The asset value for team manager : "+getName()+" id : "+getId() +"was edit.");
+        Log.getInstance().writeToLog("The asset value for team manager : "+getName()+" id : "+getId() +"was edit.");
 
     }
 
@@ -94,14 +94,14 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
-        Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+        Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
     @Override
     public void resetMyTeam(Team team) {
         this.myTeam=null;
-        Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+        Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -117,14 +117,14 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         }
         else{
             this.myTeam = team;
-            Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was added.");
+            Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was added.");
 
         }
     }
 
     @Override
     public void update(String msg) {
-        Log.getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
+        Log.getInstance().getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
     }
 
     /**
