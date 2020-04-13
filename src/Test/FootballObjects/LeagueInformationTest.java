@@ -22,9 +22,9 @@ public class LeagueInformationTest {
     Season season;
     LeagueInformation leagueInformation;
 
-    Team Arsenal= new Team("Arsenal", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-    Team Liverpool = new Team("Liverpool", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-    Team Chelsea= new Team("Chelsea", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
+    Team Arsenal= new Team("Arsenal", null);
+    Team Liverpool = new Team("Liverpool", null);
+    Team Chelsea= new Team("Chelsea",  null);
 
 //    Game game=new Game(null,2000,null,null,null,Arsenal,Liverpool);
 //    Game game1=new Game(null,2000,null,null,null,Chelsea,Liverpool);

@@ -2,7 +2,9 @@
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.League;
+import System.Controller;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
@@ -24,14 +26,14 @@ public class FootballAssosiationTest {
     List<Team> teams= new ArrayList<>();
     List<Referee> referees= new ArrayList<>();
 
-    Team Arsenal= new Team("Arsenal", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-    Team Liverpool = new Team("Liverpool", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
-    Team Chelsea= new Team("Chelsea", TeamStatus.Active, null, null, null, null, null, 0, 0, null);
+    Team Arsenal= new Team("Arsenal", null);
+    Team Liverpool = new Team("Liverpool", null);
+    Team Chelsea= new Team("Chelsea", null);
 
     Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-    Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee");
-    Referee rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","KillerReferee");
-    Referee rTest3=new Referee("Shachar", RefereeType.AssistantReferee,207,"abc","KillerReferee");
+    Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","Max");
+    Referee rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","Dana");
+    Referee rTest3=new Referee("Shachar", RefereeType.AssistantReferee,207,"abc","Shachar");
 
 
     @Before
@@ -69,29 +71,44 @@ public class FootballAssosiationTest {
 
     @Test
     public void addNewReferee() {
-        try{
-            footballAssosiation.addNewReferee("Hen", RefereeType.MainReferee,204,"123","KillerReferee");
-        }catch (Exception e){
-
+        //user not found , username not exist in the Controller
+        try {
+            footballAssosiation.addNewReferee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
         }
+        //user found
+        try {
+            footballAssosiation.addNewReferee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
 
-//        //user not found , username not exist in the system
-//        try {
-//            systemMTest1.removeUser("theBigAvi1234");
-//        } catch (Exception e) {
-//            assert(true);
-//        }
-//        //user found
-//        try {
-//            systemMTest1.removeUser("theBigAvi123");
-//            assertNull(Controller.getInstance().getUsers().get("theBigAvi123"));
-//        } catch (NoSuchAUserNamedException e) {
-//            assert(false);
-//        }
+        } catch (UserNameAlreadyExistException e) {
+            assert(false);
+        }
     }
 
     @Test
     public void removeReferee() {
+        Referee Shiran=new Referee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+        //user not found , username not exist in the Controller
+        try {
+            footballAssosiation.removeReferee(Shiran);
+        } catch (Exception e) {
+            assert(true);
+        }
+
+
+        try {
+            footballAssosiation.addNewReferee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+        } catch (UserNameAlreadyExistException e) {
+            assert(false);
+        }
+
+        //user found- shiran removed
+        try {
+            footballAssosiation.removeReferee((Referee) Controller.getInstance().getUsers().get("Shiran"));
+        } catch (Exception e) {
+            assert(false);
+        }
     }
 
     @Test
@@ -100,5 +117,6 @@ public class FootballAssosiationTest {
         leagueInformation.initLeagueInformation();
         leagueInformation.schedulingReferee(referees);
         footballAssosiation.manualChangingReferee(leagueInformation,referees,rTest0);
+        assertEquals(rTest0.getFutureGames().size(),0);
     }
 }

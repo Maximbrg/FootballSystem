@@ -55,9 +55,10 @@ public class League implements IShowable {
         teams.add(t);
     }
 
+    //</editor-fold>
+
+
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
-    //</editor-fold>
-
 }

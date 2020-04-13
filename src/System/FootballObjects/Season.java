@@ -13,9 +13,7 @@ public class Season implements IShowable {
     private List<LeagueInformation> leagueInformations;
 
 
-    public List<LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
-    }
+
 
     //<editor-fold desc="constractur">
     public Season(int year){
@@ -26,14 +24,14 @@ public class Season implements IShowable {
 
     }
     //</editor-fold>
+
+
     public String getYear() {
         return String.valueOf(year);
     }
     public int getIntYear() {
         return year;
     }
-
-
 
 
     @Override
@@ -51,15 +49,19 @@ public class Season implements IShowable {
         String str = "@year:"+year;
         return str;
     }
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
 
+
+    //</editor-fold>
+
+    //Methods
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
-    //</editor-fold>
 
 
-
-    //Methods
 
 
 }

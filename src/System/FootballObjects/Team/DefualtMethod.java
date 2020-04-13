@@ -1,11 +1,15 @@
 package System.FootballObjects.Team;
 
-
-import System.Enum.GameStatus;
-
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Inlay scoring calculation policy and league position
+ * for:
+ * WIN:3 points.
+ * LOSS: 0 points.
+ * TIE: 1 points
+ */
 public class DefualtMethod implements IScoreMethodPolicy {
 
     public List <Integer> setScorePolicy() {

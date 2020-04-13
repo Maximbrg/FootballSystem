@@ -28,6 +28,7 @@ public class Referee extends User implements IObserverGame,IShowable {
         super(id,name,pass,userName);
         this.type=type;
         games=new LinkedList<>();
+        subjectGame=new LinkedList<>();
     }
     //<editor-fold desc="getters">
     public List<ISubjectGame> getSubjectGame() {

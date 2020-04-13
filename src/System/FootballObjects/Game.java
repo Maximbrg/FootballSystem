@@ -173,6 +173,7 @@ public class Game implements ISubjectGame {
     @Override
     public void registerRefereeToAlert(IObserverGame referee) {
         this.iObserverGameListForReferees.add(referee);
+        referee.registerAlert(this);
         Log.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") register to receive a game (id: " + id +") alert");
 
     } //UC-9

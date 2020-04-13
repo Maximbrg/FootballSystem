@@ -5,8 +5,6 @@ import System.FootballObjects.Team.*;
 import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import System.Log;
-
-import javax.swing.*;
 import java.util.*;
 
 
@@ -20,7 +18,6 @@ public class LeagueInformation {
     String name;
     HashMap<Team,Integer> leagueTable;
     ITeamAllocatePolicy iTeamAllocatePolicy;
-
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
     int LOSS;
@@ -84,24 +81,6 @@ public class LeagueInformation {
         return Champion;
     }
 
-
-    //</editor-fold>
-
-
-
-    /**
-     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
-     */
-    public void initLeagueInformation(){
-        iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
-        //get list of score for policy
-        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
-        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
-        WIN=setScore.get(0);
-        LOSS=setScore.get(1);
-        TIE=setScore.get(2);
-    }
-
     /**
      *
      * @return the league table sorted by the high scoring team.
@@ -130,11 +109,27 @@ public class LeagueInformation {
         return temp;
     }
 
+    //</editor-fold>
 
 
 
     /**
-     * The Referee were inducted for games this season.
+     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
+     */
+    public void initLeagueInformation(){
+        iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
+        //get list of score for policy
+        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
+        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
+        WIN=setScore.get(0);
+        LOSS=setScore.get(1);
+        TIE=setScore.get(2);
+    }
+
+
+
+    /**
+     * Inaugural refereeing for games during the league season
      * @param referees list of all referees
      */
     public void schedulingReferee(List<Referee> referees){
@@ -186,7 +181,7 @@ public class LeagueInformation {
 
         }
 
-        Log.getInstance().writeToLog("The Referee were inducted for games this season. Name: "+league.getName());
+        Log.getInstance().writeToLog("League information- The referees inaugural season was successfully completed. League name: "+league.getName());
     } //UC-32
 
 
