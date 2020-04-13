@@ -107,7 +107,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         this.personalPage = personalPage;
     }
 
-    protected void setAssetValue(int assetValue) {
+    private void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 

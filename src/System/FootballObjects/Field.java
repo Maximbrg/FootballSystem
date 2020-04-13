@@ -78,7 +78,7 @@ public class Field implements Asset {
         this.homeTeams = homeTeams;
     }
 
-    public void setAssetValue(int assetValue) {
+    protected void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 

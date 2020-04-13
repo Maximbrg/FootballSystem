@@ -15,12 +15,12 @@ UC-14:	User - shiran
 UC-15:	Team - dana
 UC-16:	Team - dana
 UC-17:	Team - dana
-UC-18:	Team - dana
-UC-19:	Team - dana
+UC-18:	TeamOwner - dana
+UC-19:	TeamOwner - dana
 UC-20:	Team - dana
 UC-21:	Team - dana
 UC-22:	Team - dana
-UC-23:	TeamOwner - hen
+UC-23:	TeamOwner - dana
 UC-24:	TeamOwner - hen
 UC-25:	SystemManager - hen
 UC-26:	SystemManager - hen

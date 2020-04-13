@@ -67,7 +67,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         this.name = name;
     }
 
-    protected void setAssetValue(int assetValue) {
+    private void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 
