@@ -2,7 +2,11 @@ package System;
 
 import System.FootballObjects.Team.Team;
 
+import java.util.Date;
+
 public class FinancialReport {
+
+    private Date date;
     private final Team team;
     private int incomeFromGame;
     private int maintenanceFieldCost;
@@ -10,14 +14,16 @@ public class FinancialReport {
     private int income;
     private int expanse;
 
-    public FinancialReport(Team team){
-        this.team=team;
-        maintenanceFieldCost=team.getField().getMaintenanceCost();
-        income=team.getIncome();
-        expanse=team.getExpense();
-        payingSalary=team.getPaymentSalary();
+    //<editor-fold desc="constructor">
+    public FinancialReport(Team team, Date date){
+        this.team = team;
+        maintenanceFieldCost = team.getField().getMaintenanceCost();
+        income = team.getIncome();
+        expanse = team.getExpense();
+        payingSalary = team.getPaymentSalary();
+        this.date = date;
     }
-
+    //</editor-fold>
 
     //<editor-fold desc="getters">
 
@@ -41,10 +47,12 @@ public class FinancialReport {
         return expanse;
     }
     //</editor-fold>
+
     //<editor-fold desc="setter">
     public void setIncomeFromGame(int incomes){
         incomeFromGame=incomes;
     }
+
     public void setMaintenanceFieldCost(int maintenanceFieldCost) {
         this.maintenanceFieldCost = maintenanceFieldCost;
     }
@@ -61,4 +69,5 @@ public class FinancialReport {
         this.expanse = expanse;
     }
     //</editor-fold>
+
 }

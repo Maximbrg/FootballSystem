@@ -2,7 +2,7 @@ package System.FootballObjects;
 
 import System.FootballObjects.Team.Team;
 import System.IShowable;
-
+import System.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,9 +21,8 @@ public class League implements IShowable {
         this.teams= new ArrayList<>();
         this.leagueInformations= new ArrayList<>();
         for (Team t : teams) {
-            teams.add(t);
+            this.teams.add(t);
         }
-
     }
 
 

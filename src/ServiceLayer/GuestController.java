@@ -14,7 +14,7 @@ import System.Users.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class GustController extends MainUserController {
+public class GuestController extends MainUserController {
 
     public User login(String userName , String password) throws WrongPasswordException, NoSuchAUserNamedException {
         Controller controller = Controller.getInstance();
@@ -22,7 +22,7 @@ public class GustController extends MainUserController {
         return existUser;
     }
 
-    public Fan signup(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
+    public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         Controller controller = Controller.getInstance();
         Fan newFan = controller.signUp(id,name,password,userName);
         return newFan;

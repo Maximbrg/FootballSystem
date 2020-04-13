@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-public class FanController extends GustController implements Observable {
+public class FanController extends GuestController implements Observable {
 
     private static FanController ourInstance = new FanController();
 
@@ -88,7 +88,7 @@ public class FanController extends GustController implements Observable {
     }
 
     @Override
-    public Fan signup(int id, String name, String password, String userName) {
+    public Fan signUp(int id, String name, String password, String userName) {
         throw new UnsupportedOperationException();
     }
     @Override

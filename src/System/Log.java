@@ -12,12 +12,21 @@ public class Log {
     public String logName = "Football_Association_System_Log";
     protected String env = System.getProperty("user.dir");
     private static File logFile;
+
+
     public static Log getInstance(){
         return instance;
     }
-
-
-
+    //<editor-fold desc="constructor">
+    private Log(){
+        if (instance != null){
+            //Prevent Reflection
+            throw new IllegalStateException("Cannot instantiate a new singleton instance of log");
+        }
+        this.createLogFile();
+    }
+    //</editor-fold>
+    //<editor-fold desc="methods">
     public void createLogFile(){
         //Determine if a logs directory exists or not.
         File logsFolder = new File(env + '/' + "logs");
@@ -42,14 +51,11 @@ public class Log {
             System.exit(1);
         }
     }
-    private Log(){
-        if (instance != null){
-            //Prevent Reflection
-            throw new IllegalStateException("Cannot instantiate a new singleton instance of log");
-        }
-        this.createLogFile();
-    }
 
+    /**
+     * write a string to the log file of the system
+     * @param message to be write in the log file
+     */
     public static void writeToLog(String message){
         try{
             FileWriter out = new FileWriter(Log.logFile, true);
@@ -68,7 +74,7 @@ public class Log {
     }
 
     /**
-     * present the log file
+     * present the log file as string
      * @return
      */
     public String getLog() throws IOException {
@@ -98,4 +104,5 @@ public class Log {
 
         return logToString;
     } //UC-28
+    //</editor-fold>
 }

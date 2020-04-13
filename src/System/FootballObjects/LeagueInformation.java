@@ -22,10 +22,6 @@ public class LeagueInformation {
 
     ITeamAllocatePolicy iTeamAllocatePolicy;
 
-    public List<Game> getGames() {
-        return games;
-    }
-
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
     int LOSS;
@@ -54,6 +50,10 @@ public class LeagueInformation {
     //<editor-fold desc="Getters">
     public int getId() {
         return id;
+    }
+
+    public List<Game> getGames() {
+        return games;
     }
 
     public League getLeague() {

@@ -8,15 +8,13 @@ import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
 import System.IShowable;
-
+import System.Log;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Player extends User implements Asset, IPageAvailable, IShowable {
 
-
-    private String name;
     private Date birthDate;
     private String role;
     private PersonalPage personalPage;
@@ -25,6 +23,17 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     private List<ISubjectTeam> subjectTeam;
     private int salary;
 
+    /**
+     * Initialize variables
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @param birthDate
+     * @param role
+     * @param assetValue
+     * @param salary
+     */
     //<editor-fold desc="Constructor">
     public Player(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary) {
         super(id, name, password, userName);
@@ -33,7 +42,8 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         this.assetValue = assetValue;
         this.salary = salary;
         this.subjectTeam=new LinkedList<>();
-
+        this.myTeam = null;
+        this.personalPage=null;
     }
     //</editor-fold>
 
@@ -52,7 +62,9 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
 
     @Override
     public String getDetails() {
-        String str = "@name:"+name+"@birthday:"+birthDate.toString()+"@role:"+role+"@team:"+myTeam.getName()+"";
+        String str = "@name:"+this.name+"@birthday:"+ this.birthDate.toString()+"@role:"+role+"@team:";
+        if(this.myTeam!=null)
+            str=str+myTeam.getName()+"";
         return str;
     }
 
@@ -68,10 +80,12 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         return personalPage;
     }
 
+    @Override
     public int getAssetValue() {
         return assetValue;
     }
 
+    @Override
     public Team getMyTeam() {
         return myTeam;
     }
@@ -94,7 +108,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         this.personalPage = personalPage;
     }
 
-    public void setAssetValue(int assetValue) {
+    private void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 
@@ -104,26 +118,57 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
+
+    /**
+     * This function return the player details
+     * @return
+     */
     @Override
     public String showDetails() {
-        return null;
+        return this.getDetails();
     }
 
+    /**
+     * This function return the asset salary
+     * @return
+     */
     @Override
     public int getSalary() {
         return salary;
     }
 
+    /**
+     * Edit the asset value with a new value
+     * @param newVal
+     */
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
+        Log.writeToLog("The asset value for player : "+getName()+" id : "+getId() +"was edit.");
     }
 
+    /**
+     * Every asset connect to team , when this function call the team of the asset restart
+     */
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
+        Log.writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
     }
 
+    @Override
+    public void resetMyTeam(Team team) {
+        this.myTeam=null;
+        Log.writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
+
+    }
+
+
+    /**
+     * Every asset should be connect to team , when this function call the team which we get as parameter set as the asset team
+     * @param team
+     * @throws HasTeamAlreadyException
+     */
     @Override
     public void addMyTeam(Team team) throws HasTeamAlreadyException{
         if(this.myTeam != null) {
@@ -131,14 +176,22 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         }
         else{
             this.myTeam = team;
+            Log.writeToLog("The team for player : "+getName()+" id : "+getId() +"was added.");
+
         }
     }
 
+    /**
+     * This function create a new personal page to the player
+     * @return
+     * @throws PersonalPageAlreadyExist
+     */
     @Override
     public PersonalPage createPersonalPage() throws PersonalPageAlreadyExist {
         if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
+            Log.writeToLog("The PersonalPage for player : "+getName()+" id : "+getId() +"was created.");
             return personalPage;
         }
         throw new PersonalPageAlreadyExist();

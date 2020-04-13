@@ -8,6 +8,7 @@ import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
 import java.util.LinkedList;
 import java.util.List;
+import System.Log;
 //</editor-fold>
 
 public class TeamManager extends User implements Asset, IObserverTeam {
@@ -16,7 +17,17 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
+    private TeamOwner myTeamOwner;
 
+    /**
+     * Initialize variables
+      * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @param assetValue
+     * @param salary
+     */
     //<editor-fold desc="Constructor">
     public TeamManager(int id, String name, String password, String userName, int assetValue, int salary) {
         super(id, name, password, userName);
@@ -32,10 +43,24 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         return name;
     }
 
+    public TeamOwner getMyTeamOwner() {
+        return myTeamOwner;
+    }
+
+    @Override
     public int getAssetValue() {
         return assetValue;
     }
 
+    @Override
+    public String getDetails() {
+        String str = "@name:"+name+"@team:";
+        if(this.myTeam!=null)
+            str=str+myTeam.getName()+"";
+        return str;
+    }
+
+    @Override
     public Team getMyTeam() {
         return myTeam;
     }
@@ -46,26 +71,54 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         this.name = name;
     }
 
-    public void setAssetValue(int assetValue) {
+    private void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 
-    public void setMyTeam(Team myTeam) {
+    public void setMyTeam(Team myTeam)  {
         this.myTeam = myTeam;
     }
+
+    public void setMyTeamOwner(TeamOwner myTeamOwner) {
+        this.myTeamOwner = myTeamOwner;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
+    /**
+     * Edit the asset value with a new value
+     * @param newVal
+     */
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
+        Log.writeToLog("The asset value for team manager : "+getName()+" id : "+getId() +"was edit.");
+
     }
 
+    /**
+     * Every asset connect to team , when this function call the team of the asset restart
+     */
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
+        Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+
     }
 
+    @Override
+    public void resetMyTeam(Team team) {
+        this.myTeam=null;
+        Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+
+    }
+
+    /**
+     * Every asset should be connect to team , when this function call the team which we get as parameter set as the asset team
+     * @param team
+     * @throws HasTeamAlreadyException
+     */
     @Override
     public void addMyTeam(Team team) throws HasTeamAlreadyException{
         if(this.myTeam != null) {
@@ -73,12 +126,14 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         }
         else{
             this.myTeam = team;
+            Log.writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was added.");
+
         }
     }
 
     @Override
-    public void update() {
-
+    public void update(String msg) {
+        Log.getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
     }
 
     /**
@@ -100,6 +155,10 @@ public class TeamManager extends User implements Asset, IObserverTeam {
 
     }
 
+    /**
+     * This function return the asset salary
+     * @return
+     */
     @Override
     public int getSalary() {
         return salary;

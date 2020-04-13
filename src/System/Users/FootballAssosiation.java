@@ -6,10 +6,11 @@ import System.Controller;
 import System.BudgetRules;
 import System.FootballObjects.Game;
 import System.FootballObjects.LeagueInformation;
+import System.FootballObjects.Team.Team;
 import System.Log;
 import System.Exeptions.*;
-import System.Enum.UserStatus;
 import System.Enum.RefereeType;
+import System.FinancialReport;
 
 import java.util.*;
 
@@ -72,10 +73,6 @@ public class FootballAssosiation extends User {
     }
 
 
-
-
-
-
     /**
      *  Add New Referee
      * @param name
@@ -86,7 +83,7 @@ public class FootballAssosiation extends User {
      * @throws UserNameAlreadyExistException
      */
     //UC-30
-    public void addNewReferee(String name, RefereeType type, int id, String pass, String userName)  throws UserNameAlreadyExistException {
+    public Referee addNewReferee(String name, RefereeType type, int id, String pass, String userName)  throws UserNameAlreadyExistException {
         Referee referee= new Referee(name,type,id,pass,userName);
         Controller controller= Controller.getInstance();
         for (HashMap.Entry me : controller.getUsers().entrySet()) {
@@ -96,6 +93,7 @@ public class FootballAssosiation extends User {
         }
         controller.addUser(userName,referee);
         Log.getInstance().writeToLog("Add new referee. id:"+referee.getId());
+        return referee;
 
     }   //UC-30
 
@@ -106,33 +104,32 @@ public class FootballAssosiation extends User {
      * @throws IllegalInputException
      */
     //UC-31
-    public void removeReferee(Referee referee)  throws IllegalInputException  {
+    public void removeReferee(Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
         Controller controller = Controller.getInstance();
         String userName = referee.getUserName();
+
+        for(Game g:referee.getGames()) {
+            referee.removeAlert(g);
+        }
 
         if (referee.getFutureGames().size() > 0) {
             throw new IllegalInputException();
         }
-
-        //search specific referee with list from controller;
-        HashMap<String, User> users = controller.getUsers();
-        for (HashMap.Entry user : users.entrySet()) {
-            if (user.getKey().equals(userName) && user.getValue() instanceof Referee) {
-                ((Referee) user.getValue()).setStatus(UserStatus.INACTIVE);
-            }
-        }
+        controller.removeUser(userName);
     }
 
     /**
      * Manually swapping all games that the referee we want to delete should be judged in the future
-     * @param listOfGame
+     * @param leagueInformation
      * @param referees
      * @param referee
      */
-    public void manuallChangingReferee(List <Game> listOfGame, List<Referee> referees, Referee referee){
-        int i=0;
-        for(Game game:listOfGame){
+    public void manualChangingReferee(LeagueInformation leagueInformation, List<Referee> referees, Referee referee){
+        for(Game game:leagueInformation.getGames()){
             for(Referee newReferee:referees){
+                if(newReferee.equals(referee)){//skip the old referee!
+                    continue;
+                }
                 if(newReferee.getType()==referee.getType()){
                     if(referee.getRefereeType()==RefereeType.MainReferee){
                         game.setMainReferee(newReferee);
@@ -159,6 +156,20 @@ public class FootballAssosiation extends User {
     public void getSeasonFromController(String year){
         controller.getSeason(year);
     }
+
+    /**
+     * financial report by the order of the association football
+     * @param team to get financial report about it
+     * @return
+     */
+    public List<FinancialReport> getFinancialReports(Team team){
+        Log.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
+        return team.getFinancialReport();
+    }
+
+
+
+
     //public void addBudgetRule(String rule){} //UC-33
 
     //public void editGameSchedulingPolicy(ITeamAllocatePolicy iTeamAllocatePolicy){} //UC-34
@@ -167,4 +178,8 @@ public class FootballAssosiation extends User {
 
     //public void editScoreSchedulingPolicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
+
+    public HashMap<Integer, LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
 }
