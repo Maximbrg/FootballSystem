@@ -65,7 +65,7 @@ public class Controller {
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
         User user = users.get(userName);
         User user1 = removedUser.get(userName);
-        if(user != null || user != null) {
+        if(user1 != null || user != null) {
             throw new UserNameAlreadyExistException();
         }//more details
         Fan fan = new Fan(id,name, password,userName);

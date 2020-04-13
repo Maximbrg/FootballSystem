@@ -2,6 +2,7 @@ package ServiceLayer;
 
 
 import System.Asset.Asset;
+import System.Exeptions.AlreadyHasTeamException;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.NotHisTeamException;
 import System.FootballObjects.Field;
@@ -10,6 +11,7 @@ import System.Users.*;
 import System.*;
 
 import java.util.Date;
+import java.util.List;
 
 public class TeamOwnerController extends MainUserController  {
 
@@ -73,17 +75,30 @@ public class TeamOwnerController extends MainUserController  {
         asset.editAssetValue(value);
     }
 
-    public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException{
+    public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException, AlreadyHasTeamException {
+        if(!teamOwner.getTeamList().contains(team)){
+            throw new NotHisTeamException();
+        }
+        if(newTeamOwner.getTeamList().size()>0){
+            throw new AlreadyHasTeamException();
+        }
+        teamOwner.addTeamOwner(team,newTeamOwner);
     }
 
-    public void removeTeamOwner(TeamOwner teamOwner, TeamOwner teamOwnerToRemove, Team team){
-
+    public void removeTeamOwner(TeamOwner teamOwner, TeamOwner teamOwnerToRemove, Team team) throws NotHisTeamException {
+        if(!teamOwner.getTeamList().contains(team)){
+            throw new NotHisTeamException();
+        }
+        teamOwner.removeTeamOwner(team,teamOwnerToRemove);
     }
-
-    public void getMyTeamOwner(TeamOwner teamOwner, Team team){
-
+/*
+    public List<TeamOwner> getMyTeamOwner(TeamOwner teamOwner, Team team) throws NotHisTeamException {
+        if(!teamOwner.getTeamList().contains(team)){
+            throw new NotHisTeamException();
+        }
+        return teamOwner.get
     }
-
+*/
     public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager){
 
     }
