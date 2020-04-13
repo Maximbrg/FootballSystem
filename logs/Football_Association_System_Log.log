@@ -2203,3 +2203,7 @@ Mon Apr 13 15:57:40 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed
 Mon Apr 13 15:57:40 IDT 2020 Users.Referee: The referee Max (id: 205)pull his future games.
 Mon Apr 13 17:23:08 IDT 2020 Users.TeamOwner: A new financial report was set to team : Hapoel Beer Sheva , id :0
 Mon Apr 13 17:26:10 IDT 2020 Users.TeamOwner: A new financial report was set to team : Hapoel Beer Sheva , id :0
+Mon Apr 13 23:49:32 IDT 2020 Users.User: Harel Chror(id: 456) update his password
+Mon Apr 13 23:49:32 IDT 2020 Users.Coach: The PersonalPage for coach : Maxim  id : 123was created.
+Tue Apr 14 00:17:55 IDT 2020 Users.User: Harel Chror(id: 456) update his password
+Tue Apr 14 00:17:55 IDT 2020 Users.Player: The PersonalPage for player : Maxim  id : 123was created.
