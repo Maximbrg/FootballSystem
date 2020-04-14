@@ -47,7 +47,7 @@ public abstract class ASearchStrategy {
     protected List<IShowable> getListByCategory(SearchCategory category){
         Controller controller=Controller.getInstance();
         List<IShowable> list= new LinkedList<IShowable>();
-        if(category==SearchCategory.Default){
+        if(category==SearchCategory.DEFAULT){
             return getDefaultList();
         }
         if(category==SearchCategory.PLAYER){

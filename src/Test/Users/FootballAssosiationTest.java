@@ -1,7 +1,5 @@
 
 import System.Enum.RefereeType;
-import System.Enum.TeamStatus;
-import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.League;
 import System.Controller;
@@ -30,10 +28,10 @@ public class FootballAssosiationTest {
     Team Liverpool = new Team("Liverpool", null);
     Team Chelsea= new Team("Chelsea", null);
 
-    Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-    Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","Max");
-    Referee rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","Dana");
-    Referee rTest3=new Referee("Shachar", RefereeType.AssistantReferee,207,"abc","Shachar");
+    Referee rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+    Referee rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","Max");
+    Referee rTest2=new Referee("Dana", RefereeType.ASSISTANT,206,"abc","Dana");
+    Referee rTest3=new Referee("Shachar", RefereeType.ASSISTANT,207,"abc","Shachar");
 
 
     @Before
@@ -57,7 +55,7 @@ public class FootballAssosiationTest {
         assertEquals(footballAssosiation.getLeagueInformations().size(),1);
         assertEquals(footballAssosiation.getLeagueInformations().get(1).getId(),1);
 
-        assertEquals(season.getLeagueInformations().size(),1);
+        assertEquals(season.getLeaguesInformation().size(),1);
         assertEquals(PremierLeague.getLeagueInformation().size(),1);
     }
 
@@ -73,13 +71,13 @@ public class FootballAssosiationTest {
     public void addNewReferee() {
         //user not found , username not exist in the Controller
         try {
-            footballAssosiation.addNewReferee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+            footballAssosiation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         } catch (UserNameAlreadyExistException e) {
             assert(true);
         }
         //user found
         try {
-            footballAssosiation.addNewReferee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
+            footballAssosiation.addNewReferee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
 
         } catch (UserNameAlreadyExistException e) {
             assert(false);
@@ -88,7 +86,7 @@ public class FootballAssosiationTest {
 
     @Test
     public void removeReferee() {
-        Referee Shiran=new Referee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+        Referee Shiran=new Referee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         //user not found , username not exist in the Controller
         try {
             footballAssosiation.removeReferee(Shiran);
@@ -98,7 +96,7 @@ public class FootballAssosiationTest {
 
 
         try {
-            footballAssosiation.addNewReferee("Shiran", RefereeType.MainReferee,204,"123","Shiran");
+            footballAssosiation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         } catch (UserNameAlreadyExistException e) {
             assert(false);
         }

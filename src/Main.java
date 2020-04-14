@@ -1,4 +1,3 @@
-package System;
 
 import System.FootballObjects.Event.EventLog;
 import System.FootballObjects.Event.Goal;
@@ -29,10 +28,10 @@ public class Main {
 //        e.addEventToLog(g3);
 //        e.addEventToLog(g2);
 //        e.addEventToLog(g1);
-//        System.out.println(e.getaEventList().get(0).getClass().toString().substring(35,e.getaEventList().get(0).getClass().toString().length()));
-//        g.addEventToLogEvent(e.getaEventList().get(0));
-//        g.addEventToLogEvent(e.getaEventList().get(1));
-//        g.addEventToLogEvent(e.getaEventList().get(2));
+//        System.out.println(e.getEventList().get(0).getClass().toString().substring(35,e.getEventList().get(0).getClass().toString().length()));
+//        g.addEventToLogEvent(e.getEventList().get(0));
+//        g.addEventToLogEvent(e.getEventList().get(1));
+//        g.addEventToLogEvent(e.getEventList().get(2));
 //        System.out.print(r.createGameReport(g));
 
     }

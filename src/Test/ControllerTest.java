@@ -1,37 +1,29 @@
 
+
+import System.Controller;
 import System.Enum.RefereeType;
-import System.Enum.TeamStatus;
-import System.Enum.UserStatus;
-import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.*;
+import System.Users.Coach;
+import System.Users.Fan;
+import System.Users.Player;
+import System.Users.Referee;
 import org.junit.Before;
 import org.junit.Test;
-import System.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ControllerTest {
     Controller cTest;
-//    Fan fanLogOut= new Fan(201,"shmuel","h124","shmuelSG");
-
-
-
     @Before
     public void init() throws UserNameAlreadyExistException {
         cTest= Controller.getInstance();
         //Controller.getInstance().signUp(205,"Itzik","h123","ItzikHaGadol8989");
-        //fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
-        //cTest.signUp(10,"Hen Debi","123123","xyl");
-
-
     }
     @Test
     public void initSystemTest(){
@@ -113,8 +105,8 @@ public class ControllerTest {
     }
     @Test
     public void getAllRefereeTest(){
-        Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-        Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee123");
+        Referee rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+        Referee rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","KillerReferee123");
         Fan fTest0= new Fan(201,"Itzik","h124","ItzikHaGadol1");
         Fan fTest1= new Fan(203,"avi","h124","aviHaGadol1");
         int count=0;
@@ -128,7 +120,7 @@ public class ControllerTest {
              count++;
              assertEquals("Referee",r.getClass().toString().substring(r.getClass().toString().length()-7));
          }
-        assertEquals(2,count);
+        assertEquals(Controller.getInstance().getAllReferee().size(),count);
     }
     @Test
     public void getAllCoachTest(){
@@ -139,15 +131,15 @@ public class ControllerTest {
             count++;
             assertEquals("Coach",r.getClass().toString().substring(r.getClass().toString().length()-5));
         }
-        assertEquals(1,cTest.getAllCoach().size());
+        assertEquals(count,cTest.getAllCoach().size());
     }
     @Test
     public void getAllPlayersTest(){
         Team t=new Team("Hap",null);
         Player playerTest= new Player(208,"MaorMelichson","aa","maori1",new Date(System.currentTimeMillis()),"Forward",100,10);
         Player playerTest1= new Player(207,"ElyanivBarda","aa","maorit54",new Date(System.currentTimeMillis()),"Forward",10,100);
-        Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee123");
-        Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee1234");
+        Referee rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee123");
+        Referee rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","KillerReferee1234");
         Fan fTest0= new Fan(201,"Itzik","h124","ItzikHaGadol54");
         Fan fTest1= new Fan(203,"avi","h124","aviHaGadol34");
         int count=0;
@@ -222,6 +214,16 @@ public class ControllerTest {
             assertNull(cTest.getUsers().get(fTest.getUserName()));
         } catch (NoSuchAUserNamedException e) {
             assert(false);
+        }
+    }
+
+    @Test
+    public void isUserNameExistTest(){
+        cTest.addUser("hendi",new Fan(123,"hen","1223","hendi"));
+        if(!cTest.isUserNameExist("hendi")){
+            assert(false);
+        }else{
+            assert(true);
         }
     }
 

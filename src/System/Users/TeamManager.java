@@ -6,9 +6,10 @@ import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
+
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
 //</editor-fold>
 
 public class TeamManager extends User implements Asset, IObserverTeam {
@@ -69,6 +70,11 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     //<editor-fold desc="Setters">
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void removeUser() {
+
     }
 
     private void setAssetValue(int assetValue) {

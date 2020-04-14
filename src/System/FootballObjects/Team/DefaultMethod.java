@@ -10,8 +10,9 @@ import java.util.List;
  * LOSS: 0 points.
  * TIE: 1 points
  */
-public class DefualtMethod implements IScoreMethodPolicy {
+public class DefaultMethod implements IScoreMethodPolicy {
 
+    //<editor-fold desc="Methods">
     public List <Integer> setScorePolicy() {
         List <Integer> toReturn=new ArrayList();
         toReturn.add(3);
@@ -19,5 +20,6 @@ public class DefualtMethod implements IScoreMethodPolicy {
         toReturn.add(1);
         return toReturn;
     }
+    //</editor-fold>
 
 }

@@ -1,5 +1,7 @@
 package System.Users;
 //<editor-fold desc="imports">
+
+import System.Enum.TeamStatus;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
@@ -7,12 +9,11 @@ import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
 //</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
@@ -77,6 +78,11 @@ public class TeamOwner extends User implements IObserverTeam {
         this.name = name;
     }
 
+    @Override
+    public void removeUser() {
+
+    }
+
     public void setSelfCoach(Coach selfCoach) {
         this.selfCoach = selfCoach;
     }
@@ -116,6 +122,7 @@ public class TeamOwner extends User implements IObserverTeam {
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
+
     }//---UC 18
 
     /**
@@ -160,7 +167,7 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param team to produce financial report
      */
     public FinancialReport addFinancialReport(Team team){
-        FinancialReport fReport = new FinancialReport(team, new Date());
+        FinancialReport fReport = new FinancialReport(team);
         team.addFinancialReport(fReport);
         Log.getInstance().writeToLog("A new financial report was set to team : "+ team.getName()+" , id :"+ team.getId());
         return fReport;

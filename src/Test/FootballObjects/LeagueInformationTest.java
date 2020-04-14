@@ -1,7 +1,5 @@
 
 import System.Enum.RefereeType;
-import System.Enum.TeamStatus;
-import System.FootballObjects.Game;
 import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
@@ -31,10 +29,10 @@ public class LeagueInformationTest {
 //    Game game2=new Game(null,2000,null,null,null,Arsenal,Chelsea);
 
 
-    Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-    Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee");
-    Referee rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","KillerReferee");
-    Referee rTest3=new Referee("Shachar", RefereeType.AssistantReferee,207,"abc","KillerReferee");
+    Referee rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+    Referee rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","KillerReferee");
+    Referee rTest2=new Referee("Dana", RefereeType.ASSISTANT,206,"abc","KillerReferee");
+    Referee rTest3=new Referee("Shachar", RefereeType.ASSISTANT,207,"abc","KillerReferee");
 
     List<Referee> referees= new ArrayList<>();
 
@@ -58,9 +56,9 @@ public class LeagueInformationTest {
 
     @Test
     public void getLeagueTable() {
-        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(0),5);
-        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(1),3);
-        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(2),1);
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(0),5);
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),3);
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(2),1);
 
         Team [] teams= new Team[3];
         int i=0;
@@ -77,7 +75,7 @@ public class LeagueInformationTest {
 
         assertArrayEquals(teams,teams2);
 
-        leagueInformation.updateScoreTeamInLeageTable(PremierLeague.getTeams().get(1),10);
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),10);
 
         i=0;
         HashMap<Team,Integer> temp2= leagueInformation.getLeagueTable();

@@ -5,12 +5,12 @@ import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
-import System.I_Observer.IObserverTeam;
+import System.IShowable;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
-import System.IShowable;
-import System.Log;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -93,6 +93,11 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     //<editor-fold desc="Setters">
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void removeUser() {
+
     }
 
     public void setPreparation(String preparation) {

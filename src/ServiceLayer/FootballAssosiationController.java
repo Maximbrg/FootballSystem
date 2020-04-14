@@ -140,9 +140,9 @@ public class FootballAssosiationController {
         int mainNum=0;
         int sideNum=0;
         for(Referee ref:referees){
-            if(ref.getRefereeType()==RefereeType.MainReferee){
+            if(ref.getRefereeType()==RefereeType.MAIN){
                 mainNum++;
-            }else if(ref.getRefereeType()== RefereeType.AssistantReferee){
+            }else if(ref.getRefereeType()== RefereeType.ASSISTANT){
                 sideNum++;
             }
         }

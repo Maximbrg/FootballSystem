@@ -1,8 +1,7 @@
 
 
-import System.FootballObjects.Team.DefualtAllocte;
+import System.FootballObjects.Team.DefaultAllocate;
 import System.FootballObjects.Team.Team;
-import org.junit.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,11 +10,11 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
-import System.Enum.TeamStatus;
+
 import System.FootballObjects.Game;
 
 
-public class DefualtAllocteTest extends DefualtAllocte {
+public class DefaultAllocateTest extends DefaultAllocate {
     List<Team> teams= new ArrayList<>();
     List<Game> games= new ArrayList<>();
     @Before

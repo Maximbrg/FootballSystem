@@ -9,18 +9,37 @@ import java.util.List;
 
 public class EventLog {
 
+    //<editor-fold desc="Fields">
     private List<AEvent> aEventList;
+    //</editor-fold>
+
+    //<editor-fold desc="Constructor">
     public EventLog(){
         aEventList=new ArrayList<AEvent>();
     }
-    public List<AEvent> getaEventList(){
+    //</editor-fold>
+
+    //<editor-fold desc="Getters">
+    public List<AEvent> getEventList(){
         return aEventList;
     }
+    //</editor-fold>
+
+    //<editor-fold desc="Methods">
+    /**
+     * Adding event to log event
+     * @param event
+     */
     public void addEventToLog(AEvent event){
         aEventList.add(event);
         sortEventLog();
         Log.getInstance().writeToLog("Event was added to eventLog. Id:"+event.getId());
     }
+
+    /**
+     * Removes event from log event
+     * @param event
+     */
     public void removeEvent(AEvent event){
         aEventList.remove(event);
         sortEventLog();
@@ -28,6 +47,9 @@ public class EventLog {
 
     }
 
+    /**
+     * Sorting event log by time
+     */
     public void sortEventLog(){
         Collections.sort(this.aEventList, new Comparator<AEvent>() {
             public int compare(AEvent o1, AEvent o2) {
@@ -42,4 +64,6 @@ public class EventLog {
             }
         });
     }
+    //</editor-fold>
+
 }

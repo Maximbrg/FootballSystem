@@ -78,7 +78,7 @@ public class TeamOwnerController extends MainUserController implements Observabl
         teamManager.setMyTeamOwner(teamOwner);
     }
 
-    public void removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, NotHisManagerException, TeamIsClosedException {
+    public void removeTeamManager(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, NotHisManagerException, TeamIsClosedException {
         this.checkInputs(teamOwner,team);
         if(teamManager.getMyTeamOwner()!=teamOwner){
             throw new NotHisManagerException();
@@ -99,10 +99,8 @@ public class TeamOwnerController extends MainUserController implements Observabl
         notifyUI();
     }
 
-    public FinancialReport sumbitReport(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException {
-        checkInputs(teamOwner,team);
-       return teamOwner.addFinancialReport(team);
-    }
+    public FinancialReport sumbitReport(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException { checkInputs(teamOwner,team);
+        return teamOwner.addFinancialReport(team);    }
 
     //</editor-fold>
 

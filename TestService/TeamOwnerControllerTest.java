@@ -214,7 +214,7 @@ public class TeamOwnerControllerTest {
     }//Test ID:    #6.3
 
     @Test
-    public void addTeamMenegarTest(){
+    public void addTeamManagerTest(){
     try {
         teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
         assertTrue(team1.getTeamManagersList().contains(teamManager));
@@ -230,14 +230,14 @@ public class TeamOwnerControllerTest {
 
             //in case that the owner which appoint the manager is the same who's remove him
             teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner1,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner1,team1,teamManager);
             assertFalse(team1.getTeamManagersList().contains(teamManager));
             assertNull(teamManager.getMyTeam());
             assertNull(teamManager.getMyTeamOwner());
 
             //in case that owner which didnt appoint the manager try to remove him
             teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner3,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner3,team1,teamManager);
             assertTrue(team1.getTeamManagersList().contains(teamManager));
             assertTrue(teamManager.getMyTeam()==team1);
         }catch (Exception e){}

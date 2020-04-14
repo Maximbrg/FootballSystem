@@ -2,12 +2,14 @@ package System.FootballObjects.Team;
 
 import System.FootballObjects.Game;
 import System.Log;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class DefualtAllocte implements ITeamAllocatePolicy {
+public class DefaultAllocate implements ITeamAllocatePolicy {
 
+    //<editor-fold desc="Methods">
     /**
      *Inaugural games for the league- home and away games for each league team
      * @param team
@@ -46,4 +48,6 @@ public class DefualtAllocte implements ITeamAllocatePolicy {
         }
         Log.getInstance().writeToLog("League Information inaugural games for the league- home and away games for each league team");
     }
+    //</editor-fold>
+
 }

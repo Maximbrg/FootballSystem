@@ -1,18 +1,17 @@
 package System;
-import System.Exeptions.IllegalInputException;
-import System.Exeptions.UserNameAlreadyExistException;
+import System.Enum.UserStatus;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Field;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
-import System.FootballObjects.Team.*;
+import System.FootballObjects.Team.Team;
 import System.Users.*;
-import System.Enum.UserStatus;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-
 public class Controller {
 
     private HashMap<String,User> users;
@@ -117,11 +116,17 @@ public class Controller {
         return fan;
     } //UC-2
 
-
+    /**
+     * add field to the system fields
+     * @param field
+     */
     public void addField(Field field){
         fields.add(field);
     }
-
+    /**
+     * remove field from the system fields
+     * @param field
+     */
     public void removeField(Field field){
         fields.remove(field);
     }
@@ -167,6 +172,56 @@ public class Controller {
         return false;
     }
 
+    public List<Fan> getAllFan() {
+        List <Fan> fanList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Fan){
+                fanList.add((Fan) user);
+            }
+        }
+        return fanList;
+    }
+
+    public List<TeamManager> getAllTeamManager() {
+        List <TeamManager> teamMangerList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof TeamManager){
+                teamMangerList.add((TeamManager) user);
+            }
+        }
+        return teamMangerList;
+    }
+
+    public List<TeamOwner> getAllTeamOwner() {
+        List <TeamOwner> teamOwnerList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof TeamOwner){
+                teamOwnerList.add((TeamOwner) user);
+            }
+        }
+        return teamOwnerList;
+    }
+
+    public List<Player> getAllPlayers(){
+        List <Player> players = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof Player){
+                players.add((Player)user);
+            }
+        }
+        return players;
+    } //UC-4
+
+    public List<SystemManager> getAllSystemManager() {
+        List <SystemManager> sysList = new LinkedList<>();
+        for(User user : users.values()){
+            if(user instanceof SystemManager){
+                sysList.add((SystemManager) user);
+            }
+        }
+        return sysList;
+    }
+
 
 
     public List<Referee> getAllReferee(){
@@ -189,7 +244,10 @@ public class Controller {
         return Coachs;
     } //UC-4
 
-
+    /**
+     * add league to the system
+     * @param league
+     */
     public void addLeague(League league){leagues.add(league);}
 
     public Season getSeason(String year){
@@ -199,11 +257,16 @@ public class Controller {
         }
         return null;
     }
+
+
     public HashMap<String, User> getRemovedUsers() {
         return removedUser;
     }
 
-
+    /**
+     * add team to the system teams
+     * @param team
+     */
     public void addTeam(Team team){
         teams.add(team);
     }
@@ -232,33 +295,12 @@ public class Controller {
         }
         users.put(userName,removedUser.get(userName));
         removedUser.remove(userName);
+        users.get(userName).setStatus(UserStatus.INACTIVE);
         Log.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
-
     }
 
     public void removeTeam(Team team){ teams.remove(team); }
 
-
-
-    public List<Player> getAllPlayers(){
-        List <Player> players = new LinkedList<>();
-        for(User user : users.values()){
-            if(user instanceof Player){
-                players.add((Player)user);
-            }
-        }
-        return players;
-    } //UC-4
-
-    public List<SystemManager> getAllSystemManager() {
-        List <SystemManager> sysList = new LinkedList<>();
-        for(User user : users.values()){
-            if(user instanceof SystemManager){
-                sysList.add((SystemManager) user);
-            }
-        }
-        return sysList;
-    }
 
     //</editor-fold>
 

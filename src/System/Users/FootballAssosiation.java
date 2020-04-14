@@ -27,6 +27,11 @@ public class FootballAssosiation extends User {
         super(id,name,password,userName);
         leagueInformations=new HashMap<>();
     }
+
+    @Override
+    public void removeUser() {
+
+    }
     //</editor-fold>
 
 
@@ -165,7 +170,7 @@ public class FootballAssosiation extends User {
                 }
 
                 if(newReferee.getRefereeType().equals(referee.getRefereeType())){
-                    if(referee.getRefereeType()==RefereeType.MainReferee){
+                    if(referee.getRefereeType()==RefereeType.MAIN){
                         game.setMainReferee(newReferee);
                         newReferee.addGame(game);
                         referee.removeGame(game);

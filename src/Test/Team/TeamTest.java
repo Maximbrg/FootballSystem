@@ -2,8 +2,6 @@ import System.Asset.Asset;
 import System.Enum.TeamStatus;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.PersonalPageAlreadyExist;
-import System.FinancialReport;
-import System.FootballObjects.Field;
 import System.FootballObjects.Team.Team;
 import System.PersonalPages.PersonalPage;
 import System.Users.Player;
@@ -115,7 +113,7 @@ public class TeamTest {
     public void PermanentlyCloseTeamTest(){
         assets4.add(manager3);
         team4.PermanentlyCloseTeam();
-        assertTrue(team4.getTeamStatus()==TeamStatus.PermantlyClose);
+        assertTrue(team4.getTeamStatus()==TeamStatus.PermanentlyClose);
         for (Asset a:team4.getAssets()) {
             assertTrue(a.getMyTeam()==null);
         }

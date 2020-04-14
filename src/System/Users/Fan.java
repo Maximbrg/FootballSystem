@@ -22,6 +22,11 @@ public class Fan extends User implements IObserverGame {
         this.subjectGame=new LinkedList<>();
         this.myReports=new HashMap<Integer, Report>();
     }
+
+    @Override
+    public void removeUser() {
+
+    }
     //</editor-fold>
 
     //<editor-fold desc="getter">
@@ -39,15 +44,15 @@ public class Fan extends User implements IObserverGame {
     //</editor-fold>
 
     //<editor-fold desc="setter">
-    public void setFollowPages(List<PersonalPage> followPages) {
+    private void setFollowPages(List<PersonalPage> followPages) {
         FollowPages = followPages;
     }
 
-    public void setSubjectGame(List<ISubjectGame> subjectGame) {
+    private void setSubjectGame(List<ISubjectGame> subjectGame) {
         this.subjectGame = subjectGame;
     }
 
-    public void setMyReports(HashMap<Integer, Report> myReports) {
+    private void setMyReports(HashMap<Integer, Report> myReports) {
         this.myReports = myReports;
     }
 
@@ -83,7 +88,6 @@ public class Fan extends User implements IObserverGame {
         Log.getInstance().writeToLog("User submit report. (userId:"+getId()+"reportId"+report.getId()+")");
         return report;
     } //UC-11
-
     /**
      * Add a game to get alert (adding to subjectGame list)
      * @param iSubjectGame
@@ -107,6 +111,7 @@ public class Fan extends User implements IObserverGame {
     public void update() {
         //showAlert
         //log
+        Log.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
     }
 
 }

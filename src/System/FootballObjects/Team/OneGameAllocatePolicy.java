@@ -9,6 +9,7 @@ import java.util.List;
 
 public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
 
+    //<editor-fold desc="Methods">
     /**
      * Inaugural games for the league - one game for each league team
      * @param team list of team in the league
@@ -36,4 +37,6 @@ public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
         Log.getInstance().writeToLog("League Information inaugural games for the league - one game for each league team");
 
     }
+    //</editor-fold>
+
 }

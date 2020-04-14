@@ -15,6 +15,7 @@ import java.util.List;
 
 public class Game implements ISubjectGame {
 
+    //<editor-fold desc="Fields">
     private static int ID=1;
     private int id;
     private Date date;
@@ -28,8 +29,19 @@ public class Game implements ISubjectGame {
     private EventLog eventLog;
     private List<IObserverGame> iObserverGameListForFans;
     private List<IObserverGame> iObserverGameListForReferees;
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
+    /**
+     * Constructor
+     * @param date
+     * @param hour
+     * @param mainReferee
+     * @param assistantRefereeOne
+     * @param assistantRefereeTwo
+     * @param away
+     * @param home
+     */
     public Game(Date date, int hour, Referee mainReferee, Referee assistantRefereeOne, Referee assistantRefereeTwo, Team away, Team home) {
         this.id= ID;
         ID++;
@@ -46,7 +58,7 @@ public class Game implements ISubjectGame {
     }
     //</editor-fold>
 
-    //<editor-fold desc="getter">
+    //<editor-fold desc="Getters">
     public int getId(){
         return id;
     }
@@ -96,7 +108,7 @@ public class Game implements ISubjectGame {
     }
     //</editor-fold>
 
-    //<editor-fold desc="setter">
+    //<editor-fold desc="Setters">
     public void setDate(Date date) {
         this.date = date;
     }
@@ -145,6 +157,7 @@ public class Game implements ISubjectGame {
 
     //</editor-fold>
 
+    //<editor-fold desc="Override Methods">
     /**
      * Adding event to log event
      * @param event
@@ -199,7 +212,6 @@ public class Game implements ISubjectGame {
         this.iObserverGameListForReferees.remove(referee);
         referee.removeAlert(this);
         Log.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") removed alert to game (id: " + id +") alert");
-
     }
 
     /**
@@ -221,5 +233,6 @@ public class Game implements ISubjectGame {
             referee.update();
         }
     }
+    //</editor-fold>
 
 }
