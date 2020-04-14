@@ -55,9 +55,12 @@ public class TeamOwnerController extends MainUserController implements Observabl
 
     public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
         this.checkInputs(teamOwner,team);
-        if(newTeamOwner.getTeamList().size()>0){
-            throw new AlreadyHasTeamException();
+        if(! team.getAllTeamOwners().contains(newTeamOwner)){
+            throw new AlreadyHasTeamException();//********************* להחליף
         }
+        /*  it should be:
+             * !  team.getAllTeamOwners().contains(newTeamOwner)
+             * */
         teamOwner.addTeamOwner(team,newTeamOwner);
     }
 
@@ -66,9 +69,9 @@ public class TeamOwnerController extends MainUserController implements Observabl
         teamOwner.removeTeamOwner(team,teamOwnerToRemove);
     }
 
-    public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
+    public void addTeamManager(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
         this.checkInputs(teamOwner,team);
-        if(teamManager.getMyTeam()!=null){
+        if(!team.getAllTeamOwners().contains(teamOwner) && !team.getTeamManagersList().contains(teamManager)){
             throw new AlreadyHasTeamException();
         }
         team.addTeamManager(teamManager);

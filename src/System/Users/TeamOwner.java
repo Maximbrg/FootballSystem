@@ -103,19 +103,19 @@ public class TeamOwner extends User implements IObserverTeam {
     public void addTeamOwner(Team team, TeamOwner newTeamOwner){
         newTeamOwner.addTeamToMyTeamList(team);
         LinkedList<TeamOwner> teamOwnersList=this.teamOwnersWhichIappointed.get(team);
-        if(teamOwnersList!=null)
+        if(teamOwnersList!=null){
             teamOwnersList.add(newTeamOwner);
+        }
         else {
             teamOwnersList = new LinkedList<TeamOwner>();
             teamOwnersList.add(newTeamOwner);
         }
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
         team.setListOfOwnersWhichIappoint(this,teamOwnersWhichIappointed.get(team));
-
+        team.addOwnerToTeamOwnersList(newTeamOwner);
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
-
     }//---UC 18
 
     /**
@@ -124,12 +124,13 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param teamOwnerToRemove
      */
     public void removeTeamOwner(Team team, TeamOwner teamOwnerToRemove) throws StillNoAppointedOwner {
-        LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerList(this);
+        LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerListOfThisOwner(this);
         if(teamOwnersList!=null && teamOwnersList.size()!=0){
         teamOwnersList.remove(teamOwnerToRemove);
         team.setListOfOwnersWhichIappoint(this,teamOwnersList);
         this.teamOwnersWhichIappointed.remove(team);
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
+        team.removeOwnerFromTeamOwnersList(teamOwnerToRemove);
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
                     +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was removed : "+ teamOwnerToRemove.getName()+
                     " , owner id : " + teamOwnerToRemove.getId()+" .");

@@ -1,8 +1,5 @@
 package ServiceLayer;
-
-import ServiceLayer.Exceptions.CantSchedulingRefereeWithoutGames;
-import ServiceLayer.Exceptions.IsNotStartOFSeason;
-import ServiceLayer.Exceptions.LeagueNameAlreadyExist;
+import ServiceLayer.Exceptions.*;
 import System.Enum.RefereeType;
 import System.Exeptions.IllegalInputException;
 import System.Exeptions.NoSuchAUserNamedException;
@@ -16,6 +13,7 @@ import System.FootballObjects.Team.ITeamAllocatePolicy;
 import System.FootballObjects.Team.Team;
 import System.Users.FootballAssosiation;
 import System.Users.Referee;
+import System.Users.TeamOwner;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -93,6 +91,7 @@ public class FootballAssosiationController {
         Season season= controller.getSeason(year);
         if(season==null){
             season=new Season(Integer.valueOf(year));
+            controller.addSeason(season);
         }
 
         //create empty LeagueInformation
@@ -134,10 +133,27 @@ public class FootballAssosiationController {
      * @param referees
      * @throws CantSchedulingRefereeWithoutGames
      */
-    public void schedulingReferee(FootballAssosiation footballAssosiation,LeagueInformation leagueInformation, List<Referee> referees) throws CantSchedulingRefereeWithoutGames {
-        if(!leagueInformation.getGames().isEmpty()){
+    public void schedulingReferee(FootballAssosiation footballAssosiation,LeagueInformation leagueInformation, List<Referee> referees) throws CantSchedulingRefereeWithoutGames, MustHaveLeastOneMainReferee, MustHaveLeastTwoSideReferee {
+        if(leagueInformation.getGames().isEmpty()){
             throw new CantSchedulingRefereeWithoutGames();
         }
+        int mainNum=0;
+        int sideNum=0;
+        for(Referee ref:referees){
+            if(ref.getRefereeType()==RefereeType.MainReferee){
+                mainNum++;
+            }else if(ref.getRefereeType()== RefereeType.AssistantReferee){
+                sideNum++;
+            }
+        }
+
+        if(mainNum==0){
+            throw new MustHaveLeastOneMainReferee();
+        }
+        if(sideNum<2){
+            throw new MustHaveLeastTwoSideReferee();
+        }
+
         footballAssosiation.schedulingReferee(leagueInformation,referees);
     }
 
@@ -147,7 +163,7 @@ public class FootballAssosiationController {
      * @param policy
      * @throws IsNotStartOFSeason
      */
-    public void editScorePolicy(LeagueInformation leagueInformation, IScoreMethodPolicy policy) throws IsNotStartOFSeason {
+    public void editScorePolicy(LeagueInformation leagueInformation,IScoreMethodPolicy policy) throws IsNotStartOFSeason {
         if(isStartOfSeason(leagueInformation)){
             leagueInformation.editScoreSchedulingPolicy(policy);
         }
@@ -163,6 +179,7 @@ public class FootballAssosiationController {
     public void editTeamAllocatePolicy(LeagueInformation leagueInformation, ITeamAllocatePolicy policy) throws IsNotStartOFSeason {
         if(isStartOfSeason(leagueInformation)){
             leagueInformation.editGameSchedulingPolicy(policy);
+            return;
         }
         throw new IsNotStartOFSeason();
     }
@@ -172,7 +189,10 @@ public class FootballAssosiationController {
      * @param footballAssosiation
      * @param leagueInformation
      */
-    public void schedulingGames(FootballAssosiation footballAssosiation, LeagueInformation leagueInformation){
+    public void schedulingGames(FootballAssosiation footballAssosiation, LeagueInformation leagueInformation) throws MustHaveLeastTwoTeams {
+        if(leagueInformation.getLeague().getTeams().size()<2){
+            throw new MustHaveLeastTwoTeams();
+        }
         footballAssosiation.initLeagueInformation(leagueInformation);
     }
 
@@ -188,6 +208,19 @@ public class FootballAssosiationController {
     public void replaceReferee(FootballAssosiation footballAssosiation, LeagueInformation leagueInformation, List<Referee> referees, Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
         footballAssosiation.manualChangingReferee(leagueInformation,referees,referee);
         footballAssosiation.removeReferee(referee);//remove referee's user after chang
+    }
+
+    /**
+     * Create a new team to system
+     * @param teamName
+     * @param teamOwner
+     * @return
+     */
+    public Team createTeam(String teamName, TeamOwner teamOwner){
+        Team team= new Team(teamName,teamOwner);
+        Controller.getInstance().addTeam(team);
+        teamOwner.addTeamToMyTeamList(team);
+        return team;
     }
     //</editor-fold>
 
