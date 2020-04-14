@@ -55,6 +55,8 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.teamManagersList = new LinkedList<>();
         this.teamOwners = new HashMap<>();
         teamOwners.put(teamOwner,new LinkedList<TeamOwner>());
+        this.allTeamOwners=new LinkedList<>();
+        allTeamOwners.add(teamOwner);
         this.financialReport = null;
         this.iObserverTeamListForSystemManagers=new LinkedList<>();
         this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
