@@ -21,7 +21,7 @@ public class CoachControllerTest {
     }
 
     @Test
-    public void setDetailsTest(){//update coach details
+    public void setDetailsTest(){
     coachController.setDetails(c1,456,"Harel Chror","aaa111","assistant coach");
     assertTrue(c1.getId()==456);
     assertTrue(c1.getName()=="Harel Chror");

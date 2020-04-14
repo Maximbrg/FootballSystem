@@ -23,7 +23,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void setDetailsTest(){//update coach details
+    public void setDetailsTest(){
         Date newDate=new Date(2021,6,15,10,10);
         playerController.setDetails(p1,456,"Harel Chror","aaa111",newDate,"defensive tackle");
         assertTrue(p1.getId()==456);
