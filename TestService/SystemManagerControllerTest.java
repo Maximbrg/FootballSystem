@@ -33,7 +33,7 @@ public class SystemManagerControllerTest {
 
     @Before
     public void init() throws UserNameAlreadyExistException {
-        sTest=new SystemManagerController();
+        sTest=SystemManagerController.getInstance();
         sMangerTest=new SystemManager(124,"aviko","123","ninja");
         Controller.getInstance().addUser(sMangerTest.getUserName(),sMangerTest);
         //fTest=sTest.createNewFootballAssociation(sMangerTest,123,"kikos","123","kikos45");

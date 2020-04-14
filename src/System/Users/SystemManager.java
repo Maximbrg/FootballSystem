@@ -1,21 +1,20 @@
 package System.Users;
 
-import java.io.IOException;
-import java.sql.Ref;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-
+import System.Controller;
 import System.Enum.RefereeType;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
-import System.Report;
 import System.Log;
-import System.Controller;
+import System.Report;
+
+import java.io.IOException;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public class SystemManager extends User implements IObserverTeam {
 
@@ -26,6 +25,11 @@ public class SystemManager extends User implements IObserverTeam {
     //<editor-fold desc="constructor">
     public SystemManager(int id, String name, String password, String userName){
         super(id,name,password,userName);
+    }
+
+    @Override
+    public void removeUser() {
+
     }
     //</editor-fold>
 

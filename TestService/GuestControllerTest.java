@@ -1,18 +1,17 @@
 import ServiceLayer.GuestController;
-import ServiceLayer.GuestController;
+import System.Controller;
 import System.Enum.RefereeType;
 import System.Enum.SearchCategory;
-import System.Enum.TeamStatus;
 import System.Enum.UserStatus;
-import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Team.Team;
+import System.IShowable;
 import System.Searcher.ASearchStrategy;
 import System.Searcher.SearchByCategory;
 import System.Users.*;
-import org.junit.*;
-import System.*;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -165,11 +164,21 @@ public class GuestControllerTest {
         assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
         GuestController gustController = new GuestController();
         List<IShowable> iShowables =  gustController.getInfoToShow("Referee");
-        String string = iShowables.get(0).getName()+iShowables.get(0).getType();
-        assertEquals("InvokerReferee",string);
+        for(IShowable is:iShowables){
+            String string = is.getName()+is.getType();
+            if(string.equals("InvokerReferee")){
+                assert(true);
+                break;
+            }
+        }
         iShowables =  gustController.getInfoToShow("Team");
-        string = iShowables.get(0).getName()+iShowables.get(0).getType();
-        assertEquals("HapTeam",string);
+        for(IShowable is:iShowables){
+            String string = is.getName()+is.getType();
+            if(string.equals("HapTeam")){
+                assert(true);
+                break;
+            }
+        }
     } //Test ID:    #3.1
 
     /**

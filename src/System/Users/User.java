@@ -1,11 +1,7 @@
 package System.Users;
-import System.Enum.TeamStatus;
 import System.Enum.UserStatus;
-import System.Report;
 import System.Log;
-import System.Users.User;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -115,6 +111,8 @@ public abstract class User extends Guest {
         this.searchHistory.add(line);
         return searchHistory;
     }
+
+    public abstract void removeUser();
 
 
 }

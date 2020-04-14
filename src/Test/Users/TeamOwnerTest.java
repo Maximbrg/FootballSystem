@@ -6,6 +6,8 @@ import System.Users.TeamOwner;
 import org.junit.Before;
 import org.junit.Test;
 import  System.FinancialReport;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -83,7 +85,7 @@ public class TeamOwnerTest {
 
     @Test
     public void getFinancialReportTest(){
-        fReport= owner1.getFinancialReport(team1);
+        fReport= owner1.addFinancialReport(team1);
         assertTrue(fReport!=null);
     }
 

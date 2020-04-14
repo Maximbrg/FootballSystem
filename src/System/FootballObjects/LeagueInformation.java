@@ -5,23 +5,19 @@ import System.FootballObjects.Team.*;
 import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import System.Log;
-
-import javax.swing.*;
 import java.util.*;
 
 
 public class LeagueInformation {
     private static int ID=1;
     private int id;
+    private List<Game> games;
     League league;
     Season season;
     FootballAssosiation footballAssosiation;
     String name;
     HashMap<Team,Integer> leagueTable;
-    private List<Game> games;
-
     ITeamAllocatePolicy iTeamAllocatePolicy;
-
     IScoreMethodPolicy iScoreMethodPolicy;
     int WIN;
     int LOSS;
@@ -46,6 +42,7 @@ public class LeagueInformation {
             leagueTable.put(league.getTeams().get(i),0);
         }
     }
+    //</editor-fold>
 
     //<editor-fold desc="Getters">
     public int getId() {
@@ -83,24 +80,6 @@ public class LeagueInformation {
     public Team getChampion() {
         return Champion;
     }
-    //</editor-fold>
-
-    /**
-     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
-     */
-    public void initLeagueInformation(){
-        iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
-        //get list of score for policy
-        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
-        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
-        WIN=setScore.get(0);
-        LOSS=setScore.get(1);
-        TIE=setScore.get(2);
-    }
-
-    //</editor-fold>
-
-
 
     /**
      *
@@ -130,11 +109,27 @@ public class LeagueInformation {
         return temp;
     }
 
+    //</editor-fold>
 
 
 
     /**
-     * The Referee were inducted for games this season.
+     * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
+     */
+    public void initLeagueInformation(){
+        iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
+        //get list of score for policy
+        //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
+        List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
+        WIN=setScore.get(0);
+        LOSS=setScore.get(1);
+        TIE=setScore.get(2);
+    }
+
+
+
+    /**
+     * Inaugural refereeing for games during the league season
      * @param referees list of all referees
      */
     public void schedulingReferee(List<Referee> referees){
@@ -186,7 +181,7 @@ public class LeagueInformation {
 
         }
 
-        Log.getInstance().writeToLog("The Referee were inducted for games this season. Name: "+league.getName());
+        Log.getInstance().writeToLog("League information- The referees inaugural season was successfully completed. League name: "+league.getName());
     } //UC-32
 
 

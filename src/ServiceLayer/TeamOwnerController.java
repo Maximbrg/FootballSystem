@@ -1,17 +1,17 @@
 package ServiceLayer;
-
-
+import ServiceLayer.Exceptions.NotHisManagerException;
+import ServiceLayer.Exceptions.TeamIsClosedException;
 import System.Asset.Asset;
-import System.Exeptions.HasTeamAlreadyException;
-import System.Exeptions.NotHisTeamException;
+import System.Enum.TeamStatus;
+import System.Exeptions.*;
 import System.FootballObjects.Field;
 import System.FootballObjects.Team.Team;
 import System.Users.*;
 import System.*;
 
-import java.util.Date;
+public class TeamOwnerController extends MainUserController implements Observable {
 
-public class TeamOwnerController extends MainUserController  {
+    //<editor-fold desc="Singleton Constructor">
 
     private static TeamOwnerController ourInstance = new TeamOwnerController();
 
@@ -22,23 +22,9 @@ public class TeamOwnerController extends MainUserController  {
     private TeamOwnerController() {
     }
 
-//    public Player signup(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary){
-//        Player player = new Player(id, name, password, userName, birthDate,  role,  assetValue,  salary) ;
-//        Controller.getInstance().addUser(userName,player);
-//        return player;
-//    }
-//
-//    public Coach signup(int id, String name, String password, String userName, String preparation, String role){
-//        Coach coach = new Coach(id, name, password, userName, preparation, role, 0,0 );
-//        Controller.getInstance().addUser(userName,coach);
-//        return coach;
-//    }
-//
-//    public TeamManager signup(int id, String name, String password, String userName, String name1, Team myTeam){
-//        TeamManager teamManager = new TeamManager(id, name, password, userName, 0,0 );
-//        Controller.getInstance().addUser(userName,teamManager);
-//        return teamManager;
-//    }
+    //</editor-fold>
+
+    //<editor-fold desc="Methods">
 
     public Field createField(int id, String name){
         Field field = new Field(id, name, 0, 0);
@@ -46,52 +32,101 @@ public class TeamOwnerController extends MainUserController  {
         return field;
     }
 
-    public void addAssetToTeam(TeamOwner teamOwner, Team team, Asset asset) throws NotHisTeamException, HasTeamAlreadyException {
-        if(!teamOwner.getTeamList().contains(team)){
-            throw new NotHisTeamException();
-        }
+    public void addAssetToTeam(TeamOwner teamOwner, Team team, Asset asset) throws NotHisTeamException, TeamIsClosedException, HasTeamAlreadyException  {
+        this.checkInputs(teamOwner,team);
         team.addAsset(asset);
         if(asset instanceof Player){
            team.addPlayerToTeam((Player)asset);
         }
     }
 
-    public void removeAssetFromTeam(TeamOwner teamOwner, Team team, Asset asset) throws NotHisTeamException, HasTeamAlreadyException {
-        if(!teamOwner.getTeamList().contains(team)){
-            throw new NotHisTeamException();
-        }
+    public void removeAssetFromTeam(TeamOwner teamOwner, Team team, Asset asset) throws NotHisTeamException, TeamIsClosedException {
+        this.checkInputs(teamOwner,team);
         team.removeAsset(asset);
         if(asset instanceof Player){
             team.removePlayerFromTeam((Player)asset);
         }
     }
 
-    public void editAssetOfTeam(TeamOwner teamOwner, Team team,  Asset asset, int value) throws NotHisTeamException{
-        if(!teamOwner.getTeamList().contains(team)){
-            throw new NotHisTeamException();
-        }
+    public void editAssetOfTeam(TeamOwner teamOwner, Team team,  Asset asset, int value) throws NotHisTeamException, TeamIsClosedException {
+        this.checkInputs(teamOwner,team);
         asset.editAssetValue(value);
     }
 
-    public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException{
+    public void addTeamOwner(TeamOwner teamOwner, Team team, TeamOwner newTeamOwner) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
+        this.checkInputs(teamOwner,team);
+        if(newTeamOwner.getTeamList().size()>0){
+            throw new AlreadyHasTeamException();
+        }
+        teamOwner.addTeamOwner(team,newTeamOwner);
     }
 
-    public void removeTeamOwner(TeamOwner teamOwner, TeamOwner teamOwnerToRemove, Team team){
+    public void removeTeamOwner(TeamOwner teamOwner, TeamOwner teamOwnerToRemove, Team team) throws NotHisTeamException, TeamIsClosedException, StillNoAppointedOwner {
+        this.checkInputs(teamOwner,team);
+        teamOwner.removeTeamOwner(team,teamOwnerToRemove);
+    }
+
+    public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
+        this.checkInputs(teamOwner,team);
+        if(teamManager.getMyTeam()!=null){
+            throw new AlreadyHasTeamException();
+        }
+        team.addTeamManager(teamManager);
+        teamManager.setMyTeamOwner(teamOwner);
+    }
+
+    public void removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, NotHisManagerException, TeamIsClosedException {
+        this.checkInputs(teamOwner,team);
+        if(teamManager.getMyTeamOwner()!=teamOwner){
+            throw new NotHisManagerException();
+        }
+        team.removeTeamManager(teamManager);
+        teamManager.setMyTeamOwner(null);
+    }
+
+    public void closeTeam(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException {
+        this.checkInputs(teamOwner,team);
+        team.closeTeam();
+        notifyUI();
+    }
+
+    public void openTeam(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamStatusException, TeamIsClosedException {
+        this.checkInputs(teamOwner,team);
+        teamOwner.restartTeam(team);
+        notifyUI();
+    }
+
+    public FinancialReport sumbitReport(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException { checkInputs(teamOwner,team);
+        return teamOwner.addFinancialReport(team);    }
+
+    //</editor-fold>
+
+    //<editor-fold desc="Override">
+
+    @Override
+    public void addObserver(Observer observer) {
 
     }
 
-    public void getMyTeamOwner(TeamOwner teamOwner, Team team){
+    @Override
+    public void removeObserver(Observer observer) {
 
     }
 
-    public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager){
+    @Override
+    public void notifyUI() {
 
     }
 
-    public void removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager){
-
+    private void checkInputs(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException{
+        if(!teamOwner.getTeamList().contains(team)){
+            throw new NotHisTeamException();
+        }
+        if(team.getTeamStatus()== TeamStatus.Close){
+            throw new TeamIsClosedException();
+        }
     }
 
-
-
+    //</editor-fold>
 }
+

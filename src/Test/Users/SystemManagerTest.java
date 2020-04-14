@@ -54,7 +54,12 @@ public class SystemManagerTest {
     @Test
     public void createTeamTest(){
         systemMTest.createTeam("Hap123",null);
-        assertEquals("Hap123",Controller.getInstance().getAllTeams().get(0).getName());
+        boolean ans=false;
+        for(Team t:Controller.getInstance().getAllTeams()){
+            if(t.getName().equals("Hap123")){
+                assert(true);
+            }
+        }
     }
     @Test
     public void createNewPlayerTest(){

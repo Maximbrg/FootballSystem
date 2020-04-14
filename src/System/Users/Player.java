@@ -96,6 +96,11 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         this.name = name;
     }
 
+    @Override
+    public void removeUser() {
+
+    }
+
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }

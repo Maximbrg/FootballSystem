@@ -2,6 +2,8 @@ package System;
 
 import System.FootballObjects.Team.Team;
 
+import java.util.Date;
+
 public class FinancialReport {
     private final Team team;
     private int incomeFromGame;
@@ -9,6 +11,7 @@ public class FinancialReport {
     private int payingSalary;
     private int income;
     private int expanse;
+    private Date date;
 
     //<editor-fold desc="constructor">
     public FinancialReport(Team team){
@@ -17,6 +20,7 @@ public class FinancialReport {
         income=team.getIncome();
         expanse=team.getExpense();
         payingSalary=team.getPaymentSalary();
+        this.date=new Date(System.currentTimeMillis());
     }
     //</editor-fold>
     //<editor-fold desc="getters">

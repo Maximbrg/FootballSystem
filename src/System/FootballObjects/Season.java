@@ -1,7 +1,5 @@
 package System.FootballObjects;
 
-import System.FootballObjects.Team.Team;
-import System.Controller;
 import System.IShowable;
 
 import java.util.ArrayList;
@@ -13,7 +11,9 @@ public class Season implements IShowable {
     private List<LeagueInformation> leagueInformations;
 
 
-    //<editor-fold desc="constructor">
+
+
+    //<editor-fold desc="constractur">
     public Season(int year){
         this.year=year;
         leagueInformations=new ArrayList<>();
@@ -22,15 +22,13 @@ public class Season implements IShowable {
 
     }
     //</editor-fold>
+
+
     public String getYear() {
         return String.valueOf(year);
     }
     public int getIntYear() {
         return year;
-    }
-
-    public List<LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
     }
 
 
@@ -49,17 +47,19 @@ public class Season implements IShowable {
         String str = "@year:"+year;
         return str;
     }
+    public List<LeagueInformation> getLeagueInformations() {
+        return leagueInformations;
+    }
 
+
+    //</editor-fold>
+
+    //Methods
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
 
 
-
-    //Methods
-
-
-    //public void schedulingGames(){} //UC-35
 
 
 }

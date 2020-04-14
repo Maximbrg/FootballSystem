@@ -37,7 +37,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private Field field;
     private int income;
     private int expense;
-    private FinancialReport financialReport;
+    private List<FinancialReport> financialReport;
 
     /**
      * Initialize variables
@@ -54,11 +54,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.teamManagersList = new LinkedList<>();
         this.teamOwners = new HashMap<>();
         teamOwners.put(teamOwner,new LinkedList<TeamOwner>());
-        this.financialReport = null;
         this.iObserverTeamListForSystemManagers=new LinkedList<>();
         this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
         this.gamesOfTeams= new ArrayList<>();
         this.players = new LinkedList<>();
+        this.financialReport = new LinkedList<>();
     }
 
     //<editor-fold desc="Getters">
@@ -118,7 +118,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         return expense;
     }
 
-    public FinancialReport getFinancialReport() {
+    public List<FinancialReport> getFinancialReport() {
         return financialReport;
     }
 
@@ -144,9 +144,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public LinkedList<TeamOwner> getTeamOwnerList(TeamOwner appointedTeamOwner){
         LinkedList<TeamOwner> res=this.teamOwners.get(appointedTeamOwner);
-        if(res!=null)
-          return res;
-
+        if(res!=null) {
+            return res;
+        }
            return res = new LinkedList<TeamOwner>();
     }
 
@@ -173,6 +173,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Setters">
+
     public void setId(int id) {
         this.id = id;
     }
@@ -211,10 +212,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public void setExpense(int expense) {
         this.expense = expense;
-    }
-
-    public void setFinancialReport(FinancialReport financialReport) {
-        this.financialReport = financialReport;
     }
 
     public void setListOfOwnersWhichIappoint(TeamOwner teamOwner,LinkedList<TeamOwner>newList){
@@ -329,13 +326,25 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void addPlayerToTeam(Player player) {
         players.add(player);
     }
-
     /**
      * This function remove player from the team
      * @param player
      */
     public void removePlayerFromTeam(Player player){
         players.remove(player);
+    }
+    /**
+     * This function adds new financialReport
+     * @FinancialReport financialReport
+     */
+    public void addFinancialReport(FinancialReport financialReport) {
+        this.financialReport.add(financialReport);
+    }
+    /**
+     * create new financial report and it to the financial reports of the team
+     */
+    public void createFinancialReport(){
+        addFinancialReport(new FinancialReport(this));
     }
     //</editor-fold>
 

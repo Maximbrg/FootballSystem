@@ -22,6 +22,11 @@ public class Fan extends User implements IObserverGame {
         this.subjectGame=new LinkedList<>();
         this.myReports=new HashMap<Integer, Report>();
     }
+
+    @Override
+    public void removeUser() {
+
+    }
     //</editor-fold>
 
     //<editor-fold desc="getter">

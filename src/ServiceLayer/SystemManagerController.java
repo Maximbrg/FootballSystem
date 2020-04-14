@@ -10,7 +10,22 @@ import System.*;
 import java.io.IOException;
 import java.util.*;
 
+
+
+
+
 public class SystemManagerController {
+
+
+    private static SystemManagerController ourInstance = new SystemManagerController();
+
+    public static SystemManagerController getInstance() {
+        return ourInstance;
+    }
+
+    private SystemManagerController() {
+    }
+
     //<editor-fold desc="Getters">
     /**
      * Get all teams in the system

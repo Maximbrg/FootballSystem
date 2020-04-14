@@ -1,22 +1,21 @@
 
+import System.Controller;
 import System.Enum.RefereeType;
-import System.Enum.TeamStatus;
-import System.Enum.UserStatus;
-import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.*;
+import System.Users.Coach;
+import System.Users.Fan;
+import System.Users.Player;
+import System.Users.Referee;
 import org.junit.Before;
 import org.junit.Test;
-import System.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ControllerTest {
     Controller cTest;
@@ -120,7 +119,7 @@ public class ControllerTest {
              count++;
              assertEquals("Referee",r.getClass().toString().substring(r.getClass().toString().length()-7));
          }
-        assertEquals(2,count);
+        assertEquals(Controller.getInstance().getAllReferee().size(),count);
     }
     @Test
     public void getAllCoachTest(){
@@ -131,7 +130,7 @@ public class ControllerTest {
             count++;
             assertEquals("Coach",r.getClass().toString().substring(r.getClass().toString().length()-5));
         }
-        assertEquals(1,cTest.getAllCoach().size());
+        assertEquals(count,cTest.getAllCoach().size());
     }
     @Test
     public void getAllPlayersTest(){

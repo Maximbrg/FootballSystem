@@ -6,9 +6,10 @@ import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
+
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
 //</editor-fold>
 
 public class TeamManager extends User implements Asset, IObserverTeam {
@@ -17,6 +18,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
+    private TeamOwner myTeamOwner;
 
     /**
      * Initialize variables
@@ -42,6 +44,10 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         return name;
     }
 
+    public TeamOwner getMyTeamOwner() {
+        return myTeamOwner;
+    }
+
     @Override
     public int getAssetValue() {
         return assetValue;
@@ -55,7 +61,6 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         return str;
     }
 
-
     @Override
     public Team getMyTeam() {
         return myTeam;
@@ -67,13 +72,23 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         this.name = name;
     }
 
+    @Override
+    public void removeUser() {
+
+    }
+
     private void setAssetValue(int assetValue) {
         this.assetValue = assetValue;
     }
 
-    public void setMyTeam(Team myTeam) {
+    public void setMyTeam(Team myTeam)  {
         this.myTeam = myTeam;
     }
+
+    public void setMyTeamOwner(TeamOwner myTeamOwner) {
+        this.myTeamOwner = myTeamOwner;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
@@ -124,7 +139,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
 
     @Override
     public void update(String msg) {
-        Log.getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
+        Log.getInstance().getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
     }
 
     /**

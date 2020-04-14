@@ -1,16 +1,18 @@
 package System.Users;
 //<editor-fold desc="imports">
+
+import System.Enum.TeamStatus;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
-import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
 //</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
@@ -73,6 +75,11 @@ public class TeamOwner extends User implements IObserverTeam {
     //<editor-fold desc="Setters">
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public void removeUser() {
+
     }
 
     public void setSelfCoach(Coach selfCoach) {
@@ -141,7 +148,7 @@ public class TeamOwner extends User implements IObserverTeam {
      * Restart team status - reopen team
      * @param team - to restart
      */
-    public void RestartTeam(Team team) throws TeamStatusException {
+    public void restartTeam(Team team) throws TeamStatusException {
         if(team.getTeamStatus()==TeamStatus.Close) {
             team.setTeamStatus(TeamStatus.Active);
             team.notifyTeamOwnersAndManager(getName() + " was open again.");
@@ -156,9 +163,9 @@ public class TeamOwner extends User implements IObserverTeam {
      * Team owner create financial report
      * @param team to produce financial report
      */
-    public FinancialReport getFinancialReport(Team team){
+    public FinancialReport addFinancialReport(Team team){
         FinancialReport fReport = new FinancialReport(team);
-        team.setFinancialReport(fReport);
+        team.addFinancialReport(fReport);
         Log.getInstance().writeToLog("A new financial report was set to team : "+ team.getName()+" , id :"+ team.getId());
         return fReport;
     } //UC-24

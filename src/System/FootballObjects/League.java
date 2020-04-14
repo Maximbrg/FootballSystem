@@ -14,6 +14,7 @@ public class League implements IShowable {
     private List<Team> teams;
     private List<LeagueInformation> leagueInformations;
 
+    //<editor-fold desc="Constructor">
     public League(String name, List<Team> teams) {
         this.id= ID;
         ID++;
@@ -24,6 +25,7 @@ public class League implements IShowable {
             this.teams.add(t);
         }
     }
+    //</editor-fold>
 
 
     //<editor-fold desc="Getters">
@@ -53,9 +55,10 @@ public class League implements IShowable {
         teams.add(t);
     }
 
+    //</editor-fold>
+
+
     public void addLeagueInformation(LeagueInformation leagueInformation) {
         this.leagueInformations.add(leagueInformation);
     }
-    //</editor-fold>
-
 }
