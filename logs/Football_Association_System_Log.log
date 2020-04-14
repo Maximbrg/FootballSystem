@@ -2653,3 +2653,265 @@ Tue Apr 14 00:10:16 IDT 2020 FootballObjects.Event.AEvent: New Event was created
 Tue Apr 14 00:10:16 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:11
 Tue Apr 14 00:10:16 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
 Tue Apr 14 00:10:16 IDT 2020 Users.Referee: The referee Hen edited event(event Id:11).
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:11
+Tue Apr 14 00:11:32 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Tue Apr 14 00:11:32 IDT 2020 Users.Referee: The referee Hen edited event(event Id:11).
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 12:08:35 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 12:08:35 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 12:08:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 12:08:57 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 12:09:53 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 12:09:53 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 12:10:43 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 12:10:43 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Tue Apr 14 12:12:34 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Tue Apr 14 12:12:34 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.

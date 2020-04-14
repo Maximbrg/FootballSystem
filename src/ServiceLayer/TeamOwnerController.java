@@ -96,8 +96,9 @@ public class TeamOwnerController extends MainUserController implements Observabl
         notifyUI();
     }
 
-    public FinancialReport sumbitReport(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException { checkInputs(teamOwner,team);
-       return sumbitReport(teamOwner,team);
+    public FinancialReport sumbitReport(TeamOwner teamOwner, Team team) throws NotHisTeamException, TeamIsClosedException {
+        checkInputs(teamOwner,team);
+       return teamOwner.addFinancialReport(team);
     }
 
     //</editor-fold>
