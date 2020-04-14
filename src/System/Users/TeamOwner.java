@@ -116,7 +116,6 @@ public class TeamOwner extends User implements IObserverTeam {
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
-
     }//---UC 18
 
     /**
