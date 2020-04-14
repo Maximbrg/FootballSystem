@@ -29,6 +29,11 @@ public class PersonalPage {
     public List<Fan> getFollowers() {
         return followers;
     }
+
+    public List<String> getPosts() {
+        return posts;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="setter">

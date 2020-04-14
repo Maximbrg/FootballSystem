@@ -5,6 +5,7 @@ import System.Enum.TeamStatus;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
+import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -108,15 +109,16 @@ public class TeamOwner extends User implements IObserverTeam {
     public void addTeamOwner(Team team, TeamOwner newTeamOwner){
         newTeamOwner.addTeamToMyTeamList(team);
         LinkedList<TeamOwner> teamOwnersList=this.teamOwnersWhichIappointed.get(team);
-        if(teamOwnersList!=null)
+        if(teamOwnersList!=null){
             teamOwnersList.add(newTeamOwner);
+        }
         else {
             teamOwnersList = new LinkedList<TeamOwner>();
             teamOwnersList.add(newTeamOwner);
         }
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
         team.setListOfOwnersWhichIappoint(this,teamOwnersWhichIappointed.get(team));
-
+        team.addOwnerToTeamOwnersList(newTeamOwner);
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
@@ -129,13 +131,14 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param teamOwnerToRemove
      */
     public void removeTeamOwner(Team team, TeamOwner teamOwnerToRemove) throws StillNoAppointedOwner {
-        LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerList(this);
+        LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerListOfThisOwner(this);
         if(teamOwnersList!=null && teamOwnersList.size()!=0){
         teamOwnersList.remove(teamOwnerToRemove);
         team.setListOfOwnersWhichIappoint(this,teamOwnersList);
         this.teamOwnersWhichIappointed.remove(team);
         this.teamOwnersWhichIappointed.put(team,teamOwnersList);
-            Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
+        team.removeOwnerFromTeamOwnersList(teamOwnerToRemove);
+        Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
                     +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was removed : "+ teamOwnerToRemove.getName()+
                     " , owner id : " + teamOwnerToRemove.getId()+" .");
         }
@@ -152,9 +155,9 @@ public class TeamOwner extends User implements IObserverTeam {
         if(team.getTeamStatus()==TeamStatus.Close) {
             team.setTeamStatus(TeamStatus.Active);
             team.notifyTeamOwnersAndManager(getName() + " was open again.");
-            Log.getInstance().writeToLog(getName() + " was open again");
+            Log.getInstance().getInstance().writeToLog(getName() + " was open again");
         }else{
-            Log.getInstance().writeToLog(getName() + " try to restart a open/permanently team");
+            Log.getInstance().getInstance().writeToLog(getName() + " try to restart a open/permanently team");
             throw new TeamStatusException();
         }
     } //UC-23

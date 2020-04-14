@@ -49,9 +49,9 @@ public class TeamOwnerTest {
     public void addTeamOwnerTest(){
         owner1.addTeamOwner(team1,owner2);
         owner1.addTeamOwner(team1,owner3);
-        assertTrue(team1.getTeamOwnersWhichappointedByAteamOwner(owner1).contains(owner2));
+        assertTrue(team1.getTeamOwnerListOfThisOwner(owner1).contains(owner2));
         assertTrue(owner2.getTeamList().contains(team1));
-        assertTrue(team1.getTeamOwnersWhichappointedByAteamOwner(owner1).contains(owner3));
+        assertTrue(team1.getTeamOwnerListOfThisOwner(owner1).contains(owner3));
         assertTrue(owner3.getTeamList().contains(team1));
 
     }//---UC 18
@@ -60,7 +60,7 @@ public class TeamOwnerTest {
     public void removeTeamOwnerTest() throws StillNoAppointedOwner {
         try {
             owner1.removeTeamOwner(team1, owner2);
-            assertTrue(team1.getTeamOwnersWhichappointedByAteamOwner(owner1).contains(owner2) == false);
+            assertTrue(team1.getTeamOwnerListOfThisOwner(owner1).contains(owner2) == false);
             assertTrue(owner2.getTeamList().contains(team1) == false);
         }catch (StillNoAppointedOwner e){
             assert(true);
@@ -68,7 +68,7 @@ public class TeamOwnerTest {
         try {
             //owner3 cant remove owner2 because he didnt appointed him
             owner3.removeTeamOwner(team1, owner2);
-            assertTrue(team1.getTeamOwnersWhichappointedByAteamOwner(owner1).contains(owner2) == true);
+            assertTrue(team1.getTeamOwnerListOfThisOwner(owner1).contains(owner2) == true);
             assertTrue(owner2.getTeamList().contains(team1) == true);
         }catch (StillNoAppointedOwner e){
             assert(true);

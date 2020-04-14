@@ -27,6 +27,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private List<Asset> assets;
     private List<Player> players;
     private List<Game> gamesOfTeams;
+    private List<TeamOwner> allTeamOwners;
 
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
@@ -54,6 +55,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.teamManagersList = new LinkedList<>();
         this.teamOwners = new HashMap<>();
         teamOwners.put(teamOwner,new LinkedList<TeamOwner>());
+        this.allTeamOwners=new LinkedList<>();
+        allTeamOwners.add(teamOwner);
+        this.financialReport = new LinkedList<FinancialReport>();
         this.iObserverTeamListForSystemManagers=new LinkedList<>();
         this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
         this.gamesOfTeams= new ArrayList<>();
@@ -97,8 +101,12 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         return teamOwners;
     }
 
-    public LinkedList<TeamOwner> getTeamOwnersWhichappointedByAteamOwner(TeamOwner t) {
-        return teamOwners.get(t);
+    public LinkedList<TeamOwner> getTeamOwnerListOfThisOwner(TeamOwner appointedTeamOwner){
+        LinkedList<TeamOwner> res=this.teamOwners.get(appointedTeamOwner);
+        if(res!=null) {
+            return res;
+        }
+        return res = new LinkedList<TeamOwner>();
     }
 
     public Field getField() {
@@ -113,7 +121,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         int sum =0;
         sum+=getPaymentSalary();
         sum+=field.getMaintenanceCost();
-
 
         return expense;
     }
@@ -142,14 +149,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         return personalPage;
     }
 
-    public LinkedList<TeamOwner> getTeamOwnerList(TeamOwner appointedTeamOwner){
-        LinkedList<TeamOwner> res=this.teamOwners.get(appointedTeamOwner);
-        if(res!=null) {
-            return res;
-        }
-           return res = new LinkedList<TeamOwner>();
-    }
-
     public List<Game> getGamesOfTeams(){
         return gamesOfTeams;
     }
@@ -170,6 +169,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         Log.getInstance().writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
         return futureGames;
     }
+
+    public List<TeamOwner> getAllTeamOwners() {
+        return allTeamOwners;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Setters">
@@ -218,9 +222,10 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.teamOwners.put(teamOwner,newList);
     }
 
-
-
-    //</editor-fold>
+    public void setAllTeamOwners(List<TeamOwner> allTeamOwners) {
+        this.allTeamOwners = allTeamOwners;
+    }
+//</editor-fold>
 
     //<editor-fold desc="Team Methods">
     /**
@@ -326,6 +331,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void addPlayerToTeam(Player player) {
         players.add(player);
     }
+
     /**
      * This function remove player from the team
      * @param player
@@ -340,11 +346,13 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void addFinancialReport(FinancialReport financialReport) {
         this.financialReport.add(financialReport);
     }
-    /**
-     * create new financial report and it to the financial reports of the team
-     */
-    public void createFinancialReport(){
-        addFinancialReport(new FinancialReport(this));
+
+    public void addOwnerToTeamOwnersList(TeamOwner tOwner){
+        this.allTeamOwners.add(tOwner);
+    }
+
+    public void removeOwnerFromTeamOwnersList(TeamOwner tOwner){
+        this.allTeamOwners.add(tOwner);
     }
     //</editor-fold>
 
