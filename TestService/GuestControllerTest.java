@@ -172,7 +172,9 @@ public class GuestControllerTest {
         assertEquals("HapTeam",string);
     } //Test ID:    #3.1
 
-
+    /**
+     *
+     */
     @Test
     public void searchShowablesTest(){
         GuestController gustController = new GuestController();
@@ -184,6 +186,10 @@ public class GuestControllerTest {
         assertEquals("hende",list.get(0).getName());
         assertEquals("xy",f.getSearchHistory().get(0));
     }
+
+    /**
+     * filter the search by category
+     */
     @Test
     public void filterResultsTest(){
         GuestController gustController = new GuestController();

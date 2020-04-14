@@ -1,11 +1,13 @@
 package System.Users;
 
 import java.io.IOException;
+import java.sql.Ref;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import System.Enum.RefereeType;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -29,16 +31,14 @@ public class SystemManager extends User implements IObserverTeam {
 
     //<editor-fold desc="setters">
 
-    public static void setOpenReportsBox(HashMap<Integer, Report> openReportsBox) {
+    private static void setOpenReportsBox(HashMap<Integer, Report> openReportsBox) {
         SystemManager.openReportsBox = openReportsBox;
     }
 
-    public static void setCloseReportsBox(HashMap<Integer, Report> closeReportsBox) {
+    private static void setCloseReportsBox(HashMap<Integer, Report> closeReportsBox) {
         SystemManager.closeReportsBox = closeReportsBox;
     }
     //</editor-fold>
-
-    //Methods
     //<editor-fold desc="getters">
     public HashMap<Integer, Report> getOpenReports() {
         return openReportsBox;
@@ -138,10 +138,49 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Player user=new Player(id,name,password,userName,birthDate,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new Player : "+ user.getUserName());
         return user;
-
     }
+
+    /**
+     * create new referee
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @param refereeType
+     * @return
+     * @throws UserNameAlreadyExistException
+     */
+    public Referee createNewReferee(int id, String name, String password, String userName, RefereeType refereeType) throws UserNameAlreadyExistException {
+        if(Controller.getInstance().isUserNameExist(userName)){
+            throw new UserNameAlreadyExistException();
+        }
+        Referee user=new Referee(name,refereeType,id,password,userName);
+        Controller.getInstance().addUser(userName,user);
+        Log.getInstance().writeToLog("Add a new Referee : "+ user.getUserName());
+        return user;
+    }
+
+    /**
+     * create new football Association user
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @return
+     * @throws UserNameAlreadyExistException
+     */
+    public FootballAssosiation createNewFootballAssociation(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
+        if(Controller.getInstance().isUserNameExist(userName)){
+            throw new UserNameAlreadyExistException();
+        }
+        FootballAssosiation user=new FootballAssosiation(id,name,password,userName);
+        Controller.getInstance().addUser(userName,user);
+        Log.getInstance().writeToLog("Add a new Football Association : "+ user.getUserName());
+        return user;
+    }
+
     /**
      * Create a new coach
      * @param id
@@ -161,7 +200,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Coach user=new Coach(id,name,password,userName,preparation,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new Coach : " + user.getUserName());
         return user;
     }
     /**
@@ -194,7 +233,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamManager user=new TeamManager(id,name,password,userName,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new TeamManager : " + user.getUserName());
 
         return user;
     }
@@ -215,7 +254,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamOwner user=new TeamOwner(id,name,password,userName,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new TeamOwner : " + user.getUserName());
         return user;
         }
 
@@ -234,7 +273,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         SystemManager user = new SystemManager(id, name, password, userName);
         Controller.getInstance().addUser(userName, user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() + " " + user.getId());
+        Log.getInstance().writeToLog("Add a new SystemManager : " + user.getUserName());
         return user;
     }
     @Override

@@ -1,6 +1,7 @@
 import System.Asset.Asset;
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
+import System.Exeptions.NoRefereePermissions;
 import System.FootballObjects.Event.Goal;
 import System.FootballObjects.Event.YellowCard;
 import System.FootballObjects.Game;
@@ -16,6 +17,8 @@ import System.Users.TeamManager;
 import org.junit.*;
 import org.junit.Before;
 import org.junit.Test;
+import sun.misc.Cache;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.awt.*;
@@ -95,6 +98,16 @@ public class RefereeTest {
         rTest3.addEventMidGame(g1,"Offense",90);
         assertNotEquals(g1.getEventLog().getaEventList().get(g1.getEventLog().getaEventList().size()-1).getClass().toString().substring(35), "Offense");
     }
+
+    @Test
+    public void createGameReportTest(){
+        try {
+            rTest0.createGameReport(g1);
+        } catch (NoRefereePermissions e){
+            assert (true);
+        }
+    }
+
     @Test
     public void getFutureGamesTest(){
         Date d11=new Date(2021-1900,6,15,10,10);

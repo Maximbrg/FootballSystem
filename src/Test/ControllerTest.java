@@ -20,18 +20,10 @@ import java.util.Date;
 
 public class ControllerTest {
     Controller cTest;
-//    Fan fanLogOut= new Fan(201,"shmuel","h124","shmuelSG");
-
-
-
     @Before
     public void init() throws UserNameAlreadyExistException {
         cTest= Controller.getInstance();
         //Controller.getInstance().signUp(205,"Itzik","h123","ItzikHaGadol8989");
-        //fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
-        //cTest.signUp(10,"Hen Debi","123123","xyl");
-
-
     }
     @Test
     public void initSystemTest(){
@@ -222,6 +214,16 @@ public class ControllerTest {
             assertNull(cTest.getUsers().get(fTest.getUserName()));
         } catch (NoSuchAUserNamedException e) {
             assert(false);
+        }
+    }
+
+    @Test
+    public void isUserNameExistTest(){
+        cTest.addUser("hendi",new Fan(123,"hen","1223","hendi"));
+        if(!cTest.isUserNameExist("hendi")){
+            assert(false);
+        }else{
+            assert(true);
         }
     }
 

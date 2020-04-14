@@ -56,13 +56,12 @@ public class Log {
      * write a string to the log file of the system
      * @param message to be write in the log file
      */
-    public static void writeToLog(String message){
+    public void writeToLog(String message){
         try{
             FileWriter out = new FileWriter(Log.logFile, true);
             Date date =new Date();
             date.toString();
             String callerClassName = new Exception().getStackTrace()[1].getClassName().substring(7);
-
             message = date +" "+callerClassName+": "+message+"\n";
             out.write(message.toCharArray());
             System.err.println(message);

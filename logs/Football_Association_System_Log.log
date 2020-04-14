@@ -1615,3 +1615,935 @@ Sun Apr 12 22:41:31 IDT 2020 Users.Player: The team for player : Ben Saar id : 1
 Sun Apr 12 22:41:31 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Sun Apr 12 22:41:31 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
 Sun Apr 12 22:41:31 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
 Sun Apr 12 22:41:31 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:3
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:1
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Mon Apr 13 13:02:30 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:7
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:06:31 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 13:06:31 IDT 2020 Users.Fan: User submit report. (userId:201reportId1)
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:06:31 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:08:49 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:08:49 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:08:49 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 13:08:49 IDT 2020 Users.Fan: User submit report. (userId:201reportId1)
+Mon Apr 13 13:09:41 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:09:41 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:09:41 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 13:09:41 IDT 2020 Users.Fan: User submit report. (userId:201reportId1)
+Mon Apr 13 13:09:59 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:09:59 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:09:59 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:09:59 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:09:59 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 13:09:59 IDT 2020 Users.Fan: User submit report. (userId:201reportId1)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee KillerReferee (id: 204)pull his future games.
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 7 by the referee Max.
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 8 by the referee KillerReferee.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 9 by the referee Max.
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 11) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 12) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (204,KillerReferee)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 13 by the referee Max.
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 13) alert
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Event was added to the log event game 15 by the referee Max.
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:10
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:10
+Mon Apr 13 13:10:12 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:12
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: The referee Hen edited event(event Id:10).
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Mon Apr 13 13:10:12 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207
+Mon Apr 13 13:15:36 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Mon Apr 13 13:15:36 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Mon Apr 13 13:15:36 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Mon Apr 13 13:15:36 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee Max.
+Mon Apr 13 13:15:36 IDT 2020 Users.Referee: Referee no have permissions to createGameReport. id's Referee:205
+Mon Apr 13 13:25:39 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Player eilami
+Mon Apr 13 13:25:55 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Player eilami
+Mon Apr 13 13:26:17 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 13:26:17 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 13:26:17 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:26:17 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:26:17 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:26:17 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:26:17 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Player eilami
+Mon Apr 13 13:26:17 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:26:17 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:26:17 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:26:17 IDT 2020 Users.SystemManager: A new report added to the System. id(7).
+Mon Apr 13 13:27:45 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Coach 10
+Mon Apr 13 13:29:01 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 13:29:01 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:29:01 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Coach 10
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Mon Apr 13 13:29:01 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Mon Apr 13 13:29:01 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:29:01 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:29:01 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:29:01 IDT 2020 Users.SystemManager: A new report added to the System. id(9).
+Mon Apr 13 13:29:18 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 13:29:18 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:29:18 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Coach 10
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Mon Apr 13 13:29:18 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Mon Apr 13 13:29:18 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:29:18 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:29:18 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:29:18 IDT 2020 Users.SystemManager: A new report added to the System. id(9).
+Mon Apr 13 13:30:37 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 13:30:37 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:30:37 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Coach 10
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: Add a new user : class System.Users.TeamManager 10
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Mon Apr 13 13:30:37 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Mon Apr 13 13:30:37 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:30:37 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:30:37 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:30:37 IDT 2020 Users.SystemManager: A new report added to the System. id(10).
+Mon Apr 13 13:31:20 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 13:31:20 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:31:20 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: Add a new user : class System.Users.Coach 10
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: Add a new user : class System.Users.TeamManager 10
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: Add a new user : class System.Users.TeamOwner 10
+Mon Apr 13 13:31:20 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Mon Apr 13 13:31:20 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:31:20 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:31:20 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:31:20 IDT 2020 Users.SystemManager: A new report added to the System. id(11).
+Mon Apr 13 13:32:05 IDT 2020 Users.SystemManager: Add a new user : class System.Users.SystemManager 10
+Mon Apr 13 13:34:57 IDT 2020 : !!!TEST!!!
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : harel , id :123
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamOwner: Team owner : dana, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : harel , owner id : 123 .
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : shiran , id :123
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamOwner: Team owner : dana, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : shiran , owner id : 123 .
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamOwner: A new financial report was set to team : Hapoel Beer Sheva , id :0
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The asset value for player : Ben Saar id : 123was edit.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: Team manager : Harel sror, id :456
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:was remove from team :Maccabi Tel Aviv , id :0
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: The PersonalPage for team : Hapoel Beer Sheva id : 0was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Mon Apr 13 13:34:57 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.TeamManager: The asset value for team manager : Harel sror id : 456was edit.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The asset value for player : Ben Saar id : 123was edit.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The PersonalPage for player : Ben Saar id : 123was created.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:3
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:1
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:7
+Mon Apr 13 13:34:57 IDT 2020 Users.Coach: The team for coach : harel id : 367was added.
+Mon Apr 13 13:34:57 IDT 2020 Users.Coach: The team for coach : harel id : 367was restart.
+Mon Apr 13 13:34:57 IDT 2020 Users.Coach: The asset value for coach : harel id : 367was edit.
+Mon Apr 13 13:34:57 IDT 2020 Users.Coach: The PersonalPage for coach : harel id : 367was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The PersonalPage for player : MaorMelichson id : 208was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.Player: The PersonalPage for player : ElyanivBarda id : 207was created.
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 13:34:57 IDT 2020 Users.Fan: User submit report. (userId:201reportId1)
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Itzik(id: 201) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Itzik(id: 201) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Mon Apr 13 13:34:57 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Itzik(id: 205) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Itzik(id: 205) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:34:57 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Mon Apr 13 13:34:57 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Mon Apr 13 13:34:57 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: shmulik(id: 205) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: shmulik(id: 205) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Field: The asset value for field : tedi id : 2000was edit.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: Inaugural games for the league - one game for each league team
+Mon Apr 13 13:34:57 IDT 2020 Report: system manager receive to report 2
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: A answer to report set. (2).
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: Add a new Coach : eilami123
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: Add a new TeamManager : eilami123ke
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: Add a new TeamOwner : eilami123ker
+Mon Apr 13 13:34:57 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: Add a new SystemManager : eilami123kere
+Mon Apr 13 13:34:57 IDT 2020 Users.User: Avi(id: 1234) update his status
+Mon Apr 13 13:34:57 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Mon Apr 13 13:34:57 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Mon Apr 13 13:34:57 IDT 2020 Users.SystemManager: A new report added to the System. id(13).
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (10)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (11)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:11
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 10 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to createGameReport. username's Referee:KillerReferee
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (12)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (13)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:13
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 12 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 14) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 17) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 15) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 16) alert
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee KillerReferee (username: KillerReferee)pull his future games.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (14)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (15)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:15
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 18 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (16)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:16
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 19 by the referee KillerReferee.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:205
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to addEventMidGame. id's Referee:207
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (17)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (18)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:18
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 20 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 22) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 22) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 22) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 23) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 23) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Dana (id: 207) register to receive a game (id: 23) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.LeagueInformation: The Referee were inducted for games this season. Name: champions
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee pull his games for 2019 season. (KillerReferee,KillerReferee)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (19)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (20)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:20
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 24 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 24) alert
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (21)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (22)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:22
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Event was added to the log event game 26 by the referee Max.
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:204
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:21
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (23)
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:21
+Mon Apr 13 13:34:57 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:23
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: The referee Hen edited event(event Id:21).
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:205
+Mon Apr 13 13:34:57 IDT 2020 Users.Referee: Referee no have permissions to editEventAfterGame. id's Referee:207
+Mon Apr 13 13:48:26 IDT 2020 Users.User: Itzik(id: 201) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Mon Apr 13 13:48:26 IDT 2020 Users.User: Itzik(id: 201) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Mon Apr 13 13:48:26 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Mon Apr 13 13:48:26 IDT 2020 Users.User: Itzik(id: 205) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:48:26 IDT 2020 Users.User: Itzik(id: 205) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:48:26 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Mon Apr 13 13:48:26 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Mon Apr 13 13:48:26 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Mon Apr 13 13:48:26 IDT 2020 Users.User: shmulik(id: 205) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User log in to the system. id(205).
+Mon Apr 13 13:48:26 IDT 2020 Users.User: shmulik(id: 205) update his status
+Mon Apr 13 13:48:26 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Mon Apr 13 16:28:10 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 16:28:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 16:28:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 16:28:10 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 16:28:10 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 16:28:10 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 16:48:54 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 16:48:54 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 16:48:54 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 16:48:54 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 16:48:55 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 16:48:55 IDT 2020 Controller: User removed from the system. userName(debi).
+Mon Apr 13 16:52:14 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 16:52:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 16:52:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 16:52:14 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 16:52:14 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 16:52:14 IDT 2020 Controller: User removed from the system. userName(debi).
+Mon Apr 13 17:00:17 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:00:17 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:00:17 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:00:17 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:00:17 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:00:17 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:00:17 IDT 2020 Controller: User removed from the system. userName(debi12).
+Mon Apr 13 17:00:49 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:00:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:00:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:00:49 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:00:49 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:00:49 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:00:49 IDT 2020 Controller: User removed from the system. userName(debi12).
+Mon Apr 13 17:00:49 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:00:49 IDT 2020 Controller: Removed user restart to the system. userName(debi12).
+Mon Apr 13 17:21:36 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:21:36 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:21:36 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:21:36 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:21:36 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:21:36 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:21:36 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:22:43 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:22:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:22:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:22:43 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:22:43 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:22:43 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:22:43 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:22:49 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:22:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:22:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:22:49 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:22:49 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:23:13 IDT 2020 Users.SystemManager: Add a new Football Association : kikos
+Mon Apr 13 17:23:13 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:23:13 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:23:13 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:23:13 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:23:13 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:23:13 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:23:13 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:24:45 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:24:45 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:24:45 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:24:45 IDT 2020 Controller: A new user signUp to the system. (10,debi).
+Mon Apr 13 17:24:45 IDT 2020 Controller: A new user signUp to the system. (10,debi12).
+Mon Apr 13 17:24:45 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:24:45 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:24:45 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:26:49 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:26:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:26:49 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:26:49 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:26:49 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:26:49 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:27:43 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:27:43 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:27:43 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:27:43 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:27:43 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:27:43 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:27:43 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:27:43 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:27:43 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:27:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:27:43 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:27:43 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:27:43 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:27:43 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:29:01 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:29:01 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:29:01 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:01 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:29:01 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:29:01 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:29:01 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:29:01 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:29:01 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:01 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:29:01 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:29:01 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:29:01 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:29:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:37 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:37 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:29:58 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:29:58 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:30:57 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:30:57 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:30:57 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:30:57 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:30:57 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:30:57 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:30:57 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:30:57 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:30:57 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:30:57 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:30:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:30:57 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:30:57 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:30:57 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:30:57 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:31:10 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:31:10 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:31:10 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:31:10 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:31:10 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:31:10 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:31:10 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:31:10 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:31:10 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:31:10 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:31:10 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:31:10 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:31:10 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:31:10 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:31:10 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:31:10 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:31:45 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:31:45 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:31:45 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:32:01 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:32:03 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:32:24 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:32:24 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:32:24 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:32:24 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:32:24 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:32:24 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:32:24 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:32:24 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:32:24 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:32:24 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:32:24 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:32:24 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:32:24 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:32:24 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:32:24 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:32:24 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:37:06 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:37:06 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:37:06 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:37:06 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:37:06 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:06 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:37:06 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:06 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:37:06 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:37:06 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:06 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:37:22 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:37:22 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:37:22 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:37:22 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:37:22 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 17:37:22 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:37:22 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:22 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:37:22 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:22 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:37:22 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:37:22 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:37:22 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:37:22 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:42:47 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:42:47 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:42:47 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:42:47 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:42:47 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 17:42:47 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:42:47 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:42:47 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:42:47 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:42:47 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:42:47 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:42:47 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:42:47 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:42:47 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 17:48:14 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 17:48:14 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 17:48:14 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 17:48:14 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 17:48:14 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 17:48:14 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 17:48:14 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:48:14 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 17:48:14 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:48:14 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 17:48:14 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 17:48:14 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 17:48:14 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:14 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 17:48:16 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:48:16 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:48:16 IDT 2020 Users.SystemManager: Add a new Player : meli
+Mon Apr 13 17:57:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 17:57:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 17:57:57 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 18:03:00 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 18:03:00 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 18:03:00 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 18:03:00 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 18:03:00 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 18:03:00 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 18:03:00 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:03:00 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 18:03:00 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:03:00 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 18:03:00 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:03:00 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:00 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 18:03:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:03:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:03:01 IDT 2020 Users.SystemManager: Add a new Player : meli
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 18:22:08 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 18:22:08 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 18:22:08 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 18:22:08 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 18:22:08 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 18:22:08 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 18:22:08 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:08 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 18:22:08 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:08 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 18:22:08 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:08 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:08 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 18:22:09 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:09 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:09 IDT 2020 Users.SystemManager: Add a new Player : meli
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 18:22:40 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 18:22:40 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 18:22:40 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 18:22:40 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 18:22:40 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 18:22:40 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 18:22:40 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:40 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 18:22:40 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:40 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 18:22:40 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:22:40 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:40 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 18:22:41 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:22:41 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:22:41 IDT 2020 Users.SystemManager: Add a new Player : meli
+Mon Apr 13 18:24:11 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:24:11 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:24:11 IDT 2020 Users.SystemManager: Add a new Referee : melik21
+Mon Apr 13 18:24:11 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Mon Apr 13 18:25:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:25:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:25:27 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Mon Apr 13 18:28:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:28:08 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:28:08 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Mon Apr 13 18:29:50 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:29:50 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:29:50 IDT 2020 Users.SystemManager: Add a new TeamOwner : meliki212
+Mon Apr 13 18:30:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:30:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:30:25 IDT 2020 Users.SystemManager: Add a new TeamOwner : sys
+Mon Apr 13 18:31:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:14 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:14 IDT 2020 Users.SystemManager: Add a new SystemManager : sys
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Mon Apr 13 18:31:25 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Mon Apr 13 18:31:25 IDT 2020 Report: system manager receive to report 1
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Add a new Referee : melik21
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Add a new SystemManager : sys
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Mon Apr 13 18:31:25 IDT 2020 Users.FootballAssosiation: Init new League. Name:champions
+Mon Apr 13 18:31:25 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
+Mon Apr 13 18:31:25 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Mon Apr 13 18:31:25 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Mon Apr 13 18:31:25 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:31:25 IDT 2020 Controller: User removed from the system. userName(debiq).
+Mon Apr 13 18:31:25 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:31:25 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Mon Apr 13 18:31:25 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Mon Apr 13 18:31:25 IDT 2020 Users.User: roni(id: 10) update his status
+Mon Apr 13 18:31:25 IDT 2020 Controller: User removed from the system. userName(debiky).
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:25 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: Add a new TeamOwner : meliki212
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Mon Apr 13 18:31:27 IDT 2020 Users.SystemManager: Add a new Player : meli

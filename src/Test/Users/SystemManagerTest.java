@@ -1,20 +1,18 @@
 
-
-import System.Enum.TeamStatus;
 import System.Controller;
+import System.Enum.TeamStatus;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
+import System.Report;
 import System.Users.Fan;
 import System.Users.SystemManager;
-import org.junit.*;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import System.Report;
-import java.awt.*;
-import java.util.LinkedList;
 
-import java.awt.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 
 public class SystemManagerTest {
 
@@ -58,6 +56,80 @@ public class SystemManagerTest {
         systemMTest.createTeam("Hap123",null);
         assertEquals("Hap123",Controller.getInstance().getAllTeams().get(0).getName());
     }
+    @Test
+    public void createNewPlayerTest(){
+        try {
+            systemMTest.createNewPlayer(10,"eilam","11","eilami",null,"",12,12);
+            systemMTest.createNewPlayer(10,"eilam","11","eilami",null,"",12,12);
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami").getId());
+    }
+
+    @Test
+    public void createNewCoachTest(){
+        try {
+            systemMTest.createNewCoach(10,"eilam","11","eilami123",null,"",12,12);
+            systemMTest.createNewCoach(10,"eilam","11","eilami123",null,"",12,12);
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami123").getId());
+
+    }
+
+    @Test
+    public void createNewFanTest(){
+        try {
+            systemMTest.createNewFan(10,"eilam","11","eilami123k");
+            systemMTest.createNewFan(10,"eilam","11","eilami123k");
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami123k").getId());
+
+    }
+
+
+    @Test
+    public void createNewTeamManagerTest(){
+        try {
+            systemMTest.createNewTeamManager(10,"eilam","11","eilami123ke",23,23);
+            systemMTest.createNewTeamManager(10,"eilam","11","eilami123ke",23,23);
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami123ke").getId());
+
+    }
+
+
+    @Test
+    public void createNewTeamOwnerTest(){
+        try {
+            systemMTest.createNewTeamOwner(10,"eilam","11","eilami123ker",23);
+            systemMTest.createNewTeamOwner(10,"eilam","11","eilami123ker",23);
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami123ker").getId());
+
+    }
+
+    @Test
+    public void createNewSystemManagerTest(){
+        try {
+            systemMTest.createNewSystemManager(10,"eilam","11","eilami123kere");
+            systemMTest.createNewSystemManager(10,"eilam","11","eilami123kere");
+        } catch (UserNameAlreadyExistException e) {
+            assert(true);
+        }
+        assertEquals(10,Controller.getInstance().getUsers().get("eilami123kere").getId());
+
+    }
+
+
 
     @Test
     public void removeUserTest(){

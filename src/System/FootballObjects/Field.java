@@ -94,7 +94,7 @@ public class Field implements Asset {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.writeToLog("The asset value for field : "+getName()+" id : "+getId() +"was edit.");
+        Log.getInstance().writeToLog("The asset value for field : "+getName()+" id : "+getId() +"was edit.");
 
     }
 
@@ -110,7 +110,7 @@ public class Field implements Asset {
     @Override
     public void resetMyTeam(Team team) {
       this.homeTeams.remove(team);
-        Log.writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+        Log.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -122,7 +122,7 @@ public class Field implements Asset {
     @Override
     public void addMyTeam(Team team) {
       homeTeams.add(team);
-        Log.writeToLog("The team for field : "+getName()+" id : "+getId() +"was added to the home teams list.");
+        Log.getInstance().writeToLog("The team for field : "+getName()+" id : "+getId() +"was added to the home teams list.");
 
     }
 

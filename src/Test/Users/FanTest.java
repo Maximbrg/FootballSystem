@@ -28,17 +28,9 @@ public class FanTest {
         playerTest1= new Player(207,"ElyanivBarda","aa","maori",new Date(System.currentTimeMillis()),"maorit",10,10);
         playerTest.createPersonalPage();
         playerTest1.createPersonalPage();
-        //personalPageTest=new PersonalPage(playerTest);
-        //personalPageTest1=new PersonalPage(playerTest1);
-    }
-
-    @Test
-    public void addFollowPageTest(){
-//
-//        fTest.addFollowPage(personalPageTest);
-//        assertEquals(playerTest.getId(),playerTest.getPersonalPage().getFollowers().get(0).getId());
 
     }
+
     @Test
     public void removeFollowPageTest(){
         fTest.addFollowPage(playerTest.getPersonalPage());
@@ -54,9 +46,10 @@ public class FanTest {
 
     @Test
     public void submitReportTest(){
-//        SystemManager s=new SystemManager(1,"aa","bb","sys");
-//        Controller.getInstance().addUser(fTest.getUserName(),fTest);
-//        fTest.submitReport("HelloWorld!");
+        SystemManager s=new SystemManager(1,"aa","bb","sys");
+        Controller.getInstance().addUser(fTest.getUserName(),fTest);
+        Report r = fTest.submitReport("HelloWorld!");
+        assertEquals("HelloWorld!",s.getOpenReports().get(r.getId()).getReport());
 
     }
 }
