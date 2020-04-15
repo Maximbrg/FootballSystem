@@ -1,44 +1,40 @@
-import System.Asset.Asset;
+
+
 import System.Enum.RefereeType;
-import System.Enum.TeamStatus;
 import System.Exeptions.NoRefereePermissions;
 import System.Exeptions.NoSuchEventException;
 import System.FootballObjects.Event.Goal;
-import System.FootballObjects.Event.YellowCard;
 import System.FootballObjects.Game;
 import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.PersonalPages.PersonalPage;
-import System.Users.Fan;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
-import System.Users.TeamManager;
-import org.junit.*;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+
 
 public class RefereeTest {
-    Referee rTest2,rTest3,rTest0,rTest1;
-    Game g1,g0;
-    Goal goal0,goal1;
-    Date d1,d2;
-    Team t,t2;
-    ArrayList<Referee> rList;
-    @Before
-    public void init() throws NoSuchEventException {
-        rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-        rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee");
-        rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","KillerReferee");
-        rTest3=new Referee("Dana", RefereeType.AssistantReferee,207,"abc","KillerReferee");
+    static Referee rTest2,rTest3,rTest0,rTest1;
+    static  Game g1,g0;
+    static Goal goal0,goal1;
+    static Date d1,d2;
+    static Team t,t2;
+    static ArrayList<Referee> rList;
+    @BeforeClass
+    public static void init() throws NoSuchEventException {
+        rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+        rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","KillerReferee");
+        rTest2=new Referee("Dana", RefereeType.ASSISTANT,206,"abc","KillerReferee");
+        rTest3=new Referee("Dana", RefereeType.ASSISTANT,207,"abc","KillerReferee");
         //<editor-fold desc="setters for dates">
         double hours =(new Date(System.currentTimeMillis()).getHours()-6.51);
         int castHours=(int)hours;
@@ -68,18 +64,30 @@ public class RefereeTest {
     @Test
     public void editEventAfterGameTest() throws NoRefereePermissions, NoSuchEventException {
         // too late for changing in the event log
-        rTest1.editEventAfterGame(g0,g0.getEventLog().getaEventList().get(0),"RedCard");
-        assertEquals(g0.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"Goal");
+        try{
+            rTest1.editEventAfterGame(g0,g0.getEventLog().getEventList().get(0),"RedCard");
+        }catch (NoRefereePermissions e){
+            assert (true);
+        }
+        assertEquals(g0.getEventLog().getEventList().get(0).getClass().toString().substring(35),"Goal");
         //in couple hours after game (not more than 5)
         g1.addEventToLogEvent(goal0);
-        rTest1.editEventAfterGame(g1,g1.getEventLog().getaEventList().get(0),"RedCard");
-        assertEquals(g1.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"RedCard");// too late for changing in the event log
+        rTest1.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"RedCard");
+        assertEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35),"RedCard");// too late for changing in the event log
         //assistant referee not allow to edit
-        rTest0.editEventAfterGame(g1,g1.getEventLog().getaEventList().get(0),"Offense");
-        assertNotEquals(g1.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
+        try{
+            rTest0.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense");
+        }catch (NoRefereePermissions e){
+            assert (true);
+        }
+        assertNotEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
         //referee that not belong to the game
-        rTest3.editEventAfterGame(g1,g1.getEventLog().getaEventList().get(0),"Offense");
-        assertNotEquals(g1.getEventLog().getaEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
+        try{
+            rTest3.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense");
+        }catch (NoRefereePermissions e){
+            assert (true);
+        }
+        assertNotEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
     }
     @Test
     public void addEventMidGameTest() throws NoRefereePermissions, NoSuchEventException {
@@ -87,16 +95,35 @@ public class RefereeTest {
         int hours =new Date(System.currentTimeMillis()).getHours()-1;
         d2.setHours(hours);
         rTest0.addEventMidGame(g1,"YellowCard",15);
-        assertEquals(g1.getEventLog().getaEventList().get(0).getClass().toString().substring(35), "YellowCard");
+        assertEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35), "YellowCard");
         //after the game
         d2.setHours(hours-8);
-        rTest0.addEventMidGame(g1,"Offense",90);
-        assertNotEquals(g1.getEventLog().getaEventList().get(g1.getEventLog().getaEventList().size()-1).getClass().toString().substring(35), "Offense");
+        try{
+            rTest0.addEventMidGame(g1,"Offense",90);
+        }catch (NoRefereePermissions e){
+            assert (true);
+        }
+        assertNotEquals(g1.getEventLog().getEventList().get(g1.getEventLog().getEventList().size()-1).getClass().toString().substring(35), "Offense");
         //referee that not belong to the game
         d2.setHours(hours);
-        rTest3.addEventMidGame(g1,"Offense",90);
-        assertNotEquals(g1.getEventLog().getaEventList().get(g1.getEventLog().getaEventList().size()-1).getClass().toString().substring(35), "Offense");
+        try {
+            rTest3.addEventMidGame(g1, "Offense", 90);
+       }catch (NoRefereePermissions e){
+            assert (true);
+
+       }
+        assertNotEquals(g1.getEventLog().getEventList().get(g1.getEventLog().getEventList().size()-1).getClass().toString().substring(35), "Offense");
     }
+
+    @Test
+    public void createGameReportTest(){
+        try {
+            rTest0.createGameReport(g1);
+        } catch (NoRefereePermissions e){
+            assert (true);
+        }
+    }
+
     @Test
     public void getFutureGamesTest(){
         Date d11=new Date(2021-1900,6,15,10,10);
@@ -124,7 +151,7 @@ public class RefereeTest {
         teamList.add(t2);
         Season s=new Season(2019);
         League leagueTest=new League("champions",teamList);
-        LeagueInformation lTest=new LeagueInformation(leagueTest,s,new FootballAssosiation(123,"avile","345345","avileHaGadol"));
+        LeagueInformation lTest=new LeagueInformation(leagueTest,s,new FootballAssociation(123,"avile","345345","avileHaGadol"));
         s.addLeagueInformation(lTest);
         lTest.initLeagueInformation();
         lTest.schedulingReferee(rList);

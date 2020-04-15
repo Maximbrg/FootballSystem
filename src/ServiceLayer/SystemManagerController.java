@@ -1,6 +1,7 @@
 package ServiceLayer;
 
 import ServiceLayer.Exceptions.TeamHasAFutureGame;
+import System.Enum.RefereeType;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -9,7 +10,21 @@ import System.*;
 import java.io.IOException;
 import java.util.*;
 
+
+
+
+
 public class SystemManagerController {
+
+
+    private static SystemManagerController ourInstance = new SystemManagerController();
+
+    public static SystemManagerController getInstance() {
+        return ourInstance;
+    }
+
+    private SystemManagerController() {
+    }
 
     //<editor-fold desc="Getters">
     /**
@@ -78,9 +93,8 @@ public class SystemManagerController {
      * @param systemManager
      * @param user
      */
-    private void removeUser(SystemManager systemManager,User user) throws NoSuchAUserNamedException {
+    public void removeUser(SystemManager systemManager,User user) throws NoSuchAUserNamedException {
         systemManager.removeUser(user.getUserName());
-        ///????????
     }
 
     /**
@@ -98,7 +112,7 @@ public class SystemManagerController {
      * @param answer
      */
     public void answerReport(SystemManager systemManager, Report report, String answer){
-        systemManager.answerTheReport(report,answer);
+        systemManager.answerReport(report,answer);
     }
 
     /**
@@ -125,14 +139,19 @@ public class SystemManagerController {
     public Fan createNewFan(SystemManager systemManager, int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         return systemManager.createNewFan(id,name,password,userName);
     }
-    ///need????????????
-    public Referee createNewReferee(){return null;}
+    public Referee createNewReferee(SystemManager systemManager, int id, String name, String password, String userName, RefereeType refereeType) throws UserNameAlreadyExistException
+    { return systemManager.createNewReferee(id,  name,  password,  userName,refereeType);
+    }
+
+    public FootballAssociation createNewFootballAssociation(SystemManager systemManager, int id, String name, String password, String userName)throws UserNameAlreadyExistException {
+        return systemManager.createNewFootballAssociation(id,name,password,userName);}
 
     public TeamManager createNewTeamManager(SystemManager systemManager,int id, String name, String password, String userName, int assetValue, int salary) throws UserNameAlreadyExistException {
         return systemManager.createNewTeamManager(id,name,password,userName,assetValue,salary);
     }
-    //needs to chang team owner constructor
-    public TeamOwner createNewTeamOwner(){return null;}
+    public TeamOwner createNewTeamOwner(SystemManager systemManager,int id, String name, String password, String userName, int assetValue, int salary) throws UserNameAlreadyExistException{
+        return systemManager.createNewTeamOwner(id,name,password,userName,salary);}
+
     public SystemManager createNewSystemManager(SystemManager systemManager,int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         return systemManager.createNewSystemManager(id,name,password,userName);
     }

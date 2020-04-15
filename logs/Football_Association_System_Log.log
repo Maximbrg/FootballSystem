@@ -5449,3 +5449,389 @@ Wed Apr 15 17:50:11 IDT 2020 FootballObjects.Team.DefualtAllocte: League Informa
 Wed Apr 15 17:50:27 IDT 2020 Users.FootballAssosiation: Football assosiation -Init new League. Name:leagueTest
 Wed Apr 15 17:50:27 IDT 2020 FootballObjects.Team.DefualtAllocte: League Information inaugural games for the league- home and away games for each league team
 Wed Apr 15 17:56:20 IDT 2020 Users.FootballAssosiation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:04 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:04 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:07:12 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Wed Apr 15 19:07:17 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:24 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team team1id: 0 pull his future games.
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team team2id: 0 pull his future games.
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team team3id: 0 pull his future games.
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team t1id: 0 pull his future games.
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team t2id: 0 pull his future games.
+Wed Apr 15 19:07:24 IDT 2020 FootballObjects.Team.Team: The Team t3id: 0 pull his future games.
+Wed Apr 15 19:07:30 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:30 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:07:35 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:35 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Wed Apr 15 19:07:42 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Wed Apr 15 19:07:50 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:50 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 1) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 2) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 3) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 4) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 5) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:07:56 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 6) alert
+Wed Apr 15 19:07:56 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Wed Apr 15 19:07:56 IDT 2020 Users.User: ref1(id: 111) update his status
+Wed Apr 15 19:07:56 IDT 2020 Controller: User removed from the system. userName(ref1).
+Wed Apr 15 19:07:56 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Wed Apr 15 19:08:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:08:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 19:08:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 19:08:02 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 3) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 4) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 5) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 6) alert
+Wed Apr 15 19:08:02 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Wed Apr 15 19:08:02 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Wed Apr 15 19:08:07 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:08:07 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Wed Apr 15 19:08:07 IDT 2020 Users.User: ref1(id: 111) update his status
+Wed Apr 15 19:08:07 IDT 2020 Controller: User removed from the system. userName(ref1).
+Wed Apr 15 19:08:07 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Wed Apr 15 19:08:11 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:08:15 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:08:22 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:08:28 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: Add a new Referee : EilamHagadol
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: Add a new Referee : EilamHagadol3
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: Add a new Referee : aviHagadol
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: Add a new Football Association : loli
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:50 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 444) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 441) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 441) register to receive a game (id: 1) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 444) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 441) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Game: Referee avi (id: 441) register to receive a game (id: 2) alert
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: champions
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (1)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:1
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee aviHagadol.
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (2)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:1
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:2
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: The referee avi edited event(event Id:1).
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (3)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:2
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:3
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: The referee avi edited event(event Id:2).
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (4)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was removed from eventLog. Id:3
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:4
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: The referee avi edited event(event Id:3).
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Referee no have permissions to createGameReport. username's Referee:aviHagadol
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Report for the game:hapoelb7vshapoelb72was created by the referee aviHagadol.
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (5)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:5
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee aviHagadol.
+Wed Apr 15 19:08:50 IDT 2020 Users.User: fufi(id: 1111) update his name
+Wed Apr 15 19:08:50 IDT 2020 Users.User: fufi(id: 1111) update his password
+Wed Apr 15 19:08:50 IDT 2020 Users.User: koko(id: 48) update his name
+Wed Apr 15 19:08:50 IDT 2020 Users.User: koko(id: 48) update his password
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (6)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:6
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee koko.
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (7)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:7
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee koko.
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (8)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:8
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee koko.
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.AEvent: New Event was created. (9)
+Wed Apr 15 19:08:50 IDT 2020 FootballObjects.Event.EventLog: Event was added to eventLog. Id:9
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: Event was added to the log event game 1 by the referee koko.
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: The referee pull his games for 1999 season. (aviHagadol,aviHagadol)
+Wed Apr 15 19:08:50 IDT 2020 Users.Referee: The referee aviHagadol (username: aviHagadol)pull his future games.
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Wed Apr 15 19:08:57 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Wed Apr 15 19:08:57 IDT 2020 Report: system manager receive to report 1
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Add a new Referee : melik21
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Add a new SystemManager : sys
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Wed Apr 15 19:08:57 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:champions
+Wed Apr 15 19:08:57 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:08:57 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Wed Apr 15 19:08:57 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Wed Apr 15 19:08:57 IDT 2020 Users.User: roni(id: 10) update his status
+Wed Apr 15 19:08:57 IDT 2020 Controller: User removed from the system. userName(debiq).
+Wed Apr 15 19:08:57 IDT 2020 Users.User: roni(id: 10) update his status
+Wed Apr 15 19:08:57 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Wed Apr 15 19:08:57 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Wed Apr 15 19:08:57 IDT 2020 Users.User: roni(id: 10) update his status
+Wed Apr 15 19:08:57 IDT 2020 Controller: User removed from the system. userName(debiky).
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:08:57 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: Add a new TeamOwner : meliki212
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Wed Apr 15 19:09:00 IDT 2020 Users.SystemManager: Add a new Player : meli
+Wed Apr 15 19:09:21 IDT 2020 Users.User: Harel Chror(id: 456) update his password
+Wed Apr 15 19:09:21 IDT 2020 Users.Player: The PersonalPage for player : Maxim  id : 123was created.
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:09:29 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 19:09:29 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 19:09:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Shiran  , id :123
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamOwner: Team owner : Harel Sror, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : Shiran  , owner id : 123 .
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Dana  , id :123
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamOwner: Team owner : Harel Sror, id : 123was added a new team owner to his team.  team name : Hapoel Beer Sheva , team id :0. The owner name which was added : Dana  , owner id : 123 .
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000
+Wed Apr 15 19:09:43 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Wed Apr 15 19:09:43 IDT 2020@role:goalkeeper@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.Coach: The team for coach : Hen id : 123was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Hen@preparation:assistant coach@role:assistant coach@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 Users.TeamManager: The team for team manager : Shachar id : 456was added.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:Shachar@team:Hapoel Tel Aviv
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
+Wed Apr 15 19:09:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Tel Aviv , id :0Asset details : @name:tedi , id : 2000

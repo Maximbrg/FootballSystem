@@ -1,9 +1,5 @@
 package System.I_Observer;
 
-import System.Users.Fan;
-import System.Users.Referee;
-import System.Users.User;
-
 public interface ISubjectGame {
 
     void registerFanToAlert(IObserverGame fan);
@@ -12,4 +8,5 @@ public interface ISubjectGame {
     void removeAlertToReferee(IObserverGame referee);
     void notifyFan ();
     void notifyReferee ();
+
 }

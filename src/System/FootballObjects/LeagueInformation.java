@@ -2,40 +2,49 @@ package System.FootballObjects;
 
 import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Log;
 import java.util.*;
 
 
 public class LeagueInformation {
+
+    //<editor-fold desc="Fields">
     private static int ID=1;
     private int id;
     private List<Game> games;
-    League league;
-    Season season;
-    FootballAssosiation footballAssosiation;
-    String name;
-    HashMap<Team,Integer> leagueTable;
-    ITeamAllocatePolicy iTeamAllocatePolicy;
-    IScoreMethodPolicy iScoreMethodPolicy;
-    int WIN;
-    int LOSS;
-    int TIE;
-    Team Champion;//????
+    private League league;
+    private Season season;
+    private FootballAssociation footballAssociation;
+    private String name;
+    private HashMap<Team,Integer> leagueTable;
+    private ITeamAllocatePolicy iTeamAllocatePolicy;
+    private IScoreMethodPolicy iScoreMethodPolicy;
+    private int WIN;
+    private int LOSS;
+    private int TIE;
+    private Team Champion;//???
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
-    public LeagueInformation(League league, Season season, FootballAssosiation footballAssosiation) {
+    //<editor-fold desc="Constructor">
+    /**
+     * Constructor
+     * @param league
+     * @param season
+     * @param footballAssociation
+     */
+    public LeagueInformation(League league, Season season, FootballAssociation footballAssociation) {
         this.id= ID;
         ID++;
         this. league=league;
         this. season= season;
         name= season.getName()+" "+league.getName();
-        this.footballAssosiation=footballAssosiation;
-        iTeamAllocatePolicy= new DefualtAllocte();
+        this.footballAssociation = footballAssociation;
+        iTeamAllocatePolicy= new DefaultAllocate();
         leagueTable= new LinkedHashMap<>();
-        iScoreMethodPolicy= new DefualtMethod();
-
+        iScoreMethodPolicy= new DefaultMethod();
         games=new ArrayList<>();
         //init league Table with 0 points to all the team.
         for(int i=0;i<league.getTeams().size();i++){
@@ -61,8 +70,8 @@ public class LeagueInformation {
         return season;
     }
 
-    public FootballAssosiation getFootballAssosiation() {
-        return footballAssosiation;
+    public FootballAssociation getFootballAssociation() {
+        return footballAssociation;
     }
 
     public String getName() {
@@ -92,12 +101,16 @@ public class LeagueInformation {
     public int getTIE() {
         return TIE;
     }
+    //</editor-fold>
 
+
+
+    //<editor-fold desc="Override Methods">
     /**
      *
      * @return the league table sorted by the high scoring team.
      */
-    // function to sort hashmap by values
+    // function to sort hashMap by values
     public  HashMap<Team,Integer> getLeagueTable()
     {
         // Create a list from elements of HashMap
@@ -121,10 +134,6 @@ public class LeagueInformation {
         return temp;
     }
 
-    //</editor-fold>
-
-
-
     /**
      * init leagueInformation policy-  Team Allocate Policy AND Score Method Policy.
      */
@@ -141,8 +150,6 @@ public class LeagueInformation {
         TIE=setScore.get(2);
     }
 
-
-
     /**
      * Inaugural refereeing for games during the league season
      * @param referees list of all referees
@@ -152,7 +159,7 @@ public class LeagueInformation {
         List <Referee> assistentsReferee= new ArrayList<>();
 
         for(Referee referee:referees){
-            if(referee.getRefereeType()== RefereeType.MainReferee){
+            if(referee.getRefereeType()== RefereeType.MAIN){
                 mainReferee.add(referee);
             }
             else {
@@ -199,7 +206,6 @@ public class LeagueInformation {
         Log.getInstance().writeToLog("League information- The referees inaugural season was successfully completed. League name: "+league.getName());
     } //UC-32
 
-
     /**
      * Edit game scheduling policy with the help of Strategy DP.
      * @param iTeamAllocatePolicy Interface that refers to change policy.
@@ -232,7 +238,7 @@ public class LeagueInformation {
         }
     }
 
-
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
+    //</editor-fold>
 
 }

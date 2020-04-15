@@ -12,7 +12,7 @@ import System.FootballObjects.Season;
 import System.FootballObjects.Team.OneGameAllocatePolicy;
 import System.FootballObjects.Team.Team;
 import System.Users.Fan;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Users.TeamOwner;
 import org.junit.Before;
@@ -25,7 +25,7 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class FootballAssosiationControllerTest {
+public class FootballAssociationControllerTest {
 
     FootballAssosiationController faController;
     Controller controller= Controller.getInstance();
@@ -76,11 +76,11 @@ public class FootballAssosiationControllerTest {
      */
     public void initLeagueTest1(){
         List<Team> teams=faController.getAllTeams();
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         League league= new League("leagueTest",teams);
         controller.addLeague(league);
         LeagueInformation leagueInfoTest= faController.initLeague(fa,league,"2000");
-        //check leagueInfo added to FootballAssosiation
+        //check leagueInfo added to FootballAssociation
         assertEquals(fa.getLeagueInformations().get(leagueInfoTest.getId()),leagueInfoTest);
         //check leagueInfo added to league
         assertEquals(league.getLeagueInformation().get(0),leagueInfoTest);
@@ -97,10 +97,10 @@ public class FootballAssosiationControllerTest {
         List<Team> teams=faController.getAllTeams();
         Season season= new Season(2000);
         controller.addSeason(season);
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         League league= new League("leagueTest",teams);
         LeagueInformation leagueInfoTest= faController.initLeague(fa,league,"2000");
-        //check leagueInfo added to FootballAssosiation
+        //check leagueInfo added to FootballAssociation
         assertEquals(fa.getLeagueInformations().get(leagueInfoTest.getId()),leagueInfoTest);
         //check leagueInfo added to league
         assertEquals(league.getLeagueInformation().get(0),leagueInfoTest);
@@ -114,9 +114,9 @@ public class FootballAssosiationControllerTest {
     /*Test ID:    #9.3.1 -- Add a new referee
      */
     public void addRefereeTest1(){
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         try {
-            Referee ref=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
+            Referee ref=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
             assertEquals(faController.getAllReferee().get(0),ref);
         } catch (UserNameAlreadyExistException e) {
             assert(false);
@@ -128,10 +128,10 @@ public class FootballAssosiationControllerTest {
                             The function needs throw exception
      */
     public void addRefereeTest2(){
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         try {
-            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
-            Referee ref2=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
+            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
+            Referee ref2=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
         } catch (UserNameAlreadyExistException e) {
             assert(true);
             assertEquals(faController.getAllReferee().size(),1);
@@ -141,7 +141,7 @@ public class FootballAssosiationControllerTest {
     /*Test ID:    #9.3.3 -- Remove referee without games.
      */
     public void removeRefereeTest1(){
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         Fan fan1= new Fan( 1,"fan1","123","fan1");
         Fan fan2= new Fan( 2,"fan2","123","fan2");
         Fan fan3= new Fan( 3,"fan3","123","fan3");
@@ -149,7 +149,7 @@ public class FootballAssosiationControllerTest {
         controller.addUser(fan2.getUserName(),fan2);
         controller.addUser(fan3.getUserName(),fan3);
         try {
-            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
+            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
             List<Referee> refereeList= faController.getAllReferee();
             assertEquals(refereeList.isEmpty(),false);
             faController.removeReferee(fa,ref1);
@@ -169,12 +169,12 @@ public class FootballAssosiationControllerTest {
                             The function needs throw IllegalInputException exception
      */
     public void removeRefereeTest2(){
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         List<Team> teams=faController.getAllTeams();
         try {
-            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
-            Referee ref2=faController.addReferee(fa,"ref2", RefereeType.AssistantReferee,111,"111","ref2");
-            Referee ref3=faController.addReferee(fa,"ref3", RefereeType.AssistantReferee,111,"111","ref3");
+            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
+            Referee ref2=faController.addReferee(fa,"ref2", RefereeType.ASSISTANT,111,"111","ref2");
+            Referee ref3=faController.addReferee(fa,"ref3", RefereeType.ASSISTANT,111,"111","ref3");
             List<Referee> refereeList= faController.getAllReferee();
             assertEquals(refereeList.isEmpty(),false);
             League league= new League("leagueTest",teams);
@@ -208,13 +208,13 @@ public class FootballAssosiationControllerTest {
      the referee will be remove
      */
     public void replaceRefereeTest1(){
-        FootballAssosiation fa= new FootballAssosiation(123,"fa1", "123","123");
+        FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         List<Team> teams=faController.getAllTeams();
         try {
-            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MainReferee,111,"111","ref1");
-            Referee ref2=faController.addReferee(fa,"ref2", RefereeType.AssistantReferee,111,"111","ref2");
-            Referee ref3=faController.addReferee(fa,"ref3", RefereeType.AssistantReferee,111,"111","ref3");
-            Referee ref4=faController.addReferee(fa,"ref4", RefereeType.MainReferee,111,"111","ref4");
+            Referee ref1=faController.addReferee(fa,"ref1", RefereeType.MAIN,111,"111","ref1");
+            Referee ref2=faController.addReferee(fa,"ref2", RefereeType.ASSISTANT,111,"111","ref2");
+            Referee ref3=faController.addReferee(fa,"ref3", RefereeType.ASSISTANT,111,"111","ref3");
+            Referee ref4=faController.addReferee(fa,"ref4", RefereeType.MAIN,111,"111","ref4");
             List<Referee> refereeList= faController.getAllReferee();
             assertEquals(refereeList.isEmpty(),false);
             League league=faController.initEmptyLeague("leagueTest",teams);
@@ -253,16 +253,16 @@ public class FootballAssosiationControllerTest {
                              all the referee by their role scheduled to game
      */
     public void schedulingRefereeTest1() {
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         List<Team> teams = faController.getAllTeams();
         try {
-            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MainReferee, 111, "111", "ref1");
-            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.AssistantReferee, 111, "111", "ref2");
-            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.AssistantReferee, 111, "111", "ref3");
-            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MainReferee, 111, "111", "ref4");
-            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.AssistantReferee, 111, "111", "ref5");
-            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.AssistantReferee, 111, "111", "ref6");
-            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.AssistantReferee, 111, "111", "ref7");
+            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MAIN, 111, "111", "ref1");
+            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.ASSISTANT, 111, "111", "ref2");
+            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.ASSISTANT, 111, "111", "ref3");
+            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MAIN, 111, "111", "ref4");
+            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.ASSISTANT, 111, "111", "ref5");
+            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.ASSISTANT, 111, "111", "ref6");
+            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.ASSISTANT, 111, "111", "ref7");
             List<Referee> refereeList = faController.getAllReferee();
             League league = faController.initEmptyLeague("leagueTest", teams);
             LeagueInformation leagueInfoTest = faController.initLeague(fa, league, "2000");
@@ -270,7 +270,7 @@ public class FootballAssosiationControllerTest {
             faController.schedulingReferee(fa, leagueInfoTest, refereeList);
             for(Referee ref:refereeList){
                 for(Game game: ref.getGames()){
-                    if(ref.getRefereeType()==RefereeType.MainReferee){
+                    if(ref.getRefereeType()==RefereeType.MAIN){
                         assertEquals(game.getMainReferee().equals(ref),true);
                     }else {
                         if(!game.getAssistantRefereeOne().getUserName().equals(ref.getUserName())&& !game.getAssistantRefereeTwo().getUserName().equals(ref.getUserName())){
@@ -292,16 +292,16 @@ public class FootballAssosiationControllerTest {
                              result: throw exception that cant scheduling referee without games to league
      */
     public void schedulingRefereeTest2() {
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         List<Team> teams = faController.getAllTeams();
         try {
-            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MainReferee, 111, "111", "ref1");
-            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.AssistantReferee, 111, "111", "ref2");
-            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.AssistantReferee, 111, "111", "ref3");
-            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MainReferee, 111, "111", "ref4");
-            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.AssistantReferee, 111, "111", "ref5");
-            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.AssistantReferee, 111, "111", "ref6");
-            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.AssistantReferee, 111, "111", "ref7");
+            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MAIN, 111, "111", "ref1");
+            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.ASSISTANT, 111, "111", "ref2");
+            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.ASSISTANT, 111, "111", "ref3");
+            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MAIN, 111, "111", "ref4");
+            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.ASSISTANT, 111, "111", "ref5");
+            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.ASSISTANT, 111, "111", "ref6");
+            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.ASSISTANT, 111, "111", "ref7");
             List<Referee> refereeList = faController.getAllReferee();
             League league = faController.initEmptyLeague("leagueTest", teams);
             LeagueInformation leagueInfoTest = faController.initLeague(fa, league, "2000");
@@ -323,16 +323,16 @@ public class FootballAssosiationControllerTest {
 
 //    @Test
 //    public void editScorePolicyTest1(){
-//        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+//        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
 //        List<Team> teams = faController.getAllTeams();
 //        try {
-//            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MainReferee, 111, "111", "ref1");
-//            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.AssistantReferee, 111, "111", "ref2");
-//            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.AssistantReferee, 111, "111", "ref3");
-//            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MainReferee, 111, "111", "ref4");
-//            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.AssistantReferee, 111, "111", "ref5");
-//            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.AssistantReferee, 111, "111", "ref6");
-//            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.AssistantReferee, 111, "111", "ref7");
+//            Referee ref1 = faController.addReferee(fa, "ref1", RefereeType.MAIN, 111, "111", "ref1");
+//            Referee ref2 = faController.addReferee(fa, "ref2", RefereeType.ASSISTANT, 111, "111", "ref2");
+//            Referee ref3 = faController.addReferee(fa, "ref3", RefereeType.ASSISTANT, 111, "111", "ref3");
+//            Referee ref4 = faController.addReferee(fa, "ref4", RefereeType.MAIN, 111, "111", "ref4");
+//            Referee ref5 = faController.addReferee(fa, "ref5", RefereeType.ASSISTANT, 111, "111", "ref5");
+//            Referee ref6 = faController.addReferee(fa, "ref6", RefereeType.ASSISTANT, 111, "111", "ref6");
+//            Referee ref7 = faController.addReferee(fa, "ref7", RefereeType.ASSISTANT, 111, "111", "ref7");
 //            List<Referee> refereeList = faController.getAllReferee();
 //            League league = faController.initEmptyLeague("leagueTest", teams);
 //            LeagueInformation leagueInfoTest = faController.initLeague(fa, league, "2000");
@@ -349,7 +349,7 @@ public class FootballAssosiationControllerTest {
     /*Test ID:    #9.6.1 --Edit team allocate policy before the season started
      */
     public void editTeamAllocatePolicyTest1() {
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         List<Team> teams = faController.getAllTeams();
         try {
             League league = faController.initEmptyLeague("leagueTest", teams);
@@ -370,7 +370,7 @@ public class FootballAssosiationControllerTest {
     /*Test ID:    #9.6.2 --Edit team allocate policy before the season started
      */
     public void editTeamAllocatePolicyTest2() {
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         List<Team> teams = faController.getAllTeams();
         try {
             League league = faController.initEmptyLeague("leagueTest", teams);
@@ -392,7 +392,7 @@ public class FootballAssosiationControllerTest {
                            result: exists 30 games for 6 teams
      */
     public void schedulingGamesTest1(){
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         controller.addTeam(new Team("t1",null));
         controller.addTeam(new Team("t2",null));
         controller.addTeam(new Team("t3",null));
@@ -421,7 +421,7 @@ public class FootballAssosiationControllerTest {
                            result: throw MustHaveLeastTwoTeams exception
      */
     public void schedulingGamesTest2(){
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         List<Team> teams = faController.getAllTeams();
         teams.remove(0);
         teams.remove(0);
@@ -462,7 +462,7 @@ public class FootballAssosiationControllerTest {
                           result: the score for all the teams calculated right
     */
     public void getLeagueTableTest1(){
-        FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
+        FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
         League league ;
         try {
             league = faController.initEmptyLeague("leagueTest", faController.getAllTeams());

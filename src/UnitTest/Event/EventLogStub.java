@@ -1,14 +1,10 @@
 
 
 import System.FootballObjects.Event.*;
-import org.junit.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class EventLogStub {
     EventLog eventLog ;
@@ -26,13 +22,13 @@ public class EventLogStub {
     @Test
     public void addEventToLogTest(){
         eventLog.addEventToLog(g0);
-        assertEquals(g0.getId(),eventLog.getaEventList().get(0).getId());
+        assertEquals(g0.getId(),eventLog.getEventList().get(0).getId());
     }
     @Test
     public void removeEventTest(){
         eventLog.addEventToLog(g0);
         eventLog.removeEvent(g0);
-        assertEquals(0,eventLog.getaEventList().size());
+        assertEquals(0,eventLog.getEventList().size());
     }
 
     @Test
@@ -42,7 +38,7 @@ public class EventLogStub {
         eventLog.addEventToLog(g1);
         int j=0;
         for (int i = 10; i <31; i+=10) {
-            assertEquals(i,eventLog.getaEventList().get(j).getMinute());
+            assertEquals(i,eventLog.getEventList().get(j).getMinute());
             j++;
         }
     }

@@ -1,6 +1,5 @@
 import ServiceLayer.Exceptions.TeamIsClosedException;
 import ServiceLayer.TeamOwnerController;
-import System.Asset.Asset;
 import System.Enum.TeamStatus;
 import System.Exeptions.AlreadyHasTeamException;
 import System.Exeptions.HasTeamAlreadyException;
@@ -15,8 +14,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -95,7 +92,7 @@ public class TeamOwnerControllerTest {
     }//Test ID:    #6.1 -- checks if coach added successfully to the team
 
     @Test
-    public void addAssetToTeamTest3() throws TeamIsClosedException, NotHisTeamException, HasTeamAlreadyException {
+    public void addAssetToTeamTest3() throws TeamIsClosedException, NotHisTeamException, HasTeamAlreadyException{
         try {
             teamOwnerController.addAssetToTeam(tOwner1,team1,teamManager);
             assertTrue(team1.getAssets().contains(teamManager));
@@ -217,9 +214,9 @@ public class TeamOwnerControllerTest {
     }//Test ID:    #6.3
 
     @Test
-    public void addTeamMenegarTest(){
+    public void addTeamManagerTest(){
     try {
-        teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+        teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
         assertTrue(team1.getTeamManagersList().contains(teamManager));
         assertTrue(teamManager.getMyTeam()==team1);
     }catch (Exception e){}
@@ -232,15 +229,15 @@ public class TeamOwnerControllerTest {
             teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
 
             //in case that the owner which appoint the manager is the same who's remove him
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner1,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner1,team1,teamManager);
             assertFalse(team1.getTeamManagersList().contains(teamManager));
             assertNull(teamManager.getMyTeam());
             assertNull(teamManager.getMyTeamOwner());
 
             //in case that owner which didnt appoint the manager try to remove him
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner3,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner3,team1,teamManager);
             assertTrue(team1.getTeamManagersList().contains(teamManager));
             assertTrue(teamManager.getMyTeam()==team1);
         }catch (Exception e){}
@@ -250,7 +247,7 @@ public class TeamOwnerControllerTest {
     @Test
     public void closeTeamTest(){
         try {
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
             teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
 
             teamOwnerController.closeTeam(tOwner1,team1);
@@ -266,7 +263,7 @@ public class TeamOwnerControllerTest {
         //openTeam(TeamOwner teamOwner, Team team)
     try {
         //precondition for the test :
-        teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+        teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
         teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
         teamOwnerController.closeTeam(tOwner1,team1);
         //--------------------------

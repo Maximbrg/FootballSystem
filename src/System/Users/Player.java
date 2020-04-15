@@ -9,12 +9,14 @@ import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
 import System.IShowable;
 import System.Log;
+
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Player extends User implements Asset, IPageAvailable, IShowable {
 
+    //<editor-fold desc="Fields">
     private Date birthDate;
     private String role;
     private PersonalPage personalPage;
@@ -22,7 +24,9 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
      * @param id
@@ -34,7 +38,6 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
      * @param assetValue
      * @param salary
      */
-    //<editor-fold desc="Constructor">
     public Player(int id, String name, String password, String userName, Date birthDate, String role, int assetValue, int salary) {
         super(id, name, password, userName);
         this.birthDate = birthDate;
@@ -51,6 +54,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     public String getName() {
         return name;
     }
+
     public int getId(){
         return id;
     }
@@ -96,6 +100,11 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         this.name = name;
     }
 
+    @Override
+    public void removeUser() {
+
+    }
+
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
@@ -118,7 +127,6 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
-
     /**
      * This function return the player details
      * @return
@@ -163,7 +171,6 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
 
     }
 
-
     /**
      * Every asset should be connect to team , when this function call the team which we get as parameter set as the asset team
      * @param team
@@ -196,6 +203,6 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         }
         throw new PersonalPageAlreadyExist();
     }
-
     //</editor-fold>
+
 }

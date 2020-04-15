@@ -14,17 +14,17 @@ import System.FinancialReport;
 
 import java.util.*;
 
-public class FootballAssosiation extends User {
+public class FootballAssociation extends User {
 
-    private String name;
-    private HashMap<Integer,LeagueInformation> leagueInformations;
+    //<editor-fold desc="Fields">
+    private HashMap<Integer,LeagueInformation> leaguesInformation;
     private BudgetRules budgetRules;
+    //</editor-fold>
 
-
-    //<editor-fold desc="contractur">
-    public FootballAssosiation(int id, String name, String password, String userName) {
+    //<editor-fold desc="Constructor">
+    public FootballAssociation(int id, String name, String password, String userName) {
         super(id,name,password,userName);
-        leagueInformations=new HashMap<>();
+        leaguesInformation=new HashMap<>();
     }
     //</editor-fold>
 
@@ -36,9 +36,8 @@ public class FootballAssosiation extends User {
     }
 
     public HashMap<Integer, LeagueInformation> getLeagueInformations() {
-        return leagueInformations;
+        return leaguesInformation;
     }
-
 
     /**
      * financial report by the order of the association football
@@ -51,10 +50,7 @@ public class FootballAssosiation extends User {
     }
     //</editor-fold>
 
-
-
-    //Methods
-
+    //<editor-fold desc="Methods">
     /**
      * Init new League
      * @param season
@@ -65,7 +61,7 @@ public class FootballAssosiation extends User {
         //init League Information with league, season from service Layer
         LeagueInformation leagueInformation= new LeagueInformation(league,season, this);
         //add new leagueInformation to list
-        leagueInformations.put(leagueInformation.getId(), leagueInformation);
+        leaguesInformation.put(leagueInformation.getId(), leagueInformation);
 
         //update pointers
         season.addLeagueInformation(leagueInformation);
@@ -95,7 +91,6 @@ public class FootballAssosiation extends User {
     public void schedulingReferee(LeagueInformation leagueInformation, List<Referee> referees){
         leagueInformation.schedulingReferee(referees);
     }
-
 
     /**
      *  Add New Referee
@@ -164,7 +159,7 @@ public class FootballAssosiation extends User {
                 }
 
                 if(newReferee.getRefereeType().equals(referee.getRefereeType())){
-                    if(referee.getRefereeType()==RefereeType.MainReferee){
+                    if(referee.getRefereeType()==RefereeType.MAIN){
                         game.setMainReferee(newReferee);
                         newReferee.addGame(game);
                         referee.removeGame(game);
@@ -200,9 +195,13 @@ public class FootballAssosiation extends User {
         Season season = new Season(year);
         Controller.getInstance().addSeason(season);
     }
+    //</editor-fold>
 
-
-
+    //<editor-fold desc="Override Methods">
+    @Override
+    public void removeUser() {
+    }
+    //</editor-fold>
 
     //public void addBudgetRule(String rule){} //UC-33
 
@@ -211,7 +210,5 @@ public class FootballAssosiation extends User {
     //public void initialScoreSchedulingPlicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){}; //UC-36
 
     //public void editScoreSchedulingPolicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
-
-
 
 }

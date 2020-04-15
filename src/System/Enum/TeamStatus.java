@@ -4,6 +4,6 @@ public enum TeamStatus {
 
         Active,
         Close,
-        PermantlyClose
+        PermanentlyClose
 
 }

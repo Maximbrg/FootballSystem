@@ -1,17 +1,22 @@
 package System.FootballObjects.Event;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import System.Log;
 
 public abstract class AEvent {
+
+    //<editor-fold desc="Fields">
     private static int ID=1;
     private int id;
     private Date date;
     private int minute;
+    //</editor-fold>
 
     //<editor-fold desc="Constructor">
+    /**
+     * Abstract constructor for all the events that can occur in game
+     * @param minuteInTheGame
+     */
     public AEvent(int minuteInTheGame) {
         this.minute = minuteInTheGame;
         id=ID++;
@@ -20,15 +25,19 @@ public abstract class AEvent {
     }
     //</editor-fold>
 
-    //<editor-fold desc="getters">
+    //<editor-fold desc="Getters">
     public int getId() {
         return id;
     }
+
     public int getMinute(){
         return minute;
     }
-    //</editor-fold>
 
+    public Date getDate() {
+        return date;
+    }
+    //</editor-fold>
 
     //<editor-fold desc="Setters">
     public static void setID(int ID) {
@@ -47,4 +56,5 @@ public abstract class AEvent {
         this.minute = minute;
     }
     //</editor-fold>
+
 }

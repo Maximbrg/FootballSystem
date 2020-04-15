@@ -6,27 +6,28 @@ import java.util.Date;
 
 public class FinancialReport {
 
-    private Date date;
+    //<editor-fold desc="Fields">
     private final Team team;
     private int incomeFromGame;
     private int maintenanceFieldCost;
     private int payingSalary;
     private int income;
     private int expanse;
+    private Date date;
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
-    public FinancialReport(Team team, Date date){
-        this.team = team;
-        maintenanceFieldCost = team.getField().getMaintenanceCost();
-        income = team.getIncome();
-        expanse = team.getExpense();
-        payingSalary = team.getPaymentSalary();
-        this.date = date;
+    //<editor-fold desc="Constructor">
+    public FinancialReport(Team team){
+        this.team=team;
+        maintenanceFieldCost=team.getField().getMaintenanceCost();
+        income=team.getIncome();
+        expanse=team.getExpense();
+        payingSalary=team.getPaymentSalary();
+        this.date=new Date(System.currentTimeMillis());
     }
     //</editor-fold>
 
-    //<editor-fold desc="getters">
-
+    //<editor-fold desc="Getters">
     public int getIncomeFromGame() {
         return incomeFromGame;
     }
@@ -48,24 +49,24 @@ public class FinancialReport {
     }
     //</editor-fold>
 
-    //<editor-fold desc="setter">
-    public void setIncomeFromGame(int incomes){
+    //<editor-fold desc="Setter">
+    private void setIncomeFromGame(int incomes){
         incomeFromGame=incomes;
     }
 
-    public void setMaintenanceFieldCost(int maintenanceFieldCost) {
+    private void setMaintenanceFieldCost(int maintenanceFieldCost) {
         this.maintenanceFieldCost = maintenanceFieldCost;
     }
 
-    public void setPayingSalary(int payingSalary) {
+    private void setPayingSalary(int payingSalary) {
         this.payingSalary = payingSalary;
     }
 
-    public void setIncome(int income) {
+    private void setIncome(int income) {
         this.income = income;
     }
 
-    public void setExpanse(int expanse) {
+    private void setExpanse(int expanse) {
         this.expanse = expanse;
     }
     //</editor-fold>

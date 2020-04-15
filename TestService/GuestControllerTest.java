@@ -1,18 +1,17 @@
 import ServiceLayer.GuestController;
-import ServiceLayer.GuestController;
+import System.Controller;
 import System.Enum.RefereeType;
 import System.Enum.SearchCategory;
-import System.Enum.TeamStatus;
 import System.Enum.UserStatus;
-import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Team.Team;
+import System.IShowable;
 import System.Searcher.ASearchStrategy;
 import System.Searcher.SearchByCategory;
 import System.Users.*;
-import org.junit.*;
-import System.*;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -155,21 +154,36 @@ public class GuestControllerTest {
         }
     }
 
+
+
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
-        FootballAssosiation assosiation = new FootballAssosiation(205695612,"Max","123","MaxFTW");
+        FootballAssociation assosiation = new FootballAssociation(205695612,"Max","123","MaxFTW");
         Team t=new Team("Hap",null);
         Controller.getInstance().addTeam(t);
-        assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
+        assosiation.addNewReferee("Invoker", RefereeType.MAIN,1,"123","Invoker");
         GuestController gustController = new GuestController();
         List<IShowable> iShowables =  gustController.getInfoToShow("Referee");
-        String string = iShowables.get(0).getName()+iShowables.get(0).getType();
-        assertEquals("InvokerReferee",string);
+        for(IShowable is:iShowables){
+            String string = is.getName()+is.getType();
+            if(string.equals("InvokerReferee")){
+                assert(true);
+                break;
+            }
+        }
         iShowables =  gustController.getInfoToShow("Team");
-        string = iShowables.get(0).getName()+iShowables.get(0).getType();
-        assertEquals("HapTeam",string);
+        for(IShowable is:iShowables){
+            String string = is.getName()+is.getType();
+            if(string.equals("HapTeam")){
+                assert(true);
+                break;
+            }
+        }
     } //Test ID:    #3.1
 
+    /**
+     *
+     */
     @Test
     public void searchShowablesTest(){
         GuestController gustController = new GuestController();
@@ -182,6 +196,9 @@ public class GuestControllerTest {
         assertEquals("xy",f.getSearchHistory().get(0));
     }
 
+    /**
+     * filter the search by category
+     */
     @Test
     public void filterResultsTest(){
         GuestController gustController = new GuestController();

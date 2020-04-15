@@ -4,7 +4,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,10 +29,10 @@ public class LeagueInformationTest {
 //    Game game2=new Game(null,2000,null,null,null,Arsenal,Chelsea);
 
 
-    Referee rTest1=new Referee("Hen", RefereeType.MainReferee,204,"abc","KillerReferee");
-    Referee rTest0=new Referee("Max", RefereeType.AssistantReferee,205,"abc","KillerReferee");
-    Referee rTest2=new Referee("Dana", RefereeType.AssistantReferee,206,"abc","KillerReferee");
-    Referee rTest3=new Referee("Shachar", RefereeType.AssistantReferee,207,"abc","KillerReferee");
+    Referee rTest1=new Referee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+    Referee rTest0=new Referee("Max", RefereeType.ASSISTANT,205,"abc","KillerReferee");
+    Referee rTest2=new Referee("Dana", RefereeType.ASSISTANT,206,"abc","KillerReferee");
+    Referee rTest3=new Referee("Shachar", RefereeType.ASSISTANT,207,"abc","KillerReferee");
 
     List<Referee> referees= new ArrayList<>();
 
@@ -48,8 +48,8 @@ public class LeagueInformationTest {
         teams.add(Chelsea);
         PremierLeague= new League("PremierLeague",teams);
         season= new Season(2000);
-        FootballAssosiation footballAssosiation= new FootballAssosiation(1, "Shachar", "111", "Sha");
-        leagueInformation= new LeagueInformation(PremierLeague,season,footballAssosiation);
+        FootballAssociation footballAssociation = new FootballAssociation(1, "Shachar", "111", "Sha");
+        leagueInformation= new LeagueInformation(PremierLeague,season, footballAssociation);
         leagueInformation.initLeagueInformation();
 
     }
