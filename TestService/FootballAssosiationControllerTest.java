@@ -9,19 +9,19 @@ import System.FootballObjects.Game;
 import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
-import System.FootballObjects.Team.IScoreMethodPolicy;
 import System.FootballObjects.Team.OneGameAllocatePolicy;
 import System.FootballObjects.Team.Team;
 import System.Users.Fan;
 import System.Users.FootballAssosiation;
 import System.Users.Referee;
 import System.Users.TeamOwner;
-import com.sun.org.apache.regexp.internal.recompile;
-import com.sun.xml.internal.bind.v2.TODO;
 import org.junit.Before;
 import org.junit.Test;
 import System.*;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -439,7 +439,7 @@ public class FootballAssosiationControllerTest {
 
     @Test
     /*Test ID:    #???? --Create a new team
-                          result: team added to teamOwner and controller list
+                          result: team added to team owner and controller list
     */
     public void createTeamTest1(){
         TeamOwner teamOwner= new TeamOwner(111,"owner1","111","111",111);
@@ -458,29 +458,50 @@ public class FootballAssosiationControllerTest {
     }
 
     @Test
+    /*Test ID:    #???? --Get a league table after set games results
+                          result: the score for all the teams calculated right
+    */
     public void getLeagueTableTest1(){
         FootballAssosiation fa = new FootballAssosiation(123, "fa1", "123", "123");
-        controller.addTeam(new Team("t1",null));
-        controller.addTeam(new Team("t2",null));
-        controller.addTeam(new Team("t3",null));
-        League league = null;
+        League league ;
         try {
             league = faController.initEmptyLeague("leagueTest", faController.getAllTeams());
             LeagueInformation leagueInfoTest = faController.initLeague(fa, league, "2000");
             faController.schedulingGames(fa, leagueInfoTest);
-            int score=0;
-            for(Game game: faController.getGames(leagueInfoTest)){
-                game.setResult(score,score);
-                score++;
+            List<Game> games= faController.getAllGames(leagueInfoTest);
+            HashMap<Team,Integer> teamScore=new HashMap<>() ;
+            for(Team t:faController.getAllTeams()){
+                teamScore.put(t,0);
             }
-            faController.getLeagueTable(leagueInfoTest);
-            int s=0;
+            faController.updateResultToGame(games.get(0),2,2);
+            teamScore.replace(games.get(0).getHome(),teamScore.get(games.get(0).getHome())+leagueInfoTest.getTIE());
+            teamScore.replace(games.get(0).getAway(),teamScore.get(games.get(0).getAway())+leagueInfoTest.getTIE());
+            faController.updateResultToGame(games.get(1),2,1);
+            teamScore.replace(games.get(1).getHome(),teamScore.get(games.get(1).getHome())+leagueInfoTest.getWIN());
+            teamScore.replace(games.get(1).getAway(),teamScore.get(games.get(1).getAway())+leagueInfoTest.getLOSS());
+            faController.updateResultToGame(games.get(2),1,1);
+            teamScore.replace(games.get(2).getHome(),teamScore.get(games.get(2).getHome())+leagueInfoTest.getTIE());
+            teamScore.replace(games.get(2).getAway(),teamScore.get(games.get(2).getAway())+leagueInfoTest.getTIE());
+            faController.updateResultToGame(games.get(3),1,1);
+            teamScore.replace(games.get(3).getHome(),teamScore.get(games.get(3).getHome())+leagueInfoTest.getTIE());
+            teamScore.replace(games.get(3).getAway(),teamScore.get(games.get(3).getAway())+leagueInfoTest.getTIE());
+            faController.updateResultToGame(games.get(4),2,3);
+            teamScore.replace(games.get(4).getHome(),teamScore.get(games.get(4).getHome())+leagueInfoTest.getLOSS());
+            teamScore.replace(games.get(4).getAway(),teamScore.get(games.get(4).getAway())+leagueInfoTest.getWIN());
+            faController.updateResultToGame(games.get(5),2,3);
+            teamScore.replace(games.get(5).getHome(),teamScore.get(games.get(5).getHome())+leagueInfoTest.getLOSS());
+            teamScore.replace(games.get(5).getAway(),teamScore.get(games.get(5).getAway())+leagueInfoTest.getWIN());
+            HashMap<Team,Integer> leagueTable=faController.getLeagueTable(leagueInfoTest);
+            //check if all team score calculate right
+            for(Map.Entry entry:leagueTable.entrySet()){
+                assertEquals(entry.getValue(),teamScore.get(entry.getKey()));
+            }
         } catch (LeagueNameAlreadyExist e) {
             assert (false);
         } catch (MustHaveLeastTwoTeams e) {
             assert (false);
         }
-
     }
+
 
 }

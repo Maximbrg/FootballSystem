@@ -60,7 +60,12 @@ public class FootballAssosiationController {
         return leagueInformations;
     }
 
-    public List<Game> getGames(LeagueInformation leagueInformation){
+    /**
+     * Get all games for League information
+     * @param leagueInformation
+     * @return
+     */
+    public List<Game> getAllGames(LeagueInformation leagueInformation){
         return leagueInformation.getGames();
     }
 
@@ -245,7 +250,7 @@ public class FootballAssosiationController {
      * @param homeScore
      * @param awayScore
      */
-    public void updateScoreToTeam(Game game, int homeScore, int awayScore) {
+    public void updateResultToGame(Game game, int homeScore, int awayScore) {
         game.setResult(homeScore,awayScore);
     }
     //</editor-fold>

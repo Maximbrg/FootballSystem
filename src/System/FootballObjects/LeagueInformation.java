@@ -81,6 +81,18 @@ public class LeagueInformation {
         return Champion;
     }
 
+    public int getWIN() {
+        return WIN;
+    }
+
+    public int getLOSS() {
+        return LOSS;
+    }
+
+    public int getTIE() {
+        return TIE;
+    }
+
     /**
      *
      * @return the league table sorted by the high scoring team.
