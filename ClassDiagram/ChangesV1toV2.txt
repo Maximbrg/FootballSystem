@@ -1,0 +1,16 @@
+Class added:
+
+	ENUMS:	GameStatus,RefereeType,UserStatus,SearchCategory
+	INTERFACE:	IShowable,
+	ABSTARCT:	ASearchStrategy,AUser,AEvent
+	Class:	SearchByCategory,SearchByName,SearchByKeyWord,OneGameAllocatePolicy,BudgetRules,FinancialReport
+
+Class removed:
+	INTERFACE:	Event
+	CLASS:	User
+
+* added new functions in classes :Team,FootballAssosiation,TeamOwner
+** changes in the fields of users
+*** FootballAssosiation connected to BudgetRules
+**** Controller connected to Fields and League
+***** Field,Player,Coach and Season implements IShowable
