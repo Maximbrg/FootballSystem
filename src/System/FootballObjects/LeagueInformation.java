@@ -22,7 +22,7 @@ public class LeagueInformation {
     int WIN;
     int LOSS;
     int TIE;
-    Team Champion;
+    Team Champion;//????
 
     //<editor-fold desc="constructor">
     public LeagueInformation(League league, Season season, FootballAssosiation footballAssosiation) {
@@ -118,6 +118,9 @@ public class LeagueInformation {
      */
     public void initLeagueInformation(){
         iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
+        for(Game game: games){
+            game.setLeagueInformation(this);
+        }
         //get list of score for policy
         //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
         List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
@@ -202,8 +205,19 @@ public class LeagueInformation {
         this.iScoreMethodPolicy=iScoreMethodPolicy;
     }
 
-    public void updateScoreTeamInLeageTable(Team t, int score){
-        leagueTable.replace(t,score);
+    /**
+     * Update Score by game result and score policy
+     * @param t
+     * @param result
+     */
+    public void updateScoreTeamInLeagueTable(Team t, String result){
+        if(result.equals("WIN")){
+            leagueTable.replace(t,leagueTable.get(t)+WIN);
+        }else if(result.equals("LOSS")){
+            leagueTable.replace(t,leagueTable.get(t)+LOSS);
+        }else {
+            leagueTable.replace(t,leagueTable.get(t)+TIE);
+        }
     }
 
 

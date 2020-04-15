@@ -18,7 +18,6 @@ public class FootballAssosiation extends User {
 
     private String name;
     private HashMap<Integer,LeagueInformation> leagueInformations;
-    private Controller controller;
     private BudgetRules budgetRules;
 
 
@@ -32,8 +31,8 @@ public class FootballAssosiation extends User {
 
 
     //<editor-fold desc="Getters">
-    public void getSeasonFromController(String year){
-        controller.getSeason(year);
+    public Season getSeasonFromController(String year){
+        return Controller.getInstance().getSeason(year);
     }
 
     public HashMap<Integer, LeagueInformation> getLeagueInformations() {
@@ -199,7 +198,7 @@ public class FootballAssosiation extends User {
 
     public void addSeason(int year) {
         Season season = new Season(year);
-        controller.addSeason(season);
+        Controller.getInstance().addSeason(season);
     }
 
 

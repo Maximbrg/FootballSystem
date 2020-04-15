@@ -19,7 +19,7 @@ public class Game implements ISubjectGame {
     private int id;
     private Date date;
     private int hour;
-    private String result;//1:0 format
+    private String result;//1:0 format home:away
     private Referee mainReferee;
     private Referee assistantRefereeOne;
     private Referee assistantRefereeTwo;
@@ -28,6 +28,7 @@ public class Game implements ISubjectGame {
     private EventLog eventLog;
     private List<IObserverGame> iObserverGameListForFans;
     private List<IObserverGame> iObserverGameListForReferees;
+    private LeagueInformation leagueInformation;
 
     //<editor-fold desc="constructor">
     public Game(Date date, int hour, Referee mainReferee, Referee assistantRefereeOne, Referee assistantRefereeTwo, Team away, Team home) {
@@ -94,6 +95,8 @@ public class Game implements ISubjectGame {
     public List<IObserverGame> getiObserverGameListForReferees() {
         return iObserverGameListForReferees;
     }
+
+    public LeagueInformation getLeagueInformation(){return  leagueInformation;}
     //</editor-fold>
 
     //<editor-fold desc="setter">
@@ -105,8 +108,24 @@ public class Game implements ISubjectGame {
         this.hour = hour;
     }
 
-    public void setResult(String result) {
-        this.result = result;
+    /**
+     * Set result to the game and update the table league
+     * @param home
+     * @param away
+     */
+    public void setResult(int home, int away) {
+        if(home<away){
+            leagueInformation.updateScoreTeamInLeagueTable(this.home,"LOSS");
+            leagueInformation.updateScoreTeamInLeagueTable(this.away,"WIN");
+        }else if(home>away){
+            leagueInformation.updateScoreTeamInLeagueTable(this.home,"WIN");
+            leagueInformation.updateScoreTeamInLeagueTable(this.away,"LOSS");
+        }
+        else{
+            leagueInformation.updateScoreTeamInLeagueTable(this.home,"TIE");
+            leagueInformation.updateScoreTeamInLeagueTable(this.away,"TIE");
+        }
+        this.result = home+":"+away;
     }
 
     public void setMainReferee(Referee mainReferee) {
@@ -139,6 +158,10 @@ public class Game implements ISubjectGame {
 
     public void setiObserverGameListForReferees(List<IObserverGame> iObserverGameListForReferees) {
         this.iObserverGameListForReferees = iObserverGameListForReferees;
+    }
+
+    public void setLeagueInformation(LeagueInformation leagueInformation) {
+        this.leagueInformation = leagueInformation;
     }
 
     //public void setScore(){ }
