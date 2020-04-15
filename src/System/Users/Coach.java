@@ -1,6 +1,5 @@
 package System.Users;
 
-//<editor-fold desc="imports">
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.PersonalPageAlreadyExist;
@@ -14,10 +13,9 @@ import System.PersonalPages.PersonalPage;
 import java.util.LinkedList;
 import java.util.List;
 
-//</editor-fold>
-
 public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
+    //<editor-fold desc="Fields">
     private String preparation;
     private String role;
     private PersonalPage personalPage;
@@ -25,7 +23,9 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     private Team myTeam;
     private int salary;
     private List<ISubjectTeam> subjectTeam;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
      * @param id
@@ -37,7 +37,6 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
      * @param assetValue
      * @param salary
      */
-    //<editor-fold desc="Constructor">
     public Coach(int id, String name, String password, String userName, String preparation, String role, int assetValue, int salary) {
         super(id, name, password, userName);
         this.preparation = preparation;
@@ -165,6 +164,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
 
        }
     }
+
     /**
      * This function return the asset salary
      * @return
@@ -195,4 +195,5 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
         throw new PersonalPageAlreadyExist();
     }
     //</editor-fold>
+
 }

@@ -5,11 +5,11 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TestService" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test/Event" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test/FootballObjects" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test/Team" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test/Users" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UnitTest" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UnitTest/Event" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UnitTest/FootballObjects" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UnitTest/Team" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UnitTest/Users" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

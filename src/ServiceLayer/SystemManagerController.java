@@ -112,7 +112,7 @@ public class SystemManagerController {
      * @param answer
      */
     public void answerReport(SystemManager systemManager, Report report, String answer){
-        systemManager.answerTheReport(report,answer);
+        systemManager.answerReport(report,answer);
     }
 
     /**
@@ -143,7 +143,7 @@ public class SystemManagerController {
     { return systemManager.createNewReferee(id,  name,  password,  userName,refereeType);
     }
 
-    public FootballAssosiation createNewFootballAssociation(SystemManager systemManager, int id, String name, String password, String userName)throws UserNameAlreadyExistException {
+    public FootballAssociation createNewFootballAssociation(SystemManager systemManager, int id, String name, String password, String userName)throws UserNameAlreadyExistException {
         return systemManager.createNewFootballAssociation(id,name,password,userName);}
 
     public TeamManager createNewTeamManager(SystemManager systemManager,int id, String name, String password, String userName, int assetValue, int salary) throws UserNameAlreadyExistException {

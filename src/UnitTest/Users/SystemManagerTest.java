@@ -47,7 +47,7 @@ public class SystemManagerTest {
 
     @Test
     public void answerTheReportTest(){
-        systemMTest.answerTheReport(reportTest,"You are the best report EVER!");
+        systemMTest.answerReport(reportTest,"You are the best report EVER!");
         assertEquals("You are the best report EVER!",reportTest.getAnswer());
     }
 
@@ -169,7 +169,7 @@ public class SystemManagerTest {
         //legal and exist user name
         try {
             Controller.getInstance().removeUser(fTest.getUserName());
-            Controller.getInstance().restartRemvoeUser(fTest.getUserName());
+            Controller.getInstance().restartRemoveUser(fTest.getUserName());
             assertNull(Controller.getInstance().getRemovedUsers().get(fTest.getUserName()));
         } catch (NoSuchAUserNamedException e) {
             assert(false);

@@ -1,4 +1,5 @@
 package System.Users;
+
 import System.Enum.UserStatus;
 import System.Log;
 
@@ -6,18 +7,17 @@ import java.util.LinkedList;
 import java.util.List;
 
 public abstract class User extends Guest {
+
+    //<editor-fold desc="Fields">
     protected int id;
     protected String name;
     protected String password;
     protected String userName;
     private List<String> searchHistory;
     protected UserStatus status;
+    //</editor-fold>
 
-
-
-    //Constructor
-
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
     public User(int id, String name, String password, String userName) {
         this.id = id;
         this.name = name;
@@ -28,7 +28,7 @@ public abstract class User extends Guest {
     }
     //</editor-fold>
 
-    //<editor-fold desc="getter">
+    //<editor-fold desc="Getters">
     public int getId() {
         return id;
     }
@@ -53,8 +53,6 @@ public abstract class User extends Guest {
         return status;
     }
 
-
-
     /**
      * Get string of personal details
      * @return
@@ -65,7 +63,7 @@ public abstract class User extends Guest {
     } //UC-13
     //</editor-fold>
 
-    //<editor-fold desc="setter">
+    //<editor-fold desc="Setters">
     public void setId(int id) {
         this.id = id;
     }
@@ -96,12 +94,9 @@ public abstract class User extends Guest {
         Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his status");
 
     }
-
-
     //</editor-fold>
 
-    // Methods
-
+    //<editor-fold desc="Methods">
     /**
      * Adding search to search history
      * @param line
@@ -113,6 +108,6 @@ public abstract class User extends Guest {
     }
 
     public abstract void removeUser();
-
+    //</editor-fold>
 
 }

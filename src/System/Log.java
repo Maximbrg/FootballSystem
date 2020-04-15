@@ -5,19 +5,17 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Log {
+
+    //<editor-fold desc="Fields">
     //Implements a singleton logger instance
     private static final Log instance = new Log();
-
-    //Retrieve the execution directory. Note that this is whereever this process was launched
+    //Retrieve the execution directory. Note that this is whereEver this process was launched
     public String logName = "Football_Association_System_Log";
     protected String env = System.getProperty("user.dir");
     private static File logFile;
+    //</editor-fold>
 
-
-    public static Log getInstance(){
-        return instance;
-    }
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
     private Log(){
         if (instance != null){
             //Prevent Reflection
@@ -25,8 +23,13 @@ public class Log {
         }
         this.createLogFile();
     }
+
+    public static Log getInstance(){
+        return instance;
+    }
     //</editor-fold>
-    //<editor-fold desc="methods">
+
+    //<editor-fold desc="Methods">
     public void createLogFile(){
         //Determine if a logs directory exists or not.
         File logsFolder = new File(env + '/' + "logs");
@@ -104,4 +107,5 @@ public class Log {
         return logToString;
     } //UC-28
     //</editor-fold>
+
 }

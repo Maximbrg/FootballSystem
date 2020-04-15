@@ -9,7 +9,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -151,7 +151,7 @@ public class RefereeTest {
         teamList.add(t2);
         Season s=new Season(2019);
         League leagueTest=new League("champions",teamList);
-        LeagueInformation lTest=new LeagueInformation(leagueTest,s,new FootballAssosiation(123,"avile","345345","avileHaGadol"));
+        LeagueInformation lTest=new LeagueInformation(leagueTest,s,new FootballAssociation(123,"avile","345345","avileHaGadol"));
         s.addLeagueInformation(lTest);
         lTest.initLeagueInformation();
         lTest.schedulingReferee(rList);

@@ -6,7 +6,7 @@ import System.Controller;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,8 +16,8 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class FootballAssosiationTest {
-    FootballAssosiation footballAssosiation;
+public class FootballAssociationTest {
+    FootballAssociation footballAssociation;
 
     League PremierLeague;
     Season season;
@@ -36,7 +36,7 @@ public class FootballAssosiationTest {
 
     @Before
     public void setUp() throws Exception {
-        footballAssosiation= new FootballAssosiation(1, "Shachar", "123", "sha");
+        footballAssociation = new FootballAssociation(1, "Shachar", "123", "sha");
         season=new Season(2000);
         teams.add(Arsenal);
         teams.add(Liverpool);
@@ -51,9 +51,9 @@ public class FootballAssosiationTest {
 
     @Test
     public void initLeague() {
-        footballAssosiation.initLeague(season,PremierLeague);
-        assertEquals(footballAssosiation.getLeagueInformations().size(),1);
-        assertEquals(footballAssosiation.getLeagueInformations().get(1).getId(),1);
+        footballAssociation.initLeague(season,PremierLeague);
+        assertEquals(footballAssociation.getLeagueInformations().size(),1);
+        assertEquals(footballAssociation.getLeagueInformations().get(1).getId(),1);
 
         assertEquals(season.getLeaguesInformation().size(),1);
         assertEquals(PremierLeague.getLeagueInformation().size(),1);
@@ -71,13 +71,13 @@ public class FootballAssosiationTest {
     public void addNewReferee() {
         //user not found , username not exist in the Controller
         try {
-            footballAssosiation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
+            footballAssociation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         } catch (UserNameAlreadyExistException e) {
             assert(true);
         }
         //user found
         try {
-            footballAssosiation.addNewReferee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
+            footballAssociation.addNewReferee("Hen", RefereeType.MAIN,204,"abc","KillerReferee");
 
         } catch (UserNameAlreadyExistException e) {
             assert(false);
@@ -89,21 +89,21 @@ public class FootballAssosiationTest {
         Referee Shiran=new Referee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         //user not found , username not exist in the Controller
         try {
-            footballAssosiation.removeReferee(Shiran);
+            footballAssociation.removeReferee(Shiran);
         } catch (Exception e) {
             assert(true);
         }
 
 
         try {
-            footballAssosiation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
+            footballAssociation.addNewReferee("Shiran", RefereeType.MAIN,204,"123","Shiran");
         } catch (UserNameAlreadyExistException e) {
             assert(false);
         }
 
         //user found- shiran removed
         try {
-            footballAssosiation.removeReferee((Referee) Controller.getInstance().getUsers().get("Shiran"));
+            footballAssociation.removeReferee((Referee) Controller.getInstance().getUsers().get("Shiran"));
         } catch (Exception e) {
             assert(false);
         }
@@ -111,10 +111,10 @@ public class FootballAssosiationTest {
 
     @Test
     public void manuallChangingReferee() {
-        LeagueInformation leagueInformation=new LeagueInformation(PremierLeague,season,footballAssosiation);
+        LeagueInformation leagueInformation=new LeagueInformation(PremierLeague,season, footballAssociation);
         leagueInformation.initLeagueInformation();
         leagueInformation.schedulingReferee(referees);
-        footballAssosiation.manualChangingReferee(leagueInformation,referees,rTest0);
+        footballAssociation.manualChangingReferee(leagueInformation,referees,rTest0);
         assertEquals(rTest0.getFutureGames().size(),0);
     }
 }

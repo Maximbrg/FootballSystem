@@ -1,4 +1,5 @@
 package System;
+
 import System.Enum.UserStatus;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
@@ -12,14 +13,17 @@ import System.Users.*;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+
 public class Controller {
 
+    //<editor-fold desc="Fields">
     private HashMap<String,User> users;
     private List<League> leagues;
     private List<Team> teams;
     private List<Season> seasons;
     private List<Field> fields;
     private HashMap<String,User> removedUser;
+    //</editor-fold>
 
     //<editor-fold desc="Constructor">
     private static Controller ourInstance = new Controller();
@@ -37,7 +41,8 @@ public class Controller {
         fields = new LinkedList<>();
     }
     //</editor-fold>
-    //<editor-fold desc="getters">
+
+    //<editor-fold desc="Getters">
     public List<League> getAllLeagues(){ //UC-4
         return leagues;
     } //UC-4
@@ -57,7 +62,8 @@ public class Controller {
         seasons.add(season);
     }
     //</editor-fold>
-    //<editor-fold desc="setters">
+
+    //<editor-fold desc="Setters">
     public void setUsers(HashMap<String, User> users) {
         this.users = users;
     }
@@ -82,7 +88,8 @@ public class Controller {
         this.removedUser = removedUser;
     }
     //</editor-fold>
-    //<editor-fold desc="methods">
+
+    //<editor-fold desc="Methods">
     public void initSystem(){ //UC-1
     } //UC-1
 
@@ -222,8 +229,6 @@ public class Controller {
         return sysList;
     }
 
-
-
     public List<Referee> getAllReferee(){
         List <Referee> referees = new LinkedList<>();
         for(User user : users.values()){
@@ -258,7 +263,6 @@ public class Controller {
         return null;
     }
 
-
     public HashMap<String, User> getRemovedUsers() {
         return removedUser;
     }
@@ -289,7 +293,7 @@ public class Controller {
      * restart a removed user to the system
      * @param userName
      */
-    public void restartRemvoeUser(String userName) throws NoSuchAUserNamedException {
+    public void restartRemoveUser(String userName) throws NoSuchAUserNamedException {
         if(removedUser.get(userName)==null){
             throw new NoSuchAUserNamedException();
         }
@@ -300,13 +304,6 @@ public class Controller {
     }
 
     public void removeTeam(Team team){ teams.remove(team); }
-
-
     //</editor-fold>
-
-
-
-
-
 
 }

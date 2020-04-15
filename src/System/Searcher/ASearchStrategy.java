@@ -13,6 +13,7 @@ import java.util.List;
 
 public abstract class ASearchStrategy {
 
+    //<editor-fold desc="Methods">
     /**
      * Liste filter by category
      * @param list
@@ -83,9 +84,9 @@ public abstract class ASearchStrategy {
     }
 
     public abstract List<IShowable> search(SearchCategory category, String str);
+    //</editor-fold>
 
-
-    //<editor-fold desc="private functions">
+    //<editor-fold desc="Private Functions">
     /**
      * Get filtered list by player
      * @param list
@@ -192,4 +193,5 @@ public abstract class ASearchStrategy {
         return list;
     }
     //</editor-fold>
+
 }

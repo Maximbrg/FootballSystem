@@ -1,4 +1,3 @@
-
 package System.FootballObjects.Team;
 
 import System.Asset.Asset;

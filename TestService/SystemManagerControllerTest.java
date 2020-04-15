@@ -23,7 +23,7 @@ import static org.junit.Assert.assertEquals;
 public class SystemManagerControllerTest {
     SystemManagerController sTest;
     SystemManager sMangerTest;
-    FootballAssosiation fTest;
+    FootballAssociation fTest;
     Season seasonTest;
     League leagueTest;
     Team t,t2;

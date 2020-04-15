@@ -4,13 +4,15 @@ import System.Users.User;
 
 public class Report {
 
+    //<editor-fold desc="Fields">
     private static int ID =1;
     private int id;
     private User user;
     private String report;
     private String answer;
-
-    //<editor-fold desc="constructor">
+    //</editor-fold>
+    
+    //<editor-fold desc="Constructor">
     public Report(User user, String report) {
         id=ID;
         ID++;
@@ -20,7 +22,7 @@ public class Report {
     }
     //</editor-fold>
 
-    //<editor-fold desc="getter">
+    //<editor-fold desc="Getters">
     public int getId() {
         return id;
     }
@@ -50,7 +52,7 @@ public class Report {
     } //UC-27
     //</editor-fold>
 
-    //<editor-fold desc="methods">
+    //<editor-fold desc="Methods">
     /**
      * Answer to report
      * @param answer

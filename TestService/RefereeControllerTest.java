@@ -11,7 +11,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Users.SystemManager;
 import org.junit.BeforeClass;
@@ -29,7 +29,7 @@ public class RefereeControllerTest {
     static SystemManagerController systemManagerController;
     static SystemManager sManager;
     static Referee rMain,rAssist,rAssist1;
-    static FootballAssosiation fATest;
+    static FootballAssociation fATest;
     static Team t1,t2;
     static Game g1,g2;
     static Season s;

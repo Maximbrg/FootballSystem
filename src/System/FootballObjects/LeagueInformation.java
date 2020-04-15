@@ -2,7 +2,7 @@ package System.FootballObjects;
 
 import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Log;
 import java.util.*;
@@ -16,7 +16,7 @@ public class LeagueInformation {
     private List<Game> games;
     private League league;
     private Season season;
-    private FootballAssosiation footballAssosiation;
+    private FootballAssociation footballAssociation;
     private String name;
     private HashMap<Team,Integer> leagueTable;
     private ITeamAllocatePolicy iTeamAllocatePolicy;
@@ -32,15 +32,15 @@ public class LeagueInformation {
      * Constructor
      * @param league
      * @param season
-     * @param footballAssosiation
+     * @param footballAssociation
      */
-    public LeagueInformation(League league, Season season, FootballAssosiation footballAssosiation) {
+    public LeagueInformation(League league, Season season, FootballAssociation footballAssociation) {
         this.id= ID;
         ID++;
         this. league=league;
         this. season= season;
         name= season.getName()+" "+league.getName();
-        this.footballAssosiation=footballAssosiation;
+        this.footballAssociation = footballAssociation;
         iTeamAllocatePolicy= new DefaultAllocate();
         leagueTable= new LinkedHashMap<>();
         iScoreMethodPolicy= new DefaultMethod();
@@ -69,8 +69,8 @@ public class LeagueInformation {
         return season;
     }
 
-    public FootballAssosiation getFootballAssosiation() {
-        return footballAssosiation;
+    public FootballAssociation getFootballAssociation() {
+        return footballAssociation;
     }
 
     public String getName() {
