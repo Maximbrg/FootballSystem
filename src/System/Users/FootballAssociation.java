@@ -121,7 +121,7 @@ public class FootballAssociation extends User {
      * @throws IllegalInputException
      */
     //UC-31
-    public void removeReferee(Referee referee) throws IllegalInputException, NoSuchAUserNamedException, IllegalRemoveException {
+    public void removeReferee(Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
         Controller controller = Controller.getInstance();
 
         if(!(controller.getAllReferee().contains(referee))){

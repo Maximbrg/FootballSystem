@@ -1,14 +1,12 @@
 package ServiceLayer;
-
 import ServiceLayer.Exceptions.*;
-import System.Controller;
 import System.Enum.RefereeType;
 import System.Exeptions.IllegalInputException;
-import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Game;
 import System.FootballObjects.League;
+import System.Controller;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.IScoreMethodPolicy;
@@ -28,14 +26,15 @@ public class FootballAssosiationController {
 
     private static FootballAssosiationController ourInstance = new FootballAssosiationController();
 
+    //<editor-fold desc="Constructor">
+    private FootballAssosiationController(){};
+    //</editor-fold>
+
+    //<editor-fold desc="Getters">
     public static FootballAssosiationController getInstance() {
         return ourInstance;
     }
 
-    private FootballAssosiationController() {
-    }
-
-    //<editor-fold desc="Getters">
     /**
      * Get all teams in the system
      * @return
@@ -57,6 +56,14 @@ public class FootballAssosiationController {
      */
     public List<Referee> getAllReferee(){
         return Controller.getInstance().getAllReferee();
+    }
+
+    /**
+     * Get all team owner in the system
+     * @return
+     */
+    public List<TeamOwner> getAllTeamOwner(){
+        return Controller.getInstance().getAllTeamOwner();
     }
 
     /**
@@ -155,11 +162,7 @@ public class FootballAssosiationController {
      * @throws IllegalInputException
      */
     public void removeReferee(FootballAssociation footballAssociation, Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
-        try {
-            footballAssociation.removeReferee(referee);
-        } catch (IllegalRemoveException e) {
-            Log.getInstance().writeToLog("Function denied.not allow to remove user: "+referee.getUserName() );
-        }
+        footballAssociation.removeReferee(referee);
     }
 
     /**
@@ -242,7 +245,7 @@ public class FootballAssosiationController {
      * @throws IllegalInputException
      * @throws NoSuchAUserNamedException
      */
-    public void replaceReferee(FootballAssociation footballAssociation, LeagueInformation leagueInformation, List<Referee> referees, Referee referee) throws IllegalInputException, NoSuchAUserNamedException, IllegalRemoveException {
+    public void replaceReferee(FootballAssociation footballAssociation, LeagueInformation leagueInformation, List<Referee> referees, Referee referee) throws IllegalInputException, NoSuchAUserNamedException {
         footballAssociation.manualChangingReferee(leagueInformation,referees,referee);
         footballAssociation.removeReferee(referee);//remove referee's user after chang
     }
