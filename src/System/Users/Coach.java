@@ -2,6 +2,7 @@ package System.Users;
 
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.PersonalPageAlreadyExist;
 import System.FootballObjects.Team.Team;
 import System.IShowable;
@@ -92,11 +93,6 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
     //<editor-fold desc="Setters">
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void removeUser() {
-
     }
 
     public void setPreparation(String preparation) {
@@ -193,6 +189,20 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
             return this.personalPage;
         }
         throw new PersonalPageAlreadyExist();
+    }
+
+    /**
+     * remove coach from everything he connected to
+     */
+    @Override
+    public void removeUser()  throws IllegalRemoveException {
+        preparation=null;
+        role=null;
+        personalPage=null;
+        assetValue=0;
+        myTeam=null;
+        subjectTeam=null;
+        salary=0;
     }
     //</editor-fold>
 

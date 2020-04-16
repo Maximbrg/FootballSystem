@@ -1,6 +1,7 @@
 package System.Users;
 
 import System.Enum.TeamStatus;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
@@ -77,11 +78,6 @@ public class TeamOwner extends User implements IObserverTeam {
         this.name = name;
     }
 
-    @Override
-    public void removeUser() {
-
-    }
-
     public void setSelfCoach(Coach selfCoach) {
         this.selfCoach = selfCoach;
     }
@@ -133,10 +129,9 @@ public class TeamOwner extends User implements IObserverTeam {
         LinkedList<TeamOwner> teamOwnersList=team.getTeamOwnerListOfThisOwner(this);
         if(teamOwnersList!=null && teamOwnersList.size()!=0){
         teamOwnersList.remove(teamOwnerToRemove);
-        team.setListOfOwnersWhichIappoint(this,teamOwnersList);
-        this.teamOwnersWhichIappointed.remove(team);
-        this.teamOwnersWhichIappointed.put(team,teamOwnersList);
+        teamOwnerToRemove.removeTeamFromMyList(team);
         team.removeOwnerFromTeamOwnersList(teamOwnerToRemove);
+        team.setListOfOwnersWhichIappoint(this,teamOwnersList);
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was removed team owner from his team.  "
                     +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was removed : "+ teamOwnerToRemove.getName()+
                     " , owner id : " + teamOwnerToRemove.getId()+" .");
@@ -172,9 +167,20 @@ public class TeamOwner extends User implements IObserverTeam {
     } //UC-24
 
     public void addTeamToMyTeamList(Team t){
-        this.teamList.add(t);
-        Log.getInstance().writeToLog("Team : "+ t.getName()+" , id :"+ t.getId()+ "was added to the teams list of : "+ this.getName()+
-                " , id :"+ this.getId());
+        if(!this.teamList.contains(t)) {
+            this.teamList.add(t);
+            Log.getInstance().writeToLog("Team : " + t.getName() + " , id :" + t.getId() + "was added to the teams list of : " + this.getName() +
+                    " , id :" + this.getId());
+            t.addOwnerToTeamOwnersList(this);
+        }
+    }
+
+    /**
+     * Remove team from the list of team which i owning
+     * @param t
+     */
+    public void removeTeamFromMyList(Team t){
+        this.teamList.remove(t);
     }
     //</editor-fold>
 
@@ -201,6 +207,24 @@ public class TeamOwner extends User implements IObserverTeam {
     @Override
     public void removeAlert(ISubjectTeam iSubjectTeam) {
         this.subjectTeam.remove(iSubjectTeam);
+    }
+
+    /**
+     * remove the owner from everyone
+     */
+    @Override
+    public void removeUser() throws IllegalRemoveException {
+        selfCoach=null;
+        selfTeamManager=null;
+        selfPlayer=null;
+        salary=0;
+        subjectTeam=null;
+        for (Team t:teamList) {
+            List<TeamOwner>oldList=t.getAllTeamOwners();
+            oldList.remove(this);
+            t.setAllTeamOwners(oldList);
+        }
+       teamOwnersWhichIappointed.clear();
     }
     //</editor-fold>
 
