@@ -206,6 +206,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public void setField(Field field) {
         this.field = field;
+        field.addMyTeam(this);
     }
 
     public void setIncome(int income) {
