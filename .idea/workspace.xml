@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="150" column="29" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+            <state relative-caret-position="26">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="e#1071#1105#0" />
                 <element signature="n#!!doc;n#getName#0;n#TeamOwner#0" />
@@ -58,7 +59,7 @@
                 <element signature="docComment;method#registerAlert#0;class#TeamOwner#0" />
                 <element signature="e#6489#6490#0" expanded="true" />
                 <element signature="e#6539#6540#0" expanded="true" />
-                <element signature="e#6837#6838#0" expanded="true" />
+                <element signature="e#6836#6837#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,9 +204,9 @@
         <option value="$PROJECT_DIR$/TestService/PlayerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/Test/Users/TeamOwnerTest.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
-        <option value="$PROJECT_DIR$/src/System/Users/TeamOwner.java" />
         <option value="$PROJECT_DIR$/TestService/TeamOwnerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/TeamOwnerController.java" />
+        <option value="$PROJECT_DIR$/src/System/Users/TeamOwner.java" />
       </list>
     </option>
   </component>
@@ -362,7 +363,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586872307542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587026599771" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -620,13 +621,17 @@
       <option name="project" value="LOCAL" />
       <updated>1586869702052</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update TeamOwner">
+      <created>1586872351963</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1586872351963</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TeamOwnerControllerTest - 2020.04.14 at 02h 50m 55s.xml">
-      <configuration name="TeamOwnerControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TeamOwnerControllerTest - 2020.04.14 at 03h 02m 15s.xml">
       <configuration name="TeamOwnerControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -654,9 +659,12 @@
     <history-entry file="TeamOwnerControllerTest - 2020.04.14 at 11h 51m 54s.xml">
       <configuration name="TeamOwnerControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TeamOwnerControllerTest - 2020.04.14 at 16h 52m 53s.xml">
+      <configuration name="TeamOwnerControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183441000" />
+    <option name="totallyTimeSpent" value="183661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -675,7 +683,7 @@
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.3268206" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.54228187" visible="true" weight="0.13314448" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.54228187" visible="true" weight="0.8073654" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.28328612" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -785,7 +793,8 @@
     <MESSAGE value="add getInstance() to the log in my classes" />
     <MESSAGE value="--&#10;TeamOwnerControllerTest class was created&#10;update the next class : Team, TeamOwner" />
     <MESSAGE value="--&#10;TeamOwnerControllerTest class was created&#10;update the next class : Team, TeamOwner," />
-    <option name="LAST_COMMIT_MESSAGE" value="--&#10;TeamOwnerControllerTest class was created&#10;update the next class : Team, TeamOwner," />
+    <MESSAGE value="update TeamOwner" />
+    <option name="LAST_COMMIT_MESSAGE" value="update TeamOwner" />
   </component>
   <component name="WindowStateProjectService">
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586522900196">
@@ -1308,8 +1317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Users/TeamOwner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="150" column="29" lean-forward="true" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+        <state relative-caret-position="26">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="e#1071#1105#0" />
             <element signature="n#!!doc;n#getName#0;n#TeamOwner#0" />
@@ -1319,7 +1328,7 @@
             <element signature="docComment;method#registerAlert#0;class#TeamOwner#0" />
             <element signature="e#6489#6490#0" expanded="true" />
             <element signature="e#6539#6540#0" expanded="true" />
-            <element signature="e#6837#6838#0" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
           </folding>
         </state>
       </provider>
