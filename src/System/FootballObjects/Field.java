@@ -1,6 +1,5 @@
 package System.FootballObjects;
 
-//<editor-fold desc="imports">
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
@@ -8,18 +7,19 @@ import System.I_Observer.ISubjectTeam;
 import java.util.LinkedList;
 import java.util.List;
 import System.Log;
-//</editor-fold>
 
 public class Field implements Asset {
 
+    //<editor-fold desc="Fields">
     private int id;
     private String name;
     private List<Team> homeTeams;
-    private  int assetValue;
+    private int assetValue;
     private List<ISubjectTeam> subjectTeam;
     private int maintenanceCost;
+    //</editor-fold>
 
-
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
      * @param id
@@ -27,7 +27,6 @@ public class Field implements Asset {
      * @param assetValue
      * @param maintCost
      */
-    //<editor-fold desc="Constructor">
     public Field(int id, String name, int assetValue,int maintCost) {
         this.id = id;
         this.name = name;
@@ -61,7 +60,6 @@ public class Field implements Asset {
         return str;
     }
 
-
     public int getMaintenanceCost() {  return maintenanceCost; }
     //</editor-fold>
 
@@ -83,7 +81,6 @@ public class Field implements Asset {
     }
 
     public void setMaintenanceCost(int maintenanceCost) {  this.maintenanceCost = maintenanceCost;  }
-
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">

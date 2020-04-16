@@ -1,22 +1,21 @@
 package System.Users;
-//<editor-fold desc="imports">
+
+import System.Enum.TeamStatus;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
-import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
+import System.Log;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
-//</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
 
+    //<editor-fold desc="Fields">
     private Coach selfCoach; // if he also Coach otherwise null
     private TeamManager selfTeamManager; // if he also TeamManager otherwise null
     private Player selfPlayer; // if he also Player otherwise null
@@ -24,7 +23,9 @@ public class TeamOwner extends User implements IObserverTeam {
     private List<ISubjectTeam> subjectTeam;
     private List<Team> teamList;
     private HashMap<Team,LinkedList<TeamOwner>> teamOwnersWhichIappointed;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
      * @param id
@@ -33,7 +34,6 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param name
      * @param salary
      */
-    //<editor-fold desc="Constructor">
     public TeamOwner(int id, String name, String password, String userName,int salary) {
         super(id,name, password, userName);
         this.selfCoach = null;
@@ -77,6 +77,11 @@ public class TeamOwner extends User implements IObserverTeam {
         this.name = name;
     }
 
+    @Override
+    public void removeUser() {
+
+    }
+
     public void setSelfCoach(Coach selfCoach) {
         this.selfCoach = selfCoach;
     }
@@ -116,6 +121,7 @@ public class TeamOwner extends User implements IObserverTeam {
         Log.getInstance().writeToLog("Team owner : "+getName()+", id : "+getId() +"was added a new team owner to his team.  "
         +"team name : " + team.getName()+" , team id :"+team.getId()+". The owner name which was added : "+ newTeamOwner.getName()+
                 " , owner id : " + newTeamOwner.getId()+" .");
+
     }//---UC 18
 
     /**
@@ -139,7 +145,6 @@ public class TeamOwner extends User implements IObserverTeam {
             throw new StillNoAppointedOwner();
     }//---UC 19
 
-
     /**
      * Restart team status - reopen team
      * @param team - to restart
@@ -160,7 +165,7 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param team to produce financial report
      */
     public FinancialReport addFinancialReport(Team team){
-        FinancialReport fReport = new FinancialReport(team, new Date());
+        FinancialReport fReport = new FinancialReport(team);
         team.addFinancialReport(fReport);
         Log.getInstance().writeToLog("A new financial report was set to team : "+ team.getName()+" , id :"+ team.getId());
         return fReport;
@@ -198,4 +203,5 @@ public class TeamOwner extends User implements IObserverTeam {
         this.subjectTeam.remove(iSubjectTeam);
     }
     //</editor-fold>
+
 }

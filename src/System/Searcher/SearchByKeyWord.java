@@ -7,6 +7,7 @@ import java.util.List;
 
 public class SearchByKeyWord extends ASearchStrategy {
 
+    //<editor-fold desc="Override Methods">
     @Override
     public List<IShowable> search(SearchCategory category, String str) {
         List<IShowable> list= getListByCategory(category);
@@ -18,4 +19,6 @@ public class SearchByKeyWord extends ASearchStrategy {
         }
         return searchList;
     }
+    //</editor-fold>
+
 }

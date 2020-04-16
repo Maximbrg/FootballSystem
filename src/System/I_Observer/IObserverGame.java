@@ -4,5 +4,6 @@ public interface IObserverGame {
 
     void update();
     void registerAlert(ISubjectGame iSubjectGame);
-    void removeAlert(ISubjectGame iSubjectGame) ;
+    void removeAlert(ISubjectGame iSubjectGame);
+
 }

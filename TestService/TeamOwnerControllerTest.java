@@ -1,10 +1,11 @@
+import ServiceLayer.Exceptions.NotHisManagerException;
 import ServiceLayer.Exceptions.TeamIsClosedException;
 import ServiceLayer.TeamOwnerController;
-import System.Asset.Asset;
 import System.Enum.TeamStatus;
 import System.Exeptions.AlreadyHasTeamException;
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.NotHisTeamException;
+import System.Exeptions.StillNoAppointedOwner;
 import System.FootballObjects.Field;
 import System.FootballObjects.Team.Team;
 import System.Users.Coach;
@@ -15,10 +16,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
+
 
 
 public class TeamOwnerControllerTest {
@@ -54,8 +53,6 @@ public class TeamOwnerControllerTest {
         team2.addAsset(teamManager);
         team2.addAsset(field);
 
-
-
         //team3=new Team("Hapoel Jerusalem",null);
         //team4=new Team("Maccabi Tel Aviv",null);
     }
@@ -77,9 +74,9 @@ public class TeamOwnerControllerTest {
         assertTrue(team1.getAssets().contains(player));
         assertTrue(player.getMyTeam()==team1);
         assertTrue(tOwner1.getTeamList().contains(team1));
-    }catch (Exception e){
-
-         }
+    }catch (TeamIsClosedException e){  fail(); }
+     catch (NotHisTeamException e){ fail(); }
+     catch (HasTeamAlreadyException e){ fail(); }
     }//Test ID:    #6.1 -- checks if player added successfully to the team
 
     @Test
@@ -89,21 +86,21 @@ public class TeamOwnerControllerTest {
             assertTrue(team1.getAssets().contains(coach));
             assertTrue(coach.getMyTeam()==team1);
             assertTrue(tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (TeamIsClosedException e){  fail(); }
+        catch (NotHisTeamException e){ fail(); }
+        catch (HasTeamAlreadyException e){ fail(); }
     }//Test ID:    #6.1 -- checks if coach added successfully to the team
 
     @Test
-    public void addAssetToTeamTest3() throws TeamIsClosedException, NotHisTeamException, HasTeamAlreadyException {
+    public void addAssetToTeamTest3() throws TeamIsClosedException, NotHisTeamException, HasTeamAlreadyException{
         try {
             teamOwnerController.addAssetToTeam(tOwner1,team1,teamManager);
             assertTrue(team1.getAssets().contains(teamManager));
             assertTrue(teamManager.getMyTeam()==team1);
             assertTrue(tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (TeamIsClosedException e){  fail(); }
+        catch (NotHisTeamException e){ fail(); }
+        catch (HasTeamAlreadyException e){ fail(); }
     }//Test ID:    #6.1 -- checks if teamManager added successfully to the team
 
     @Test
@@ -113,9 +110,9 @@ public class TeamOwnerControllerTest {
             assertTrue(team1.getAssets().contains(field));
             assertTrue(field.getMyTeam()==team1);
             assertTrue(tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (TeamIsClosedException e){  fail(); }
+        catch (NotHisTeamException e){ fail(); }
+        catch (HasTeamAlreadyException e){ fail(); }
     }//Test ID:    #6.1 -- checks if field added successfully to the team
     //</editor-fold>
 
@@ -127,9 +124,8 @@ public class TeamOwnerControllerTest {
             assertTrue(!team1.getAssets().contains(player));
             assertTrue(player.getMyTeam()!=team1);
             assertTrue(!tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (NotHisTeamException e){ fail();}
+         catch (TeamIsClosedException e){ fail();}
     }//Test ID:    #6.1 -- checks if player removed successfully from the team
 
     @Test
@@ -139,9 +135,8 @@ public class TeamOwnerControllerTest {
             assertTrue(!team1.getAssets().contains(coach));
             assertTrue(coach.getMyTeam()!=team1);
             assertTrue(!tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (NotHisTeamException e){ fail();}
+        catch (TeamIsClosedException e){ fail();}
     }//Test ID:    #6.1 -- checks if coach removed successfully from the team
 
     @Test
@@ -151,9 +146,8 @@ public class TeamOwnerControllerTest {
             assertTrue(!team1.getAssets().contains(teamManager));
             assertTrue(teamManager.getMyTeam()!=team1);
             assertTrue(!tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (NotHisTeamException e){ fail();}
+        catch (TeamIsClosedException e){ fail();}
     }//Test ID:    #6.1 -- checks if team manager removed successfully from the team
 
     @Test
@@ -163,9 +157,8 @@ public class TeamOwnerControllerTest {
             assertTrue(!team1.getAssets().contains(field));
             assertTrue(field.getMyTeam()!=team1);
             assertTrue(!tOwner1.getTeamList().contains(team1));
-        }catch (Exception e){
-
-        }
+        }catch (NotHisTeamException e){ fail();}
+        catch (TeamIsClosedException e){ fail();}
     }//Test ID:    #6.1 -- checks if field removed successfully from the team
     //</editor-fold>
 
@@ -181,9 +174,8 @@ public class TeamOwnerControllerTest {
             assertTrue(coach.getAssetValue()==1700);
             assertTrue(teamManager.getAssetValue()==1700);
             assertTrue(field.getAssetValue()==1700);
-        }catch (Exception e){
-
-        }
+        }catch (NotHisTeamException e){ fail();}
+         catch (TeamIsClosedException e){ fail();}
     }//Test ID:    #6.1 -- checks if assets valu update successfully
 
 
@@ -193,9 +185,10 @@ public class TeamOwnerControllerTest {
             teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
             assertTrue(team1.getTeamOwnerListOfThisOwner(tOwner1).contains(tOwner1));
             assertTrue(tOwner2.getTeamList().contains(team1));
-        }catch (Exception e){}
+        }catch (TeamIsClosedException e){fail();}
+         catch (NotHisTeamException e){fail();}
+         catch (AlreadyHasTeamException e){fail();}
     }//Test ID:    #6.2
-
 
 
     @Test
@@ -212,45 +205,51 @@ public class TeamOwnerControllerTest {
             teamOwnerController.removeTeamOwner(tOwner3,tOwner1,team1);
             assertTrue(tOwner1.getTeamList().contains(team1));
             assertTrue(team1.getAllTeamOwners().contains(tOwner1));
-
-        }catch (Exception e){}
+        }catch (NotHisTeamException e){fail();}
+         catch (TeamIsClosedException e){fail();}
+         catch (StillNoAppointedOwner e){fail();}
     }//Test ID:    #6.3
 
     @Test
-    public void addTeamMenegarTest(){
+    public void addTeamManagerTest(){
     try {
-        teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+        teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
         assertTrue(team1.getTeamManagersList().contains(teamManager));
         assertTrue(teamManager.getMyTeam()==team1);
-    }catch (Exception e){}
+    }catch (NotHisTeamException e){fail();}
+     catch (TeamIsClosedException e){fail();}
+     catch (AlreadyHasTeamException e){fail();}
     }//Test ID:    #6.4
 
     @Test
-    public void removeTeamMenegarTest(){
-        //removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager)
+    public void removeTeamMenegarTest(){//NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException
         try {
             teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
 
             //in case that the owner which appoint the manager is the same who's remove him
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner1,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner1,team1,teamManager);
             assertFalse(team1.getTeamManagersList().contains(teamManager));
             assertNull(teamManager.getMyTeam());
             assertNull(teamManager.getMyTeamOwner());
 
             //in case that owner which didnt appoint the manager try to remove him
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
-            teamOwnerController.removeTeamMenegar(tOwner3,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
+            teamOwnerController.removeTeamManager(tOwner3,team1,teamManager);
             assertTrue(team1.getTeamManagersList().contains(teamManager));
             assertTrue(teamManager.getMyTeam()==team1);
-        }catch (Exception e){}
+        }catch (NotHisTeamException e){fail();}
+         catch (NotHisManagerException e){fail();}
+         catch (TeamIsClosedException e){fail();}
+         catch (NotHisTeamException e){fail();}
+
 
     }//Test ID:    #6.5
 
     @Test
     public void closeTeamTest(){
         try {
-            teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+            teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
             teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
 
             teamOwnerController.closeTeam(tOwner1,team1);
@@ -266,7 +265,7 @@ public class TeamOwnerControllerTest {
         //openTeam(TeamOwner teamOwner, Team team)
     try {
         //precondition for the test :
-        teamOwnerController.addTeamMenegar(tOwner1,team1,teamManager);
+        teamOwnerController.addTeamManager(tOwner1,team1,teamManager);
         teamOwnerController.addTeamOwner(tOwner1,team1,tOwner2);
         teamOwnerController.closeTeam(tOwner1,team1);
         //--------------------------

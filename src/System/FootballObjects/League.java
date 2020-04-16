@@ -2,17 +2,19 @@ package System.FootballObjects;
 
 import System.FootballObjects.Team.Team;
 import System.IShowable;
-import System.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class League implements IShowable {
 
+    //<editor-fold desc="Fields">
     private static int ID=1;
     private int id;
     private String name;
     private List<Team> teams;
-    private List<LeagueInformation> leagueInformations;
+    private List<LeagueInformation> leaguesInformation;
+    //</editor-fold>
 
     //<editor-fold desc="Constructor">
     public League(String name, List<Team> teams) {
@@ -20,13 +22,12 @@ public class League implements IShowable {
         ID++;
         this.name=name;
         this.teams= new ArrayList<>();
-        this.leagueInformations= new ArrayList<>();
+        this.leaguesInformation = new ArrayList<>();
         for (Team t : teams) {
             this.teams.add(t);
         }
     }
     //</editor-fold>
-
 
     //<editor-fold desc="Getters">
     public String getName() {
@@ -45,7 +46,7 @@ public class League implements IShowable {
     }
 
     public List<LeagueInformation> getLeagueInformation() {
-        return leagueInformations;
+        return leaguesInformation;
     }
 
     public List<Team> getTeams(){
@@ -57,8 +58,10 @@ public class League implements IShowable {
 
     //</editor-fold>
 
-
+    //<editor-fold desc="Methods">
     public void addLeagueInformation(LeagueInformation leagueInformation) {
-        this.leagueInformations.add(leagueInformation);
+        this.leaguesInformation.add(leagueInformation);
     }
+    //</editor-fold>
+
 }

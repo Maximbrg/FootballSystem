@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SearchByName extends ASearchStrategy {
+
+    //<editor-fold desc="Override Methods">
     @Override
     public List<IShowable> search(SearchCategory category, String str) {
         List<IShowable> list= getListByCategory(category);
@@ -17,4 +19,6 @@ public class SearchByName extends ASearchStrategy {
         }
         return searchList;
     }
+    //</editor-fold>
+
 }

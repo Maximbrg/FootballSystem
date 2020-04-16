@@ -1,10 +1,12 @@
 package System.Enum;
 
 public enum SearchCategory {
-    Default,
+
+    DEFAULT,
     PLAYER,
     COACH,
     TEAM,
     SEASON,
     LEAGUE
+
 }

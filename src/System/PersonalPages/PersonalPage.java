@@ -2,18 +2,19 @@ package System.PersonalPages;
 
 import System.Users.Fan;
 import System.Log;
-import System.Users.User;
 
 import java.util.LinkedList;
 import java.util.List;
 
 public class PersonalPage {
 
+    //<editor-fold desc="Fields">
      private IPageAvailable pageAvailable;
      private List<String> posts;
      private List <Fan> followers;
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
     public PersonalPage(IPageAvailable pageAvailable) {
         this.pageAvailable = pageAvailable;
         this.followers = new LinkedList<>();
@@ -21,7 +22,7 @@ public class PersonalPage {
     }
     //</editor-fold>
 
-    //<editor-fold desc="getter">
+    //<editor-fold desc="Getters">
     public IPageAvailable getPageAvailable() {
         return pageAvailable;
     }
@@ -33,10 +34,9 @@ public class PersonalPage {
     public List<String> getPosts() {
         return posts;
     }
-
     //</editor-fold>
 
-    //<editor-fold desc="setter">
+    //<editor-fold desc="Setters">
     public void setPageAvailable(IPageAvailable pageAvailable) {
         this.pageAvailable = pageAvailable;
     }
@@ -46,6 +46,7 @@ public class PersonalPage {
     }
     //</editor-fold>
 
+    //<editor-fold desc="Methods">
     /**
      * Add follower to personal page
      * @param fan
@@ -77,5 +78,6 @@ public class PersonalPage {
     }
 
     public void removePost(String post){}
+    //</editor-fold>
 
 }

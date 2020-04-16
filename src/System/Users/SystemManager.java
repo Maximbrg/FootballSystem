@@ -1,45 +1,36 @@
 package System.Users;
 
+import System.Controller;
+import System.Enum.RefereeType;
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.UserNameAlreadyExistException;
+import System.FootballObjects.Team.Team;
+import System.I_Observer.IObserverTeam;
+import System.I_Observer.ISubjectTeam;
+import System.Log;
+import System.Report;
+
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import System.Exeptions.NoSuchAUserNamedException;
-import System.Exeptions.UserNameAlreadyExistException;
-import System.FootballObjects.Team.Team;
-import System.I_Observer.IObserverTeam;
-import System.I_Observer.ISubjectTeam;
-import System.Report;
-import System.Log;
-import System.Controller;
-
 public class SystemManager extends User implements IObserverTeam {
 
+    //<editor-fold desc="Fields">
     private static HashMap<Integer,Report> openReportsBox = new HashMap<Integer, Report>();
     private static HashMap<Integer,Report> closeReportsBox = new HashMap<Integer, Report>();
     private static List<ISubjectTeam> observerTeams = new LinkedList<>();
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
     public SystemManager(int id, String name, String password, String userName){
         super(id,name,password,userName);
     }
     //</editor-fold>
 
-    //<editor-fold desc="setters">
-
-    public static void setOpenReportsBox(HashMap<Integer, Report> openReportsBox) {
-        SystemManager.openReportsBox = openReportsBox;
-    }
-
-    public static void setCloseReportsBox(HashMap<Integer, Report> closeReportsBox) {
-        SystemManager.closeReportsBox = closeReportsBox;
-    }
-    //</editor-fold>
-
-    //Methods
-    //<editor-fold desc="getters">
+    //<editor-fold desc="Getters">
     public HashMap<Integer, Report> getOpenReports() {
         return openReportsBox;
     }
@@ -54,6 +45,17 @@ public class SystemManager extends User implements IObserverTeam {
         return Log.getInstance().getLog();
 
     } //UC-28
+    //</editor-fold>
+
+    //<editor-fold desc="Setters">
+
+    private static void setOpenReportsBox(HashMap<Integer, Report> openReportsBox) {
+        SystemManager.openReportsBox = openReportsBox;
+    }
+
+    private static void setCloseReportsBox(HashMap<Integer, Report> closeReportsBox) {
+        SystemManager.closeReportsBox = closeReportsBox;
+    }
     //</editor-fold>
 
     //<editor-fold desc="Methods">
@@ -82,7 +84,7 @@ public class SystemManager extends User implements IObserverTeam {
      * @throws NoSuchAUserNamedException
      */
     public void restartRemovedUser(String userName) throws NoSuchAUserNamedException{
-        Controller.getInstance().restartRemvoeUser(userName);
+        Controller.getInstance().restartRemoveUser(userName);
     }
 
     /**
@@ -98,7 +100,7 @@ public class SystemManager extends User implements IObserverTeam {
      * Answer to report
      * @param report
      */
-    public void answerTheReport(Report report, String answer){
+    public void answerReport(Report report, String answer){
         report.answer(answer);
         closeReportsBox.put(report.getId(),report);
         openReportsBox.remove(report.getId());
@@ -117,8 +119,8 @@ public class SystemManager extends User implements IObserverTeam {
         Controller.getInstance().addTeam(newTeam);
         Log.getInstance().writeToLog("New team added to the system. ("+newTeam.getId()+", "+newTeam.getName()+")");
     }
-    //<editor-fold desc="Create Users">
 
+    //<editor-fold desc="Create Users">
     /**
      * Create a new Player
      * @param id
@@ -138,10 +140,49 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Player user=new Player(id,name,password,userName,birthDate,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new Player : "+ user.getUserName());
         return user;
-
     }
+
+    /**
+     * create new referee
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @param refereeType
+     * @return
+     * @throws UserNameAlreadyExistException
+     */
+    public Referee createNewReferee(int id, String name, String password, String userName, RefereeType refereeType) throws UserNameAlreadyExistException {
+        if(Controller.getInstance().isUserNameExist(userName)){
+            throw new UserNameAlreadyExistException();
+        }
+        Referee user=new Referee(name,refereeType,id,password,userName);
+        Controller.getInstance().addUser(userName,user);
+        Log.getInstance().writeToLog("Add a new Referee : "+ user.getUserName());
+        return user;
+    }
+
+    /**
+     * create new football Association user
+     * @param id
+     * @param name
+     * @param password
+     * @param userName
+     * @return
+     * @throws UserNameAlreadyExistException
+     */
+    public FootballAssociation createNewFootballAssociation(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
+        if(Controller.getInstance().isUserNameExist(userName)){
+            throw new UserNameAlreadyExistException();
+        }
+        FootballAssociation user=new FootballAssociation(id,name,password,userName);
+        Controller.getInstance().addUser(userName,user);
+        Log.getInstance().writeToLog("Add a new Football Association : "+ user.getUserName());
+        return user;
+    }
+
     /**
      * Create a new coach
      * @param id
@@ -161,7 +202,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Coach user=new Coach(id,name,password,userName,preparation,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new Coach : " + user.getUserName());
         return user;
     }
     /**
@@ -194,7 +235,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamManager user=new TeamManager(id,name,password,userName,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new TeamManager : " + user.getUserName());
 
         return user;
     }
@@ -215,7 +256,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamOwner user=new TeamOwner(id,name,password,userName,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() +" "+ user.getId());
+        Log.getInstance().writeToLog("Add a new TeamOwner : " + user.getUserName());
         return user;
         }
 
@@ -234,7 +275,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         SystemManager user = new SystemManager(id, name, password, userName);
         Controller.getInstance().addUser(userName, user);
-        Log.getInstance().writeToLog("Add a new user : " + user.getClass() + " " + user.getId());
+        Log.getInstance().writeToLog("Add a new SystemManager : " + user.getUserName());
         return user;
     }
     @Override
@@ -242,19 +283,24 @@ public class SystemManager extends User implements IObserverTeam {
         Log.getInstance().writeToLog("System Manager was updated by a team. about the messge:"+msg+" id's SystemManager:"+getId());
 
     }
+
     @Override
     public void registerAlert(ISubjectTeam iSubjectTeam) {
         observerTeams.add(iSubjectTeam);
 
     }
+
     @Override
     public void removeAlert(ISubjectTeam iSubjectTeam) {
         observerTeams.remove(iSubjectTeam);
 
     }
 
-    //</editor-fold>
+    @Override
+    public void removeUser() {
 
+    }
+    //</editor-fold>
     //</editor-fold>
 
 }
