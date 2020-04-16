@@ -275,7 +275,6 @@ public class Referee extends User implements IObserverGame,IShowable {
 
     @Override
     public void removeUser() {
-
     }
     //</editor-fold>
 }
