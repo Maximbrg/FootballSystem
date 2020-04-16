@@ -4,6 +4,7 @@ import System.Enum.RefereeType;
 import System.Exeptions.IllegalInputException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
+import System.FootballObjects.Game;
 import System.FootballObjects.League;
 import System.Controller;
 import System.FootballObjects.LeagueInformation;
@@ -15,6 +16,7 @@ import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Users.TeamOwner;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +59,25 @@ public class FootballAssosiationController {
         }
         return leagueInformations;
     }
+
+    /**
+     * Get all games for League information
+     * @param leagueInformation
+     * @return
+     */
+    public List<Game> getAllGames(LeagueInformation leagueInformation){
+        return leagueInformation.getGames();
+    }
+
+    /**
+     * Get League table
+     * @param leagueInfo
+     * @return
+     */
+    public HashMap<Team,Integer> getLeagueTable(LeagueInformation leagueInfo){
+        return leagueInfo.getLeagueTable();
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Methods">
@@ -88,7 +109,7 @@ public class FootballAssosiationController {
     public LeagueInformation initLeague(FootballAssociation footballAssociation, League league, String year){
         //Check if season already exist in the system
         Controller controller=Controller.getInstance();
-        Season season= controller.getSeason(year);
+        Season season= footballAssociation.getSeasonFromController(year);
         if(season==null){
             season=new Season(Integer.valueOf(year));
             controller.addSeason(season);
@@ -221,6 +242,16 @@ public class FootballAssosiationController {
         Controller.getInstance().addTeam(team);
         teamOwner.addTeamToMyTeamList(team);
         return team;
+    }
+
+    /**
+     * Update game result and score in league table
+     * @param game
+     * @param homeScore
+     * @param awayScore
+     */
+    public void updateResultToGame(Game game, int homeScore, int awayScore) {
+        game.setResult(homeScore,awayScore);
     }
     //</editor-fold>
 

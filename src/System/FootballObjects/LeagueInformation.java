@@ -3,6 +3,7 @@ package System.FootballObjects;
 import System.Enum.RefereeType;
 import System.FootballObjects.Team.*;
 import System.Users.FootballAssociation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Log;
 import java.util.*;
@@ -24,7 +25,7 @@ public class LeagueInformation {
     private int WIN;
     private int LOSS;
     private int TIE;
-    private Team Champion;
+    private Team Champion;//???
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
@@ -88,6 +89,18 @@ public class LeagueInformation {
     public Team getChampion() {
         return Champion;
     }
+
+    public int getWIN() {
+        return WIN;
+    }
+
+    public int getLOSS() {
+        return LOSS;
+    }
+
+    public int getTIE() {
+        return TIE;
+    }
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
@@ -124,6 +137,9 @@ public class LeagueInformation {
      */
     public void initLeagueInformation(){
         iTeamAllocatePolicy.setTeamPolicy(league.getTeams(),games);
+        for(Game game: games){
+            game.setLeagueInformation(this);
+        }
         //get list of score for policy
         //setSore[0]= WIN, setSore[1]=LOSS, setSore[2]=TIE
         List<Integer> setScore= iScoreMethodPolicy.setScorePolicy();
@@ -205,8 +221,19 @@ public class LeagueInformation {
         this.iScoreMethodPolicy=iScoreMethodPolicy;
     }
 
-    public void updateScoreTeamInLeagueTable(Team t, int score){
-        leagueTable.replace(t,score);
+    /**
+     * Update Score by game result and score policy
+     * @param t
+     * @param result
+     */
+    public void updateScoreTeamInLeagueTable(Team t, String result){
+        if(result.equals("WIN")){
+            leagueTable.replace(t,leagueTable.get(t)+WIN);
+        }else if(result.equals("LOSS")){
+            leagueTable.replace(t,leagueTable.get(t)+LOSS);
+        }else {
+            leagueTable.replace(t,leagueTable.get(t)+TIE);
+        }
     }
 
     //public void editScoreSchedulingPolicy(League league, Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37

@@ -91,6 +91,13 @@ public class Controller {
 
     //<editor-fold desc="Methods">
     public void initSystem(){ //UC-1
+        //Object TaxServer;
+        //Object AccountingServer;
+        //In the future we will use this objects for getting/sending information from/to tax and accounting servers
+        Log.getInstance().writeToLog("Successfully connected to Tax System");
+        Log.getInstance().writeToLog("Successfully connected to Accounting System");
+        SystemManager systemManager = new SystemManager(0,"Administrator","2&^4BcE#@6","Admin");
+        this.addUser("Admin",systemManager);
     } //UC-1
 
     public User login(String userName , String password) throws WrongPasswordException , NoSuchAUserNamedException { //UC-3

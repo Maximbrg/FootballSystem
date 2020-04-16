@@ -1,5 +1,4 @@
 
-
 import System.Controller;
 import System.Enum.RefereeType;
 import System.Exeptions.NoSuchAUserNamedException;
@@ -16,6 +15,9 @@ import org.junit.Test;
 
 import java.util.Date;
 
+import static junit.framework.TestCase.assertNotNull;
+import static junit.framework.TestCase.assertNull;
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ControllerTest {

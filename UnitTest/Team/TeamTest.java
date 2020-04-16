@@ -9,13 +9,13 @@ import System.Users.TeamManager;
 import System.Users.TeamOwner;
 import  org.junit.Before;
 import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 public class TeamTest {
 
