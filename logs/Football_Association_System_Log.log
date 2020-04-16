@@ -4287,3 +4287,12 @@ Wed Apr 15 18:07:57 IDT 2020 Users.FootballAssociation: Football assosiation -Ad
 Wed Apr 15 18:07:57 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
 Wed Apr 15 18:07:57 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
 Wed Apr 15 18:07:57 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 18:15:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Wed Apr 15 18:15:23 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Wed Apr 15 18:15:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
