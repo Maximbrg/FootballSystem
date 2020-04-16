@@ -41,7 +41,7 @@ public class RefereeController extends MainUserController  {
         if(!(user instanceof Referee)){
             throw new NoRefereePermissions();
         }
-        return game.getEventLog().getaEventList();
+        return game.getEventLog().getEventList();
     }
 
     public void editEventAfterGame(Referee referee, Game game, String type, AEvent oldEvent) throws NoRefereePermissions, NoSuchEventException {

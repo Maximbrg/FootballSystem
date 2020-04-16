@@ -1,6 +1,5 @@
 package System.Users;
 
-//<editor-fold desc="imports">
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
 import System.FootballObjects.Team.Team;
@@ -10,26 +9,27 @@ import System.Log;
 
 import java.util.LinkedList;
 import java.util.List;
-//</editor-fold>
 
 public class TeamManager extends User implements Asset, IObserverTeam {
 
+    //<editor-fold desc="Fields">
     private  int assetValue;
     private Team myTeam;
     private List<ISubjectTeam> subjectTeam;
     private int salary;
     private TeamOwner myTeamOwner;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
-      * @param id
+     * @param id
      * @param name
      * @param password
      * @param userName
      * @param assetValue
      * @param salary
      */
-    //<editor-fold desc="Constructor">
     public TeamManager(int id, String name, String password, String userName, int assetValue, int salary) {
         super(id, name, password, userName);
         this.assetValue = assetValue;
@@ -88,7 +88,6 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     public void setMyTeamOwner(TeamOwner myTeamOwner) {
         this.myTeamOwner = myTeamOwner;
     }
-
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">

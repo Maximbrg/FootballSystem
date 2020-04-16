@@ -1,11 +1,9 @@
 package System.Users;
-//<editor-fold desc="imports">
 
 import System.Enum.TeamStatus;
 import System.Exeptions.StillNoAppointedOwner;
 import System.Exeptions.TeamStatusException;
 import System.FinancialReport;
-import System.Enum.TeamStatus;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -14,10 +12,10 @@ import System.Log;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-//</editor-fold>
 
 public class TeamOwner extends User implements IObserverTeam {
 
+    //<editor-fold desc="Fields">
     private Coach selfCoach; // if he also Coach otherwise null
     private TeamManager selfTeamManager; // if he also TeamManager otherwise null
     private Player selfPlayer; // if he also Player otherwise null
@@ -25,7 +23,9 @@ public class TeamOwner extends User implements IObserverTeam {
     private List<ISubjectTeam> subjectTeam;
     private List<Team> teamList;
     private HashMap<Team,LinkedList<TeamOwner>> teamOwnersWhichIappointed;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
      * @param id
@@ -34,7 +34,6 @@ public class TeamOwner extends User implements IObserverTeam {
      * @param name
      * @param salary
      */
-    //<editor-fold desc="Constructor">
     public TeamOwner(int id, String name, String password, String userName,int salary) {
         super(id,name, password, userName);
         this.selfCoach = null;
@@ -146,7 +145,6 @@ public class TeamOwner extends User implements IObserverTeam {
             throw new StillNoAppointedOwner();
     }//---UC 19
 
-
     /**
      * Restart team status - reopen team
      * @param team - to restart
@@ -205,4 +203,5 @@ public class TeamOwner extends User implements IObserverTeam {
         this.subjectTeam.remove(iSubjectTeam);
     }
     //</editor-fold>
+
 }

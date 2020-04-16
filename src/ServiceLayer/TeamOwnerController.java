@@ -69,7 +69,7 @@ public class TeamOwnerController extends MainUserController implements Observabl
         teamOwner.removeTeamOwner(team,teamOwnerToRemove);
     }
 
-    public void addTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
+    public void addTeamManager(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, TeamIsClosedException, AlreadyHasTeamException {
         this.checkInputs(teamOwner,team);
         if(!team.getAllTeamOwners().contains(teamOwner) && !team.getTeamManagersList().contains(teamManager)){
             throw new AlreadyHasTeamException();
@@ -78,7 +78,7 @@ public class TeamOwnerController extends MainUserController implements Observabl
         teamManager.setMyTeamOwner(teamOwner);
     }
 
-    public void removeTeamMenegar(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, NotHisManagerException, TeamIsClosedException {
+    public void removeTeamManager(TeamOwner teamOwner, Team team, TeamManager teamManager) throws NotHisTeamException, NotHisManagerException, TeamIsClosedException {
         this.checkInputs(teamOwner,team);
         if(teamManager.getMyTeamOwner()!=teamOwner){
             throw new NotHisManagerException();

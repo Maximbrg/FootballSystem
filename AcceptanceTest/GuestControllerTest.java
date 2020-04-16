@@ -158,10 +158,10 @@ public class GuestControllerTest {
 
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
-        FootballAssosiation assosiation = new FootballAssosiation(205695612,"Max","123","MaxFTW");
+        FootballAssociation assosiation = new FootballAssociation(205695612,"Max","123","MaxFTW");
         Team t=new Team("Hap",null);
         Controller.getInstance().addTeam(t);
-        assosiation.addNewReferee("Invoker", RefereeType.MainReferee,1,"123","Invoker");
+        assosiation.addNewReferee("Invoker", RefereeType.MAIN,1,"123","Invoker");
         GuestController gustController = new GuestController();
         List<IShowable> iShowables =  gustController.getInfoToShow("Referee");
         for(IShowable is:iShowables){

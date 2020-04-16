@@ -5,6 +5,8 @@ import System.FootballObjects.Team.Team;
 import java.util.Date;
 
 public class FinancialReport {
+
+    //<editor-fold desc="Fields">
     private final Team team;
     private int incomeFromGame;
     private int maintenanceFieldCost;
@@ -12,8 +14,9 @@ public class FinancialReport {
     private int income;
     private int expanse;
     private Date date;
+    //</editor-fold>
 
-    //<editor-fold desc="constructor">
+    //<editor-fold desc="Constructor">
     public FinancialReport(Team team){
         this.team=team;
         maintenanceFieldCost=team.getField().getMaintenanceCost();
@@ -23,8 +26,8 @@ public class FinancialReport {
         this.date=new Date(System.currentTimeMillis());
     }
     //</editor-fold>
-    //<editor-fold desc="getters">
 
+    //<editor-fold desc="Getters">
     public int getIncomeFromGame() {
         return incomeFromGame;
     }
@@ -45,10 +48,12 @@ public class FinancialReport {
         return expanse;
     }
     //</editor-fold>
-    //<editor-fold desc="setter">
+
+    //<editor-fold desc="Setter">
     private void setIncomeFromGame(int incomes){
         incomeFromGame=incomes;
     }
+
     private void setMaintenanceFieldCost(int maintenanceFieldCost) {
         this.maintenanceFieldCost = maintenanceFieldCost;
     }
@@ -65,4 +70,5 @@ public class FinancialReport {
         this.expanse = expanse;
     }
     //</editor-fold>
+
 }

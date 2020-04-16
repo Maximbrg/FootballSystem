@@ -11,7 +11,7 @@ import System.FootballObjects.League;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
-import System.Users.FootballAssosiation;
+import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Users.SystemManager;
 import org.junit.BeforeClass;
@@ -29,7 +29,7 @@ public class RefereeControllerTest {
     static SystemManagerController systemManagerController;
     static SystemManager sManager;
     static Referee rMain,rAssist,rAssist1;
-    static FootballAssosiation fATest;
+    static FootballAssociation fATest;
     static Team t1,t2;
     static Game g1,g2;
     static Season s;
@@ -49,9 +49,9 @@ public class RefereeControllerTest {
         rCTest=RefereeController.getInstance();
         systemManagerController=SystemManagerController.getInstance();
         sManager=new SystemManager(123,"abc","abv","sys");
-        rAssist =systemManagerController.createNewReferee(sManager,441,"avi","1","EilamHagadol", RefereeType.AssistantReferee);
-        rAssist1 =systemManagerController.createNewReferee(sManager,441,"avi","1","EilamHagadol3", RefereeType.AssistantReferee);
-        rMain =systemManagerController.createNewReferee(sManager,444,"avi","1","aviHagadol", RefereeType.MainReferee);
+        rAssist =systemManagerController.createNewReferee(sManager,441,"avi","1","EilamHagadol", RefereeType.ASSISTANT);
+        rAssist1 =systemManagerController.createNewReferee(sManager,441,"avi","1","EilamHagadol3", RefereeType.ASSISTANT);
+        rMain =systemManagerController.createNewReferee(sManager,444,"avi","1","aviHagadol", RefereeType.MAIN);
         referees=new LinkedList<>();
         referees.add(rMain);
         referees.add(rAssist);
@@ -80,7 +80,7 @@ public class RefereeControllerTest {
      */
     @Test
     public void editDetails() throws UserNameAlreadyExistException {
-        //rMain =systemManagerController.createNewReferee(sManager,444,"avi","1","aviHagadol28", RefereeType.MainReferee);
+        //rMain =systemManagerController.createNewReferee(sManager,444,"avi","1","aviHagadol28", RefereeType.MAIN);
         //edit id
         rCTest.editDetails(rMain,1111,"","");
         assertEquals(1111,rMain.getId());
@@ -144,7 +144,7 @@ public class RefereeControllerTest {
     @Test
     public void getMySeasonGames(){
                 int count =0;
-                List<Game> l=s.getLeagueInformations().get(0).getGames();
+                List<Game> l=s.getLeaguesInformation().get(0).getGames();
                 for(Game g:rCTest.getMySeasonGames(rMain,s) ){
                     if(!l.contains(g)){
                         assert(false);
@@ -174,7 +174,7 @@ public class RefereeControllerTest {
         d1.setHours(new Date(System.currentTimeMillis()).getHours()+1);
         //referee not allow to addEventDuringGame
         try {
-            rCTest.addEventDuringGame(new Referee("a",RefereeType.MainReferee,59,"o","abra"),g,"Offense",10);
+            rCTest.addEventDuringGame(new Referee("a",RefereeType.MAIN,59,"o","abra"),g,"Offense",10);
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -196,8 +196,8 @@ public class RefereeControllerTest {
         } catch (NoSuchEventException e) {
             assert (false);
         }
-        List<AEvent> a=g.getEventLog().getaEventList();
-        assertEquals("RedCard",g.getEventLog().getaEventList().get(0).getClass().toString().substring(35));
+        List<AEvent> a=g.getEventLog().getEventList();
+        assertEquals("RedCard",g.getEventLog().getEventList().get(0).getClass().toString().substring(35));
 
 
     }
@@ -223,7 +223,7 @@ public class RefereeControllerTest {
         //try before game start
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()-2);
-            rCTest.editEventAfterGame(rMain,g,"Offense",g.getEventLog().getaEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"Offense",g.getEventLog().getEventList().get(0));
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -231,7 +231,7 @@ public class RefereeControllerTest {
         }
         //referee not allow to addEventAfterGame -assistant referee
         try {
-            rCTest.editEventAfterGame(rAssist1,g,"Offense",g.getEventLog().getaEventList().get(0));
+            rCTest.editEventAfterGame(rAssist1,g,"Offense",g.getEventLog().getEventList().get(0));
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -239,7 +239,7 @@ public class RefereeControllerTest {
         }
         //no such Event like this kind
         try {
-            rCTest.editEventAfterGame(rMain,g,"blueCard",g.getEventLog().getaEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"blueCard",g.getEventLog().getEventList().get(0));
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -248,7 +248,7 @@ public class RefereeControllerTest {
         //to late to add event to game
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+10);
-            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getaEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0));
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -257,15 +257,15 @@ public class RefereeControllerTest {
         //to late to add event to game
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+4);
-            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getaEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0));
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
             assert (false);
         }
-        List<AEvent> a=g.getEventLog().getaEventList();
-        assertEquals("RedCard",g.getEventLog().getaEventList().get(0).getClass().toString().substring(35));
-        assertEquals(1,g.getEventLog().getaEventList().get(0).getMinute());
+        List<AEvent> a=g.getEventLog().getEventList();
+        assertEquals("RedCard",g.getEventLog().getEventList().get(0).getClass().toString().substring(35));
+        assertEquals(1,g.getEventLog().getEventList().get(0).getMinute());
 
     }
 
@@ -329,9 +329,9 @@ public class RefereeControllerTest {
         } catch (NoSuchEventException e) {
             assert (false);
         }
-        List<AEvent> a=g.getEventLog().getaEventList();
-        assertEquals("YellowCard",g.getEventLog().getaEventList().get(g.getEventLog().getaEventList().size()-1).getClass().toString().substring(35));
-        assertEquals(90,g.getEventLog().getaEventList().get(g.getEventLog().getaEventList().size()-1).getMinute());
+        List<AEvent> a=g.getEventLog().getEventList();
+        assertEquals("YellowCard",g.getEventLog().getEventList().get(g.getEventLog().getEventList().size()-1).getClass().toString().substring(35));
+        assertEquals(90,g.getEventLog().getEventList().get(g.getEventLog().getEventList().size()-1).getMinute());
 
 
     }

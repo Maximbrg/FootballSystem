@@ -2,6 +2,7 @@ package ServiceLayer;
 
 import ServiceLayer.Exceptions.TeamHasAFutureGame;
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -9,10 +10,6 @@ import System.Users.*;
 import System.*;
 import java.io.IOException;
 import java.util.*;
-
-
-
-
 
 public class SystemManagerController {
 
@@ -94,7 +91,8 @@ public class SystemManagerController {
      * @param user
      */
     public void removeUser(SystemManager systemManager,User user) throws NoSuchAUserNamedException {
-        systemManager.removeUser(user.getUserName());
+            systemManager.removeUser(user.getUserName());
+
     }
 
     /**
@@ -112,7 +110,7 @@ public class SystemManagerController {
      * @param answer
      */
     public void answerReport(SystemManager systemManager, Report report, String answer){
-        systemManager.answerTheReport(report,answer);
+        systemManager.answerReport(report,answer);
     }
 
     /**
@@ -143,7 +141,7 @@ public class SystemManagerController {
     { return systemManager.createNewReferee(id,  name,  password,  userName,refereeType);
     }
 
-    public FootballAssosiation createNewFootballAssociation(SystemManager systemManager, int id, String name, String password, String userName)throws UserNameAlreadyExistException {
+    public FootballAssociation createNewFootballAssociation(SystemManager systemManager, int id, String name, String password, String userName)throws UserNameAlreadyExistException {
         return systemManager.createNewFootballAssociation(id,name,password,userName);}
 
     public TeamManager createNewTeamManager(SystemManager systemManager,int id, String name, String password, String userName, int assetValue, int salary) throws UserNameAlreadyExistException {

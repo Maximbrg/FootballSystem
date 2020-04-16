@@ -23,7 +23,7 @@ import static org.junit.Assert.assertEquals;
 public class SystemManagerControllerTest {
     SystemManagerController sTest;
     SystemManager sMangerTest;
-    FootballAssosiation fTest;
+    FootballAssociation fTest;
     Season seasonTest;
     League leagueTest;
     Team t,t2;
@@ -206,7 +206,7 @@ public class SystemManagerControllerTest {
 
         boolean check=false;
         try{
-            sTest.createNewReferee(sMangerTest,123,"maorMel","11","melik21", RefereeType.MainReferee);
+            sTest.createNewReferee(sMangerTest,123,"maorMel","11","melik21", RefereeType.MAIN);
             sTest.createNewFan(sMangerTest,123,"maorMel","11","melik2");
         } catch (UserNameAlreadyExistException e) {
             assert(true);

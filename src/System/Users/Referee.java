@@ -1,7 +1,7 @@
-//<editor-fold desc="imports">
 package System.Users;
 
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoRefereePermissions;
 import System.Exeptions.NoSuchEventException;
 import System.FootballObjects.Event.*;
@@ -14,15 +14,16 @@ import System.I_Observer.ISubjectGame;
 import System.Log;
 
 import java.util.*;
-//</editor-fold>
+
 
 public class Referee extends User implements IObserverGame,IShowable {
 
-    //<editor-fold desc="attributes">
+    //<editor-fold desc="Fields">
     private RefereeType type;
     private List<ISubjectGame> subjectGame;
     private List<Game> games;
     //</editor-fold>
+
     //<editor-fold desc="Constructor">
     public Referee(String name, RefereeType type, int id, String pass, String userName) {
         super(id, name, pass, userName);
@@ -31,10 +32,12 @@ public class Referee extends User implements IObserverGame,IShowable {
         subjectGame = new LinkedList<>();
     }
     //</editor-fold>
-    //<editor-fold desc="getters">
+
+    //<editor-fold desc="Getters">
     public List<ISubjectGame> getSubjectGame() {
         return subjectGame;
     }
+
     public RefereeType getRefereeType(){
         return type;
     }
@@ -47,9 +50,9 @@ public class Referee extends User implements IObserverGame,IShowable {
         });
         return games;
     }
-
     //</editor-fold>
-    //<editor-fold desc="setters">
+
+    //<editor-fold desc="Setters">
     public void setType(RefereeType type) {
         this.type = type;
     }
@@ -62,8 +65,8 @@ public class Referee extends User implements IObserverGame,IShowable {
         this.games = games;
     }
     //</editor-fold>
-    //<editor-fold desc="Methods">
 
+    //<editor-fold desc="Methods">
     /**
      * add game to the games and register the referee to alerts from the game
      * @param g
@@ -71,8 +74,6 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void addGame(Game g){
         g.registerRefereeToAlert(this);
         games.add(g);
-
-
     }
 
     /**
@@ -84,7 +85,6 @@ public class Referee extends User implements IObserverGame,IShowable {
         games.remove(g);
     }
 
-
     /**
      * edit an event in the game and till 5 hours from the end of the game . only by the main Referee
      * @param game concret game
@@ -93,7 +93,7 @@ public class Referee extends User implements IObserverGame,IShowable {
      */
     public void editEventAfterGame(Game game, AEvent oldEvent, String type) throws NoRefereePermissions, NoSuchEventException {
         long diffHours = (new Date(System.currentTimeMillis()).getTime() - game.getDate().getTime()) / (60 * 60 * 1000);
-        if (diffHours <= 6.5 && this.type == RefereeType.MainReferee) {// 1.5 hours after the beginning
+        if (diffHours <= 6.5 && this.type == RefereeType.MAIN) {// 1.5 hours after the beginning
             AEvent editedEvent = createEvent(type, oldEvent.getMinute());
             game.getEventLog().removeEvent(oldEvent);
             game.getEventLog().addEventToLog(editedEvent);
@@ -122,7 +122,6 @@ public class Referee extends User implements IObserverGame,IShowable {
         }
     }
 
-
     /**
      * add event to the game log event
      * @param game current game
@@ -135,8 +134,6 @@ public class Referee extends User implements IObserverGame,IShowable {
         Log.getInstance().writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getName()+"." );
     }
 
-
-
     /**
      * create gameReport
      * @param game current game
@@ -146,12 +143,12 @@ public class Referee extends User implements IObserverGame,IShowable {
         String report = "";
         long diffHours = (game.getDate().getTime()-new Date(System.currentTimeMillis()).getTime() ) / (60 * 60 * 1000);
 
-        if (type == RefereeType.MainReferee && game.getMainReferee().getUserName().equals(getUserName()) && diffHours>=1.5) {
+        if (type == RefereeType.MAIN && game.getMainReferee().getUserName().equals(getUserName()) && diffHours>=1.5) {
             report = "Report for the game:" + game.getHome().getName() + " vs " + game.getAway().getName() + "\n";
             report += "Main Referee:" + game.getMainReferee().getName() + ".\n";
             report += "Assistant Referee:" + game.getAssistantRefereeOne().getName() + ".\n";
             report += "Assistant Referee:" + game.getAssistantRefereeTwo().getName() + ".\n";
-            for (AEvent a : game.getEventLog().getaEventList()) {
+            for (AEvent a : game.getEventLog().getEventList()) {
                 report += a.getMinute() + ". " + a.getClass().toString().substring(35, a.getClass().toString().length()) + "\n";
             }
             Log.getInstance().writeToLog("Report for the game:" + game.getHome().getName() + "vs" + game.getAway().getName() + "was created by the referee " + getUserName() + ".");
@@ -187,8 +184,9 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @param season current season to get the relevant games
      * @return
      */
+
     public List<Game> getGamesForSeason(Season season){
-        List<LeagueInformation> seasonGames= season.getLeagueInformations();
+        List<LeagueInformation> seasonGames= season.getLeaguesInformation();
         List<Game> relevantGames= new ArrayList<>();
 
         for (int i = 0; i <seasonGames.size() ; i++) {
@@ -215,8 +213,8 @@ public class Referee extends User implements IObserverGame,IShowable {
         return relevantGames;
     } //UC-39
     //</editor-fold>
-    //<editor-fold desc="Override methods">
 
+    //<editor-fold desc="Override Methods">
     @Override
     public void update() {
         Log.getInstance().writeToLog("Referee was updated by a game. Referee's id:"+getId());
@@ -237,18 +235,20 @@ public class Referee extends User implements IObserverGame,IShowable {
      */
     @Override
     public void removeAlert(ISubjectGame iSubjectGame) {
-        subjectGame.remove(iSubjectGame);
-    }
+        subjectGame.remove(iSubjectGame);}
+
     @Override
     public String getType() {
         return "Referee";
     }
+
     @Override
     public String getDetails() {
         return "@name:"+this.name+"@role:"+type.toString();
     }
     //</editor-fold>
-    //<editor-fold desc="private methods">
+
+    //<editor-fold desc="private Methods">
     /**
      * create new event
      * @param type of the event
@@ -275,6 +275,10 @@ public class Referee extends User implements IObserverGame,IShowable {
 
     @Override
     public void removeUser() {
+
+
+
     }
     //</editor-fold>
+
 }

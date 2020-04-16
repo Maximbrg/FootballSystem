@@ -1,14 +1,8 @@
 
 
-import System.Enum.TeamStatus;
-import System.FootballObjects.Game;
-import System.FootballObjects.LeagueInformation;
-import System.FootballObjects.Team.DefualtMethod;
-import System.FootballObjects.Team.Team;
-import org.junit.Before;
+import System.FootballObjects.Team.DefaultMethod;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,7 +10,7 @@ import static org.junit.Assert.*;
 
 
 
-public class DefualtMethodTest extends DefualtMethod {
+public class DefaultMethodTest extends DefaultMethod {
 
     @Test
     public void setTeamPolicyTest(){

@@ -1,6 +1,7 @@
 
 import System.Controller;
 import System.Enum.TeamStatus;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -30,12 +31,12 @@ public class SystemManagerTest {
     }
 
     /**
-     * close team and set status to "PermantlyClose"
+     * close team and set status to "PermanentlyClose"
      */
     @Test
     public void closeTeamTest(){
         systemMTest.closeTeam(tTest);
-        assertEquals(TeamStatus.PermantlyClose,tTest.getTeamStatus());
+        assertEquals(TeamStatus.PermanentlyClose,tTest.getTeamStatus());
     }
 
     @Test
@@ -47,7 +48,7 @@ public class SystemManagerTest {
 
     @Test
     public void answerTheReportTest(){
-        systemMTest.answerTheReport(reportTest,"You are the best report EVER!");
+        systemMTest.answerReport(reportTest,"You are the best report EVER!");
         assertEquals("You are the best report EVER!",reportTest.getAnswer());
     }
 
@@ -137,7 +138,7 @@ public class SystemManagerTest {
 
 
     @Test
-    public void removeUserTest(){
+    public void removeUserTest() throws IllegalRemoveException {
         Fan fTest=new Fan(1234,"Avi","abc1234","theBigAvi123");
         Controller.getInstance().addUser(fTest.getUserName(),fTest);
         SystemManager systemMTest1=new SystemManager(111,"Sys","123","bestSystemManager");
@@ -157,7 +158,7 @@ public class SystemManagerTest {
         }
     }
     @Test
-    public void restartRemovedUserTest(){
+    public void restartRemovedUserTest() throws IllegalRemoveException {
         Fan fTest=new Fan(1234,"Avi","abc1234","theBigAvi123");
         Controller.getInstance().addUser(fTest.getUserName(),fTest);
         //not found user in this userName
@@ -169,7 +170,7 @@ public class SystemManagerTest {
         //legal and exist user name
         try {
             Controller.getInstance().removeUser(fTest.getUserName());
-            Controller.getInstance().restartRemvoeUser(fTest.getUserName());
+            Controller.getInstance().restartRemoveUser(fTest.getUserName());
             assertNull(Controller.getInstance().getRemovedUsers().get(fTest.getUserName()));
         } catch (NoSuchAUserNamedException e) {
             assert(false);

@@ -1,5 +1,5 @@
-//<editor-fold desc="imports">
 package System.FootballObjects.Team;
+
 import System.Asset.Asset;
 import System.Enum.TeamStatus;
 import System.Exeptions.HasTeamAlreadyException;
@@ -16,10 +16,10 @@ import System.IShowable;
 import System.Log;
 
 import java.util.*;
-//</editor-fold>
 
 public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
+    //<editor-fold desc="Fields">
     private static int id;
     private String name;
     private TeamStatus teamStatus;
@@ -28,24 +28,22 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private List<Player> players;
     private List<Game> gamesOfTeams;
     private List<TeamOwner> allTeamOwners;
-
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
-
     private List<TeamManager> teamManagersList;
     private HashMap<TeamOwner,LinkedList<TeamOwner>> teamOwners;
-
     private Field field;
     private int income;
     private int expense;
     private List<FinancialReport> financialReport;
+    //</editor-fold>
 
+    //<editor-fold desc="Constructor">
     /**
      * Initialize variables
-     * @param name
+     * @param name,teamOwner
 
      */
-    //<editor-fold desc="Constructor">
     public Team(String name,TeamOwner teamOwner) {
         this.name = name;
         this.field = null;
@@ -64,6 +62,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.players = new LinkedList<>();
         this.financialReport = new LinkedList<>();
     }
+    //</editor-fold>
 
     //<editor-fold desc="Getters">
     public int getId() {
@@ -177,7 +176,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Setters">
-
     public void setId(int id) {
         this.id = id;
     }
@@ -225,9 +223,9 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void setAllTeamOwners(List<TeamOwner> allTeamOwners) {
         this.allTeamOwners = allTeamOwners;
     }
-//</editor-fold>
+    //</editor-fold>
 
-    //<editor-fold desc="Team Methods">
+    //<editor-fold desc="Methods">
     /**
      *
      * @param asset
@@ -313,7 +311,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * This function update ths team's status to "Permanently Close" and notify about the closing to the stakeholder
      */
     public void PermanentlyCloseTeam(){
-        this.setTeamStatus(TeamStatus.PermantlyClose);
+        this.setTeamStatus(TeamStatus.PermanentlyClose);
         for (Asset a:assets) {
             a.resetMyTeam();
         }
@@ -339,6 +337,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     public void removePlayerFromTeam(Player player){
         players.remove(player);
     }
+
     /**
      * This function adds new financialReport
      * @FinancialReport financialReport
@@ -357,7 +356,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     //</editor-fold>
 
     //<editor-fold desc="Override Methods">
-
     /**
      *
      * @return the details of this team
@@ -442,10 +440,6 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         }
         throw new PersonalPageAlreadyExist();
     }
-
     //</editor-fold>
-
-
-
 
 }

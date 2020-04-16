@@ -4,5 +4,6 @@ public interface IObserverTeam {
 
     void update(String s);
     void registerAlert(ISubjectTeam iSubjectTeam);
-    void removeAlert(ISubjectTeam iSubjectTeam) ;
+    void removeAlert(ISubjectTeam iSubjectTeam);
+
 }

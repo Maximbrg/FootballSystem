@@ -8839,3 +8839,575 @@ Tue Apr 14 18:47:27 IDT 2020 Controller: A new user signUp to the system. (20569
 Tue Apr 14 18:47:27 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
 Tue Apr 14 18:47:27 IDT 2020 Users.FootballAssosiation: Football assosiation -Add new referee. id: 1name: Invoker
 Tue Apr 14 18:47:27 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Thu Apr 16 16:46:28 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 16:46:28 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Thu Apr 16 16:46:28 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Thu Apr 16 16:46:28 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Thu Apr 16 16:46:28 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Thu Apr 16 17:22:57 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 17:25:22 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 17:25:22 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 17:25:22 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 17:38:36 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 17:38:36 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 17:38:36 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 17:38:43 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 17:38:43 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 17:38:43 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 17:38:43 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 17:38:43 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 17:51:01 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 17:51:01 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 17:51:01 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 17:51:01 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 17:52:07 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 17:52:07 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 17:52:07 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 17:52:07 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 17:52:45 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 17:52:45 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 17:52:45 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 17:52:45 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 17:52:45 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: Itzik(id: 201) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: Itzik(id: 201) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Thu Apr 16 18:08:25 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: Itzik(id: 205) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: Itzik(id: 205) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 18:08:25 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Thu Apr 16 18:08:25 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Thu Apr 16 18:08:25 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: shmulik(id: 205) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 18:08:25 IDT 2020 Users.User: shmulik(id: 205) update his status
+Thu Apr 16 18:08:25 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Thu Apr 16 18:08:48 IDT 2020 Report: system manager receive to report 1
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Thu Apr 16 18:08:48 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:08:48 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: Add a new Coach : eilami123
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: Add a new TeamManager : eilami123ke
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: Add a new TeamOwner : eilami123ker
+Thu Apr 16 18:08:48 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: Add a new SystemManager : eilami123kere
+Thu Apr 16 18:08:48 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:08:48 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Thu Apr 16 18:08:48 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:08:48 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Thu Apr 16 18:08:48 IDT 2020 Users.SystemManager: A new report added to the System. id(12).
+Thu Apr 16 18:09:11 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:09:11 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:09:11 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:09:11 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:09:11 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:09:11 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:16:12 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:16:12 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:16:45 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:16:45 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:16:45 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:16:45 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:16:49 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:16:49 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:17:03 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:03 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:17:03 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:17:03 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:12 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:17:12 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:17:25 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:25 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:17:25 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:17:25 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:29 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:17:29 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:17:40 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:40 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:17:40 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:17:40 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:44 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:17:44 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:17:57 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:17:57 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:17:57 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:17:57 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:18:01 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:18:01 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:18:17 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:18:17 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:18:17 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:18:17 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:18:20 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:18:21 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:18:37 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:18:37 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:18:37 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:18:37 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:18:41 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:18:41 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:19:06 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:19:06 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:19:08 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:19:44 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:19:48 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:19:48 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:19:50 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:19:50 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:19:53 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:20:10 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:20:14 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:20:14 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:20:32 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:20:32 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:20:32 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:20:32 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:20:36 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:20:36 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:20:37 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:20:37 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:20:38 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:21:09 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:21:13 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:21:13 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:21:14 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:21:14 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:21:17 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:21:27 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:21:29 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:21:30 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:21:57 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:21:57 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:22:05 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:22:09 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:22:31 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:22:31 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:22:31 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:22:31 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:22:35 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:22:35 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:22:54 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:23:00 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:23:19 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:23:19 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:23:19 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:23:19 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:23:23 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:23:23 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:23:28 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:23:29 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:24:12 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:24:12 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:24:16 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:24:16 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:24:21 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:24:21 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:24:21 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:24:21 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:24:49 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:24:49 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:24:50 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:24:50 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:24:50 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:24:50 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:24:50 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:24:50 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:30:16 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:30:16 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:30:16 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:39:39 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:39:39 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:39:39 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:39:39 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 18:39:39 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:39:39 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:40:46 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:40:46 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:40:46 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:40:46 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 18:40:46 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:40:46 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:40:46 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:40:46 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 18:40:51 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:40:51 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:40:51 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:40:51 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:40:51 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:40:51 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:40:51 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:40:51 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:40:51 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:40:51 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 18:40:51 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:40:51 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:40:51 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:40:51 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 18:40:51 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 18:40:51 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:40:51 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:40:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 18:43:04 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:43:04 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:43:04 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:45:02 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Thu Apr 16 18:45:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:45:26 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Thu Apr 16 18:45:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Thu Apr 16 18:45:56 IDT 2020 Users.User: Harel Chror(id: 456) update his password
+Thu Apr 16 18:45:56 IDT 2020 Users.Coach: The PersonalPage for coach : Maxim  id : 123was created.
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 18:46:00 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Thu Apr 16 18:46:00 IDT 2020 Report: system manager receive to report 1
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: Add a new Referee : melik21
+Thu Apr 16 18:46:00 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: Add a new SystemManager : sys
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Thu Apr 16 18:46:00 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:champions
+Thu Apr 16 18:46:00 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:46:00 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:00 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Thu Apr 16 18:46:00 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:00 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:01 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Thu Apr 16 18:46:01 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Thu Apr 16 18:46:01 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 18:46:01 IDT 2020 Controller: User removed from the system. userName(debiq).
+Thu Apr 16 18:46:01 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 18:46:01 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:01 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Thu Apr 16 18:46:01 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Thu Apr 16 18:46:01 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 18:46:01 IDT 2020 Controller: User removed from the system. userName(debiky).
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:01 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : meliki212
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 18:46:12 IDT 2020 Users.SystemManager: Add a new Player : meli
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Thu Apr 16 18:46:35 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Thu Apr 16 18:46:35 IDT 2020 Controller: User log in to the system. id(205695612).
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Thu Apr 16 18:46:35 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: Invoker
+Thu Apr 16 18:46:35 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Thu Apr 16 18:46:49 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Shiran
+Thu Apr 16 18:46:49 IDT 2020 Users.Referee: The referee Shiran (username: Shiran)pull his future games.
+Thu Apr 16 18:46:49 IDT 2020 Users.User: Shiran(id: 204) update his status
+Thu Apr 16 18:46:49 IDT 2020 Controller: User removed from the system. userName(Shiran).
+Thu Apr 16 18:46:49 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 204name: Shiran
+Thu Apr 16 18:46:49 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:PremierLeague
+Thu Apr 16 18:46:49 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Shiran
+Thu Apr 16 18:46:49 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Hen
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 1) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 1) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 1) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 2) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 2) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 2) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 3) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 3) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 4) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 4) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 5) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 5) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 6) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 6) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 1) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 1) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 2) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 2) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 4) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 4) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 5) alert
+Thu Apr 16 18:46:49 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 5) alert
+Thu Apr 16 18:46:49 IDT 2020 Users.Referee: The referee Max (username: Max)pull his future games.
+Thu Apr 16 18:46:55 IDT 2020 Report: system manager receive to report 1
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Thu Apr 16 18:46:55 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:46:55 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: Add a new Coach : eilami123
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: Add a new TeamManager : eilami123ke
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: New team added to the system. (0, Hap123)
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: The team: HBS,Id: 0 closed successfully.
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: Add a new Player : eilami
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: Add a new TeamOwner : eilami123ker
+Thu Apr 16 18:46:55 IDT 2020 Controller: A new user signUp to the system. (10,eilami123k).
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: Add a new SystemManager : eilami123kere
+Thu Apr 16 18:46:55 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:46:55 IDT 2020 Controller: User removed from the system. userName(theBigAvi123).
+Thu Apr 16 18:46:55 IDT 2020 Users.User: Avi(id: 1234) update his status
+Thu Apr 16 18:46:55 IDT 2020 Controller: Removed user restart to the system. userName(theBigAvi123).
+Thu Apr 16 18:46:55 IDT 2020 Users.SystemManager: A new report added to the System. id(12).
+Thu Apr 16 18:47:03 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:47:03 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:47:04 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Thu Apr 16 18:47:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Thu Apr 16 18:47:13 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team team1id: 0 pull his future games.
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team team2id: 0 pull his future games.
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team team3id: 0 pull his future games.
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team t1id: 0 pull his future games.
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team t2id: 0 pull his future games.
+Thu Apr 16 18:47:13 IDT 2020 FootballObjects.Team.Team: The Team t3id: 0 pull his future games.
+Thu Apr 16 18:47:37 IDT 2020 Users.Referee: Function denied. Just football association allows to remove Referee
+Thu Apr 16 18:47:37 IDT 2020 Layer.SystemManagerController: Function denied.not allow to remove user: referee123
+Thu Apr 16 18:47:37 IDT 2020 Users.Referee: The referee referee123 (username: referee123)pull his future games.
+Thu Apr 16 18:47:37 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:47:37 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:47:37 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 1name: Avi
+Thu Apr 16 18:54:22 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 18:54:22 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 18:54:22 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 18:54:22 IDT 2020 Users.User: Avi(id: 1) update his status
+Thu Apr 16 18:54:22 IDT 2020 Controller: User removed from the system. userName(referee123).
+Thu Apr 16 18:54:22 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 18:54:22 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:54:22 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:54:22 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:54:22 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 18:54:22 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 18:54:22 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 18:54:22 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 18:54:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 19:01:27 IDT 2020 Users.User: Itzik(id: 201) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Thu Apr 16 19:01:27 IDT 2020 Users.User: Itzik(id: 201) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User removed from the system. userName(ItzikHaGadol).
+Thu Apr 16 19:01:27 IDT 2020 Controller: A new user signUp to the system. (205,ItzikHaGadol**).
+Thu Apr 16 19:01:27 IDT 2020 Users.User: Itzik(id: 205) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 19:01:27 IDT 2020 Users.User: Itzik(id: 205) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 19:01:27 IDT 2020 Controller: A new user signUp to the system. (10,xyl).
+Thu Apr 16 19:01:27 IDT 2020 Controller: A new user signUp to the system. (10,idani).
+Thu Apr 16 19:01:27 IDT 2020 Controller: A new user signUp to the system. (205,ShmuelSG).
+Thu Apr 16 19:01:27 IDT 2020 Users.User: shmulik(id: 205) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User log in to the system. id(205).
+Thu Apr 16 19:01:27 IDT 2020 Users.User: shmulik(id: 205) update his status
+Thu Apr 16 19:01:27 IDT 2020 Controller: User log out from the system. id(ShmuelSG).
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:01:45 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:01:45 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:01:45 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:01:45 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:01:45 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:01:45 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:01:45 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 19:01:45 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 19:01:45 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 19:01:45 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:01:45 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:01:45 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:01:45 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 19:01:45 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 19:01:45 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:01:45 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:01:45 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 19:02:01 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:02:01 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:01 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:02:01 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:02:01 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:02:00 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:02:01 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:02:01 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:02:01 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:02:01 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:02:01 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:02:31 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:02:31 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:31 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:02:31 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:02:31 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:02:31 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:02:31 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:02:31 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:02:31 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:02:31 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:02:31 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:02:40 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:02:40 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:40 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:02:40 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:02:40 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:02:40 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:02:59 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:02:59 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:04:02 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 19:04:02 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 19:04:02 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 19:04:02 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 19:04:02 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:04:02 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:04:02 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:04:02 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 19:04:02 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 19:04:02 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:04:02 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:04:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 19:05:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Shiran
+Thu Apr 16 19:05:13 IDT 2020 Users.Referee: The referee Shiran (username: Shiran)pull his future games.
+Thu Apr 16 19:05:13 IDT 2020 Users.User: Shiran(id: 204) update his status
+Thu Apr 16 19:05:13 IDT 2020 Controller: User removed from the system. userName(Shiran).
+Thu Apr 16 19:05:13 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 204name: Shiran
+Thu Apr 16 19:05:13 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:PremierLeague
+Thu Apr 16 19:05:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Shiran
+Thu Apr 16 19:05:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 204name: Hen
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 1) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 1) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 1) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 2) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 2) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 2) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 3) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 3) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 3) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 4) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 4) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 4) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 5) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 5) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 5) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 6) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 6) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 6) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 1) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 1) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 2) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 2) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 4) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 4) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 5) alert
+Thu Apr 16 19:05:13 IDT 2020 FootballObjects.Game: Referee Max (id: 205) removed alert to game (id: 5) alert
+Thu Apr 16 19:05:13 IDT 2020 Users.Referee: The referee Max (username: Max)pull his future games.
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Thu Apr 16 19:05:21 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Thu Apr 16 19:05:21 IDT 2020 Controller: User log in to the system. id(205695612).
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Thu Apr 16 19:05:21 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: Invoker
+Thu Apr 16 19:05:21 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Add a new Coach : melik
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debiky1233).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:05:26 IDT 2020 Users.Fan: User submit report. (userId:10reportId1)
+Thu Apr 16 19:05:26 IDT 2020 Report: system manager receive to report 1
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: A answer to report set. (1).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Add a new TeamManager : meliki21
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Add a new Referee : melik21
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (123,melik2).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Add a new SystemManager : sys
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Add a new Football Association : kikos45
+Thu Apr 16 19:05:26 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:champions
+Thu Apr 16 19:05:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 19:05:26 IDT 2020 FootballObjects.Team.Team: The Team hapoelb7id: 0 pull his future games.
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debiky123).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Thu Apr 16 19:05:26 IDT 2020 Users.Fan: User submit report. (userId:10reportId2)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debik).
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debiq).
+Thu Apr 16 19:05:26 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 19:05:26 IDT 2020 Controller: User removed from the system. userName(debiq).
+Thu Apr 16 19:05:26 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 19:05:26 IDT 2020 Controller: Removed user restart to the system. userName(debiq).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debiky).
+Thu Apr 16 19:05:26 IDT 2020 Controller: A new user signUp to the system. (10,debiqy).
+Thu Apr 16 19:05:26 IDT 2020 Users.User: roni(id: 10) update his status
+Thu Apr 16 19:05:26 IDT 2020 Controller: User removed from the system. userName(debiky).
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:26 IDT 2020 Users.SystemManager: Log introduced by the System Manager. id:124
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: Add a new TeamOwner : meliki212
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb7)
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: New team added to the system. (0, hapoelb72)
+Thu Apr 16 19:05:43 IDT 2020 Users.SystemManager: Add a new Player : meli

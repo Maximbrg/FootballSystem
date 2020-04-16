@@ -9,4 +9,5 @@ import java.util.List;
 public interface ITeamAllocatePolicy {
 
     void setTeamPolicy(List<Team> teams, List<Game> games);
+
 }
