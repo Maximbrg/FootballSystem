@@ -23,7 +23,17 @@ import java.util.Map;
 
 public class FootballAssosiationController {
 
+    private static FootballAssosiationController ourInstance = new FootballAssosiationController();
+
+    //<editor-fold desc="Constructor">
+    private FootballAssosiationController(){};
+    //</editor-fold>
+
     //<editor-fold desc="Getters">
+    public static FootballAssosiationController getInstance() {
+        return ourInstance;
+    }
+
     /**
      * Get all teams in the system
      * @return
@@ -45,6 +55,14 @@ public class FootballAssosiationController {
      */
     public List<Referee> getAllReferee(){
         return Controller.getInstance().getAllReferee();
+    }
+
+    /**
+     * Get all team owner in the system
+     * @return
+     */
+    public List<TeamOwner> getAllTeamOwner(){
+        return Controller.getInstance().getAllTeamOwner();
     }
 
     /**

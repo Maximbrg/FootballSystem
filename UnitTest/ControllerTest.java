@@ -1,5 +1,4 @@
 
-
 import System.Controller;
 import System.Enum.RefereeType;
 import System.Exeptions.NoSuchAUserNamedException;

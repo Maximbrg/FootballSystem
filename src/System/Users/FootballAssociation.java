@@ -28,8 +28,6 @@ public class FootballAssociation extends User {
     }
     //</editor-fold>
 
-
-
     //<editor-fold desc="Getters">
     public Season getSeasonFromController(String year){
         return Controller.getInstance().getSeason(year);
