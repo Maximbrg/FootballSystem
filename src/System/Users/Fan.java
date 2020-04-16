@@ -112,9 +112,17 @@ public class Fan extends User implements IObserverGame {
         Log.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
     }
 
+    /**
+     * Remove fam from the system- clean his data structure
+     */
     @Override
     public void removeUser() {
-
+        for (PersonalPage personalPage:this.FollowPages){
+            personalPage.unfollow(this);
+        }
+        for (ISubjectGame game: this.subjectGame){
+            game.removeAlertToFan(this);
+        }
     }
     //</editor-fold>
 
