@@ -1,6 +1,7 @@
 
 import System.Controller;
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.Exeptions.WrongPasswordException;
@@ -18,7 +19,6 @@ import java.util.Date;
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class ControllerTest {
     Controller cTest;
@@ -197,10 +197,9 @@ public class ControllerTest {
         } catch (NoSuchAUserNamedException e) {
             assert(false);
         }
-
     }
     @Test
-    public void restartRemvoedUserTest(){
+    public void restartRemvoedUserTest() throws IllegalRemoveException {
         Fan fTest= new Fan(201,"Itzik","h124","ItzikHaGadol");
 
         cTest.addUser(fTest.getUserName(),fTest);

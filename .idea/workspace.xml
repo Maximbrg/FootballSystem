@@ -317,7 +317,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587060442131" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587060834141" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -335,22 +335,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuit4">
+  <component name="RunManager" selected="JUnit.TeamTest">
     <configuration name="TeamOwnerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TeamOwnerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamOwnerControllerTest.closeTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FootballSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TeamOwnerControllerTest" />
-      <option name="METHOD_NAME" value="closeTeamTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -361,6 +351,15 @@
       <option name="MAIN_CLASS_NAME" value="TeamOwnerControllerTest" />
       <option name="METHOD_NAME" value="openTeamTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FootballSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TeamTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -386,11 +385,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamTest" />
         <item itemvalue="JUnit.TestSuit4" />
         <item itemvalue="JUnit.TestSuit4.Test1" />
         <item itemvalue="JUnit.TeamOwnerControllerTest" />
         <item itemvalue="JUnit.TeamOwnerControllerTest.openTeamTest" />
-        <item itemvalue="JUnit.TeamOwnerControllerTest.closeTeamTest" />
       </list>
     </recent_temporary>
   </component>

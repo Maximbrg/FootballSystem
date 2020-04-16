@@ -204,7 +204,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
      * remove player from everything he connected to
      */
     @Override
-    public void removeUser() throws IllegalRemoveException {
+    public void removeUser()  {
         birthDate=null;
         role=null;
         personalPage=null;

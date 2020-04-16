@@ -15,6 +15,7 @@ import System.FootballObjects.Team.Team;
 import System.Users.FootballAssociation;
 import System.Users.Referee;
 import System.Users.TeamOwner;
+import System.Log;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -23,7 +24,17 @@ import java.util.Map;
 
 public class FootballAssosiationController {
 
+    private static FootballAssosiationController ourInstance = new FootballAssosiationController();
+
+    //<editor-fold desc="Constructor">
+    private FootballAssosiationController(){};
+    //</editor-fold>
+
     //<editor-fold desc="Getters">
+    public static FootballAssosiationController getInstance() {
+        return ourInstance;
+    }
+
     /**
      * Get all teams in the system
      * @return
@@ -45,6 +56,14 @@ public class FootballAssosiationController {
      */
     public List<Referee> getAllReferee(){
         return Controller.getInstance().getAllReferee();
+    }
+
+    /**
+     * Get all team owner in the system
+     * @return
+     */
+    public List<TeamOwner> getAllTeamOwner(){
+        return Controller.getInstance().getAllTeamOwner();
     }
 
     /**

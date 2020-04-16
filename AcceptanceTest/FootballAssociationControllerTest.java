@@ -3,6 +3,7 @@ import ServiceLayer.FootballAssosiationController;
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.Exeptions.IllegalInputException;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Game;
@@ -33,7 +34,7 @@ public class FootballAssociationControllerTest {
 
     @Before
     public void initTest(){
-        faController= new FootballAssosiationController();
+        faController= FootballAssosiationController.getInstance();
         Team t1= new Team("team1",null);
         Team t2= new Team("team2",null);
         Team t3= new Team("team3",null);
@@ -207,7 +208,7 @@ public class FootballAssociationControllerTest {
     /*Test ID:    #9.3.5 --Removes referee with a games after replacing referees
      the referee will be remove
      */
-    public void replaceRefereeTest1(){
+    public void replaceRefereeTest1() throws IllegalRemoveException {
         FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         List<Team> teams=faController.getAllTeams();
         try {

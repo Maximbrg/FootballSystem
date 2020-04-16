@@ -195,7 +195,7 @@ public class Coach extends User implements Asset, IPageAvailable, IShowable {
      * remove coach from everything he connected to
      */
     @Override
-    public void removeUser()  throws IllegalRemoveException {
+    public void removeUser()  {
         preparation=null;
         role=null;
         personalPage=null;

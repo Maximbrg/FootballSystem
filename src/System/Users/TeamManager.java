@@ -169,7 +169,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
      * remove manager from everything he connected to
      */
     @Override
-    public void removeUser() throws IllegalRemoveException {
+    public void removeUser()  {
         assetValue=0;
         myTeam=null;
         subjectTeam=null;

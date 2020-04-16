@@ -1,7 +1,6 @@
 package System.Users;
 
 import System.Enum.UserStatus;
-import System.Exeptions.IllegalRemoveException;
 import System.Log;
 
 import java.util.LinkedList;
@@ -108,7 +107,7 @@ public abstract class User extends Guest {
         return searchHistory;
     }
 
-    public abstract void removeUser() throws IllegalRemoveException;
+    public abstract void removeUser() ;
     //</editor-fold>
 
 }

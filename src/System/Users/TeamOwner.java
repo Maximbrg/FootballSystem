@@ -213,7 +213,7 @@ public class TeamOwner extends User implements IObserverTeam {
      * remove the owner from everyone
      */
     @Override
-    public void removeUser() throws IllegalRemoveException {
+    public void removeUser()  {
         selfCoach=null;
         selfTeamManager=null;
         selfPlayer=null;

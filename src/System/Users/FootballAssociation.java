@@ -135,7 +135,8 @@ public class FootballAssociation extends User {
         if (referee.getFutureGames().size() > 0) {
             throw new IllegalInputException();
         }
-        controller.removeUser(userName);
+            controller.removeUser(userName);
+
         Log.getInstance().writeToLog("Football assosiation -remove referee. id: "+referee.getId()+ "name: "+ referee.getName());
     }
 

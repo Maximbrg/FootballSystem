@@ -2,6 +2,7 @@ package ServiceLayer;
 
 import ServiceLayer.Exceptions.TeamHasAFutureGame;
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -9,10 +10,6 @@ import System.Users.*;
 import System.*;
 import java.io.IOException;
 import java.util.*;
-
-
-
-
 
 public class SystemManagerController {
 
@@ -94,7 +91,8 @@ public class SystemManagerController {
      * @param user
      */
     public void removeUser(SystemManager systemManager,User user) throws NoSuchAUserNamedException {
-        systemManager.removeUser(user.getUserName());
+            systemManager.removeUser(user.getUserName());
+
     }
 
     /**

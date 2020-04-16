@@ -4368,79 +4368,223 @@ Thu Apr 16 14:53:40 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
 Thu Apr 16 14:53:40 IDT 2020 Report: system manager receive to report 1
 Thu Apr 16 14:58:30 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
 Thu Apr 16 14:58:30 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
-Thu Apr 16 18:34:18 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
-Thu Apr 16 18:34:18 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
-Thu Apr 16 18:34:18 IDT 2020 Users.Coach: The team for coach : harel id : 367was added.
-Thu Apr 16 18:34:18 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
-Thu Apr 16 18:34:18 IDT 2020 Users.Coach: The team for coach : harel id : 367was restart.
-Thu Apr 16 18:34:18 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
-Thu Apr 16 18:34:18 IDT 2020 Users.Coach: The asset value for coach : harel id : 367was edit.
-Thu Apr 16 18:34:18 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
-Thu Apr 16 18:34:18 IDT 2020 Users.Coach: The PersonalPage for coach : harel id : 367was created.
-Thu Apr 16 18:54:40 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:54:40 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:55:52 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:55:52 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:57:22 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:57:22 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 18:57:22 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 18:57:22 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:07:58 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:07:58 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:07:58 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:07:58 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:12:23 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:12:23 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:12:23 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:12:23 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:12:23 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:12:23 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 19:12:23 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 19:12:23 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
-Thu Apr 16 19:29:49 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:29:49 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:29:49 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:29:49 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 19:29:49 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 19:29:49 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 19:29:49 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 19:29:49 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
-Thu Apr 16 20:07:37 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:07:37 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 20:07:37 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 20:07:37 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
-Thu Apr 16 20:07:37 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:07:37 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:07:37 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 20:07:37 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 20:07:37 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:07:37 IDT 2020 Users.Coach: The team for coach : Harel Sror id : 123was added.
-Thu Apr 16 20:07:37 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@preparation:assistant coach@role:assistant coach@team:Hapoel Beer Sheva
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:16:56 IDT 2020 Users.Coach: The team for coach : Harel Sror id : 123was added.
-Thu Apr 16 20:16:56 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@preparation:assistant coach@role:assistant coach@team:Hapoel Beer Sheva
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:16:56 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 20:16:56 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamManager: The team for team manager : Harel Sror id : 123was added.
-Thu Apr 16 20:16:56 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@team:Hapoel Beer Sheva
-Thu Apr 16 20:16:56 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 20:16:56 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 20:16:56 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 20:16:56 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 Users.Coach: The team for coach : Harel Sror id : 123was added.
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@preparation:assistant coach@role:assistant coach@team:Hapoel Beer Sheva
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : macabi , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Field: The team for field : tedi id : 2000was added to the home teams list.
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 21:06:14 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
-Thu Apr 16 21:06:14 IDT 2020 Users.User: Harel Sror(id: 124) update his password
-Thu Apr 16 21:06:14 IDT 2020 Users.Player: The asset value for player : Harel Sror id : 124was edit.
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamManager: The team for team manager : Harel Sror id : 123was added.
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@team:Hapoel Beer Sheva
-Thu Apr 16 21:06:14 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : Harel Sror , id :123
-Thu Apr 16 21:06:14 IDT 2020 Users.Player: The team for player : Harel Sror id : 123was added.
-Thu Apr 16 21:06:14 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Harel Sror@birthday:Thu Apr 16 21:06:14 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
+Thu Apr 16 17:51:26 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 17:51:26 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 18:02:21 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 18:02:21 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 18:03:34 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 18:03:34 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 18:16:04 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 18:16:04 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 18:16:04 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:16:09 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 18:16:09 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 18:16:09 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 18:16:09 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 18:16:09 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:20:45 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 18:20:45 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 18:20:45 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:20:57 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 18:21:04 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 18:21:04 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 18:21:04 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:21:15 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 18:21:15 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 18:21:15 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 18:21:15 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 18:21:15 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 18:21:15 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:22:51 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 18:22:51 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 18:22:51 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 18:22:51 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 18:41:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Thu Apr 16 18:41:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Thu Apr 16 19:02:30 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:02:30 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:30 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:02:30 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:02:30 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:02:30 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:02:30 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:02:30 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:02:30 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:02:30 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:02:30 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:02:35 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Thu Apr 16 19:02:35 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:35 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Thu Apr 16 19:02:35 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Thu Apr 16 19:02:35 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Thu Apr 16 19:02:35 IDT 2020@role:Strength@team:DOTA
+Thu Apr 16 19:02:39 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Thu Apr 16 19:02:39 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Thu Apr 16 19:02:39 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Thu Apr 16 19:02:39 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Thu Apr 16 19:02:39 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Thu Apr 16 19:02:43 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:02:43 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:02:43 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:02:47 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Thu Apr 16 19:02:47 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Thu Apr 16 19:02:47 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Thu Apr 16 19:02:47 IDT 2020 Report: system manager receive to report 1
+Thu Apr 16 19:02:51 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 19:02:51 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 19:03:26 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 1) alert
+Thu Apr 16 19:03:37 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 19:03:38 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 19:03:38 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:03:38 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 19:03:38 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 1) alert
+Thu Apr 16 19:03:38 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 19:03:38 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 19:03:38 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 19:03:38 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 19:03:38 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:06:56 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 1) alert
+Thu Apr 16 19:06:56 IDT 2020 FootballObjects.Game: Fan fan (id: 4) removed alert to game (id: 1) alert
+Thu Apr 16 19:07:04 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 19:07:04 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 19:07:04 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:07:04 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 19:07:04 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 1) alert
+Thu Apr 16 19:07:04 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 19:07:04 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 19:07:04 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 19:07:04 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 19:07:04 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:07:04 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 2) alert
+Thu Apr 16 19:07:04 IDT 2020 FootballObjects.Game: Fan fan (id: 4) removed alert to game (id: 2) alert
+Thu Apr 16 19:13:37 IDT 2020 Users.SystemManager: Add a new Football Association : ref123
+Thu Apr 16 19:13:37 IDT 2020 Users.SystemManager: Add a new Referee : referee123
+Thu Apr 16 19:13:37 IDT 2020 Users.SystemManager: Add a new Referee : babi
+Thu Apr 16 19:13:37 IDT 2020 Controller: A new user signUp to the system. (10,whitey).
+Thu Apr 16 19:13:37 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:13:37 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:13:37 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:13:37 IDT 2020 Controller: User log out from the system. id(whitey).
+Thu Apr 16 19:13:37 IDT 2020 Controller: A new user signUp to the system. (10,blacki).
+Thu Apr 16 19:13:37 IDT 2020 Users.User: coffee(id: 10) update his status
+Thu Apr 16 19:13:37 IDT 2020 Controller: User log in to the system. id(10).
+Thu Apr 16 19:13:37 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 13name: Itzik
+Thu Apr 16 19:13:48 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Thu Apr 16 19:13:48 IDT 2020 Users.SystemManager: Add a new Player : player1
+Thu Apr 16 19:13:48 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:13:48 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Thu Apr 16 19:13:48 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 1) alert
+Thu Apr 16 19:13:48 IDT 2020 Users.SystemManager: Add a new TeamOwner : teamOwner
+Thu Apr 16 19:13:48 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : teamOwner , id :2
+Thu Apr 16 19:13:48 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Thu Apr 16 19:13:48 IDT 2020 Users.SystemManager: Add a new Player : player
+Thu Apr 16 19:13:48 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Thu Apr 16 19:13:48 IDT 2020 FootballObjects.Game: Fan fan (id: 4) register to receive a game (id: 2) alert
+Thu Apr 16 19:13:48 IDT 2020 FootballObjects.Game: Fan fan (id: 4) removed alert to game (id: 2) alert
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was restart.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The asset value for player : Ben Saar id : 123was edit.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: Team manager : Harel sror, id :456
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was restart.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:was remove from team :Maccabi Tel Aviv , id :0
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: The PersonalPage for team : Hapoel Beer Sheva id : 0was created.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Hapoel Beer Sheva , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Hapoel Beer Sheva
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Beer Sheva , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Tel Aviv , id :0was added to the teams list of : harel , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Hapoel Jerusalem , id :0was added to the teams list of : shiran , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamOwner: Team : Maccabi Tel Aviv , id :0was added to the teams list of : dana , id :123
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 123was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
+Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
+Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
