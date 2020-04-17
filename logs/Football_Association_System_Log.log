@@ -4588,3 +4588,1468 @@ Thu Apr 16 21:14:00 IDT 2020 Users.Player: The team for player : Ben Saar id : 1
 Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Ben Saar@birthday:Thu Apr 16 21:14:00 IDT 2020@role:goalkeeper@team:Maccabi Tel Aviv
 Thu Apr 16 21:14:00 IDT 2020 Users.TeamManager: The team for team manager : Harel sror id : 456was added.
 Thu Apr 16 21:14:00 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :Maccabi Tel Aviv , id :0Asset details : @name:Harel sror@team:Maccabi Tel Aviv
+Fri Apr 17 08:01:17 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:01:17 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:01:17 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:01:17 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 08:04:43 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 7) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 7) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 7) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 8) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 8) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 8) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 9) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 9) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 9) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 10) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 10) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 10) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 11) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 11) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Max (id: 205) register to receive a game (id: 11) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Hen (id: 204) register to receive a game (id: 12) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Dana (id: 206) register to receive a game (id: 12) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Game: Referee Shachar (id: 207) register to receive a game (id: 12) alert
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 08:04:44 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:03:22 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:03:22 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:03:22 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:03:22 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:03:22 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:03:22 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:03:22 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:03:22 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:03:22 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:03:22 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:03:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:03:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:04:03 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:04:03 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:04:03 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:04:03 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:04:03 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:04:03 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:04:03 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:04:03 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:04:03 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:04:03 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:04:03 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:04:03 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:07:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:07:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:07:23 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:07:23 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:07:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:07:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:07:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:07:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:07:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:07:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:07:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:07:23 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:09:03 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:03 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:03 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:04 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:09:04 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:04 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:09:04 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:04 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:09:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:09:04 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:04 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:09:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:23 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:23 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:09:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:09:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:09:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:09:23 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:23 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:09:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:09:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:41 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:09:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:09:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:09:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:09:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:09:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:09:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:09:41 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:15:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:15:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:15:02 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:15:02 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:15:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:15:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:15:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:15:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:15:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:15:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:15:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:15:02 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:15:02 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:15:02 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:16:46 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:16:46 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:16:46 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:16:46 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:16:46 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:16:46 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:16:46 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:16:46 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:16:46 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:16:46 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:16:46 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:16:46 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:18:03 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:18:03 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:18:07 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:18:07 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:18:07 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:18:07 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:18:07 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:18:07 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:18:07 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:18:07 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:18:07 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:18:07 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:18:07 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:18:07 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:18:07 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:18:07 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:19:37 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:19:37 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:19:37 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:19:37 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:19:37 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:19:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:19:37 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:19:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:19:37 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:19:37 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:19:37 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:19:37 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:19:37 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:20:00 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:20:31 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:31 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:31 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:20:31 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:20:31 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:20:31 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:20:31 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:20:31 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:20:31 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:20:31 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:20:31 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:31 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:20:31 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:20:31 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:20:59 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:59 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:59 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:20:59 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:20:59 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:20:59 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:20:59 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:20:59 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:20:59 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:20:59 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:20:59 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:20:59 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:24:37 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:24:37 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:24:39 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:24:39 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:24:39 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:24:39 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:24:39 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:24:39 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:24:39 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:24:39 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:24:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:24:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:24:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:24:39 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:24:47 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:29:06 IDT 2020 Users.Referee: The referee r2 (username: r2)pull his future games.
+Fri Apr 17 09:56:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:56:19 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:56:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:56:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:56:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:56:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:56:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:56:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:56:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:19 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:56:32 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:32 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:32 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:56:32 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:56:32 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:56:32 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:56:32 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:56:32 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:56:32 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:56:32 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:56:32 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:56:32 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:57:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:02 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:57:02 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:57:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:57:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:57:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:57:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:57:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:57:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:57:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:02 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 09:57:54 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:54 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:54 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:57:54 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 09:57:54 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:57:54 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 09:57:54 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 09:57:54 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 09:57:54 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 09:57:54 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 09:57:54 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 09:57:54 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:15:36 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:15:36 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:15:36 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:15:36 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:15:36 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:15:36 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:15:36 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:15:36 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:15:36 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:15:36 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:15:36 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:15:36 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:19:29 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:29 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:29 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:29 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:19:29 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:29 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:19:29 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:29 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:19:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:19:29 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:29 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:19:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:51 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:19:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:19:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:19:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:19:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:51 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:19:56 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:56 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:56 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:56 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:19:56 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:56 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:19:56 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:19:56 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:19:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:19:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:19:56 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:19:56 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:20:39 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:20:39 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:20:39 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:20:39 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:20:39 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:20:39 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:20:39 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:20:39 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:20:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:20:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:20:39 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:20:39 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:22:22 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:22:22 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:22:22 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:22:22 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:22:22 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:22:22 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:22:22 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:22:22 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:22:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:22:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:22:22 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:22:22 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:35:49 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:35:49 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:35:49 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:35:49 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:35:49 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:35:49 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 10:35:49 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 10:35:49 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:09 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:36:09 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:09 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:09 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:36:09 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:09 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 10:36:09 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 10:36:09 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:36:35 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:36:35 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:35 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:35 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:36:35 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:36:35 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 10:36:35 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 10:36:35 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:51:25 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:51:25 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:51:25 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:51:25 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 10:51:25 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:51:25 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 10:51:25 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 10:51:25 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 10:51:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 10:51:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 10:51:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 10:51:25 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:03:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:03:02 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:03:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:03:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:03:02 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:03:02 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:03:02 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:11:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:11:50 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:11:50 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:14:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:14:19 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : b , id :2
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : b , id :2
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:14:19 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:14:19 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:15:06 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:15:06 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : b , id :2
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : b , id :2
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 17) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 17) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 17) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 18) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 18) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 18) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 19) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 19) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 19) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 20) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 20) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 20) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 21) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 21) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 21) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 22) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 22) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 22) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 23) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 23) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 23) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 24) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 24) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 24) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 25) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 25) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 25) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 26) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 26) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 26) alert
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:15:06 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:15:06 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:16:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:16:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:16:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:16:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:16:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:16:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:12 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:16:16 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:16:16 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 15) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 16) alert
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:16:16 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:16:16 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:18:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:18:12 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:18:12 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:18:12 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:19:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:19:26 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:19:26 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:19:26 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:21:40 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:21:40 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:21:40 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:21:40 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:24:52 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:24:52 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:24:52 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:24:52 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:25:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:25:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:25:51 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:25:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:26:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:26:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:26:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:26:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : j , id :7
+Fri Apr 17 11:26:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:26:52 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:42 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:27:42 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:27:42 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:27:42 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:27:42 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:42 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:27:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:27:47 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:27:47 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:27:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:27:59 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:23 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:23 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:28:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:23 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:28:28 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:28:28 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:28 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:28 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:28:29 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:28:31 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:37 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:37 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:28:37 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:37 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:28:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:28:41 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:28:41 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:28:41 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:29:10 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:29:10 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: Add a new TeamOwner : bbb
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: Add a new TeamOwner : jjj
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:29:10 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: Add a new TeamOwner : sdfs
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:29:10 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:29:10 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:30:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:30:13 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:30:13 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: Add a new TeamOwner : sdfs
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:30:13 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:30:13 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Gabe , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r1
+Fri Apr 17 11:36:48 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r2
+Fri Apr 17 11:36:48 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: r3
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 7) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r1 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r2 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Game: Referee r3 (id: 1) register to receive a game (id: 8) alert
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: PremierLeague
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: Add a new TeamOwner : ddd
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : d , id :4
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : Inbar , id :1
+Fri Apr 17 11:36:48 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: Add a new TeamOwner : sdfs
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Arsenal , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Arsenal)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Liverpool , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Liverpool)
+Fri Apr 17 11:36:48 IDT 2020 Users.TeamOwner: Team : Chelsea , id :0was added to the teams list of : f , id :10
+Fri Apr 17 11:36:48 IDT 2020 Users.SystemManager: New team added to the system. (0, Chelsea)

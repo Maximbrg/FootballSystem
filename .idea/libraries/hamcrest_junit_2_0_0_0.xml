@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="hamcrest-junit-2.0.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Desktop/תוכנות/hamcrest-junit-2.0.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/תוכנות/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/תוכנות/junit-4.13-rc-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/תוכנות/junit-jupiter-api-5.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/תוכנות/junit-platform-commons-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
