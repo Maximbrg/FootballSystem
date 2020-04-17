@@ -20,6 +20,7 @@ import org.junit.Test;
 import System.*;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -34,12 +35,7 @@ public class FootballAssociationControllerTest {
     @Before
     public void initTest(){
         faController= FootballAssosiationController.getInstance();
-        Team t1= new Team("team1",null);
-        Team t2= new Team("team2",null);
-        Team t3= new Team("team3",null);
-        controller.addTeam(t1);
-        controller.addTeam(t2);
-        controller.addTeam(t3);
+        resetController();
     }
 
     @Test
@@ -503,5 +499,16 @@ public class FootballAssociationControllerTest {
         }
     }
 
-
+    private void resetController(){
+        Controller.getInstance().setLeagues(new LinkedList<>());
+        Controller.getInstance().setUsers(new HashMap<>());
+        Controller.getInstance().setTeams(new LinkedList<>());
+        Controller.getInstance().setSeasons(new LinkedList<>());
+        Team t1= new Team("team1",null);
+        Team t2= new Team("team2",null);
+        Team t3= new Team("team3",null);
+        controller.addTeam(t1);
+        controller.addTeam(t2);
+        controller.addTeam(t3);
+    }
 }
