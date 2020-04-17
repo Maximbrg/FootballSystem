@@ -3,6 +3,7 @@ import ServiceLayer.FootballAssosiationController;
 import System.Enum.RefereeType;
 import System.Enum.TeamStatus;
 import System.Exeptions.IllegalInputException;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Game;
@@ -203,7 +204,7 @@ public class FootballAssociationControllerTest {
     /*Test ID:    #9.3.5 --Removes referee with a games after replacing referees
      the referee will be remove
      */
-    public void replaceRefereeTest1(){
+    public void replaceRefereeTest1() throws IllegalRemoveException {
         FootballAssociation fa= new FootballAssociation(123,"fa1", "123","123");
         List<Team> teams=faController.getAllTeams();
         try {
@@ -389,9 +390,13 @@ public class FootballAssociationControllerTest {
      */
     public void schedulingGamesTest1(){
         FootballAssociation fa = new FootballAssociation(123, "fa1", "123", "123");
-        controller.addTeam(new Team("t1",null));
-        controller.addTeam(new Team("t2",null));
-        controller.addTeam(new Team("t3",null));
+        TeamOwner teamOwner4= new TeamOwner(1,"t","t","teamOwner4",100);
+        TeamOwner teamOwner5= new TeamOwner(1,"t","t","teamOwner5",100);
+        TeamOwner teamOwner6= new TeamOwner(1,"t","t","teamOwner6",100);
+
+        controller.addTeam(new Team("t1",teamOwner4));
+        controller.addTeam(new Team("t2",teamOwner5));
+        controller.addTeam(new Team("t3",teamOwner6));
         List<Team> teams = faController.getAllTeams();
         try {
             League league = faController.initEmptyLeague("leagueTest", teams);
@@ -504,9 +509,12 @@ public class FootballAssociationControllerTest {
         Controller.getInstance().setUsers(new HashMap<>());
         Controller.getInstance().setTeams(new LinkedList<>());
         Controller.getInstance().setSeasons(new LinkedList<>());
-        Team t1= new Team("team1",null);
-        Team t2= new Team("team2",null);
-        Team t3= new Team("team3",null);
+        TeamOwner teamOwner1= new TeamOwner(1,"t","t","teamOwner1",100);
+        TeamOwner teamOwner2= new TeamOwner(1,"t","t","teamOwner2",100);
+        TeamOwner teamOwner3= new TeamOwner(1,"t","t","teamOwner3",100);
+        Team t1= new Team("team1",teamOwner1);
+        Team t2= new Team("team2",teamOwner2);
+        Team t3= new Team("team3",teamOwner3);
         controller.addTeam(t1);
         controller.addTeam(t2);
         controller.addTeam(t3);

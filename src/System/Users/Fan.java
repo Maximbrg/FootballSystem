@@ -18,6 +18,14 @@ public class Fan extends User implements IObserverGame {
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
+
+    /**
+     * constructor to fan
+     * @param id - fan's id
+     * @param name full name
+     * @param password
+     * @param userName
+     */
     public Fan(int id, String name, String password, String userName) {
         super(id, name,password,userName);
         this.FollowPages = new LinkedList<>();

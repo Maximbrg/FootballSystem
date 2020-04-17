@@ -6,6 +6,7 @@ import System.FootballObjects.Season;
 import System.FootballObjects.Team.Team;
 import System.Users.FootballAssociation;
 import System.Users.Referee;
+import System.Users.TeamOwner;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,9 +21,10 @@ public class LeagueInformationTest {
     Season season;
     LeagueInformation leagueInformation;
 
-    Team Arsenal= new Team("Arsenal", null);
-    Team Liverpool = new Team("Liverpool", null);
-    Team Chelsea= new Team("Chelsea",  null);
+    TeamOwner teamOwner=new TeamOwner(1,"Inbar","123","Inbar",100);
+    Team Arsenal= new Team("Arsenal", teamOwner);
+    Team Liverpool = new Team("Liverpool", teamOwner);
+    Team Chelsea= new Team("Chelsea",  teamOwner);
 
 //    Game game=new Game(null,2000,null,null,null,Arsenal,Liverpool);
 //    Game game1=new Game(null,2000,null,null,null,Chelsea,Liverpool);
@@ -35,6 +37,8 @@ public class LeagueInformationTest {
     Referee rTest3=new Referee("Shachar", RefereeType.ASSISTANT,207,"abc","KillerReferee");
 
     List<Referee> referees= new ArrayList<>();
+
+
 
 
 
@@ -54,43 +58,43 @@ public class LeagueInformationTest {
 
     }
 
-//    @Test
-//    public void getLeagueTable() {
-//        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(0),5);
-//        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),3);
-//        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(2),1);
-//
-//        Team [] teams= new Team[3];
-//        int i=0;
-//        HashMap<Team,Integer> temp= leagueInformation.getLeagueTable();
-//        for (HashMap.Entry me : temp.entrySet()) {
-//            teams[i]=(Team) me.getKey();
-//            i++;
-//        }
-//
-//        Team [] teams2= new Team[3];
-//        teams2[0]=Arsenal;
-//        teams2[1]=Liverpool;
-//        teams2[2]=Chelsea;
-//
-//        assertArrayEquals(teams,teams2);
-//
-//        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),10);
-//
-//        i=0;
-//        HashMap<Team,Integer> temp2= leagueInformation.getLeagueTable();
-//        for (HashMap.Entry me : temp2.entrySet()) {
-//            teams[i]=(Team) me.getKey();
-//            i++;
-//        }
-//
-//        Team [] teams3= new Team[3];
-//        teams3[0]=Liverpool;
-//        teams3[1]=Arsenal;
-//        teams3[2]=Chelsea;
-//        assertArrayEquals(teams,teams3);
-//
-//    }
+    @Test
+    public void getLeagueTable() {
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(0),"WIN");
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),"TIE");
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(2),"LOSS");
+
+        Team [] teams= new Team[3];
+        int i=0;
+        HashMap<Team,Integer> temp= leagueInformation.getLeagueTable();
+        for (HashMap.Entry me : temp.entrySet()) {
+            teams[i]=(Team) me.getKey();
+            i++;
+        }
+
+        Team [] teams2= new Team[3];
+        teams2[0]=Arsenal;
+        teams2[1]=Liverpool;
+        teams2[2]=Chelsea;
+
+        assertArrayEquals(teams,teams2);
+
+        leagueInformation.updateScoreTeamInLeagueTable(PremierLeague.getTeams().get(1),"WIN");
+
+        i=0;
+        HashMap<Team,Integer> temp2= leagueInformation.getLeagueTable();
+        for (HashMap.Entry me : temp2.entrySet()) {
+            teams[i]=(Team) me.getKey();
+            i++;
+        }
+
+        Team [] teams3= new Team[3];
+        teams3[0]=Liverpool;
+        teams3[1]=Arsenal;
+        teams3[2]=Chelsea;
+        assertArrayEquals(teams,teams3);
+
+    }
 
     @Test
     public void schedulingReferee() {

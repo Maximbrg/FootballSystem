@@ -135,7 +135,8 @@ public class FootballAssociation extends User {
         if (referee.getFutureGames().size() > 0) {
             throw new IllegalInputException();
         }
-        controller.removeUser(userName);
+            controller.removeUser(userName);
+
         Log.getInstance().writeToLog("Football assosiation -remove referee. id: "+referee.getId()+ "name: "+ referee.getName());
     }
 
@@ -198,15 +199,12 @@ public class FootballAssociation extends User {
     //<editor-fold desc="Override Methods">
     @Override
     public void removeUser() {
+
     }
     //</editor-fold>
 
     //public void addBudgetRule(String rule){} //UC-33
 
-    //public void editGameSchedulingPolicy(ITeamAllocatePolicy iTeamAllocatePolicy){} //UC-34
 
-    //public void initialScoreSchedulingPlicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){}; //UC-36
-
-    //public void editScoreSchedulingPolicy(League league , Season season , IScoreMethodPolicy iScoreMethodPolicy){} //UC-37
 
 }

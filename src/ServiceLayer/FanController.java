@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class FanController extends GuestController implements Observable {
-
+    List<Observer> listeners;
     private static FanController ourInstance = new FanController();
 
     public static FanController getInstance() {
@@ -20,9 +20,10 @@ public class FanController extends GuestController implements Observable {
     }
 
     private FanController() {
+
     }
 
-    List<Observer> listeners;
+
 
     public List<PersonalPage> getAllpersonalPages() {
         List<PersonalPage> results = new LinkedList<>();

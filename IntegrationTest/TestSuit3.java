@@ -12,7 +12,6 @@ import System.Users.Player;
 import System.Users.SystemManager;
 import System.Users.TeamOwner;
 import org.junit.Test;
-import System.*;
 
 import java.util.List;
 

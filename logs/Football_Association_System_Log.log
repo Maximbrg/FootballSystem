@@ -4605,3 +4605,357 @@ Fri Apr 17 14:55:49 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) regist
 Fri Apr 17 14:55:49 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 63) alert
 Fri Apr 17 14:55:49 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
 Fri Apr 17 14:55:49 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:12:16 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:16 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:16 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:24 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 10) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 10) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 10) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 11) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 11) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 11) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 12) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 12) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 12) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 13) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 13) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 13) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 14) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 14) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 14) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 15) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 15) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 15) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 10) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 10) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 11) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 11) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 12) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 12) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 13) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 13) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 14) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 14) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 15) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 15) alert
+Fri Apr 17 19:12:25 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:12:25 IDT 2020 Users.User: ref1(id: 111) update his status
+Fri Apr 17 19:12:25 IDT 2020 Controller: User removed from the system. userName(ref1).
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 16) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 16) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 16) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 17) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 17) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 17) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 18) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 18) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 18) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 19) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 19) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 19) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 20) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 20) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 20) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 21) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 21) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 21) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:12:25 IDT 2020 Users.User: ref1(id: 111) update his status
+Fri Apr 17 19:12:25 IDT 2020 Controller: User removed from the system. userName(ref1).
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:12:25 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 28) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 28) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 28) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 29) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 29) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 29) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 30) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 30) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 30) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 31) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 31) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 31) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 32) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 32) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 32) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 33) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 33) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 33) alert
+Fri Apr 17 19:12:25 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:12:25 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : t2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : t3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team team1id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team team2id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team team3id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team t1id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team t2id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.Team: The Team t3id: 0 pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : t1 , id :0was added to the teams list of : owner1 , id :111
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.OneGameAllocatePolicy: League Information inaugural games for the league - one game for each league team
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 40) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 40) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 40) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 41) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 41) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 41) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 42) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 42) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 42) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 43) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 43) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 43) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 44) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 44) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 44) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 45) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 45) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 45) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 40) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 40) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 41) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 41) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 42) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 42) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 43) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 43) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 44) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 44) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 45) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) removed alert to game (id: 45) alert
+Fri Apr 17 19:13:51 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 Users.User: ref1(id: 111) update his status
+Fri Apr 17 19:13:51 IDT 2020 Controller: User removed from the system. userName(ref1).
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 46) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 46) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 46) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 47) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 47) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 47) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 48) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 48) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 48) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 49) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 49) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref6 (id: 111) register to receive a game (id: 49) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref4 (id: 111) register to receive a game (id: 50) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref5 (id: 111) register to receive a game (id: 50) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 50) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 51) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref7 (id: 111) register to receive a game (id: 51) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 51) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref4
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref5
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref6
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref7
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
+Fri Apr 17 19:13:51 IDT 2020 Users.User: ref1(id: 111) update his status
+Fri Apr 17 19:13:51 IDT 2020 Controller: User removed from the system. userName(ref1).
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -remove referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team1 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team2 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.TeamOwner: Team : team3 , id :0was added to the teams list of : t , id :1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref1
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref2
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 111name: ref3
+Fri Apr 17 19:13:51 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:leagueTest
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Team.DefaultAllocate: League Information inaugural games for the league- home and away games for each league team
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 58) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 58) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 58) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 59) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 59) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 59) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 60) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 60) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 60) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 61) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 61) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 61) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 62) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 62) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 62) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref1 (id: 111) register to receive a game (id: 63) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref3 (id: 111) register to receive a game (id: 63) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.Game: Referee ref2 (id: 111) register to receive a game (id: 63) alert
+Fri Apr 17 19:13:51 IDT 2020 FootballObjects.LeagueInformation: League information- The referees inaugural season was successfully completed. League name: leagueTest
+Fri Apr 17 19:13:51 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.

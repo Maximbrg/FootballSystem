@@ -1,6 +1,7 @@
 package System.Users;
 
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoRefereePermissions;
 import System.Exeptions.NoSuchEventException;
 import System.FootballObjects.Event.*;
@@ -274,6 +275,8 @@ public class Referee extends User implements IObserverGame,IShowable {
 
     @Override
     public void removeUser() {
+
+
 
     }
     //</editor-fold>

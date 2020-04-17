@@ -2,6 +2,7 @@ package System.Users;
 
 import System.Controller;
 import System.Enum.RefereeType;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
