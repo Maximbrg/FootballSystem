@@ -5,41 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IntegrationTest/TestSuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IntegrationTest/TestSuit1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/CoachControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/CoachControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/FootballAssociationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/GuestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/PlayerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/PlayerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/RefereeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/RefereeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/SystemManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/SystemManagerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestService/TeamOwnerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/TeamOwnerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Users/FootballAssociation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Users/FootballAssociation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Event/EventLogStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Event/EventLogStub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/FootballObjects/FieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/FootballObjects/FieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/FootballObjects/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/FootballObjects/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/FootballObjects/LeagueInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/FootballObjects/LeagueInformationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/FootballObjects/LeagueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/FootballObjects/LeagueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/FootballObjects/SeasonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/FootballObjects/SeasonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/LogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Team/DefaultAllocateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Team/DefaultAllocateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Team/DefaultMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Team/DefaultMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Team/OneGameAllocatePolicyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Team/OneGameAllocatePolicyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Team/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Team/TeamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/CoachTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/CoachTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/FanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/FanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/FootballAssociationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/FootballAssociationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/RefereeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/RefereeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/SystemManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/SystemManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/TeamManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/TeamManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTest/Users/TeamOwnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest/Users/TeamOwnerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,13 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="489">
               <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#addNewTeam#0;class#TestSuit#0" />
                 <element signature="method#followPersonalPage#0;class#TestSuit#0" />
                 <element signature="method#unFollowPersonalPage#0;class#TestSuit#0" />
@@ -140,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/PlayerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,15 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8654">
-              <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-              <folding>
-                <element signature="method#createTeamTest1#0;class#FootballAssociationControllerTest#0" />
-                <element signature="method#getLeagueTableTest1#0;class#FootballAssociationControllerTest#0" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -171,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -266,10 +229,11 @@
         <option value="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" />
         <option value="$PROJECT_DIR$/TestService/FootballAssosiationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/System/Users/Fan.java" />
-        <option value="$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/FootballAssosiationController.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/PlayerController.java" />
         <option value="$PROJECT_DIR$/IntegrationTest/TestSuit.java" />
+        <option value="$PROJECT_DIR$/IntegrationTest/TestSuit3.java" />
+        <option value="$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java" />
       </list>
     </option>
   </component>
@@ -290,31 +254,6 @@
             <path>
               <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-              <item name="AcceptanceTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-              <item name="IntegrationTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem1" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FootballSystem1" type="b2602c69:ProjectViewProjectNode" />
@@ -390,7 +329,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587053303890" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587139389021" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/security1Done/security1" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -417,13 +356,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuit3">
-    <configuration name="TestSuit1.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FootballAssociationControllerTest">
+    <configuration name="FootballAssociationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuit1" />
-      <option name="METHOD_NAME" value="Test4" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="FootballAssociationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -469,11 +407,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FootballAssociationControllerTest" />
         <item itemvalue="JUnit.TestSuit3" />
         <item itemvalue="JUnit.TestSuit3.moveAlertToGame" />
         <item itemvalue="JUnit.TestSuit3.registerToGameAlert" />
         <item itemvalue="JUnit.TestSuit1.Test5" />
-        <item itemvalue="JUnit.TestSuit1.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -690,19 +628,17 @@
       <option name="project" value="LOCAL" />
       <updated>1586967540258</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="testSuit3">
+      <created>1587053379845</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1587053379845</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSuit1 - 2020.04.16 at 19h 02m 30s.xml">
-      <configuration name="TestSuit1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuit1_Test1 - 2020.04.16 at 19h 02m 36s.xml">
-      <configuration name="TestSuit1.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuit1_Test2 - 2020.04.16 at 19h 02m 39s.xml">
-      <configuration name="TestSuit1.Test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSuit1_Test3 - 2020.04.16 at 19h 02m 43s.xml">
       <configuration name="TestSuit1.Test3" configurationId="JUnit" />
     </history-entry>
@@ -724,13 +660,21 @@
     <history-entry file="TestSuit - 2020.04.16 at 19h 07m 04s.xml">
       <configuration name="TestSuit" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestSuit3 - 2020.04.17 at 13h 08m 50s.xml">
+      <configuration name="TestSuit3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FootballAssociationControllerTest - 2020.04.17 at 14h 54m 35s.xml">
+      <configuration name="FootballAssociationControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FootballAssociationControllerTest - 2020.04.17 at 14h 55m 50s.xml">
+      <configuration name="FootballAssociationControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208298000" />
+    <option name="totallyTimeSpent" value="210716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -738,20 +682,20 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2048583" />
-      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.57894737" weight="0.45115453" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2048583" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.57813764" weight="0.59680283" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.44048584" side_tool="true" visible="true" weight="0.28063944" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.44129553" side_tool="true" visible="true" weight="0.28063944" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info active="true" anchor="bottom" id="Find" order="6" visible="true" weight="0.3268206" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.55951416" visible="true" weight="0.28063944" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.55870444" visible="true" weight="0.28063944" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49959514" weight="0.37655416" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49716598" weight="0.39609236" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49635628" weight="0.39609236" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -859,7 +803,8 @@
     <MESSAGE value="FootballAssosiationController and test + init team owners list in Team class" />
     <MESSAGE value="update league table and set results in game" />
     <MESSAGE value="football association controller test + score to league table" />
-    <option name="LAST_COMMIT_MESSAGE" value="football association controller test + score to league table" />
+    <MESSAGE value="testSuit3" />
+    <option name="LAST_COMMIT_MESSAGE" value="testSuit3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" />
@@ -896,7 +841,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java</url>
-          <line>61</line>
+          <line>57</line>
           <properties class="FootballAssociationControllerTest" method="initEmptyLeagueTest">
             <option name="EMULATED" value="true" />
           </properties>
@@ -1195,7 +1140,7 @@
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1206,36 +1151,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8654">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-          <folding>
-            <element signature="method#createTeamTest1#0;class#FootballAssociationControllerTest#0" />
-            <element signature="method#getLeagueTableTest1#0;class#FootballAssociationControllerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit.java">
+    <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="489">
           <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#addNewTeam#0;class#TestSuit#0" />
             <element signature="method#followPersonalPage#0;class#TestSuit#0" />
             <element signature="method#unFollowPersonalPage#0;class#TestSuit#0" />
             <element signature="method#registerToGameAlert#0;class#TestSuit#0" />
             <element signature="method#registerToGameAlert#1;class#TestSuit#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
         </state>
       </provider>
     </entry>
