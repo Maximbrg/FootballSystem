@@ -107,7 +107,7 @@ public abstract class User extends Guest {
         return searchHistory;
     }
 
-    public abstract void removeUser();
+    public abstract void removeUser() ;
     //</editor-fold>
 
 }

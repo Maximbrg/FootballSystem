@@ -18,6 +18,14 @@ public class Fan extends User implements IObserverGame {
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
+
+    /**
+     * constructor to fan
+     * @param id - fan's id
+     * @param name full name
+     * @param password
+     * @param userName
+     */
     public Fan(int id, String name, String password, String userName) {
         super(id, name,password,userName);
         this.FollowPages = new LinkedList<>();
@@ -112,9 +120,17 @@ public class Fan extends User implements IObserverGame {
         Log.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
     }
 
+    /**
+     * Remove fam from the system- clean his data structure
+     */
     @Override
     public void removeUser() {
-
+        for (PersonalPage personalPage:this.FollowPages){
+            personalPage.unfollow(this);
+        }
+        for (ISubjectGame game: this.subjectGame){
+            game.removeAlertToFan(this);
+        }
     }
     //</editor-fold>
 

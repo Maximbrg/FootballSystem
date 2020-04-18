@@ -25,14 +25,13 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     private TeamStatus teamStatus;
     private PersonalPage personalPage;
     private List<Asset> assets;
-    private List<Player> players;
     private List<Game> gamesOfTeams;
     private List<TeamOwner> allTeamOwners;
+    private List<TeamManager> teamManagersList;
+    private Field field;
     private List<IObserverTeam> iObserverTeamListForSystemManagers;
     private List<IObserverTeam> iObserverTeamListForTeamOwnersAndManagers;
-    private List<TeamManager> teamManagersList;
     private HashMap<TeamOwner,LinkedList<TeamOwner>> teamOwners;
-    private Field field;
     private int income;
     private int expense;
     private List<FinancialReport> financialReport;
@@ -54,12 +53,14 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         this.teamOwners = new HashMap<>();
         teamOwners.put(teamOwner,new LinkedList<TeamOwner>());
         this.allTeamOwners=new LinkedList<>();
-        allTeamOwners.add(teamOwner);
+        if(teamOwner != null) {
+            allTeamOwners.add(teamOwner);
+            teamOwner.addTeamToMyTeamList(this);
+        }
         this.financialReport = new LinkedList<FinancialReport>();
         this.iObserverTeamListForSystemManagers=new LinkedList<>();
         this.iObserverTeamListForTeamOwnersAndManagers=new LinkedList<>();
         this.gamesOfTeams= new ArrayList<>();
-        this.players = new LinkedList<>();
         this.financialReport = new LinkedList<>();
     }
     //</editor-fold>
@@ -206,6 +207,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
 
     public void setField(Field field) {
         this.field = field;
+        field.addMyTeam(this);
     }
 
     public void setIncome(int income) {
@@ -234,7 +236,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      *
      */
     public void addAsset(Asset asset) throws HasTeamAlreadyException {
-        if(asset!=null) {
+        if(asset.getMyTeam()==null && asset!=null && !this.assets.contains(asset)) {
             this.assets.add(asset);
             asset.addMyTeam(this);//connect this team to the asset
             Log.getInstance().writeToLog("New asset wae added to team :"+this.getName()+" , id :"+this.getId()+"Asset details : "+ asset.getDetails());
@@ -280,10 +282,11 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      * according to UC-20
      */
     public void addTeamManager(TeamManager teamManagerNew){
-        this.teamManagersList.add(teamManagerNew);
-        teamManagerNew.setMyTeam(this);
-        Log.getInstance().writeToLog("Team manager : "+teamManagerNew.getName() +", id :"+ teamManagerNew.getId());
-
+        if(!this.teamManagersList.contains(teamManagerNew)) {
+            this.teamManagersList.add(teamManagerNew);
+            teamManagerNew.setMyTeam(this);
+            Log.getInstance().writeToLog("Team manager : " + teamManagerNew.getName() + ", id :" + teamManagerNew.getId());
+        }
     } //UC-20
 
     /**
@@ -293,6 +296,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void removeTeamManager(TeamManager teamManager){
         this.teamManagersList.remove(teamManager);
+        teamManager.setMyTeam(null);
     } //UC-21
 
     /**
@@ -301,6 +305,19 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void closeTeam(){
         this.setTeamStatus(TeamStatus.Close);
+        for (Asset a:assets)
+            a.resetMyTeam();
+        for(TeamManager m:teamManagersList)
+            m.resetMyTeam();this.teamOwners.clear();
+        this.teamManagersList.clear();
+        if(field!=null)
+         field.resetMyTeam(this);
+
+        for(IObserverTeam ioT:iObserverTeamListForSystemManagers){
+            ioT.removeAlert(this);
+        }
+        iObserverTeamListForSystemManagers=new LinkedList<>();
+
         notifySystemManager("Team Closed :"+ getName());
         notifyTeamOwnersAndManager("Team Closed :"+ getName());//needs another notify for this
 
@@ -312,30 +329,22 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void PermanentlyCloseTeam(){
         this.setTeamStatus(TeamStatus.PermanentlyClose);
-        for (Asset a:assets) {
+        for (Asset a:assets)
             a.resetMyTeam();
-        }
+        for (TeamOwner o:allTeamOwners)
+            o.removeTeamFromMyList(this);
+        for(TeamManager m:teamManagersList)
+            m.resetMyTeam();
+        this.teamOwners.clear();
+        this.teamManagersList.clear();
+        this.allTeamOwners.clear();
+        if(field!=null)
+            field.resetMyTeam(this);
         notifyTeamOwnersAndManager("Team Closed permanently:"+ getName());
         for(IObserverTeam ioT:iObserverTeamListForSystemManagers){
             ioT.removeAlert(this);
         }
         iObserverTeamListForSystemManagers=new LinkedList<>();
-    }
-
-    /**
-     * This function addd a new player to the team
-     * @param player
-     */
-    public void addPlayerToTeam(Player player) {
-        players.add(player);
-    }
-
-    /**
-     * This function remove player from the team
-     * @param player
-     */
-    public void removePlayerFromTeam(Player player){
-        players.remove(player);
     }
 
     /**
@@ -347,11 +356,12 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
     }
 
     public void addOwnerToTeamOwnersList(TeamOwner tOwner){
-        this.allTeamOwners.add(tOwner);
+        if(!this.allTeamOwners.contains(tOwner))
+              this.allTeamOwners.add(tOwner);
     }
 
     public void removeOwnerFromTeamOwnersList(TeamOwner tOwner){
-        this.allTeamOwners.add(tOwner);
+        this.allTeamOwners.remove(tOwner);
     }
     //</editor-fold>
 

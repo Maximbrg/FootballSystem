@@ -290,6 +290,7 @@ public class Controller {
         if(users.get(userName)==null){
             throw new NoSuchAUserNamedException();
         }
+        users.get(userName).removeUser();
         users.get(userName).setStatus(UserStatus.REMOVED);
         removedUser.put(userName,users.get(userName));
         users.remove(userName);

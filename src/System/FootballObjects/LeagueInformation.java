@@ -25,7 +25,7 @@ public class LeagueInformation {
     private int WIN;
     private int LOSS;
     private int TIE;
-    private Team Champion;//???
+    private Team Champion;
     //</editor-fold>
 
     //<editor-fold desc="Constructor">

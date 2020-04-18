@@ -1,6 +1,7 @@
 
 import System.Controller;
 import System.Enum.TeamStatus;
+import System.Exeptions.IllegalRemoveException;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
@@ -137,7 +138,7 @@ public class SystemManagerTest {
 
 
     @Test
-    public void removeUserTest(){
+    public void removeUserTest() throws IllegalRemoveException {
         Fan fTest=new Fan(1234,"Avi","abc1234","theBigAvi123");
         Controller.getInstance().addUser(fTest.getUserName(),fTest);
         SystemManager systemMTest1=new SystemManager(111,"Sys","123","bestSystemManager");
@@ -157,7 +158,7 @@ public class SystemManagerTest {
         }
     }
     @Test
-    public void restartRemovedUserTest(){
+    public void restartRemovedUserTest() throws IllegalRemoveException {
         Fan fTest=new Fan(1234,"Avi","abc1234","theBigAvi123");
         Controller.getInstance().addUser(fTest.getUserName(),fTest);
         //not found user in this userName

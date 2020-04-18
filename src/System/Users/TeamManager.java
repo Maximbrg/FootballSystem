@@ -2,6 +2,7 @@ package System.Users;
 
 import System.Asset.Asset;
 import System.Exeptions.HasTeamAlreadyException;
+import System.Exeptions.IllegalRemoveException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
@@ -70,11 +71,6 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     //<editor-fold desc="Setters">
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void removeUser() {
-
     }
 
     private void setAssetValue(int assetValue) {
@@ -167,6 +163,18 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     @Override
     public int getSalary() {
         return salary;
+    }
+
+    /**
+     * remove manager from everything he connected to
+     */
+    @Override
+    public void removeUser()  {
+        assetValue=0;
+        myTeam=null;
+        subjectTeam=null;
+        salary=0;
+        myTeamOwner=null;
     }
     //</editor-fold>
 
