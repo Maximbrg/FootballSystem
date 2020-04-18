@@ -4368,3 +4368,175 @@ Thu Apr 16 14:53:40 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
 Thu Apr 16 14:53:40 IDT 2020 Report: system manager receive to report 1
 Thu Apr 16 14:58:30 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
 Thu Apr 16 14:58:30 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Thu Apr 16 15:15:21 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Thu Apr 16 15:15:21 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:31:43 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:31:43 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:31:43 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:31:43 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:31:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:31:43 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:31:43 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:31:43 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:31:43 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:31:43 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:31:43 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:32:07 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:32:07 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:34:25 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:34:25 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:34:25 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:34:25 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:34:25 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:34:25 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:35:02 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:35:02 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:35:02 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:35:02 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:35:02 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:35:02 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:35:12 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:35:12 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:35:12 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:35:12 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:35:12 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:35:12 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:35:18 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:35:18 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:35:18 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:35:18 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:35:18 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:35:18 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:35:33 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:35:33 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:35:33 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:35:33 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:35:33 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:35:33 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:37:06 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:37:06 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:37:06 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:37:06 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:37:06 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:37:06 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:37:06 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:06 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:37:06 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:37:06 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:37:06 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:37:06 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:37:17 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:37:17 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:37:17 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:37:17 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:37:17 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:37:17 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:37:17 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:17 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:37:17 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:37:17 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:37:29 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:37:29 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:37:44 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:37:44 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:37:44 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:37:44 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:37:44 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:37:44 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:37:44 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:37:44 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:37:44 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:37:44 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:37:53 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:37:55 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:38:43 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:38:43 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:38:43 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:38:43 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:38:43 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:38:43 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:38:43 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:38:43 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:38:43 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:38:43 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:38:44 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:38:44 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:39:56 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:39:56 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:39:56 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:39:56 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:39:56 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:39:56 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:39:56 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:39:59 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:39:59 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:39:59 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:40:00 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:40:05 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:40:05 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:40:08 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:40:08 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:40:08 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:40:08 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:40:08 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:40:08 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:40:08 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:40:10 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:40:10 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:40:10 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:40:19 IDT 2020 Report: system manager receive to report 1
+Fri Apr 17 14:40:19 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:40:19 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: Add a new Player : PudgeFTW
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA)
+Fri Apr 17 14:43:47 IDT 2020 Users.Player: The team for player : Pudge id : 1was added.
+Fri Apr 17 14:43:47 IDT 2020 FootballObjects.Team.Team: New asset wae added to team :DOTA , id :0Asset details : @name:Pudge@birthday:Fri Apr 17 14:43:47 IDT 2020@role:Strength@team:DOTA
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: Add a new TeamOwner : GabeFTW
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA1)
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: New team added to the system. (0, DOTA2)
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: Add a new Football Association : LineFTW
+Fri Apr 17 14:43:47 IDT 2020 Users.FootballAssociation: Football assosiation -Init new League. Name:Dota
+Fri Apr 17 14:43:47 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Fri Apr 17 14:43:47 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Fri Apr 17 14:43:47 IDT 2020 Controller: A new user signUp to the system. (1,InvokerFTW).
+Fri Apr 17 14:43:47 IDT 2020 Users.SystemManager: A new report added to the System. id(2).
+Fri Apr 17 14:43:47 IDT 2020 Users.Fan: User submit report. (userId:1reportId2)
+Fri Apr 17 14:43:47 IDT 2020 Report: system manager receive to report 2
+Fri Apr 17 14:43:47 IDT 2020 Controller: A new user signUp to the system. (1,EarthShakerFTW).
+Fri Apr 17 14:43:47 IDT 2020 Controller: A new user signUp to the system. (1,PuckFTW).

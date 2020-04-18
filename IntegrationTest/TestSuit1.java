@@ -1,4 +1,4 @@
-import System.Asset.Asset;
+
 import System.Exeptions.HasTeamAlreadyException;
 import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.League;
@@ -13,6 +13,7 @@ import org.junit.Test;
 
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -27,6 +28,7 @@ public class TestSuit1 {
         Team team = Controller.getInstance().getAllTeams().get(0);
         team.addAsset(player);
         assertEquals(player,team.getAssets().get(0));
+        resetController();
     }
 
     @Test
@@ -38,6 +40,7 @@ public class TestSuit1 {
         FootballAssociation footballAssociation =  systemManager.createNewFootballAssociation(1,"Lina","Lina","LineFTW");
         LeagueInformation leagueInformation = footballAssociation.initLeague(new Season(2020),new League("Dota",Controller.getInstance().getAllTeams()));
         assertEquals(leagueInformation.getLeague().getTeams(),Controller.getInstance().getAllTeams());
+        resetController();
     }
 
     @Test
@@ -47,16 +50,19 @@ public class TestSuit1 {
         fan.submitReport("hi");
         HashMap<Integer,Report> info = systemManager.getOpenReports();
         Assert.assertTrue(info.get(1).getReport().equals("hi"));
+        resetController();
     }
 
     @Test
     public void Test4() throws UserNameAlreadyExistException { //Test IDl 4# -- Checks if user can see answer on his report
+        HashMap<String,User> AA = Controller.getInstance().getUsers();
         SystemManager systemManager = new SystemManager(1,"a","a","a");
         Fan fan = Controller.getInstance().signUp(1,"Invoker","Invoker","InvokerFTW");
         fan.submitReport("hi");
         HashMap<Integer,Report> info = systemManager.getOpenReports();
-        systemManager.getOpenReports().get(1).answer("bye");
-        Assert.assertTrue(fan.getMyReports().get(1).getAnswer().equals("bye"));
+        systemManager.getOpenReports().get(2).answer("bye");
+        Assert.assertTrue(fan.getMyReports().get(2).getAnswer().equals("bye"));
+        resetController();
     }
 
     @Test
@@ -66,6 +72,15 @@ public class TestSuit1 {
         systemManager.createNewFan(1,"EarthShaker","EarthShaker","EarthShakerFTW");
         systemManager.createNewFan(1,"Puck","Puck","PuckFTW");
         Assert.assertTrue(Controller.getInstance().getUsers().size()==3);
+        resetController();
+    }
+
+    private void resetController(){
+        Controller.getInstance().setFields(null);
+        Controller.getInstance().setLeagues(new LinkedList<>());
+        Controller.getInstance().setUsers(new HashMap<>());
+        Controller.getInstance().setTeams(new LinkedList<>());
+        Controller.getInstance().setSeasons(new LinkedList<>());
     }
 
 }
