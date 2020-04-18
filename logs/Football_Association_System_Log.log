@@ -5284,3 +5284,44 @@ Sat Apr 18 12:28:49 IDT 2020 FootballObjects.LeagueInformation: League informati
 Sat Apr 18 12:28:49 IDT 2020 Users.Referee: The referee ref1 (username: ref1)pull his future games.
 Sat Apr 18 12:28:56 IDT 2020 Users.User: Harel Chror(id: 456) update his password
 Sat Apr 18 12:28:57 IDT 2020 Users.Coach: The PersonalPage for coach : Maxim  id : 123was created.
+Sat Apr 18 23:08:54 IDT 2020 Controller: A new user signUp to the system. (1,b).
+Sat Apr 18 23:08:54 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Sat Apr 18 23:08:54 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sat Apr 18 23:23:02 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sat Apr 18 23:23:02 IDT 2020 Controller: User log in to the system. id(205695612).
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sat Apr 18 23:23:02 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: Invoker
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Sat Apr 18 23:23:02 IDT 2020 Users.SystemManager: Add a new Player : player1
+Sat Apr 18 23:23:02 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Sat Apr 18 23:23:02 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Sat Apr 18 23:23:02 IDT 2020 Users.SystemManager: Add a new Player : player
+Sat Apr 18 23:23:02 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (1,b).
+Sat Apr 18 23:23:02 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Sat Apr 18 23:23:02 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Sat Apr 18 23:23:02 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44).
+Sat Apr 18 23:23:36 IDT 2020 Users.User: Maxim(id: 205695612) update his status
+Sat Apr 18 23:23:36 IDT 2020 Controller: User log in to the system. id(205695612).
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4433).
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW4356).
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW1022).
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW55).
+Sat Apr 18 23:23:36 IDT 2020 Users.FootballAssociation: Football assosiation -Add new referee. id: 1name: Invoker
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (4,fan1).
+Sat Apr 18 23:23:36 IDT 2020 Users.SystemManager: Add a new Player : player1
+Sat Apr 18 23:23:36 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Sat Apr 18 23:23:36 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) unfollow plyer
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (4,fan).
+Sat Apr 18 23:23:36 IDT 2020 Users.SystemManager: Add a new Player : player
+Sat Apr 18 23:23:36 IDT 2020 PersonalPages.PersonalPage: fan (id: 4) follows plyer
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (1,b).
+Sat Apr 18 23:23:36 IDT 2020 Users.SystemManager: A new report added to the System. id(1).
+Sat Apr 18 23:23:36 IDT 2020 Users.Fan: User submit report. (userId:1reportId1)
+Sat Apr 18 23:23:36 IDT 2020 Controller: A new user signUp to the system. (205695612,MaxFTW44785).

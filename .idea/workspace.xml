@@ -4,9 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" description="Log.writeToLog(&quot;Asset details : &quot;+ asset.getDetail..." line="268" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
+    <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="Merge branch 'master' of https://github.com/Maximbrg/FootballSystem&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;IntegrationTest/TestSuit1.java&#10;#&#9;logs/Football_Association_System_Log.log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptanceTest/GuestFanControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/FootballSystem/GuestControllerTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +37,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/CoachController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,45 +50,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="41">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="method#getAllpersonalPages#0;class#FanController#0" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
                 <element signature="method#editDetails#0;class#FanController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/AcceptanceTest/GuestFanControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="215" column="26" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+            <state relative-caret-position="299">
+              <caret line="198" selection-start-line="198" selection-end-line="198" />
               <folding>
                 <element signature="method#signUpTest1#0;class#GuestControllerTest#0" />
                 <element signature="method#signUpTest2#0;class#GuestControllerTest#0" />
@@ -95,10 +85,22 @@
                 <element signature="docComment;method#logOutTest1#0;class#GuestControllerTest#0" />
                 <element signature="method#logOutTest1#0;class#GuestControllerTest#0" />
                 <element signature="method#getInfoToShow#0;class#GuestControllerTest#0" />
-                <element signature="method#searchShowablesTest#0;class#GuestControllerTest#0" />
+                <element signature="method#searchShowablesTest#0;class#GuestFanControllerTest#0" />
                 <element signature="docComment;method#filterResultsTest#0;class#GuestControllerTest#0" />
                 <element signature="method#filterResultsTest#0;class#GuestControllerTest#0" />
+                <element signature="method#sumbitReport#0;class#GuestControllerTest#0" />
+                <element signature="method#unFollowPersonalPage#0;class#GuestFanControllerTest#0" />
+                <element signature="method#followPersonalPage#0;class#GuestFanControllerTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AcceptanceTest/RefereeControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -137,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" />
-        <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtAllocte.java" />
-        <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/DefaultAllocate.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/DefualtMethod.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/DefaultMethod.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/IScoreMethodPolicy.java" />
@@ -185,9 +184,12 @@
         <option value="$PROJECT_DIR$/IntegrationTest/TestSuit1.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" />
-        <option value="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" />
         <option value="$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest.java" />
+        <option value="$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest2.java" />
         <option value="$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java" />
+        <option value="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" />
+        <option value="$PROJECT_DIR$/IntegrationTest/TestSuit3.java" />
+        <option value="$PROJECT_DIR$/AcceptanceTest/GuestFanControllerTest.java" />
       </list>
     </option>
   </component>
@@ -202,6 +204,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="AcceptanceTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -235,40 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="AcceptanceTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="IntegrationTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceLayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,7 +277,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587240144453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587242264581" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/AcceptanceTest" />
@@ -312,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceLayer in FootballSystem">
+  <component name="RunManager" selected="JUnit.GuestFanControllerTest.searchShowablesTest">
     <configuration name="CoachControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
@@ -322,29 +319,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FootballAssociationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuestFanControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FootballAssociationControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="GuestFanControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuestFanControllerTest.searchShowablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuestControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="GuestFanControllerTest" />
+      <option name="METHOD_NAME" value="searchShowablesTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuestFanControllerTest.submitReport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FootballSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="GuestFanControllerTest" />
+      <option name="METHOD_NAME" value="submitReport" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -359,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuestFanControllerTest.searchShowablesTest" />
+        <item itemvalue="JUnit.GuestFanControllerTest" />
+        <item itemvalue="JUnit.GuestFanControllerTest.submitReport" />
         <item itemvalue="JUnit.ServiceLayer in FootballSystem" />
         <item itemvalue="JUnit.CoachControllerTest" />
-        <item itemvalue="JUnit.FootballAssociationControllerTest" />
-        <item itemvalue="JUnit.GuestControllerTest" />
-        <item itemvalue="JUnit.PlayerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +387,8 @@
       <workItem from="1587033802440" duration="7095000" />
       <workItem from="1587201421283" duration="343000" />
       <workItem from="1587201791983" duration="431000" />
-      <workItem from="1587237889025" duration="2185000" />
+      <workItem from="1587237889025" duration="2340000" />
+      <workItem from="1587240329873" duration="1929000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -571,28 +571,17 @@
       <option name="project" value="LOCAL" />
       <updated>1587202205435</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Merge branch 'master' of https://github.com/Maximbrg/FootballSystem&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;IntegrationTest/TestSuit1.java&#10;#&#9;logs/Football_Association_System_Log.log">
+      <created>1587240204275</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1587240204275</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RefereeControllerTest - 2020.04.18 at 12h 25m 13s.xml">
-      <configuration name="RefereeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RefereeControllerTest - 2020.04.18 at 12h 25m 41s.xml">
-      <configuration name="RefereeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RefereeControllerTest - 2020.04.18 at 12h 27m 36s.xml">
-      <configuration name="RefereeControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamOwnerControllerTest - 2020.04.18 at 12h 27m 58s.xml">
-      <configuration name="TeamOwnerControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SystemManagerControllerTest - 2020.04.18 at 12h 28m 09s.xml">
-      <configuration name="SystemManagerControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RefereeControllerTest - 2020.04.18 at 12h 28m 24s.xml">
-      <configuration name="RefereeControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlayerControllerTest - 2020.04.18 at 12h 28m 30s.xml">
       <configuration name="PlayerControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -605,9 +594,27 @@
     <history-entry file="CoachControllerTest - 2020.04.18 at 12h 28m 57s.xml">
       <configuration name="CoachControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ServiceLayer_in_FootballSystem - 2020.04.18 at 23h 02m 32s.xml">
+      <configuration name="ServiceLayer in FootballSystem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestControllerTest_submitReport - 2020.04.18 at 23h 08m 55s.xml">
+      <configuration name="GuestControllerTest.submitReport" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFanControllerTest - 2020.04.18 at 23h 23m 03s.xml">
+      <configuration name="GuestFanControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFanControllerTest_searchShowablesTest - 2020.04.18 at 23h 23m 11s.xml">
+      <configuration name="GuestFanControllerTest.searchShowablesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFanControllerTest - 2020.04.18 at 23h 23m 36s.xml">
+      <configuration name="GuestFanControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFanControllerTest_searchShowablesTest - 2020.04.18 at 23h 23m 54s.xml">
+      <configuration name="GuestFanControllerTest.searchShowablesTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221698000" />
+    <option name="totallyTimeSpent" value="223782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -618,21 +625,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23560767" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23827292" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.043336947" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.45771813" side_tool="true" visible="true" weight="0.14626218" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.45948827" side_tool="true" visible="true" weight="0.2426869" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.10400867" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.54228187" weight="0.2426869" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.5405117" visible="true" weight="0.2426869" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.31419286" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49878544" weight="0.33044422" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49733475" weight="0.33044422" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -758,27 +765,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/System/Searcher/SearchByKeyWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="n#!!doc;n#search#0;n#SearchByKeyWord#0" />
-            <element signature="method#search#0;class#SearchByKeyWord#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Searcher/SearchByCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="n#!!doc;n#search#0;n#SearchByCategory#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Team/OneGameAllocatePolicy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1391,41 +1377,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/PlayerControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AcceptanceTest/CoachControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/RefereeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/CoachController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1436,20 +1391,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest2.java" />
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/CoachController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/FanController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="41">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="method#getAllpersonalPages#0;class#FanController#0" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
             <element signature="method#editDetails#0;class#FanController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FootballAssociationControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
+        <state relative-caret-position="277">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1457,10 +1442,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="215" column="26" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+        <state relative-caret-position="242">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/PlayerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/RefereeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcceptanceTest/GuestFanControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
           <folding>
             <element signature="method#signUpTest1#0;class#GuestControllerTest#0" />
             <element signature="method#signUpTest2#0;class#GuestControllerTest#0" />
@@ -1470,19 +1476,12 @@
             <element signature="docComment;method#logOutTest1#0;class#GuestControllerTest#0" />
             <element signature="method#logOutTest1#0;class#GuestControllerTest#0" />
             <element signature="method#getInfoToShow#0;class#GuestControllerTest#0" />
-            <element signature="method#searchShowablesTest#0;class#GuestControllerTest#0" />
+            <element signature="method#searchShowablesTest#0;class#GuestFanControllerTest#0" />
             <element signature="docComment;method#filterResultsTest#0;class#GuestControllerTest#0" />
             <element signature="method#filterResultsTest#0;class#GuestControllerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#sumbitReport#0;class#GuestControllerTest#0" />
+            <element signature="method#unFollowPersonalPage#0;class#GuestFanControllerTest#0" />
+            <element signature="method#followPersonalPage#0;class#GuestFanControllerTest#0" />
           </folding>
         </state>
       </provider>
