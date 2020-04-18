@@ -155,7 +155,6 @@ public class GuestControllerTest {
     }
 
 
-
     @Test
     public void getInfoToShow() throws UserNameAlreadyExistException{
         FootballAssociation assosiation = new FootballAssociation(205695612,"Max","123","MaxFTW");
@@ -179,11 +178,8 @@ public class GuestControllerTest {
                 break;
             }
         }
-    } //Test ID:    #3.1
+    } //Test ID:    #3.1.1
 
-    /**
-     *
-     */
     @Test
     public void searchShowablesTest(){
         GuestController gustController = new GuestController();
@@ -194,7 +190,7 @@ public class GuestControllerTest {
         List<IShowable> list =gustController.searchShowables(f,a,SearchCategory.PLAYER,"xy");
         assertEquals("hende",list.get(0).getName());
         assertEquals("xy",f.getSearchHistory().get(0));
-    }
+    } //Test ID:    #2.5.1
 
     /**
      * filter the search by category
@@ -217,9 +213,5 @@ public class GuestControllerTest {
             }
         }
 
-
-
-
-
-    }
+    } //Test ID:    #2.4.1
 }
