@@ -1,7 +1,7 @@
 package System.FootballObjects.Team;
 
 import System.FootballObjects.Game;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -34,7 +34,7 @@ public class OneGameAllocatePolicy implements ITeamAllocatePolicy {
                 away.getGamesOfTeams().add(game);
             }
         }
-        Log.getInstance().writeToLog("League Information inaugural games for the league - one game for each league team");
+        SystemEventLog.getInstance().writeToLog("League Information inaugural games for the league - one game for each league team");
 
     }
     //</editor-fold>

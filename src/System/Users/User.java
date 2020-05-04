@@ -1,7 +1,7 @@
 package System.Users;
 
 import System.Enum.UserStatus;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -70,18 +70,18 @@ public abstract class User extends Guest {
 
     public void setName(String name) {
         this.name = name;
-        Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his name");
+        SystemEventLog.getInstance().writeToLog(name+"(id: "+ id+ ") update his name");
 
     }
 
     public void setPassword(String password) {
         this.password = password;
-        Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his password");
+        SystemEventLog.getInstance().writeToLog(name+"(id: "+ id+ ") update his password");
     }
 
     public void setUserName(String userName) {
         this.userName = userName;
-        Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his userName");
+        SystemEventLog.getInstance().writeToLog(name+"(id: "+ id+ ") update his userName");
 
     }
 
@@ -91,7 +91,7 @@ public abstract class User extends Guest {
 
     public void setStatus(UserStatus status) {
         this.status = status;
-        Log.getInstance().writeToLog(name+"(id: "+ id+ ") update his status");
+        SystemEventLog.getInstance().writeToLog(name+"(id: "+ id+ ") update his status");
 
     }
     //</editor-fold>

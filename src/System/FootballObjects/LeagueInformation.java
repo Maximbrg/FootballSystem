@@ -5,7 +5,7 @@ import System.FootballObjects.Team.*;
 import System.Users.FootballAssociation;
 import System.Users.FootballAssociation;
 import System.Users.Referee;
-import System.Log;
+import System.SystemEventLog;
 import java.util.*;
 
 
@@ -201,7 +201,7 @@ public class LeagueInformation {
 
         }
 
-        Log.getInstance().writeToLog("League information- The referees inaugural season was successfully completed. League name: "+league.getName());
+        SystemEventLog.getInstance().writeToLog("League information- The referees inaugural season was successfully completed. League name: "+league.getName());
     } //UC-32
 
     /**

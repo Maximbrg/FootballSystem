@@ -9,7 +9,7 @@ import System.I_Observer.ISubjectTeam;
 import System.PersonalPages.IPageAvailable;
 import System.PersonalPages.PersonalPage;
 import System.IShowable;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.Date;
 import java.util.LinkedList;
@@ -148,7 +148,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.getInstance().writeToLog("The asset value for player : "+getName()+" id : "+getId() +"was edit.");
+        SystemEventLog.getInstance().writeToLog("The asset value for player : "+getName()+" id : "+getId() +"was edit.");
     }
 
     /**
@@ -157,13 +157,13 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
-        Log.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
+        SystemEventLog.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
     }
 
     @Override
     public void resetMyTeam(Team team) {
         this.myTeam=null;
-        Log.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
+        SystemEventLog.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -179,7 +179,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         }
         else{
             this.myTeam = team;
-            Log.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was added.");
+            SystemEventLog.getInstance().writeToLog("The team for player : "+getName()+" id : "+getId() +"was added.");
 
         }
     }
@@ -194,7 +194,7 @@ public class Player extends User implements Asset, IPageAvailable, IShowable {
         if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
-            Log.getInstance().writeToLog("The PersonalPage for player : "+getName()+" id : "+getId() +"was created.");
+            SystemEventLog.getInstance().writeToLog("The PersonalPage for player : "+getName()+" id : "+getId() +"was created.");
             return personalPage;
         }
         throw new PersonalPageAlreadyExist();

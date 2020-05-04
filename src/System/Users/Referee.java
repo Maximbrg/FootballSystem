@@ -11,7 +11,8 @@ import System.FootballObjects.Season;
 import System.IShowable;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
-import System.Log;
+import System.SystemEventLog;
+import System.SystemErrorLog;
 
 import java.util.*;
 
@@ -74,6 +75,7 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void addGame(Game g){
         g.registerRefereeToAlert(this);
         games.add(g);
+        SystemEventLog.getInstance().writeToLog("a Game added to referee list. Referee's username:"+getUserName());
     }
 
     /**
@@ -83,6 +85,8 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void removeGame(Game g){
         g.removeAlertToReferee(this);
         games.remove(g);
+        SystemEventLog.getInstance().writeToLog("a Game remove from referee list. Referee's username:"+getUserName());
+
     }
 
     /**
@@ -97,8 +101,9 @@ public class Referee extends User implements IObserverGame,IShowable {
             AEvent editedEvent = createEvent(type, oldEvent.getMinute());
             game.getEventLog().removeEvent(oldEvent);
             game.getEventLog().addEventToLog(editedEvent);
-            Log.getInstance().writeToLog("The referee " + getName() + " edited event" + "(event Id:" + oldEvent.getId() + ").");
+            SystemEventLog.getInstance().writeToLog("The referee " + getUserName() + " edited event" + "(event Id:" + oldEvent.getId() + ").");
         } else {
+            SystemErrorLog.getInstance().writeToLog("The referee " + getUserName() + " edited event" + "(event Id:" + oldEvent.getId() + ").");
             throw new NoRefereePermissions();
         }
     }
@@ -116,8 +121,9 @@ public class Referee extends User implements IObserverGame,IShowable {
 
         if (diffHours < 1.5 && (game.getMainReferee().getId() == getId() || game.getAssistantRefereeTwo().getId() == getId() || game.getAssistantRefereeOne().getId() == getId())) {
             game.addEventToLogEvent(createEvent(type, min));
-            Log.getInstance().writeToLog("Event was added to the log event game " + game.getId() + " by the referee " + getUserName() + ".");
+            SystemEventLog.getInstance().writeToLog("Event was added to the log event game " + game.getId() + " by the referee " + getUserName() + ".");
         } else {
+            SystemErrorLog.getInstance().writeToLog("Event wasn't added to the log event game " + game.getId() + " by the referee " + getUserName() + ".");
             throw new NoRefereePermissions();
         }
     }
@@ -131,7 +137,7 @@ public class Referee extends User implements IObserverGame,IShowable {
     public void addEventToLogEvent(Game game, String type, int minute) throws NoSuchEventException {
         AEvent newEvent = createEvent(type, minute);
         game.addEventToLogEvent(newEvent);
-        Log.getInstance().writeToLog("Event was added to the log event game "+game.getId()+" by the referee " + getName()+"." );
+        SystemEventLog.getInstance().writeToLog("Event was added to the event log game "+game.getId()+" by the referee " + getUserName()+"." );
     }
 
     /**
@@ -151,10 +157,10 @@ public class Referee extends User implements IObserverGame,IShowable {
             for (AEvent a : game.getEventLog().getEventList()) {
                 report += a.getMinute() + ". " + a.getClass().toString().substring(35, a.getClass().toString().length()) + "\n";
             }
-            Log.getInstance().writeToLog("Report for the game:" + game.getHome().getName() + "vs" + game.getAway().getName() + "was created by the referee " + getUserName() + ".");
+            SystemEventLog.getInstance().writeToLog("Report for the game:" + game.getHome().getName() + "vs" + game.getAway().getName() + "was created by the referee " + getUserName() + ".");
             return report;
         } else {
-            Log.getInstance().writeToLog("Referee no have permissions to createGameReport. username's Referee:"+getUserName());
+            SystemErrorLog.getInstance().writeToLog("Referee no have permissions to createGameReport. username's Referee:"+getUserName());
             throw new NoRefereePermissions();
         }
     } //UC-41
@@ -176,7 +182,7 @@ public class Referee extends User implements IObserverGame,IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.getInstance().writeToLog("The referee "+getUserName()+" (username: "+getUserName() +")pull his future games.");
+        SystemEventLog.getInstance().writeToLog("The referee "+getUserName()+" (username: "+getUserName() +")pull his future games.");
         return futureGames;
     }
     /**
@@ -209,7 +215,7 @@ public class Referee extends User implements IObserverGame,IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.getInstance().writeToLog("The referee pull his games for "+ season.getYear()+" season. "+"("+getUserName() +","+getUserName()+")");
+        SystemEventLog.getInstance().writeToLog("The referee pull his games for "+ season.getYear()+" season. "+"("+getUserName() +",username: "+getUserName()+")");
         return relevantGames;
     } //UC-39
     //</editor-fold>
@@ -217,7 +223,7 @@ public class Referee extends User implements IObserverGame,IShowable {
     //<editor-fold desc="Override Methods">
     @Override
     public void update() {
-        Log.getInstance().writeToLog("Referee was updated by a game. Referee's id:"+getId());
+        SystemEventLog.getInstance().writeToLog("Referee was updated by a game. Referee's id:"+getId());
     }
 
     /**
@@ -270,6 +276,7 @@ public class Referee extends User implements IObserverGame,IShowable {
             case "YellowCard":
                 return new YellowCard(minute);
         }
+        SystemErrorLog.getInstance().writeToLog("Referee tried to non exists event in createEvent. username: "+getUserName());
         throw new NoSuchEventException();
     }
 

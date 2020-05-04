@@ -1,7 +1,7 @@
 package System.PersonalPages;
 
 import System.Users.Fan;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -54,7 +54,7 @@ public class PersonalPage {
     public void follow(Fan fan){
         followers.add(fan);
         fan.addFollowPage(this);
-        Log.getInstance().writeToLog(fan.getName() +" (id: "+ fan.getId()+") follows "+ this.pageAvailable.getName());
+        SystemEventLog.getInstance().writeToLog(fan.getName() +" (id: "+ fan.getId()+") follows "+ this.pageAvailable.getName());
     } //UC-7
 
     /**
@@ -64,7 +64,7 @@ public class PersonalPage {
     public void unfollow(Fan fan) {
         followers.remove(fan);
         fan.removeFollowPage(this);
-        Log.getInstance().writeToLog(fan.getName() +" (id: "+ fan.getId()+") unfollow "+ this.pageAvailable.getName());
+        SystemEventLog.getInstance().writeToLog(fan.getName() +" (id: "+ fan.getId()+") unfollow "+ this.pageAvailable.getName());
 
     } //UC-8
 

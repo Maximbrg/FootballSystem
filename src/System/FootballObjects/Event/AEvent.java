@@ -1,6 +1,6 @@
 package System.FootballObjects.Event;
 
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.Date;
 
@@ -22,7 +22,7 @@ public abstract class AEvent {
         this.minute = minuteInTheGame;
         id=ID++;
         date=new Date(System.currentTimeMillis());
-        Log.getInstance().writeToLog("New Event was created. ("+id+")");
+        SystemEventLog.getInstance().writeToLog("New Event was created. ("+id+")");
     }
     //</editor-fold>
 

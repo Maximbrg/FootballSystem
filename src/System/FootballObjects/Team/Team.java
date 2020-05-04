@@ -13,7 +13,7 @@ import System.PersonalPages.PersonalPage;
 import System.Users.*;
 import System.FinancialReport;
 import System.IShowable;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.*;
 
@@ -166,7 +166,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
                 return o1.getDate().compareTo(o2.getDate());
             }
         });
-        Log.getInstance().writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
+        SystemEventLog.getInstance().writeToLog("The Team "+getName()+"id: "+getId() +" pull his future games.");
         return futureGames;
     }
 
@@ -239,7 +239,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(asset.getMyTeam()==null && asset!=null && !this.assets.contains(asset)) {
             this.assets.add(asset);
             asset.addMyTeam(this);//connect this team to the asset
-            Log.getInstance().writeToLog("New asset wae added to team :"+this.getName()+" , id :"+this.getId()+"Asset details : "+ asset.getDetails());
+            SystemEventLog.getInstance().writeToLog("New asset wae added to team :"+this.getName()+" , id :"+this.getId()+"Asset details : "+ asset.getDetails());
         }
     } //UC-15
 
@@ -254,7 +254,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(asset!=null){
             this.assets.remove(asset);
             asset.resetMyTeam();//delete this team from the asset
-            Log.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was remove from team :"+this.getName()+" , id :"+this.getId());
+            SystemEventLog.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was remove from team :"+this.getName()+" , id :"+this.getId());
 
         }
     } //UC-16
@@ -266,13 +266,13 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
      */
     public void editAsset(Asset asset ,int val){
         asset.editAssetValue(val);
-        Log.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was update value.");
+        SystemEventLog.getInstance().writeToLog("Asset details : "+ asset.getDetails()+"was update value.");
 
     } //UC-17
 
     public void addIncome(int income){
         this.income+=income;
-        Log.getInstance().writeToLog("A new income added to the incomes of the team id: "+ getId());
+        SystemEventLog.getInstance().writeToLog("A new income added to the incomes of the team id: "+ getId());
 
     }
 
@@ -285,7 +285,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(!this.teamManagersList.contains(teamManagerNew)) {
             this.teamManagersList.add(teamManagerNew);
             teamManagerNew.setMyTeam(this);
-            Log.getInstance().writeToLog("Team manager : " + teamManagerNew.getName() + ", id :" + teamManagerNew.getId());
+            SystemEventLog.getInstance().writeToLog("Team manager : " + teamManagerNew.getName() + ", id :" + teamManagerNew.getId());
         }
     } //UC-20
 
@@ -445,7 +445,7 @@ public class Team implements IPageAvailable, ISubjectTeam, IShowable {
         if(personalPage== null){
             PersonalPage newPersonalPage= new PersonalPage(this);
             this.personalPage=newPersonalPage;
-            Log.getInstance().writeToLog("The PersonalPage for team : "+getName()+" id : "+getId() +"was created.");
+            SystemEventLog.getInstance().writeToLog("The PersonalPage for team : "+getName()+" id : "+getId() +"was created.");
             return this.personalPage;
         }
         throw new PersonalPageAlreadyExist();

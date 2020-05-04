@@ -8,7 +8,7 @@ import System.Exeptions.UserNameAlreadyExistException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
-import System.Log;
+import System.SystemEventLog;
 import System.Report;
 
 import java.io.IOException;
@@ -42,8 +42,8 @@ public class SystemManager extends User implements IObserverTeam {
      * @return
      */
     public String getLog() throws IOException {
-        Log.getInstance().writeToLog("Log introduced by the System Manager. id:"+getId());
-        return Log.getInstance().getLog();
+        SystemEventLog.getInstance().writeToLog("Log introduced by the System Manager. id:"+getId());
+        return SystemEventLog.getInstance().getLog();
 
     } //UC-28
     //</editor-fold>
@@ -66,7 +66,7 @@ public class SystemManager extends User implements IObserverTeam {
      */
     public void closeTeam(Team team){
         team.PermanentlyCloseTeam();
-        Log.getInstance().writeToLog("The team: "+team.getName()+",Id: " +team.getId()+" closed successfully.");
+        SystemEventLog.getInstance().writeToLog("The team: "+team.getName()+",Id: " +team.getId()+" closed successfully.");
     } //UC-25
 
     /**
@@ -94,7 +94,7 @@ public class SystemManager extends User implements IObserverTeam {
      */
     public static void addReport(Report report) {
         openReportsBox.put(report.getId(),report);
-        Log.getInstance().writeToLog("A new report added to the System. id("+report.getId()+").");
+        SystemEventLog.getInstance().writeToLog("A new report added to the System. id("+report.getId()+").");
     }
 
     /**
@@ -105,7 +105,7 @@ public class SystemManager extends User implements IObserverTeam {
         report.answer(answer);
         closeReportsBox.put(report.getId(),report);
         openReportsBox.remove(report.getId());
-        Log.getInstance().writeToLog("A answer to report set. ("+report.getId()+").");
+        SystemEventLog.getInstance().writeToLog("A answer to report set. ("+report.getId()+").");
     }
 
     /**
@@ -118,7 +118,7 @@ public class SystemManager extends User implements IObserverTeam {
             newTeam.registerSystemManagerToAlert(s);
         }
         Controller.getInstance().addTeam(newTeam);
-        Log.getInstance().writeToLog("New team added to the system. ("+newTeam.getId()+", "+newTeam.getName()+")");
+        SystemEventLog.getInstance().writeToLog("New team added to the system. ("+newTeam.getId()+", "+newTeam.getName()+")");
     }
 
     //<editor-fold desc="Create Users">
@@ -141,7 +141,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Player user=new Player(id,name,password,userName,birthDate,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new Player : "+ user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new Player : "+ user.getUserName());
         return user;
     }
 
@@ -161,7 +161,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Referee user=new Referee(name,refereeType,id,password,userName);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new Referee : "+ user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new Referee : "+ user.getUserName());
         return user;
     }
 
@@ -180,7 +180,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         FootballAssociation user=new FootballAssociation(id,name,password,userName);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new Football Association : "+ user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new Football Association : "+ user.getUserName());
         return user;
     }
 
@@ -203,7 +203,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         Coach user=new Coach(id,name,password,userName,preparation,role,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new Coach : " + user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new Coach : " + user.getUserName());
         return user;
     }
     /**
@@ -236,7 +236,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamManager user=new TeamManager(id,name,password,userName,assetValue,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new TeamManager : " + user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new TeamManager : " + user.getUserName());
 
         return user;
     }
@@ -257,7 +257,7 @@ public class SystemManager extends User implements IObserverTeam {
         }
         TeamOwner user=new TeamOwner(id,name,password,userName,salary);
         Controller.getInstance().addUser(userName,user);
-        Log.getInstance().writeToLog("Add a new TeamOwner : " + user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new TeamOwner : " + user.getUserName());
         return user;
         }
 
@@ -276,12 +276,12 @@ public class SystemManager extends User implements IObserverTeam {
         }
         SystemManager user = new SystemManager(id, name, password, userName);
         Controller.getInstance().addUser(userName, user);
-        Log.getInstance().writeToLog("Add a new SystemManager : " + user.getUserName());
+        SystemEventLog.getInstance().writeToLog("Add a new SystemManager : " + user.getUserName());
         return user;
     }
     @Override
     public void update(String msg) {
-        Log.getInstance().writeToLog("System Manager was updated by a team. about the messge:"+msg+" id's SystemManager:"+getId());
+        SystemEventLog.getInstance().writeToLog("System Manager was updated by a team. about the messge:"+msg+" id's SystemManager:"+getId());
 
     }
 

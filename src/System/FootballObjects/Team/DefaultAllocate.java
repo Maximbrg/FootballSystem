@@ -1,7 +1,7 @@
 package System.FootballObjects.Team;
 
 import System.FootballObjects.Game;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -46,7 +46,7 @@ public class DefaultAllocate implements ITeamAllocatePolicy {
 
             }
         }
-        Log.getInstance().writeToLog("League Information inaugural games for the league- home and away games for each league team");
+        SystemEventLog.getInstance().writeToLog("League Information inaugural games for the league- home and away games for each league team");
     }
     //</editor-fold>
 

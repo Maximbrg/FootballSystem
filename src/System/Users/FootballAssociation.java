@@ -7,7 +7,7 @@ import System.BudgetRules;
 import System.FootballObjects.Game;
 import System.FootballObjects.LeagueInformation;
 import System.FootballObjects.Team.Team;
-import System.Log;
+import System.SystemEventLog;
 import System.Exeptions.*;
 import System.Enum.RefereeType;
 import System.FinancialReport;
@@ -43,7 +43,7 @@ public class FootballAssociation extends User {
      * @return
      */
     public List<FinancialReport> getFinancialReport(Team team){
-        Log.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
+        SystemEventLog.getInstance().writeToLog("The football association representative got financial report about the team:"+team.getName()+" id's representative:"+getId());
         return team.getFinancialReport();
     }
     //</editor-fold>
@@ -66,7 +66,7 @@ public class FootballAssociation extends User {
         league.addLeagueInformation(leagueInformation);
 
         //add to log
-        Log.getInstance().writeToLog("Football assosiation -Init new League. Name:"+ league.getName());
+        SystemEventLog.getInstance().writeToLog("Football assosiation -Init new League. Name:"+ league.getName());
 
         //return to service Layer
         return leagueInformation;
@@ -109,7 +109,7 @@ public class FootballAssociation extends User {
             }
         }
         controller.addUser(userName,referee);
-        Log.getInstance().writeToLog("Football assosiation -Add new referee. id: "+referee.getId()+ "name: "+ referee.getName());
+        SystemEventLog.getInstance().writeToLog("Football assosiation -Add new referee. id: "+referee.getId()+ "name: "+ referee.getName());
         return referee;
 
     }   //UC-30
@@ -137,7 +137,7 @@ public class FootballAssociation extends User {
         }
             controller.removeUser(userName);
 
-        Log.getInstance().writeToLog("Football assosiation -remove referee. id: "+referee.getId()+ "name: "+ referee.getName());
+        SystemEventLog.getInstance().writeToLog("Football assosiation -remove referee. id: "+referee.getId()+ "name: "+ referee.getName());
     }
 
     /**
