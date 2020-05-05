@@ -6,7 +6,7 @@ import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
 import System.Users.Referee;
-import System.Log;
+import System.SystemEventLog;
 import System.Users.User;
 
 import java.util.Date;
@@ -198,7 +198,7 @@ public class Game implements ISubjectGame {
     public void registerFanToAlert(IObserverGame fan) { //UC-9
         this.iObserverGameListForFans.add(fan);
         fan.registerAlert(this);
-        Log.getInstance().writeToLog("Fan "+((User)fan).getName() +" (id: "+ ((User)fan).getId()+") register to receive a game (id: " + id +") alert");
+        SystemEventLog.getInstance().writeToLog("Fan "+((User)fan).getName() +" (id: "+ ((User)fan).getId()+") register to receive a game (id: " + id +") alert");
 
     } //UC-9
 
@@ -210,7 +210,7 @@ public class Game implements ISubjectGame {
     public void registerRefereeToAlert(IObserverGame referee) {
         this.iObserverGameListForReferees.add(referee);
         referee.registerAlert(this);
-        Log.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") register to receive a game (id: " + id +") alert");
+        SystemEventLog.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") register to receive a game (id: " + id +") alert");
 
     } //UC-9
 
@@ -222,7 +222,7 @@ public class Game implements ISubjectGame {
     public void removeAlertToFan(IObserverGame fan) {
         this.iObserverGameListForFans.remove(fan);
         fan.removeAlert(this);
-        Log.getInstance().writeToLog("Fan "+((User)fan).getName() +" (id: "+ ((User)fan).getId()+") removed alert to game (id: " + id +") alert");
+        SystemEventLog.getInstance().writeToLog("Fan "+((User)fan).getName() +" (id: "+ ((User)fan).getId()+") removed alert to game (id: " + id +") alert");
 
     }
 
@@ -234,7 +234,7 @@ public class Game implements ISubjectGame {
     public void removeAlertToReferee(IObserverGame referee) {
         this.iObserverGameListForReferees.remove(referee);
         referee.removeAlert(this);
-        Log.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") removed alert to game (id: " + id +") alert");
+        SystemEventLog.getInstance().writeToLog("Referee "+((User)referee).getName() +" (id: "+ ((User)referee).getId()+") removed alert to game (id: " + id +") alert");
     }
 
     /**

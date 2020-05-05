@@ -6,7 +6,7 @@ import System.FootballObjects.Team.Team;
 import System.I_Observer.ISubjectTeam;
 import java.util.LinkedList;
 import java.util.List;
-import System.Log;
+import System.SystemEventLog;
 
 public class Field implements Asset {
 
@@ -91,7 +91,7 @@ public class Field implements Asset {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.getInstance().writeToLog("The asset value for field : "+getName()+" id : "+getId() +"was edit.");
+        SystemEventLog.getInstance().writeToLog("The asset value for field : "+getName()+" id : "+getId() +"was edit.");
 
     }
 
@@ -107,7 +107,7 @@ public class Field implements Asset {
     @Override
     public void resetMyTeam(Team team) {
       this.homeTeams.remove(team);
-        Log.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
+        SystemEventLog.getInstance().writeToLog("The team for coach : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -119,7 +119,7 @@ public class Field implements Asset {
     @Override
     public void addMyTeam(Team team) {
       homeTeams.add(team);
-        Log.getInstance().writeToLog("The team for field : "+getName()+" id : "+getId() +"was added to the home teams list.");
+        SystemEventLog.getInstance().writeToLog("The team for field : "+getName()+" id : "+getId() +"was added to the home teams list.");
 
     }
 

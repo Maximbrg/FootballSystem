@@ -6,7 +6,7 @@ import System.Exeptions.IllegalRemoveException;
 import System.FootballObjects.Team.Team;
 import System.I_Observer.IObserverTeam;
 import System.I_Observer.ISubjectTeam;
-import System.Log;
+import System.SystemEventLog;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -94,7 +94,7 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     @Override
     public void editAssetValue(int newVal) {
         this.setAssetValue(newVal);
-        Log.getInstance().writeToLog("The asset value for team manager : "+getName()+" id : "+getId() +"was edit.");
+        SystemEventLog.getInstance().writeToLog("The asset value for team manager : "+getName()+" id : "+getId() +"was edit.");
 
     }
 
@@ -104,14 +104,14 @@ public class TeamManager extends User implements Asset, IObserverTeam {
     @Override
     public void resetMyTeam() {
         this.myTeam=null;
-        Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+        SystemEventLog.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
     @Override
     public void resetMyTeam(Team team) {
         this.myTeam=null;
-        Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
+        SystemEventLog.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was restart.");
 
     }
 
@@ -127,14 +127,14 @@ public class TeamManager extends User implements Asset, IObserverTeam {
         }
         else{
             this.myTeam = team;
-            Log.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was added.");
+            SystemEventLog.getInstance().writeToLog("The team for team manager : "+getName()+" id : "+getId() +"was added.");
 
         }
     }
 
     @Override
     public void update(String msg) {
-        Log.getInstance().getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
+        SystemEventLog.getInstance().getInstance().writeToLog("Team Manager was updated about the message : "+msg+". id's TeamManager :"+getId());
     }
 
     /**

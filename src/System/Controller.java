@@ -94,8 +94,8 @@ public class Controller {
         //Object TaxServer;
         //Object AccountingServer;
         //In the future we will use this objects for getting/sending information from/to tax and accounting servers
-        Log.getInstance().writeToLog("Successfully connected to Tax System");
-        Log.getInstance().writeToLog("Successfully connected to Accounting System");
+        SystemEventLog.getInstance().writeToLog("Successfully connected to Tax System");
+        SystemEventLog.getInstance().writeToLog("Successfully connected to Accounting System");
         SystemManager systemManager = new SystemManager(0,"Administrator","2&^4BcE#@6","Admin");
         this.addUser("Admin",systemManager);
     } //UC-1
@@ -107,7 +107,7 @@ public class Controller {
         }
         if(user.getPassword().equals(password)) {
             user.setStatus(UserStatus.ACTIVE);
-            Log.getInstance().writeToLog("User log in to the system. id("+user.getId()+").");
+            SystemEventLog.getInstance().writeToLog("User log in to the system. id("+user.getId()+").");
             return user;
         }
         throw new WrongPasswordException();
@@ -115,7 +115,7 @@ public class Controller {
 
     public void logOut(User user){ //UC-6
         user.setStatus(UserStatus.INACTIVE);
-        Log.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
+        SystemEventLog.getInstance().writeToLog("User log out from the system. id("+user.getUserName()+").");
     } //UC-6
 
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException{ //UC-2
@@ -126,7 +126,7 @@ public class Controller {
         }//more details
         Fan fan = new Fan(id,name, password,userName);
         users.put(fan.getUserName(),fan);
-        Log.getInstance().writeToLog("A new user signUp to the system. ("+fan.getId()+","+fan.getUserName()+").");
+        SystemEventLog.getInstance().writeToLog("A new user signUp to the system. ("+fan.getId()+","+fan.getUserName()+").");
         return fan;
     } //UC-2
 
@@ -294,7 +294,7 @@ public class Controller {
         users.get(userName).setStatus(UserStatus.REMOVED);
         removedUser.put(userName,users.get(userName));
         users.remove(userName);
-        Log.getInstance().writeToLog("User removed from the system. userName("+userName+").");
+        SystemEventLog.getInstance().writeToLog("User removed from the system. userName("+userName+").");
     }
 
     /**
@@ -308,7 +308,7 @@ public class Controller {
         users.put(userName,removedUser.get(userName));
         removedUser.remove(userName);
         users.get(userName).setStatus(UserStatus.INACTIVE);
-        Log.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
+        SystemEventLog.getInstance().writeToLog("Removed user restart to the system. userName("+userName+").");
     }
 
     public void removeTeam(Team team){ teams.remove(team); }

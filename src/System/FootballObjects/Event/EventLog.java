@@ -1,5 +1,5 @@
 package System.FootballObjects.Event;
-import System.Log;
+import System.SystemEventLog;
 import System.FootballObjects.Game;
 
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class EventLog {
     public void addEventToLog(AEvent event){
         aEventList.add(event);
         sortEventLog();
-        Log.getInstance().writeToLog("Event was added to eventLog. Id:"+event.getId());
+        SystemEventLog.getInstance().writeToLog("Event was added to eventLog. Id:"+event.getId());
     }
 
     /**
@@ -43,7 +43,7 @@ public class EventLog {
     public void removeEvent(AEvent event){
         aEventList.remove(event);
         sortEventLog();
-        Log.getInstance().writeToLog("Event was removed from eventLog. Id:"+event.getId());
+        SystemEventLog.getInstance().writeToLog("Event was removed from eventLog. Id:"+event.getId());
 
     }
 

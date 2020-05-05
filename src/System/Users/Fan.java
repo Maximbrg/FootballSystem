@@ -88,7 +88,7 @@ public class Fan extends User implements IObserverGame {
         Report report= new Report(this, reportTxt);
         myReports.put(report.getId(), report);
         SystemManager.addReport(report);
-        Log.getInstance().writeToLog("User submit report. (userId:"+getId()+"reportId"+report.getId()+")");
+        SystemEventLog.getInstance().writeToLog("User submit report. (userId:"+getId()+"reportId"+report.getId()+")");
         return report;
     } //UC-11
     //</editor-fold>
@@ -117,7 +117,7 @@ public class Fan extends User implements IObserverGame {
     public void update() {
         //showAlert
         //log
-        Log.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
+        SystemEventLog.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
     }
 
     /**
