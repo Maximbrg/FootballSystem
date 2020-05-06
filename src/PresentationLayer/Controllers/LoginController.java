@@ -41,7 +41,7 @@ public class LoginController extends ImageView{
        User user = FanController.getInstance().login(userN, userP);
        if(user instanceof Referee) {
            Referee referee = (Referee)user;
-           ScreenController.getInstance().changeScene(referee);
+           ScreenController.getInstance().changeSceneReferee(referee.getUserName());
        }
     }
     catch (Exception e){

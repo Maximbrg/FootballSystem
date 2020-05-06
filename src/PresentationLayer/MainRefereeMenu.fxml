@@ -12,13 +12,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="1440.0" style="-fx-background-color: #BAC7E1;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.RefereeController">
     <children>
-        <TableView fx:id="tableInfo" layoutX="443.0" layoutY="83.0" prefHeight="200.0" prefWidth="450.0">
+        <TableView fx:id="tableInfo" layoutX="241.0" layoutY="79.0" prefHeight="692.0" prefWidth="1063.0">
             <columns>
-                <TableColumn fx:id="team1" prefWidth="75.0" text="Team 1" />
-                <TableColumn fx:id="team2" prefWidth="75.0" text="Tem 2" />
-                <TableColumn fx:id="score" prefWidth="75.0" text="Score" />
-                <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
-                <TableColumn prefWidth="149.0" text="addEvent/addReport" />
+                <TableColumn fx:id="team1" prefWidth="235.0" text="Team 1" />
+                <TableColumn fx:id="team2" prefWidth="237.0" text="Tem 2" />
+                <TableColumn fx:id="score" prefWidth="144.0" text="Score" />
+                <TableColumn fx:id="date" prefWidth="361.0" text="Date" />
+                <TableColumn prefWidth="162.0" text="addEvent/addReport" />
             </columns>
         </TableView>
       <Pane prefHeight="895.0" prefWidth="195.0" style="-fx-background-color: white;">
@@ -33,12 +33,75 @@
                   <Font name="Open Sans Semibold" size="16.0" />
                </font>
             </Text>
-            <Button layoutX="18.0" layoutY="115.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
-            <Button layoutX="18.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
-            <Button layoutX="18.0" layoutY="198.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
-            <Button layoutX="18.0" layoutY="240.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
-            <Button layoutX="18.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
-            <Button layoutX="18.0" layoutY="326.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button fx:id="homeBtn" layoutX="18.0" layoutY="115.0" mnemonicParsing="false" onMouseEntered="#mouseInH" onMouseExited="#mouseOutH" prefHeight="30.0" prefWidth="160.0" style="-fx-background-radius: 10; -fx-background-color: white; -fx-text-fill: #444444;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="gamesBtn" layoutX="18.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="Games">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="teamsBtn" layoutX="18.0" layoutY="198.0" mnemonicParsing="false" onMouseEntered="#mouseInT" onMouseExited="#mouseOutT" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: #444444; -fx-background-color: white;" text="Teams">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="playersBtn" layoutX="18.0" layoutY="240.0" mnemonicParsing="false" onMouseEntered="#mouseInP" onMouseExited="#mouseOutP" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: #444444; -fx-background-color: white;" text="Players">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="refereeBtn" layoutX="18.0" layoutY="283.0" mnemonicParsing="false" onMouseEntered="#mouseInR" onMouseExited="#mouseOutR" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: #444444; -fx-background-color: white;" text="Referee">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="stadiumsBtn" layoutX="18.0" layoutY="326.0" mnemonicParsing="false" onMouseEntered="#mouseInS" onMouseExited="#mouseOutS" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: #444444; -fx-background-color: white;" text="Stadiums">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font></Button>
+            <Button fx:id="logOutBtn" layoutX="18.0" layoutY="769.0" mnemonicParsing="false" onAction="#handleLogOut" onMouseEntered="#mouseInL" onMouseExited="#mouseOutL" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: #444444; -fx-background-color: white;" text="Log Out">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Button>
+            <Text fx:id="userInfo" fill="#444444" layoutX="65.0" layoutY="740.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="115.77490234375">
+               <font>
+                  <Font name="Open Sans" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="15.0" layoutY="720.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/profilePic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/men.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="50.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/ball.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="46.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/men.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="42.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/referee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="38.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/stad.png" />
+               </image>
+            </ImageView>
          </children></Pane>
     </children>
 </AnchorPane>
