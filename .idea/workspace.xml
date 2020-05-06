@@ -9,20 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/System/FootballObjects/Team/Team.java" description="Log.writeToLog(&quot;Asset details : &quot;+ asset.getDetail..." line="268" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="Iteration3">
-      <change afterPath="$PROJECT_DIR$/src/pictures/ball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/men.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/profilePic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/referee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pictures/stad.png" afterDir="false" />
+    <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -316,7 +304,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588765614358" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588767361142" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/AcceptanceTest" />
@@ -459,7 +447,7 @@
       <workItem from="1588519996011" duration="1270000" />
       <workItem from="1588607144375" duration="3682000" />
       <workItem from="1588674217144" duration="29557000" />
-      <workItem from="1588762366499" duration="3831000" />
+      <workItem from="1588762366499" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -677,7 +665,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588756077277</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Iteration3">
+      <created>1588766395555</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1588766395555</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -713,7 +708,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269658000" />
+    <option name="totallyTimeSpent" value="270280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
