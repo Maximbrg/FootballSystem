@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="1440.0" style="-fx-background-color: #BAC7E1;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.Controllers.RefereeController">
+    <children>
+        <TableView fx:id="tableInfo" layoutX="443.0" layoutY="83.0" prefHeight="200.0" prefWidth="450.0">
+            <columns>
+                <TableColumn fx:id="team1" prefWidth="75.0" text="Team 1" />
+                <TableColumn fx:id="team2" prefWidth="75.0" text="Tem 2" />
+                <TableColumn fx:id="score" prefWidth="75.0" text="Score" />
+                <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
+                <TableColumn prefWidth="149.0" text="addEvent/addReport" />
+            </columns>
+        </TableView>
+      <Pane prefHeight="895.0" prefWidth="195.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/Vector.png" />
+               </image>
+            </ImageView>
+            <Text fill="#02147a" layoutX="30.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Football System" textAlignment="CENTER" wrappingWidth="115.77490234375">
+               <font>
+                  <Font name="Open Sans Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="18.0" layoutY="115.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button layoutX="18.0" layoutY="158.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button layoutX="18.0" layoutY="198.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button layoutX="18.0" layoutY="240.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button layoutX="18.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+            <Button layoutX="18.0" layoutY="326.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Button" />
+         </children></Pane>
+    </children>
+</AnchorPane>

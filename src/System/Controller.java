@@ -1,5 +1,6 @@
 package System;
 
+import System.Enum.RefereeType;
 import System.Enum.UserStatus;
 import System.Exeptions.NoSuchAUserNamedException;
 import System.Exeptions.UserNameAlreadyExistException;

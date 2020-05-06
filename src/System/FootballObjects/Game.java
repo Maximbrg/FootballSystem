@@ -96,6 +96,10 @@ public class Game implements ISubjectGame {
         return home;
     }
 
+    public String getHome1() {
+        return home.getName();
+    }
+
     public EventLog getEventLog() {
         return eventLog;
     }
