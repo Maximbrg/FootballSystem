@@ -30,7 +30,7 @@ public class ScreenController {
     public void changeSceneReferee(String referee) throws Exception{
         userName = referee;
         Parent root = FXMLLoader.load(getClass().getResource("MainRefereeMenu.fxml"));
-        primaryStage.setScene(new Scene(root, 1440, 844) );
+        primaryStage.setScene(new Scene(root, 1440, 895) );
         primaryStage.show();
     }
 

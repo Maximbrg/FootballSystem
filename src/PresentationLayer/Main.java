@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 import System.Controller;
 
 import java.awt.event.ActionEvent;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -82,6 +83,9 @@ public class Main extends Application {
         referees.add((Referee)referee);
         referees.add((Referee)refereeSide1);
         referees.add((Referee)refereeSide2);
+
+        leagueInformation.getGames().get(0).setDate(new Date());
+        leagueInformation.getGames().get(1).setResult(0,9);
 
         FootballAssosiationController.getInstance().schedulingReferee((FootballAssociation)footballAs ,leagueInformation ,referees);
     }

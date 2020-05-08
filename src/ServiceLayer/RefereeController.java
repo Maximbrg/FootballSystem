@@ -7,7 +7,11 @@ import System.FootballObjects.Game;
 import System.FootballObjects.Season;
 import System.Users.Referee;
 import System.Users.User;
+import System.*;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 public class RefereeController extends MainUserController  {
@@ -37,6 +41,34 @@ public class RefereeController extends MainUserController  {
        referee.addEventMidGame(game,type,min);
     }
 
+    public void addEventDuringGame(String name, String game, String type, int min , String playerName , String team) throws NoRefereePermissions, NoSuchEventException {
+        HashMap<String, User> dic = Controller.getInstance().getUsers();
+        Referee referee = ((Referee) dic.get(name));
+        Game game1 = null;
+        for (Game g : referee.getGames()) {
+            if (g.getId() == Integer.parseInt(game)) {
+                game1 = g;
+            }
+        }
+        addEventDuringGame(referee, game1, type, min);
+        if(type.equals("Goal")){
+            if(game1.getHome().getName().equals(team)){
+                if(game1.getResult() == null){
+                    game1.setResult(0,0);
+                }
+                game1.setResult(Integer.parseInt(game1.getResult().split(":")[0])+1,Integer.parseInt(game1.getResult().split(":")[1]));
+            }
+            else{
+                if(game1.getResult() == null){
+                    game1.setResult(0,0);
+                }
+                String home = game1.getResult().split(":")[0];
+                int away = (Integer.parseInt(game1.getResult().split(":")[1])+1);
+                game1.setResult(Integer.parseInt(home),away);
+            }
+        }
+    }
+
     public List<AEvent> getEventsOfGame(User user, Game game) throws NoRefereePermissions {
         if(!(user instanceof Referee)){
             throw new NoRefereePermissions();
@@ -60,6 +92,51 @@ public class RefereeController extends MainUserController  {
             throw new NoRefereePermissions();
         }
          referee.createGameReport(game);
+    }
+
+    public List<String> getMyGames(String refereeName){
+        HashMap<String , User>  dic = Controller.getInstance().getUsers();
+        Referee referee = ((Referee)dic.get(refereeName));
+        List <Game> games = this.getMyGames(referee);
+        LinkedList<String> output = new LinkedList<>();
+        for(Game g : games){
+            String [] strA = g.getDate().toString().split(" ");
+            String str = g.getHome().getName() +","+ g.getAway().getName()+","+strA[1]+" "+strA[2]+","+strA[3].substring(0,strA[3].length()-3)+","+g.getId();
+            output.add(str);
+        }
+        return output;
+    }
+
+    public String getScore(String idGame , String refereeName){
+        String output = "";
+        HashMap<String , User>  dic = Controller.getInstance().getUsers();
+        Referee referee = ((Referee)dic.get(refereeName));
+        for(Game g : referee.getGames()){
+            if(g.getId() == Integer.parseInt(idGame)){
+                if(g.getResult() != null){
+                    output = g.getResult() ;
+                }
+                else{
+                    output = "0:0";
+                }
+            }
+        }
+        return output;
+    }
+
+    public Boolean isGameLive(String idGame, String refereeName){
+        HashMap<String , User>  dic = Controller.getInstance().getUsers();
+        Referee referee = ((Referee)dic.get(refereeName));
+        for(Game g : referee.getGames()){
+            if(g.getId() == Integer.parseInt(idGame)) {
+                Date startTime = new Date();
+                Date endTime =new Date(startTime.getTime() + 2*(3600*1000));
+                if(startTime.after(g.getDate()))
+                    if(g.getDate().before(endTime))
+                    return true;
+            }
+        }
+        return false;
     }
 
 }

@@ -46,7 +46,7 @@ public class RefereeControllerTest {
 
     @BeforeClass
     public static void init() throws UserNameAlreadyExistException {
-        rCTest=RefereeController.getInstance();
+        rCTest= RefereeController.getInstance();
         systemManagerController=SystemManagerController.getInstance();
         sManager=new SystemManager(123,"abc","abv","sys");
         rAssist =systemManagerController.createNewReferee(sManager,441,"avi","1","EilamHagadol", RefereeType.ASSISTANT);
