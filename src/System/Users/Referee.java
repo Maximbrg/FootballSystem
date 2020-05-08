@@ -94,10 +94,10 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @param oldEvent old event to edit
      * @param type type of event
      */
-    public void editEventAfterGame(Game game, AEvent oldEvent, String type) throws NoRefereePermissions, NoSuchEventException {
+    public void editEventAfterGame(Game game, AEvent oldEvent, String type,String playerName, String teamName) throws NoRefereePermissions, NoSuchEventException {
         long diffHours = (new Date(System.currentTimeMillis()).getTime() - game.getDate().getTime()) / (60 * 60 * 1000);
         if (diffHours <= 6.5 && this.type == RefereeType.MAIN) {// 1.5 hours after the beginning
-            AEvent editedEvent = createEvent(type, oldEvent.getMinute());
+            AEvent editedEvent = createEvent(type, oldEvent.getMinute(),playerName,teamName);
             game.getEventLog().removeEvent(oldEvent);
             game.getEventLog().addEventToLog(editedEvent);
             SystemEventLog.getInstance().writeToLog("The referee " + getUserName() + " edited event" + "(event Id:" + oldEvent.getId() + ").");
@@ -115,11 +115,11 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @param type type of the event
      * @param min min of the occasion
      */
-    public void addEventMidGame(Game game, String type, int min) throws NoRefereePermissions, NoSuchEventException {
+    public void addEventMidGame(Game game, String type, int min, String playerName, String teamName) throws NoRefereePermissions, NoSuchEventException {
         long diffHours = (new Date(System.currentTimeMillis()).getTime() - game.getDate().getTime()) / (60 * 60 * 1000);
 
         if (diffHours < 1.5 && (game.getMainReferee().getId() == getId() || game.getAssistantRefereeTwo().getId() == getId() || game.getAssistantRefereeOne().getId() == getId())) {
-            game.addEventToLogEvent(createEvent(type, min));
+            game.addEventToLogEvent(createEvent(type, min, playerName, teamName));
             SystemEventLog.getInstance().writeToLog("Event was added to the log event game " + game.getId() + " by the referee " + getUserName() + ".");
         } else {
             SystemEventLog.getInstance().writeToLog("Event wasn't added to the log event game " + game.getId() + " by the referee " + getUserName() + ".");
@@ -133,8 +133,8 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @param type of the event
      * @param minute in the game
      */
-    public void addEventToLogEvent(Game game, String type, int minute) throws NoSuchEventException {
-        AEvent newEvent = createEvent(type, minute);
+    public void addEventToLogEvent(Game game, String type, int minute, String playerName, String teamName) throws NoSuchEventException {
+        AEvent newEvent = createEvent(type, minute,playerName,teamName);
         game.addEventToLogEvent(newEvent);
         SystemEventLog.getInstance().writeToLog("Event was added to the event log game "+game.getId()+" by the referee " + getUserName()+"." );
     }
@@ -260,20 +260,20 @@ public class Referee extends User implements IObserverGame,IShowable {
      * @param minute of the occasion
      * @return new AEvent by his type and his minute
      */
-    private AEvent createEvent(String type, int minute) throws NoSuchEventException {
+    private AEvent createEvent(String type, int minute, String playerName, String teamName) throws NoSuchEventException {
         switch (type) {
             case "Goal":
-                return new Goal(minute);
+                return new Goal(minute,playerName,teamName);
             case "Injury":
-                return new Injury(minute);
+                return new Injury(minute,playerName,teamName);
             case "Offense":
-                return new Offense(minute);
+                return new Offense(minute,playerName,teamName);
             case "Offside":
-                return new Offside(minute);
+                return new Offside(minute,playerName,teamName);
             case "RedCard":
-                return new RedCard(minute);
+                return new RedCard(minute,playerName,teamName);
             case "YellowCard":
-                return new YellowCard(minute);
+                return new YellowCard(minute,playerName,teamName);
         }
         SystemEventLog.getInstance().writeToLog("Referee tried to non exists event in createEvent. username: "+getUserName());
         throw new NoSuchEventException();

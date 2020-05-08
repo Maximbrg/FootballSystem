@@ -37,8 +37,8 @@ public class RefereeController extends MainUserController  {
     }
 
 
-    public void addEventDuringGame(Referee referee, Game game, String type, int min) throws NoRefereePermissions, NoSuchEventException {
-       referee.addEventMidGame(game,type,min);
+    public void addEventDuringGame(Referee referee, Game game, String type, int min,String playerName, String teamName) throws NoRefereePermissions, NoSuchEventException {
+       referee.addEventMidGame(game,type,min, playerName, teamName);
     }
 
     public void addEventDuringGame(String name, String game, String type, int min , String playerName , String team) throws NoRefereePermissions, NoSuchEventException {
@@ -50,7 +50,7 @@ public class RefereeController extends MainUserController  {
                 game1 = g;
             }
         }
-        addEventDuringGame(referee, game1, type, min);
+        addEventDuringGame(referee, game1, type, min,playerName,team);
         if(type.equals("Goal")){
             if(game1.getHome().getName().equals(team)){
                 if(game1.getResult() == null){
@@ -76,15 +76,15 @@ public class RefereeController extends MainUserController  {
         return game.getEventLog().getEventList();
     }
 
-    public void editEventAfterGame(Referee referee, Game game, String type, AEvent oldEvent) throws NoRefereePermissions, NoSuchEventException {
-        referee.editEventAfterGame(game, oldEvent, type);
+    public void editEventAfterGame(Referee referee, Game game, String type, AEvent oldEvent,String playerName, String teamName) throws NoRefereePermissions, NoSuchEventException {
+        referee.editEventAfterGame(game, oldEvent, type,playerName,teamName);
     }
 
-    public void addEventAfterGame(Referee referee, Game game, String type, int minute) throws NoRefereePermissions, NoSuchEventException {
+    public void addEventAfterGame(Referee referee, Game game, String type, int minute,String playerName, String teamName) throws NoRefereePermissions, NoSuchEventException {
         if(game.getMainReferee()!=referee){
             throw new NoRefereePermissions();
         }
-        referee.addEventToLogEvent(game,type,minute);
+        referee.addEventToLogEvent(game,type,minute,playerName,teamName);
     }
 
     public void createGameReport(Referee referee, Game game) throws NoRefereePermissions {

@@ -13,9 +13,9 @@ public class EventLogStub {
     RedCard g0;
     @Before
     public void init(){
-        g0=new RedCard(10);
-        g1=new Offense(20);
-        g2=new Goal(30);
+        g0=new RedCard(10,"","");
+        g1=new Offense(20,"","");
+        g2=new Goal(30,"","");
         eventLog=new EventLog();
     }
 

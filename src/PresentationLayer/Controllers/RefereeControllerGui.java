@@ -343,6 +343,21 @@ public class RefereeControllerGui {
         ScreenController.getInstance().changeSenceLogOut();
     }
 
+    @FXML
+    public void handleMouseClickedPass() {
+        postEvent.setStyle("-fx-background-color: #000F64 ; -fx-background-radius:10; -fx-text-fill: white");
+    }
+
+    @FXML
+    public void onHover() {
+        postEvent.setStyle("-fx-background-color: #4179F0 ; -fx-background-radius:10; -fx-text-fill: white");
+    }
+
+    @FXML
+    public void OnExit() {
+        postEvent.setStyle("-fx-background-color: #2060E4 ; -fx-background-radius:10; -fx-text-fill: white");
+    }
+
     private boolean checkPlayerName(String str){
         char [] chars = str.toCharArray();
         for(char c : chars){
@@ -357,7 +372,7 @@ public class RefereeControllerGui {
         if(chars.length > 3 || chars.length < 1)
             return false;
         for(char c : chars){
-            if (!((c >= '1' && c <= '9')))
+            if (!((c >= '0' && c <= '9')))
                 return false;
         }
         if(Integer.parseInt(str) > 120 || Integer.parseInt(str) < 1){

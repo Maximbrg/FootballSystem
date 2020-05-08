@@ -47,8 +47,8 @@ public class RefereeTest {
          t2=new Team("Hap",null);
          g0 = new Game(d1,10,rTest1,rTest0,rTest2,t,t2);
          g1 = new Game(d2,10,rTest1,rTest0,rTest2,t,t2);
-         goal0= new Goal(22);
-         rTest0.addEventToLogEvent(g0,"Goal",22);
+         goal0= new Goal(22,"","");
+         rTest0.addEventToLogEvent(g0,"Goal",22,"","");
          rList=new ArrayList<>();
          rList.add(rTest1);
          rList.add(rTest3);
@@ -65,25 +65,25 @@ public class RefereeTest {
     public void editEventAfterGameTest() throws NoRefereePermissions, NoSuchEventException {
         // too late for changing in the event log
         try{
-            rTest1.editEventAfterGame(g0,g0.getEventLog().getEventList().get(0),"RedCard");
+            rTest1.editEventAfterGame(g0,g0.getEventLog().getEventList().get(0),"RedCard","","");
         }catch (NoRefereePermissions e){
             assert (true);
         }
         assertEquals(g0.getEventLog().getEventList().get(0).getClass().toString().substring(35),"Goal");
         //in couple hours after game (not more than 5)
         g1.addEventToLogEvent(goal0);
-        rTest1.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"RedCard");
+        rTest1.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"RedCard","","");
         assertEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35),"RedCard");// too late for changing in the event log
         //assistant referee not allow to edit
         try{
-            rTest0.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense");
+            rTest0.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense","","");
         }catch (NoRefereePermissions e){
             assert (true);
         }
         assertNotEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35),"Offense");// too late for changing in the event log
         //referee that not belong to the game
         try{
-            rTest3.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense");
+            rTest3.editEventAfterGame(g1,g1.getEventLog().getEventList().get(0),"Offense","","");
         }catch (NoRefereePermissions e){
             assert (true);
         }
@@ -94,12 +94,12 @@ public class RefereeTest {
         //in middle of the game
         int hours =new Date(System.currentTimeMillis()).getHours()-1;
         d2.setHours(hours);
-        rTest0.addEventMidGame(g1,"YellowCard",15);
+        rTest0.addEventMidGame(g1,"YellowCard",15,"","");
         assertEquals(g1.getEventLog().getEventList().get(0).getClass().toString().substring(35), "YellowCard");
         //after the game
         d2.setHours(hours-8);
         try{
-            rTest0.addEventMidGame(g1,"Offense",90);
+            rTest0.addEventMidGame(g1,"Offense",90,"","");
         }catch (NoRefereePermissions e){
             assert (true);
         }
@@ -107,7 +107,7 @@ public class RefereeTest {
         //referee that not belong to the game
         d2.setHours(hours);
         try {
-            rTest3.addEventMidGame(g1, "Offense", 90);
+            rTest3.addEventMidGame(g1, "Offense", 90,"","");
        }catch (NoRefereePermissions e){
             assert (true);
 

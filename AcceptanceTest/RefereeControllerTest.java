@@ -165,7 +165,7 @@ public class RefereeControllerTest {
         //try before game start
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()-2);
-            rCTest.addEventDuringGame(rMain,g,"Offense",10);
+            rCTest.addEventDuringGame(rMain,g,"Offense",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -174,7 +174,7 @@ public class RefereeControllerTest {
         d1.setHours(new Date(System.currentTimeMillis()).getHours()+1);
         //referee not allow to addEventDuringGame
         try {
-            rCTest.addEventDuringGame(new Referee("a",RefereeType.MAIN,59,"o","abra"),g,"Offense",10);
+            rCTest.addEventDuringGame(new Referee("a",RefereeType.MAIN,59,"o","abra"),g,"Offense",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -182,7 +182,7 @@ public class RefereeControllerTest {
         }
         //no such Event like this kind
         try {
-            rCTest.addEventDuringGame(rMain,g,"blueCard",10);
+            rCTest.addEventDuringGame(rMain,g,"blueCard",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -190,7 +190,7 @@ public class RefereeControllerTest {
         }
         //legal addEventDuringGame
         try {
-            rCTest.addEventDuringGame(rMain,g,"RedCard",10);
+            rCTest.addEventDuringGame(rMain,g,"RedCard",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -214,7 +214,7 @@ public class RefereeControllerTest {
         d1.setTime(System.currentTimeMillis());
         //initialize
         try {
-            rCTest.addEventDuringGame(rMain,g,"RedCard",1);
+            rCTest.addEventDuringGame(rMain,g,"RedCard",1,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             noRefereePermissions.printStackTrace();
         } catch (NoSuchEventException e) {
@@ -223,7 +223,7 @@ public class RefereeControllerTest {
         //try before game start
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()-2);
-            rCTest.editEventAfterGame(rMain,g,"Offense",g.getEventLog().getEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"Offense",g.getEventLog().getEventList().get(0),"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -231,7 +231,7 @@ public class RefereeControllerTest {
         }
         //referee not allow to addEventAfterGame -assistant referee
         try {
-            rCTest.editEventAfterGame(rAssist1,g,"Offense",g.getEventLog().getEventList().get(0));
+            rCTest.editEventAfterGame(rAssist1,g,"Offense",g.getEventLog().getEventList().get(0),"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -239,7 +239,7 @@ public class RefereeControllerTest {
         }
         //no such Event like this kind
         try {
-            rCTest.editEventAfterGame(rMain,g,"blueCard",g.getEventLog().getEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"blueCard",g.getEventLog().getEventList().get(0),"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -248,7 +248,7 @@ public class RefereeControllerTest {
         //to late to add event to game
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+10);
-            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0),"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -257,7 +257,7 @@ public class RefereeControllerTest {
         //to late to add event to game
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+4);
-            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0));
+            rCTest.editEventAfterGame(rMain,g,"RedCard",g.getEventLog().getEventList().get(0),"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -280,7 +280,7 @@ public class RefereeControllerTest {
         d1.setTime(System.currentTimeMillis());
         //initialize
         try {
-            rCTest.addEventAfterGame(rMain,g,"RedCard",1);
+            rCTest.addEventAfterGame(rMain,g,"RedCard",1,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             noRefereePermissions.printStackTrace();
         } catch (NoSuchEventException e) {
@@ -289,7 +289,7 @@ public class RefereeControllerTest {
         //try before game start
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()-2);
-            rCTest.addEventAfterGame(rMain,g,"Offense",10);
+            rCTest.addEventAfterGame(rMain,g,"Offense",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -297,7 +297,7 @@ public class RefereeControllerTest {
         }
         //referee not allow to addEventAfterGame -assistant referee
         try {
-            rCTest.addEventAfterGame(rAssist1,g,"Offense",10);
+            rCTest.addEventAfterGame(rAssist1,g,"Offense",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -305,7 +305,7 @@ public class RefereeControllerTest {
         }
         //no such Event like this kind
         try {
-            rCTest.addEventAfterGame(rMain,g,"blueCard",10);
+            rCTest.addEventAfterGame(rMain,g,"blueCard",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {
@@ -314,7 +314,7 @@ public class RefereeControllerTest {
         //to late to add event to game
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+10);
-            rCTest.addEventAfterGame(rMain,g,"RedCard",10);
+            rCTest.addEventAfterGame(rMain,g,"RedCard",10,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(true);
         } catch (NoSuchEventException e) {
@@ -323,7 +323,7 @@ public class RefereeControllerTest {
         //legal add Event afterGame
         try {
             d1.setHours(new Date(System.currentTimeMillis()).getHours()+4);
-            rCTest.addEventAfterGame(rMain,g,"YellowCard",90);
+            rCTest.addEventAfterGame(rMain,g,"YellowCard",90,"","");
         } catch (NoRefereePermissions noRefereePermissions) {
             assert(false);
         } catch (NoSuchEventException e) {

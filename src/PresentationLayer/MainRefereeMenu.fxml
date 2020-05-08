@@ -291,7 +291,7 @@
                   </Text>
                </children>
             </Pane>
-            <Button fx:id="AllBtn" layoutX="34.0" layoutY="31.0" mnemonicParsing="false" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="30.0" prefWidth="116.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="ALL Games">
+            <Button fx:id="AllBtn" layoutX="34.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="ALL Games">
                <font>
                   <Font name="Open Sans Semibold" size="16.0" />
                </font>
@@ -308,7 +308,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="rightPane" layoutX="732.0" layoutY="30.0" prefHeight="840.0" prefWidth="678.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+      <Pane fx:id="rightPane" layoutX="732.0" layoutY="30.0" prefHeight="840.0" prefWidth="678.0" style="-fx-background-color: white; -fx-background-radius: 10;" visible="false">
          <children>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="120.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -341,7 +341,7 @@
                </font>
             </TextField>
             <ComboBox fx:id="comboEventBox" layoutX="14.0" layoutY="352.0" prefHeight="50.0" prefWidth="150.0" promptText="Event Type" style="fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: black; -fx-prompt-text-fill: #6B6B6B;" />
-            <Button fx:id="postEvent" layoutX="331.0" layoutY="421.0" mnemonicParsing="false" onAction="#postEvent" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" prefHeight="49.0" prefWidth="116.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="Post">
+            <Button fx:id="postEvent" layoutX="331.0" layoutY="421.0" mnemonicParsing="false" onAction="#postEvent" onMouseEntered="#onHover" onMouseExited="#OnExit" onMousePressed="#handleMouseClickedPass" prefHeight="49.0" prefWidth="116.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="Post">
                <font>
                   <Font name="Open Sans Semibold" size="16.0" />
                </font>

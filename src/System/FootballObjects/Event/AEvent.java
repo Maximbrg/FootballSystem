@@ -11,6 +11,8 @@ public abstract class AEvent {
     private int id;
     private Date date;
     private int minute;
+    private String playerName;
+    private String teamName;
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
@@ -18,11 +20,13 @@ public abstract class AEvent {
      * Abstract constructor for all the events that can occur in game
      * @param minuteInTheGame
      */
-    public AEvent(int minuteInTheGame) {
+    public AEvent(int minuteInTheGame, String playerName ,String teamName ) {
         this.minute = minuteInTheGame;
         id=ID++;
         date=new Date(System.currentTimeMillis());
         SystemEventLog.getInstance().writeToLog("New Event was created. ("+id+")");
+        this.playerName = playerName;
+        this.teamName = teamName;
     }
     //</editor-fold>
 

@@ -3,8 +3,8 @@ package System.FootballObjects.Event;
 public class Offense extends AEvent {
 
     //<editor-fold desc="Constructor">
-    public Offense(int minuteInTheGame) {
-        super(minuteInTheGame);
+    public Offense(int minuteInTheGame, String playerName ,String teamName) {
+        super(minuteInTheGame,playerName,teamName);
     }
     //</editor-fold>
 

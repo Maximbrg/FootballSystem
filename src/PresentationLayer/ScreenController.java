@@ -2,10 +2,14 @@ package PresentationLayer;
 
 import System.Users.Referee;
 import System.Users.User;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
+
 
 public class ScreenController {
 
@@ -40,4 +44,5 @@ public class ScreenController {
         primaryStage.setScene(new Scene(root, 1440, 844) );
         primaryStage.show();
     }
+
 }
