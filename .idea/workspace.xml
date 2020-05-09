@@ -11,19 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Error_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Error_Log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/RefereeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/ServiceLayer/RefereeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/AEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/AEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Goal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Goal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Injury.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Injury.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offense.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offense.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offside.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offside.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/RedCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/RedCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/YellowCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/YellowCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Referee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/Users/Referee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSystem/EventLogStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/FootballSystem/EventLogStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSystem/RefereeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/FootballSystem/RefereeControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/FootballSystem/RefereeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/FootballSystem/RefereeTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -331,7 +318,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589034386129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589037561484" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/AcceptanceTest" />
@@ -479,7 +466,7 @@
       <workItem from="1588868865067" duration="2779000" />
       <workItem from="1588872075976" duration="9678000" />
       <workItem from="1588926849037" duration="16413000" />
-      <workItem from="1589031517597" duration="3262000" />
+      <workItem from="1589031517597" duration="3882000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -725,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588948382849</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Iteration3">
+      <created>1589035630886</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589035630886</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -761,7 +755,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310891000" />
+    <option name="totallyTimeSpent" value="311511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
