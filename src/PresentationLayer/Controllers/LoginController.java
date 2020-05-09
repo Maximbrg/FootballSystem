@@ -6,6 +6,7 @@ import ServiceLayer.*;
 import System.Users.Referee;
 import System.Users.User;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -45,6 +46,12 @@ public class LoginController extends ImageView{
        }
     }
     catch (Exception e){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("אחד או יותר מהפרטים אינם נכונים");
+
+        alert.showAndWait();
         System.out.println(e.toString());
     }
     }
