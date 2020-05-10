@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Error_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Error_Log.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FootballSystem$RefereeTest.ic" NAME="RefereeTest Coverage Results" MODIFIED="1586855552361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/FootballSystem$TeamOwnerTest_getFinancialReportTest.ic" NAME="TeamOwnerTest.getFinancialReportTest Coverage Results" MODIFIED="1586785491912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FootballSystem$RefereeTest.ic" NAME="RefereeTest Coverage Results" MODIFIED="1586855552361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -42,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/ScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="528">
               <caret line="33" column="49" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -51,28 +52,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+            <state relative-caret-position="682">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-                <element signature="e#1646#1647#0" expanded="true" />
-                <element signature="e#1683#1684#0" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/RefereeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="22">
               <caret line="43" column="59" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -84,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnitTest/Users/RefereeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="2002">
               <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
             </state>
           </provider>
@@ -102,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+            <state relative-caret-position="1232">
+              <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="292" column="33" lean-forward="true" selection-start-line="292" selection-start-column="33" selection-end-line="292" selection-end-column="33" />
+            <state relative-caret-position="6138">
+              <caret line="292" column="33" selection-start-line="292" selection-start-column="33" selection-end-line="292" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -245,6 +240,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="CatdeaLogs" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -273,34 +296,6 @@
               <item name="FootballSystem" type="616d4139:PackageViewModuleNode" />
               <item name="System" type="1f31426a:PackageElementNode" />
               <item name="Users" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="CatdeaLogs" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,6 +462,8 @@
       <workItem from="1588872075976" duration="9678000" />
       <workItem from="1588926849037" duration="16413000" />
       <workItem from="1589031517597" duration="3882000" />
+      <workItem from="1589037642066" duration="1905000" />
+      <workItem from="1589103389485" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -755,26 +752,27 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311511000" />
+    <option name="totallyTimeSpent" value="314091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1609808" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.081023455" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.043336947" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.31419286" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.46695095" side_tool="true" weight="0.19826652" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.10400867" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.53304905" visible="true" weight="0.28494042" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.53304905" weight="0.28494042" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49840087" weight="0.19501625" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -1245,47 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="121" column="70" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/RefereeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AcceptanceTest/RefereeControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1300,26 +1257,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTest/Users/RefereeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="292" column="33" lean-forward="true" selection-start-line="292" selection-start-column="33" selection-end-line="292" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PresentationLayer/ScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="528">
           <caret line="33" column="49" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1329,16 +1269,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+        <state relative-caret-position="682">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/Users/RefereeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6138">
+          <caret line="292" column="33" selection-start-line="292" selection-start-column="33" selection-end-line="292" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Users/Referee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="121" column="70" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServiceLayer/RefereeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="43" column="59" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
