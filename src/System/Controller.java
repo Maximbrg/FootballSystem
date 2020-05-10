@@ -8,9 +8,10 @@ import System.Exeptions.WrongPasswordException;
 import System.FootballObjects.Field;
 import System.FootballObjects.League;
 import System.FootballObjects.Season;
-import System.FootballObjects.Team.Team;
+import System.FootballObjects.Team.*;
 import System.Users.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -24,6 +25,9 @@ public class Controller {
     private List<Season> seasons;
     private List<Field> fields;
     private HashMap<String,User> removedUser;
+
+    private HashMap<String, IScoreMethodPolicy> scorePolicies;
+    private HashMap<String, ITeamAllocatePolicy> methodAllocatePolicies;
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
@@ -40,6 +44,9 @@ public class Controller {
         teams = new LinkedList<>();
         seasons = new LinkedList<>();
         fields = new LinkedList<>();
+        scorePolicies=new HashMap<>();
+        methodAllocatePolicies=new HashMap<>();
+
     }
     //</editor-fold>
 
@@ -99,6 +106,10 @@ public class Controller {
         SystemEventLog.getInstance().writeToLog("Successfully connected to Accounting System");
         SystemManager systemManager = new SystemManager(0,"Administrator","2&^4BcE#@6","Admin");
         this.addUser("Admin",systemManager);
+        IScoreMethodPolicy iScoreMethod=new DefaultMethod();
+        ITeamAllocatePolicy iScoreAllocate=new DefaultAllocate();
+        scorePolicies.put(iScoreMethod.getClass().getSimpleName(),iScoreMethod);
+        methodAllocatePolicies.put(iScoreAllocate.getClass().getSimpleName(),iScoreAllocate);
     } //UC-1
 
     public User login(String userName , String password) throws WrongPasswordException , NoSuchAUserNamedException { //UC-3
@@ -216,7 +227,17 @@ public class Controller {
         }
         return teamOwnerList;
     }
-
+    /**
+     * get string of the policies
+     * @return
+     */
+    public List<String> getScorePoliciesString() {
+        List<String> list=new ArrayList<>();
+        for (int i = 0; i <scorePolicies.size() ; i++) {
+            list.add(scorePolicies.keySet().toArray()[i].toString());
+        }
+        return list;
+    }
     public List<Player> getAllPlayers(){
         List <Player> players = new LinkedList<>();
         for(User user : users.values()){
@@ -313,6 +334,25 @@ public class Controller {
     }
 
     public void removeTeam(Team team){ teams.remove(team); }
+
+    /**
+     * get string of the policies
+     * @return
+     */
+    public List<String> getMethodAllocatePoliciesString() {
+        List<String> list=new ArrayList<>();
+        for (int i = 0; i <methodAllocatePolicies.size() ; i++) {
+            list.add(methodAllocatePolicies.keySet().toArray()[i].toString());
+        }
+        return list;
+    }
+
+    public HashMap<String, ITeamAllocatePolicy> getMethodAllocatePolicies() {
+        return methodAllocatePolicies;
+    }
+    public HashMap<String, IScoreMethodPolicy> getScorePolicies() {
+        return scorePolicies;
+    }
     //</editor-fold>
 
 }

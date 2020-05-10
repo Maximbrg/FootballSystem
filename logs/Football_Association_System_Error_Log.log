@@ -5492,3 +5492,160 @@ Sat May 09 18:16:34 IDT 2020 Users.Referee.writeToLog: a Game added to referee l
 Sat May 09 18:16:34 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
 Sat May 09 18:16:34 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
 Sat May 09 18:16:34 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major
+Sat May 09 18:55:45 IDT 2020 Controller.writeToLog: Successfully connected to Tax System
+Sat May 09 18:55:45 IDT 2020 Controller.writeToLog: Successfully connected to Accounting System
+Sat May 09 18:55:45 IDT 2020 Controller.writeToLog: A new user signUp to the system. (1,Pudge).
+Sat May 09 18:55:45 IDT 2020 Users.User.writeToLog: Administrator(id: 0) update his status
+Sat May 09 18:55:45 IDT 2020 Controller.writeToLog: User log in to the system. id(0).
+Sat May 09 18:55:45 IDT 2020 Users.SystemManager.writeToLog: Add a new TeamOwner : Puck
+Sat May 09 18:55:45 IDT 2020 Users.SystemManager.writeToLog: Add a new Football Association : PA
+Sat May 09 18:55:45 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker
+Sat May 09 18:55:45 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker2
+Sat May 09 18:55:45 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker3
+Sat May 09 18:55:45 IDT 2020 Users.TeamOwner.writeToLog: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:55:45 IDT 2020 Users.TeamOwner.writeToLog: Team : VP , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Field.writeToLog: The team for field : rus id : 0was added to the home teams list.
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Field.writeToLog: The team for field : ukr id : 1was added to the home teams list.
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Sat May 09 18:55:45 IDT 2020 Users.FootballAssociation.writeToLog: Football assosiation -Init new League. Name:Major
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Team.DefaultAllocate.writeToLog: League Information inaugural games for the league- home and away games for each league team
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:55:45 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:55:45 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:55:45 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major
+Sat May 09 18:55:58 IDT 2020 Users.User.writeToLog: Invoker(id: 2) update his status
+Sat May 09 18:55:58 IDT 2020 Controller.writeToLog: User log in to the system. id(2).
+Sat May 09 18:56:32 IDT 2020 Controller.writeToLog: Successfully connected to Tax System
+Sat May 09 18:56:32 IDT 2020 Controller.writeToLog: Successfully connected to Accounting System
+Sat May 09 18:56:32 IDT 2020 Controller.writeToLog: A new user signUp to the system. (1,Pudge).
+Sat May 09 18:56:32 IDT 2020 Users.User.writeToLog: Administrator(id: 0) update his status
+Sat May 09 18:56:32 IDT 2020 Controller.writeToLog: User log in to the system. id(0).
+Sat May 09 18:56:32 IDT 2020 Users.SystemManager.writeToLog: Add a new TeamOwner : Puck
+Sat May 09 18:56:32 IDT 2020 Users.SystemManager.writeToLog: Add a new Football Association : PA
+Sat May 09 18:56:32 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker
+Sat May 09 18:56:32 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker2
+Sat May 09 18:56:32 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker3
+Sat May 09 18:56:32 IDT 2020 Users.TeamOwner.writeToLog: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:56:32 IDT 2020 Users.TeamOwner.writeToLog: Team : VP , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Field.writeToLog: The team for field : rus id : 0was added to the home teams list.
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Field.writeToLog: The team for field : ukr id : 1was added to the home teams list.
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Sat May 09 18:56:32 IDT 2020 Users.FootballAssociation.writeToLog: Football assosiation -Init new League. Name:Major
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Team.DefaultAllocate.writeToLog: League Information inaugural games for the league- home and away games for each league team
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:56:32 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:56:32 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:56:32 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major
+Sat May 09 18:57:11 IDT 2020 Controller.writeToLog: Successfully connected to Tax System
+Sat May 09 18:57:11 IDT 2020 Controller.writeToLog: Successfully connected to Accounting System
+Sat May 09 18:57:11 IDT 2020 Controller.writeToLog: A new user signUp to the system. (1,Pudge).
+Sat May 09 18:57:11 IDT 2020 Users.User.writeToLog: Administrator(id: 0) update his status
+Sat May 09 18:57:11 IDT 2020 Controller.writeToLog: User log in to the system. id(0).
+Sat May 09 18:57:11 IDT 2020 Users.SystemManager.writeToLog: Add a new TeamOwner : Puck
+Sat May 09 18:57:11 IDT 2020 Users.SystemManager.writeToLog: Add a new Football Association : PA
+Sat May 09 18:57:11 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker
+Sat May 09 18:57:11 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker2
+Sat May 09 18:57:11 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker3
+Sat May 09 18:57:11 IDT 2020 Users.TeamOwner.writeToLog: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:57:11 IDT 2020 Users.TeamOwner.writeToLog: Team : VP , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Field.writeToLog: The team for field : rus id : 0was added to the home teams list.
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Field.writeToLog: The team for field : ukr id : 1was added to the home teams list.
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Sat May 09 18:57:11 IDT 2020 Users.FootballAssociation.writeToLog: Football assosiation -Init new League. Name:Major
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Team.DefaultAllocate.writeToLog: League Information inaugural games for the league- home and away games for each league team
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:57:11 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:57:11 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:57:11 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major
+Sat May 09 18:58:40 IDT 2020 Controller.writeToLog: Successfully connected to Tax System
+Sat May 09 18:58:40 IDT 2020 Controller.writeToLog: Successfully connected to Accounting System
+Sat May 09 18:58:40 IDT 2020 Controller.writeToLog: A new user signUp to the system. (1,Pudge).
+Sat May 09 18:58:40 IDT 2020 Users.User.writeToLog: Administrator(id: 0) update his status
+Sat May 09 18:58:40 IDT 2020 Controller.writeToLog: User log in to the system. id(0).
+Sat May 09 18:58:40 IDT 2020 Users.SystemManager.writeToLog: Add a new TeamOwner : Puck
+Sat May 09 18:58:40 IDT 2020 Users.SystemManager.writeToLog: Add a new Football Association : PA
+Sat May 09 18:58:40 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker
+Sat May 09 18:58:40 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker2
+Sat May 09 18:58:40 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker3
+Sat May 09 18:58:40 IDT 2020 Users.TeamOwner.writeToLog: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:58:40 IDT 2020 Users.TeamOwner.writeToLog: Team : VP , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Field.writeToLog: The team for field : rus id : 0was added to the home teams list.
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Field.writeToLog: The team for field : ukr id : 1was added to the home teams list.
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Sat May 09 18:58:40 IDT 2020 Users.FootballAssociation.writeToLog: Football assosiation -Init new League. Name:Major
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Team.DefaultAllocate.writeToLog: League Information inaugural games for the league- home and away games for each league team
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:58:40 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:40 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:58:40 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major
+Sat May 09 18:58:41 IDT 2020 Controller.writeToLog: Successfully connected to Tax System
+Sat May 09 18:58:41 IDT 2020 Controller.writeToLog: Successfully connected to Accounting System
+Sat May 09 18:58:41 IDT 2020 Controller.writeToLog: A new user signUp to the system. (1,Pudge).
+Sat May 09 18:58:41 IDT 2020 Users.User.writeToLog: Administrator(id: 0) update his status
+Sat May 09 18:58:41 IDT 2020 Controller.writeToLog: User log in to the system. id(0).
+Sat May 09 18:58:41 IDT 2020 Users.SystemManager.writeToLog: Add a new TeamOwner : Puck
+Sat May 09 18:58:41 IDT 2020 Users.SystemManager.writeToLog: Add a new Football Association : PA
+Sat May 09 18:58:41 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker
+Sat May 09 18:58:41 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker2
+Sat May 09 18:58:41 IDT 2020 Users.SystemManager.writeToLog: Add a new Referee : Invoker3
+Sat May 09 18:58:41 IDT 2020 Users.TeamOwner.writeToLog: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:58:41 IDT 2020 Users.TeamOwner.writeToLog: Team : VP , id :0was added to the teams list of : Puck , id :4
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Field.writeToLog: The team for field : rus id : 0was added to the home teams list.
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Field.writeToLog: The team for field : ukr id : 1was added to the home teams list.
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Team.Team.writeToLog: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Sat May 09 18:58:41 IDT 2020 Users.FootballAssociation.writeToLog: Football assosiation -Init new League. Name:Major
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Team.DefaultAllocate.writeToLog: League Information inaugural games for the league- home and away games for each league team
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker2
+Sat May 09 18:58:41 IDT 2020 FootballObjects.Game.writeToLog: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Sat May 09 18:58:41 IDT 2020 Users.Referee.writeToLog: a Game added to referee list. Referee's username:Invoker3
+Sat May 09 18:58:41 IDT 2020 FootballObjects.LeagueInformation.writeToLog: League information- The referees inaugural season was successfully completed. League name: Major

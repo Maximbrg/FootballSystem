@@ -44,5 +44,11 @@ public class ScreenController {
         primaryStage.setScene(new Scene(root, 1440, 844) );
         primaryStage.show();
     }
+    public void changeSceneFootballAssociation(String footballAssociation) throws Exception{
+        userName = footballAssociation;
+        Parent root = FXMLLoader.load(getClass().getResource("MainFootballAssociationMenu.fxml"));
+        primaryStage.setScene(new Scene(root, 1440, 895) );
+        primaryStage.show();
+    }
 
 }

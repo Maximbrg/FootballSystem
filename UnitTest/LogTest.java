@@ -19,7 +19,7 @@
 //        String sCurrentLine ="";
 //        BufferedReader br=null;
 //        try {
-//            String path = System.getProperty("user.dir") + '/' + "logs/Football_Association_System_Log.log";
+//            String path = System.getProperty("user.dir") + '/' + "logs/Football_Association_ystem_Log.log";
 //            br = new BufferedReader(new FileReader(path));
 //        } catch (FileNotFoundException e) {
 //            e.printStackTrace();

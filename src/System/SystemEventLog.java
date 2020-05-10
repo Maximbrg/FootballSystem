@@ -30,7 +30,7 @@ public class SystemEventLog extends Logger{
 
         //<editor-fold desc="Methods">
         public void createLogFile(){
-            SystemEventLog.logFile=createLogFile(env,"Football_Association_System_Error_Log");
+            SystemEventLog.logFile=createLogFile(env,"Football_Association_System_Event_Log");
         }
 
         /**
@@ -46,7 +46,7 @@ public class SystemEventLog extends Logger{
          * @return
          */
         public String getLog() throws IOException {
-            return getLog("Football_Association_System_Error_Log");
+            return getLog("Football_Association_System_Event_Log");
 
         } //UC-28
         //</editor-fold>
