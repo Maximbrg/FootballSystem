@@ -221,7 +221,7 @@ public class Referee extends User implements IObserverGame,IShowable {
 
     //<editor-fold desc="Override Methods">
     @Override
-    public void update() {
+    public void update(String alert) {
         SystemEventLog.getInstance().writeToLog("Referee was updated by a game. Referee's id:"+getId());
     }
 

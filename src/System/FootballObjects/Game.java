@@ -191,7 +191,7 @@ public class Game implements ISubjectGame {
      */
     public void addEventToLogEvent(AEvent event){
         eventLog.addEventToLog(event);
-        notifyFan();
+        notifyFan(event);
     }
 
     /**
@@ -245,9 +245,9 @@ public class Game implements ISubjectGame {
      * Send an alert to all fans in iObserverGameListForFans
      */
     @Override
-    public void notifyFan () { //UC-10
+    public void notifyFan (AEvent event) { //UC-10
         for (IObserverGame fan: iObserverGameListForFans) {
-            fan.update();
+            fan.update(event.toString());
         }
     }
 
@@ -257,7 +257,7 @@ public class Game implements ISubjectGame {
     @Override
     public void notifyReferee (){
         for (IObserverGame referee: iObserverGameListForReferees) {
-            referee.update();
+            referee.update(null);
         }
     }
     //</editor-fold>

@@ -2,7 +2,7 @@ package System.I_Observer;
 
 public interface IObserverGame {
 
-    void update();
+    void update(String alert);
     void registerAlert(ISubjectGame iSubjectGame);
     void removeAlert(ISubjectGame iSubjectGame);
 

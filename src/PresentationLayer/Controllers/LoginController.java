@@ -3,6 +3,8 @@ package PresentationLayer.Controllers;
 import PresentationLayer.ScreenController;
 import ServiceLayer.*;
 
+import System.Exeptions.NoSuchAUserNamedException;
+import System.Exeptions.WrongPasswordException;
 import System.Users.Referee;
 import System.Users.User;
 import javafx.fxml.FXML;
@@ -39,19 +41,23 @@ public class LoginController extends ImageView{
          String userN = userName.getText();
          String userP = userPass.getText();
     try {
-       User user = FanController.getInstance().login(userN, userP);
-       if(user instanceof Referee) {
-           Referee referee = (Referee)user;
-           ScreenController.getInstance().changeSceneReferee(referee.getUserName());
+       int userType = FanController.getInstance().getUserType(userN, userP);
+       if(userType == 1) {//fan
+           ScreenController.getInstance().changeSceneReferee(userN,"MainFanMenu.fxml");
+       }else if(userType == 2) {//referee
+           ScreenController.getInstance().changeSceneReferee(userN,"MainRefereeMenu.fxml");
        }
     }
-    catch (Exception e){
+    catch (WrongPasswordException | NoSuchAUserNamedException e){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
         alert.setHeaderText(null);
         alert.setContentText("אחד או יותר מהפרטים אינם נכונים");
 
         alert.showAndWait();
+        }
+    catch (Exception e){
+
         System.out.println(e.toString());
     }
     }

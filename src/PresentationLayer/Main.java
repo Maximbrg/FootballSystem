@@ -1,9 +1,6 @@
 package PresentationLayer;
 
-import ServiceLayer.FootballAssosiationController;
-import ServiceLayer.GuestController;
-import ServiceLayer.SystemManagerController;
-import ServiceLayer.TeamOwnerController;
+import ServiceLayer.*;
 import System.Asset.Asset;
 import System.Enum.RefereeType;
 import System.FootballObjects.Field;
@@ -52,17 +49,18 @@ public class Main extends Application {
         Controller.getInstance().initSystem();
         GuestController guestController = new GuestController();
         guestController.signUp(1,"Pudge","1234","Pudge");
-        User systemManager = guestController.login("Admin","2&^4BcE#@6");
+        User systemManager = Controller.getInstance().login("Admin","2&^4BcE#@6");
         User teamOwner = SystemManagerController.getInstance().createNewTeamOwner((SystemManager)systemManager,4,"Puck","1234","Puck",0,0);
 
         Field field1 = TeamOwnerController.getInstance().createField(0,"rus");
         Field field2 = TeamOwnerController.getInstance().createField(1,"ukr");
 
+
         User footballAs = SystemManagerController.getInstance().createNewFootballAssociation((SystemManager)systemManager,4,"PA","1234","PA");
         User referee = SystemManagerController.getInstance().createNewReferee((SystemManager)systemManager,2,"Invoker","1234","Invoker", RefereeType.MAIN);
         User refereeSide1 = SystemManagerController.getInstance().createNewReferee((SystemManager)systemManager,2,"Invoker2","1234","Invoker2", RefereeType.ASSISTANT);
         User refereeSide2 = SystemManagerController.getInstance().createNewReferee((SystemManager)systemManager,2,"Invoker3","1234","Invoker3", RefereeType.ASSISTANT);
-
+        User fan= SystemManagerController.getInstance().createNewFan((SystemManager)systemManager,2,"fan","1234","fan");
 
 
         Team team1 = FootballAssosiationController.getInstance().createTeam("Navi",(TeamOwner)teamOwner);
@@ -86,6 +84,8 @@ public class Main extends Application {
 
         leagueInformation.getGames().get(0).setDate(new Date());
         leagueInformation.getGames().get(1).setResult(0,9);
+        FanController.getInstance().followGame((Fan)fan,leagueInformation.getGames().get(0));
+        FanController.getInstance().followGame((Fan)fan,leagueInformation.getGames().get(1));
 
         FootballAssosiationController.getInstance().schedulingReferee((FootballAssociation)footballAs ,leagueInformation ,referees);
     }

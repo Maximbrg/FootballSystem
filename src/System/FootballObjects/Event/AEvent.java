@@ -60,6 +60,11 @@ public abstract class AEvent {
     public void setMinute(int minute) {
         this.minute = minute;
     }
+
+    public String toString(){
+        return this.date+ " " +this.teamName+": the player "+ this.playerName +" get " + getClass()+" in minute "+ this.minute;
+    }
+
     //</editor-fold>
 
 }

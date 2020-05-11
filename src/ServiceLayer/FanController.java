@@ -1,5 +1,7 @@
 package ServiceLayer;
 
+import PresentationLayer.Controllers.FanControllerGUI;
+import PresentationLayer.ScreenController;
 import System.FootballObjects.Game;
 import System.FootballObjects.Team.Team;
 import System.PersonalPages.IPageAvailable;
@@ -53,9 +55,9 @@ public class FanController extends GuestController implements Observable {
         personalPage.unfollow(fan);
     }
 
-    public void followGame(Observer observer, Fan fan, Game game) {
+    public void followGame(Fan fan, Game game) {
         game.registerFanToAlert(fan);
-        addObserver(observer);
+//        addObserver(observer);
     }
 
     public void unfollowGame(Observer observer,Fan fan, Game game){
@@ -88,6 +90,14 @@ public class FanController extends GuestController implements Observable {
         }
     }
 
+//    public void showAlert(String alert){
+//        FanControllerGUI fanControllerGUI=new FanControllerGUI();
+//        fanControllerGUI.showAlert(alert);
+//    }
+    public void addAlert(String userName, String alert){
+       ScreenController.getInstance().setAlert(userName,alert);
+
+    }
     @Override
     public Fan signUp(int id, String name, String password, String userName) {
         throw new UnsupportedOperationException();
