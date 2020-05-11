@@ -6,5 +6,10 @@ public class Injury extends AEvent {
     public Injury(int minuteInTheGame, String playerName ,String teamName) {
         super(minuteInTheGame,playerName,teamName);
     }
+
     //</editor-fold>
+    @Override
+    public String getType() {
+        return "injury";
+    }
 }

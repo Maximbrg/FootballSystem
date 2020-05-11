@@ -6,6 +6,13 @@ public class Goal extends AEvent {
     public Goal(int minuteInTheGame, String playerName ,String teamName) {
         super(minuteInTheGame,playerName,teamName);
     }
+
+    @Override
+     public String getType() {
+        return "goal";
+    }
     //</editor-fold>
+
+
 
 }
