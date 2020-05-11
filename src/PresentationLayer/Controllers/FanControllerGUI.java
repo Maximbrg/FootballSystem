@@ -26,9 +26,10 @@ public class FanControllerGUI {
     public void showAlert(){
         System.out.println("blabla");
         List<String> alerts= ScreenController.getInstance().getAlertsList();
-        for (String a: alerts){
-            textAlert.setText(a);
+        if(alerts!=null) {
+            for (String a : alerts) {
+                textAlert.setText(a);
+            }
         }
-
     }
 }
