@@ -37,7 +37,7 @@ public class ScreenController {
 
     }
 
-    public void changeSceneReferee(String userName, String fxml) throws Exception{
+    public void changeScene(String userName, String fxml) throws Exception{
         this.userName = userName;
         Parent root = FXMLLoader.load(getClass().getResource(fxml));
         primaryStage.setScene(new Scene(root, 1440, 895) );
@@ -48,6 +48,12 @@ public class ScreenController {
         userName = "";
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setScene(new Scene(root, 1440, 844) );
+        primaryStage.show();
+    }
+    public void changeSceneFootballAssociation(String footballAssociation) throws Exception{
+        userName = footballAssociation;
+        Parent root = FXMLLoader.load(getClass().getResource("MainFootballAssociationMenu.fxml"));
+        primaryStage.setScene(new Scene(root, 1440, 895) );
         primaryStage.show();
     }
 

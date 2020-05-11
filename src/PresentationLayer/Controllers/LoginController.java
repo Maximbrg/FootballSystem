@@ -38,28 +38,30 @@ public class LoginController extends ImageView{
             nameImg.setVisible(true);
             userName.setStyle("-fx-prompt-text-fill: #6B6B6B; -fx-background-radius: 10;-fx-background-color: transparent;-fx-border-color: black;-fx-border-radius: 10");
         }
-         String userN = userName.getText();
-         String userP = userPass.getText();
-    try {
-       int userType = FanController.getInstance().getUserType(userN, userP);
-       if(userType == 1) {//fan
-           ScreenController.getInstance().changeSceneReferee(userN,"MainFanMenu.fxml");
-       }else if(userType == 2) {//referee
-           ScreenController.getInstance().changeSceneReferee(userN,"MainRefereeMenu.fxml");
-       }
-    }
-    catch (WrongPasswordException | NoSuchAUserNamedException e){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Information Dialog");
-        alert.setHeaderText(null);
-        alert.setContentText("אחד או יותר מהפרטים אינם נכונים");
-
-        alert.showAndWait();
+        String userN = userName.getText();
+        String userP = userPass.getText();
+        try {
+            int userType = FanController.getInstance().getUserType(userN, userP);
+            if(userType == 1) {//fan
+                ScreenController.getInstance().changeScene(userN,"MainFanMenu.fxml");
+            }else if(userType == 2) {//referee
+                ScreenController.getInstance().changeScene(userN,"MainRefereeMenu.fxml");
+            }else if(userType==5){//footballAssociation
+                ScreenController.getInstance().changeScene(userN,"MainFootballAssociationMenu.fxml");
+            }
         }
-    catch (Exception e){
+        catch (WrongPasswordException | NoSuchAUserNamedException e){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information Dialog");
+            alert.setHeaderText(null);
+            alert.setContentText("אחד או יותר מהפרטים אינם נכונים");
 
-        System.out.println(e.toString());
-    }
+            alert.showAndWait();
+        }
+        catch (Exception e){
+
+            System.out.println(e.toString());
+        }
     }
 
     @FXML
