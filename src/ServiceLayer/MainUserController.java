@@ -9,4 +9,6 @@ public abstract class MainUserController {
         Controller controller = Controller.getInstance();
         controller.logOut(user);
     }
+
+
 }

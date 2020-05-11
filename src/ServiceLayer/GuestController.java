@@ -22,6 +22,37 @@ public class GuestController extends MainUserController {
         return existUser;
     }
 
+    public int getUserType(String userName , String password) throws WrongPasswordException, NoSuchAUserNamedException {
+        Controller controller = Controller.getInstance();
+        User existUser = controller.login(userName,password);
+        if(existUser instanceof Fan){
+            return 1;
+        }
+        if(existUser instanceof Referee){
+            return 2;
+        }
+        if(existUser instanceof Coach){
+            return 3;
+        }
+        if(existUser instanceof Player){
+            return 4;
+        }
+        if(existUser instanceof FootballAssociation){
+            return 5;
+        }
+        if(existUser instanceof SystemManager){
+            return 6;
+        }
+        if(existUser instanceof TeamOwner){
+            return 7;
+        }
+        if(existUser instanceof TeamManager){
+            return 8;
+        }
+        return 0;
+
+    }
+
     public Fan signUp(int id, String name, String password, String userName) throws UserNameAlreadyExistException {
         Controller controller = Controller.getInstance();
         Fan newFan = controller.signUp(id,name,password,userName);

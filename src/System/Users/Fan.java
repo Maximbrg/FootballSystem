@@ -1,5 +1,6 @@
 package System.Users;
 
+import ServiceLayer.FanController;
 import System.I_Observer.IObserverGame;
 import System.I_Observer.ISubjectGame;
 import System.PersonalPages.PersonalPage;
@@ -15,6 +16,7 @@ public class Fan extends User implements IObserverGame {
     private List<PersonalPage> FollowPages;
     private List<ISubjectGame> subjectGame;
     private HashMap<Integer, Report> myReports;
+    public List<String> alerts;
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
@@ -31,6 +33,7 @@ public class Fan extends User implements IObserverGame {
         this.FollowPages = new LinkedList<>();
         this.subjectGame=new LinkedList<>();
         this.myReports=new HashMap<Integer, Report>();
+        this.alerts= new LinkedList<>();
     }
     //</editor-fold>
 
@@ -114,8 +117,8 @@ public class Fan extends User implements IObserverGame {
     }
 
     @Override
-    public void update() {
-        //showAlert
+    public void update(String alert) {
+        FanController.getInstance().addAlert(userName,alert);
         //log
         SystemEventLog.getInstance().writeToLog("Fan was updated about a msg. username's fan:"+getUserName());
     }
