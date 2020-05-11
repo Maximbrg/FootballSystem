@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.SnapshotResult;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -66,6 +67,16 @@ public class ScreenController {
         primaryStage.show();
     }
 
+
+    public void saveGameInfo(String homeTeam , String awayTeam , String gameID , RefereeControllerGui refereeControllerGui){
+        gameInfo = gameID+","+homeTeam+","+awayTeam;
+        this.refereeControllerGui = refereeControllerGui;
+    }
+
+    public String getGameIndfo(){
+        return gameInfo;
+    }
+
     public List<String> getAlertsList(){
         return this.fanAlerts.get(userName);
     }
@@ -82,13 +93,4 @@ public class ScreenController {
             this.fanAlerts.put(userName,newAlerts);
         }
     }
-    public void saveGameInfo(String homeTeam , String awayTeam , String gameID , RefereeControllerGui refereeControllerGui){
-        gameInfo = gameID+","+homeTeam+","+awayTeam;
-        this.refereeControllerGui = refereeControllerGui;
-    }
-
-    public String getGameIndfo(){
-        return gameInfo;
-    }
-
 }
