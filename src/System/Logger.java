@@ -40,7 +40,7 @@ public abstract class Logger {
             FileWriter out = new FileWriter(file, true);
             Date date =new Date();
             String callerClassName = new Exception().getStackTrace()[2].getClassName().substring(7);
-            message = date +" "+callerClassName+"."+Thread.currentThread().getStackTrace()[2].getMethodName()+": "+message+"\n";
+            message = date +" "+callerClassName+"."+Thread.currentThread().getStackTrace()[3].getMethodName()+": "+message+"\n";
             out.write(message.toCharArray());
             System.err.println(message);
             out.close();

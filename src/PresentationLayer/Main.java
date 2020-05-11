@@ -4,7 +4,6 @@ import ServiceLayer.FootballAssosiationController;
 import ServiceLayer.GuestController;
 import ServiceLayer.SystemManagerController;
 import ServiceLayer.TeamOwnerController;
-import System.Asset.Asset;
 import System.Enum.RefereeType;
 import System.FootballObjects.Field;
 import System.FootballObjects.League;
@@ -20,7 +19,6 @@ import javafx.stage.Stage;
 import System.Controller;
 
 import java.awt.event.ActionEvent;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -36,7 +34,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         intiallieSystem();
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainFootballAssociationMenu.fxml"));
         ScreenController.getInstance().setPrimaryStage(primaryStage);
         primaryStage.setTitle("Football System");
         primaryStage.setScene(new Scene(root, 1440, 844));
@@ -83,9 +81,6 @@ public class Main extends Application {
         referees.add((Referee)referee);
         referees.add((Referee)refereeSide1);
         referees.add((Referee)refereeSide2);
-
-        leagueInformation.getGames().get(0).setDate(new Date());
-        leagueInformation.getGames().get(1).setResult(0,9);
 
         FootballAssosiationController.getInstance().schedulingReferee((FootballAssociation)footballAs ,leagueInformation ,referees);
     }
