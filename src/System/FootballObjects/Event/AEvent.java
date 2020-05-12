@@ -16,6 +16,11 @@ public abstract class AEvent {
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
     /**
      * Abstract constructor for all the events that can occur in game
      * @param minuteInTheGame

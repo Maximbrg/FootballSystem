@@ -3,18 +3,18 @@ package PresentationLayer.Controllers;
 import PresentationLayer.ScreenController;
 import ServiceLayer.FootballAssosiationController;
 import System.Users.Fan;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 
 //import java.awt.*;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.TextFlow;
-
-
 import java.util.List;
 
 public class FanControllerGUI {
@@ -25,6 +25,13 @@ public class FanControllerGUI {
     Button logOutBtn;
 
     @FXML
+    VBox eventMenu;
+
+    @FXML
+    ScrollPane scrollAlerts;
+
+
+    @FXML
     public void initialize() {
         showAlert();
     }
@@ -32,12 +39,26 @@ public class FanControllerGUI {
     public void showAlert(){
         List<String> alerts= ScreenController.getInstance().getAlertsList();
         if(alerts!=null) {
-            String text="";
+            eventMenu.getChildren().removeAll(eventMenu.getChildren());
             for (String a : alerts) {
-               text= text+ a+'\n';
+                Button bRemove= new Button();
+                bRemove.setText("X");
+                bRemove.setOnAction((click -> {
+                    removeAlert(bRemove);
+                }));
+                bRemove.setStyle("-fx-background-color :  #A73A33; -fx-text-fill :  white ");
+                Pane pane = new Pane();
+                pane.setPrefWidth(20);
+                pane.setPrefHeight(36);
+                pane.setStyle("-fx-background-color:  #F6F6F4 ; -fx-background-radius: 10 ;");
+                Text t = new Text(a);
+                t.setLayoutX(50);
+                t.setLayoutY(20);
+                t.setFill(Color.web("#444444"));
+                t.setStyle("-fx-font-size: 20px;-fx-font-family:Open Sans");
+                pane.getChildren().addAll(t,bRemove);
+                eventMenu.getChildren().addAll(pane);
             }
-            Text t = new Text(text);
-            textAlert.getChildren().add(t);
         }
     }
 
@@ -54,5 +75,19 @@ public class FanControllerGUI {
     @FXML
     public void handleLogOut() throws Exception {
         ScreenController.getInstance().changeSenceLogOut();
+    }
+
+    @FXML
+    public void removeAlert(){
+        System.out.println("jsdjkcbsjhdcbjshdcbjhsdcbjhsdc");
+    }
+
+    public void removeAlert(Button bRemove){
+        Parent parent =  bRemove.getParent();
+        ObservableList<Node> childrenUnmodifiable = parent.getChildrenUnmodifiable();
+        Node alertToDelete= childrenUnmodifiable.get(0);
+        String alertM= ((Text)alertToDelete).	getText();
+        ScreenController.getInstance().removeAlert(alertM);
+        showAlert();
     }
 }
