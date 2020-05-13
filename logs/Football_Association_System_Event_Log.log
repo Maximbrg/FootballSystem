@@ -3598,3 +3598,71 @@ Tue May 12 15:59:09 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Refere
 Tue May 12 15:59:09 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker3
 Tue May 12 15:59:09 IDT 2020 FootballObjects.LeagueInformation.schedulingReferee: League information- The referees inaugural season was successfully completed. League name: Major
 Tue May 12 15:59:21 IDT 2020 Users.TeamOwner.addTeamToMyTeamList: Team : dsds , id :0was added to the teams list of : Puck , id :4
+Wed May 13 11:35:58 IDT 2020 Controller.initSystem: Successfully connected to Tax System
+Wed May 13 11:35:58 IDT 2020 Controller.initSystem: Successfully connected to Accounting System
+Wed May 13 11:35:59 IDT 2020 Controller.signUp: A new user signUp to the system. (1,Pudge).
+Wed May 13 11:35:59 IDT 2020 Users.User.setStatus: Administrator(id: 0) update his status
+Wed May 13 11:35:59 IDT 2020 Controller.login: User log in to the system. id(0).
+Wed May 13 11:35:59 IDT 2020 Users.SystemManager.createNewTeamOwner: Add a new TeamOwner : Puck
+Wed May 13 11:35:59 IDT 2020 Users.SystemManager.createNewFootballAssociation: Add a new Football Association : PA
+Wed May 13 11:35:59 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker
+Wed May 13 11:35:59 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker2
+Wed May 13 11:35:59 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker3
+Wed May 13 11:35:59 IDT 2020 Controller.signUp: A new user signUp to the system. (2,fan).
+Wed May 13 11:35:59 IDT 2020 Users.TeamOwner.addTeamToMyTeamList: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Wed May 13 11:35:59 IDT 2020 Users.TeamOwner.addTeamToMyTeamList: Team : VP , id :0was added to the teams list of : Puck , id :4
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Field.addMyTeam: The team for field : rus id : 0was added to the home teams list.
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Team.Team.addAsset: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Field.addMyTeam: The team for field : ukr id : 1was added to the home teams list.
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Team.Team.addAsset: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Wed May 13 11:35:59 IDT 2020 Users.FootballAssociation.initLeague: Football assosiation -Init new League. Name:Major
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Team.DefaultAllocate.setTeamPolicy: League Information inaugural games for the league- home and away games for each league team
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerFanToAlert: Fan fan (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerFanToAlert: Fan fan (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker2
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker3
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker2
+Wed May 13 11:35:59 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:35:59 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker3
+Wed May 13 11:35:59 IDT 2020 FootballObjects.LeagueInformation.schedulingReferee: League information- The referees inaugural season was successfully completed. League name: Major
+Wed May 13 11:36:37 IDT 2020 Controller.initSystem: Successfully connected to Tax System
+Wed May 13 11:36:37 IDT 2020 Controller.initSystem: Successfully connected to Accounting System
+Wed May 13 11:36:37 IDT 2020 Controller.signUp: A new user signUp to the system. (1,Pudge).
+Wed May 13 11:36:37 IDT 2020 Users.User.setStatus: Administrator(id: 0) update his status
+Wed May 13 11:36:37 IDT 2020 Controller.login: User log in to the system. id(0).
+Wed May 13 11:36:37 IDT 2020 Users.SystemManager.createNewTeamOwner: Add a new TeamOwner : Puck
+Wed May 13 11:36:37 IDT 2020 Users.SystemManager.createNewFootballAssociation: Add a new Football Association : PA
+Wed May 13 11:36:37 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker
+Wed May 13 11:36:37 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker2
+Wed May 13 11:36:37 IDT 2020 Users.SystemManager.createNewReferee: Add a new Referee : Invoker3
+Wed May 13 11:36:37 IDT 2020 Controller.signUp: A new user signUp to the system. (2,fan).
+Wed May 13 11:36:37 IDT 2020 Users.TeamOwner.addTeamToMyTeamList: Team : Navi , id :0was added to the teams list of : Puck , id :4
+Wed May 13 11:36:37 IDT 2020 Users.TeamOwner.addTeamToMyTeamList: Team : VP , id :0was added to the teams list of : Puck , id :4
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Field.addMyTeam: The team for field : rus id : 0was added to the home teams list.
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Team.Team.addAsset: New asset wae added to team :Navi , id :0Asset details : @name:rus , id : 0
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Field.addMyTeam: The team for field : ukr id : 1was added to the home teams list.
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Team.Team.addAsset: New asset wae added to team :VP , id :0Asset details : @name:ukr , id : 1
+Wed May 13 11:36:37 IDT 2020 Users.FootballAssociation.initLeague: Football assosiation -Init new League. Name:Major
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Team.DefaultAllocate.setTeamPolicy: League Information inaugural games for the league- home and away games for each league team
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerFanToAlert: Fan fan (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerFanToAlert: Fan fan (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker2 (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker2
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker3 (id: 2) register to receive a game (id: 1) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker3
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker2 (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker2
+Wed May 13 11:36:37 IDT 2020 FootballObjects.Game.registerRefereeToAlert: Referee Invoker3 (id: 2) register to receive a game (id: 2) alert
+Wed May 13 11:36:37 IDT 2020 Users.Referee.addGame: a Game added to referee list. Referee's username:Invoker3
+Wed May 13 11:36:37 IDT 2020 FootballObjects.LeagueInformation.schedulingReferee: League information- The referees inaugural season was successfully completed. League name: Major
