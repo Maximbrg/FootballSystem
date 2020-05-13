@@ -11,6 +11,7 @@ public class EventLog {
 
     //<editor-fold desc="Fields">
     private List<AEvent> aEventList;
+    private String report;
     //</editor-fold>
 
     //<editor-fold desc="Constructor">
@@ -23,9 +24,19 @@ public class EventLog {
     public List<AEvent> getEventList(){
         return aEventList;
     }
+
+
+    public String getReport() {
+        return report;
+    }
+
+    public void setReport(String report) {
+        this.report = report;
+    }
     //</editor-fold>
 
     //<editor-fold desc="Methods">
+
     /**
      * Adding event to log event
      * @param event

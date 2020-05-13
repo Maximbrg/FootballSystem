@@ -48,7 +48,7 @@
                <font>
                   <Font name="Open Sans" size="16.0" />
                </font></Button>
-            <Button fx:id="logOutBtn" layoutX="14.0" layoutY="487.0" mnemonicParsing="false" onAction="#handleLogOut" onMouseEntered="#mouseInL" onMouseExited="#mouseOutL" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #A73A33; -fx-background-radius: 10;" text="Log Out">
+            <Button fx:id="logOutBtn" layoutX="14.0" layoutY="845.0" mnemonicParsing="false" onAction="#handleLogOut" onMouseEntered="#mouseInL" onMouseExited="#mouseOutL" prefHeight="30.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #A73A33; -fx-background-radius: 10;" text="Log Out">
                <font>
                   <Font name="Open Sans" size="16.0" />
                </font>
@@ -308,7 +308,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="rightPane" layoutX="732.0" layoutY="30.0" prefHeight="840.0" prefWidth="678.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+      <Pane fx:id="rightPane" layoutX="732.0" layoutY="30.0" prefHeight="840.0" prefWidth="678.0" style="-fx-background-color: white;">
          <children>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="120.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -359,14 +359,26 @@
                   <Image url="@../pictures/Star.png" />
                </image>
             </ImageView>
-            <ScrollPane layoutX="39.0" layoutY="266.0" prefHeight="400.0" prefWidth="620.0">
+            <ScrollPane layoutX="39.0" layoutY="266.0" prefHeight="400.0" prefWidth="622.0" style="-fx-background-radius: 10; -fx-border-color: white;">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="10000.0" prefWidth="605.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="10000.0" prefWidth="605.0" style="-fx-border-color: white;">
                      <children>
-                        <VBox fx:id="eventMenu" prefHeight="10000.0" prefWidth="600.0" style="-fx-background-color: white;" />
+                        <VBox fx:id="eventMenu" prefHeight="10000.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: white;" />
                      </children></AnchorPane>
               </content>
             </ScrollPane>
+            <Button fx:id="postReport" layoutX="400.0" layoutY="742.0" mnemonicParsing="false" onAction="#postEvent" onMouseEntered="#onHover" onMouseExited="#OnExit" onMousePressed="#handleMouseClickedPass" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: white; -fx-background-color: #2060E4; -fx-background-radius: 10;" text="Create report">
+               <font>
+                  <Font name="Open Sans Semibold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </Pane>
     </children>

@@ -10,8 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b50f148f-bdf2-40bb-af44-4f0823f12c22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/report.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Football_Association_System_Event_Log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Football_Association_System_Event_Log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/AEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/AEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Goal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Goal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Injury.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Injury.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offense.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offense.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offside.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/Offside.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/RedCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/RedCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/YellowCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FootballSystem/System/FootballObjects/Event/YellowCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/FanControllerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/FanControllerGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MainFanMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MainFanMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/RefereeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/RefereeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/Goal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/Injury.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/Injury.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/Offense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/Offense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/Offside.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/Offside.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/RedCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/RedCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/FootballObjects/Event/YellowCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/FootballObjects/Event/YellowCard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,23 +66,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/ScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+            <state relative-caret-position="371">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+            <state relative-caret-position="489">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="method#checkPlayerName#0;class#AddEventController#0" />
+                <element signature="method#checkMin#0;class#AddEventController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="710">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
@@ -85,12 +132,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5764">
-              <caret line="283" column="23" selection-start-line="283" selection-start-column="23" selection-end-line="283" selection-end-column="23" />
+            <state relative-caret-position="299">
+              <caret line="354" column="25" selection-start-line="354" selection-start-column="25" selection-end-line="354" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1876#3511#0" />
+                <element signature="e#5039#5545#0" />
+                <element signature="e#5551#7069#0" />
+                <element signature="e#7075#7312#0" />
+                <element signature="e#7318#7557#0" />
+                <element signature="e#7563#7718#0" />
+                <element signature="e#7724#7881#0" />
+                <element signature="e#7887#8008#0" />
               </folding>
             </state>
           </provider>
@@ -99,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ServiceLayer/RefereeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2970">
-              <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+            <state relative-caret-position="607">
+              <caret line="160" column="72" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +176,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            <state relative-caret-position="462">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="29" />
               <folding>
                 <element signature="e#412#413#0" expanded="true" />
                 <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IntegrationTest/TestSuit1.java" />
-        <option value="$PROJECT_DIR$/src/System/FootballObjects/LeagueInformation.java" />
-        <option value="$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest.java" />
         <option value="$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest2.java" />
         <option value="$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java" />
         <option value="$PROJECT_DIR$/AcceptanceTest/GuestControllerTest.java" />
@@ -203,13 +267,16 @@
         <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.java" />
         <option value="$PROJECT_DIR$/src/PresentationLayer/AddEvent.fxml" />
         <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/FootballAssociationController.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" />
+        <option value="$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.fxml" />
         <option value="$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.java" />
+        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java" />
         <option value="$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java" />
         <option value="$PROJECT_DIR$/src/ServiceLayer/RefereeController.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java" />
         <option value="$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java" />
-        <option value="$PROJECT_DIR$/src/PresentationLayer/ScreenController.java" />
       </list>
     </option>
   </component>
@@ -247,33 +314,14 @@
               <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceLayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FootballSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FootballSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="System" type="462c0819:PsiDirectoryNode" />
-              <item name="FootballObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="CatdeaLogs" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -308,7 +356,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,11 +367,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589210916500" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589369462475" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/AcceptanceTest" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -475,6 +522,8 @@
       <workItem from="1589204372292" duration="5515000" />
       <workItem from="1589210216976" duration="708000" />
       <workItem from="1589212876772" duration="2608000" />
+      <workItem from="1589361791377" duration="1748000" />
+      <workItem from="1589363633065" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="write LOG">
       <created>1585993834179</created>
@@ -770,27 +819,28 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334017000" />
+    <option name="totallyTimeSpent" value="340644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19829424" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5805369" weight="0.31419286" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49938875" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.46801707" side_tool="true" visible="true" weight="0.3217768" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.47014925" side_tool="true" visible="true" weight="0.13217768" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.10400867" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.53198296" visible="true" weight="0.3217768" />
-      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49840087" weight="0.19501625" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.5298507" visible="true" weight="0.13217768" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49733475" weight="0.19501625" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -918,12 +968,16 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/ServiceLayer/FanControllerTest2.java" />
-    <entry file="file://$PROJECT_DIR$/AcceptanceTest/FanControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/IntegrationTest/TestSuit1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1164,25 +1218,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/login.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="324" selection-start-line="11" selection-start-column="309" selection-end-line="11" selection-end-column="324" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/YellowCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1266,13 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/FootballAssociationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1294,23 +1326,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/ScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml">
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/login.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="242">
+          <caret line="11" column="324" selection-start-line="11" selection-start-column="309" selection-end-line="11" selection-end-column="324" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/EventLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PresentationLayer/MainRefereeMenu.fxml">
       <provider editor-type-id="text-editor">
@@ -1320,43 +1362,92 @@
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5764">
-          <caret line="283" column="23" selection-start-line="283" selection-start-column="23" selection-end-line="283" selection-end-column="23" />
+        <state relative-caret-position="313">
+          <caret line="31" selection-start-line="31" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEvent.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServiceLayer/RefereeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2970">
-          <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+        <state relative-caret-position="607">
+          <caret line="160" column="72" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/FootballObjects/Event/AEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-          <folding>
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventReport.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/AddEventController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+        <state relative-caret-position="489">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="method#checkPlayerName#0;class#AddEventController#0" />
+            <element signature="method#checkMin#0;class#AddEventController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/RefereeControllerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="354" column="25" selection-start-line="354" selection-start-column="25" selection-end-line="354" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1876#3511#0" />
+            <element signature="e#5039#5545#0" />
+            <element signature="e#5551#7069#0" />
+            <element signature="e#7075#7312#0" />
+            <element signature="e#7318#7557#0" />
+            <element signature="e#7563#7718#0" />
+            <element signature="e#7724#7881#0" />
+            <element signature="e#7887#8008#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/Controllers/FootballAssociationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5685">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PresentationLayer/ScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,13 +4,15 @@ import PresentationLayer.ScreenController;
 import ServiceLayer.RefereeController;
 import System.Exeptions.NoRefereePermissions;
 import System.Exeptions.NoSuchEventException;
+import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+
 
 
 public class AddEventController {
@@ -44,16 +46,25 @@ public class AddEventController {
     public void initialize() {
 
         comboEventBox.getItems().addAll("Red Card", "Yellow Card", "Offside", "Goal", "Injury", "Offense");
-        String[] str = (ScreenController.getInstance().getGameIndfo()).split(",");
+        String[] str = (ScreenController.getInstance().getGameInfo()).split(",");
         teamNameHome.setText(str[0]);
         teamNameAway.setText(str[2]);
         gameID = str[1];
     }
 
+    @FXML
+    public void clickHomeRadio(){
+        away.setSelected(false);
+    }
+    @FXML
+    public void clickAwayRadio(){
+        home.setSelected(false);
+    }
 
 
     @FXML
-    public void postEvent() {
+    public void postEvent(Event event) {
+        Button btn = ((Button) event.getSource());
         String str ="something goes wrong";
         try {
             String eventType = comboEventBox.getValue().replace(" ", "");
@@ -86,6 +97,8 @@ public class AddEventController {
            }
             Alert alert = new Alert(Alert.AlertType.INFORMATION,"Event added successfully");
             alert.show();
+            Stage stage = (Stage) btn.getScene().getWindow();
+            stage.close();
 
         }
         catch (NoRefereePermissions refereePermissions){

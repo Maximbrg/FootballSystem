@@ -193,16 +193,25 @@ public class RefereeControllerGui {
     }
 
     @FXML
-    public void postEvent() {
+    public void postEvent(Event event) {
         try {
+            String str;
+            Button btn = ((Button) event.getSource());
+            if(btn.getText().equals("Add event")){
+                str = "AddEvent.fxml";
+            }
+            else{
+                str = "AddEventReport.fxml";
+            }
             Stage stage = new Stage();
             ScreenController.getInstance().saveGameInfo(gameInfo.get(currPane), teamNameHome.getText(), teamNameAway.getText(), this);
-            Parent root = FXMLLoader.load(getClass().getResource("AddEvent.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(str));
             stage.setScene(new Scene(root, 600, 400));
             stage.show();
         } catch (Exception e) {
         }
     }
+
 
     @FXML
     public void onEnteredPane(Event event) {
@@ -315,18 +324,21 @@ public class RefereeControllerGui {
     }
 
     @FXML
-    public void handleMouseClickedPass() {
-        postEvent.setStyle("-fx-background-color: #000F64 ; -fx-background-radius:10; -fx-text-fill: white");
+    public void handleMouseClickedPass(Event event) {
+        Button btn = ((Button) event.getSource());
+        btn.setStyle("-fx-background-color: #000F64 ; -fx-background-radius:10; -fx-text-fill: white");
     }
 
     @FXML
-    public void onHover() {
-        postEvent.setStyle("-fx-background-color: #4179F0 ; -fx-background-radius:10; -fx-text-fill: white");
+    public void onHover(Event event) {
+        Button btn = ((Button) event.getSource());
+        btn.setStyle("-fx-background-color: #4179F0 ; -fx-background-radius:10; -fx-text-fill: white");
     }
 
     @FXML
-    public void OnExit() {
-        postEvent.setStyle("-fx-background-color: #2060E4 ; -fx-background-radius:10; -fx-text-fill: white");
+    public void OnExit(Event event) {
+        Button btn = ((Button) event.getSource());
+        btn.setStyle("-fx-background-color: #2060E4 ; -fx-background-radius:10; -fx-text-fill: white");
     }
 
     public void updateEvents() {
@@ -339,16 +351,28 @@ public class RefereeControllerGui {
         eventMenu.getChildren().addAll(pane2);
         List<String> events = RefereeController.getInstance().getEvents(gameInfo.get(currPane), ScreenController.getInstance().userName);
         for (String str : events) {
+            if(!(str.contains("Goal")||str.contains("Yellow")||str.contains("Red"))){
+                continue;
+            }
             String[] output = str.split(",");
-
+            String firstField;
+            String secField;
+            if(teamNameAway.getText().equals(output[3])){
+                firstField = output[1];
+                secField = output[2];
+            }
+            else{
+                firstField = output[2];
+                secField = output[1];
+            }
             Pane pane = new Pane();
             pane.setPrefWidth(600);
             pane.setPrefHeight(50);
             pane.setStyle("-fx-background-color:  #F6F6F4 ; -fx-background-radius: 10 ;");
 
-            Text text = new Text(output[2]);
+            Text text = new Text(firstField);
             text.setLayoutX(136);
-            text.setLayoutY(20);
+            text.setLayoutY(30);
             text.setFill(Color.web("#444444"));
             text.setStyle("-fx-font-size: 20px;-fx-font-family:Open Sans");
             ImageView image;
@@ -372,9 +396,9 @@ public class RefereeControllerGui {
             image.setLayoutX(314);
             image.setLayoutY(13);
 
-            Text text2 = new Text(output[1]);
+            Text text2 = new Text(secField);
             text2.setLayoutX(394);
-            text2.setLayoutY(20);
+            text2.setLayoutY(30);
             text2.setFill(Color.web("#444444"));
             text2.setStyle("-fx-font-size: 20px;-fx-font-family:Open Sans");
 

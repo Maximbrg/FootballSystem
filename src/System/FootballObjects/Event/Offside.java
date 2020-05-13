@@ -6,6 +6,12 @@ public class Offside extends AEvent {
     public Offside(int minuteInTheGame, String playerName ,String teamName) {
         super(minuteInTheGame,playerName,teamName);
     }
+
+
     //</editor-fold>
+    @Override
+    public String getType() {
+        return "offside";
+    }
 
 }

@@ -47,6 +47,11 @@ public abstract class AEvent {
     public Date getDate() {
         return date;
     }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Setters">
@@ -66,8 +71,10 @@ public abstract class AEvent {
         this.minute = minute;
     }
 
+    public abstract String getType();
+
     public String toString(){
-        return this.date+ " " +this.teamName+": the player "+ this.playerName +" get " + getClass()+" in minute "+ this.minute;
+        return this.teamName+": the player "+ this.playerName +" get " + getType()+" in minute "+ this.minute;
     }
 
     //</editor-fold>

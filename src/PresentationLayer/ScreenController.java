@@ -73,7 +73,7 @@ public class ScreenController {
         this.refereeControllerGui = refereeControllerGui;
     }
 
-    public String getGameIndfo(){
+    public String getGameInfo(){
         return gameInfo;
     }
 
@@ -92,5 +92,12 @@ public class ScreenController {
             newAlerts.add(alert);
             this.fanAlerts.put(userName,newAlerts);
         }
+    }
+
+    public void removeAlert(String alert){
+        List<String> newList= this.fanAlerts.get(userName);
+        newList.removeIf(item->item.equals(alert));
+        fanAlerts.replace(userName,newList);
+
     }
 }

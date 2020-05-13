@@ -3,6 +3,7 @@ package ServiceLayer;
 import System.Exeptions.NoRefereePermissions;
 import System.Exeptions.NoSuchEventException;
 import System.FootballObjects.Event.AEvent;
+import System.FootballObjects.Event.EventLog;
 import System.FootballObjects.Game;
 import System.FootballObjects.Season;
 import System.Users.Referee;
@@ -149,10 +150,20 @@ public class RefereeController extends MainUserController {
         for (Game g : referee.getGames()) {
             if (g.getId() == Integer.parseInt(gameID)) {
                 for(AEvent event : g.getEventLog().getEventList()){
-                    events.add(event.getClass().getName()+","+"'"+event.getMinute()+","+event.getPlayerName());
+                    events.add(event.getClass().getName()+","+"'"+event.getMinute()+","+event.getPlayerName()+","+event.getTeamName());
                 }
             }
         }
         return events;
+    }
+
+    public void postEventReport(String userName , String gameID , String report){
+        HashMap<String, User> dic = Controller.getInstance().getUsers();
+        Referee referee = ((Referee) dic.get(userName));
+        for (Game g : referee.getGames()) {
+            if (g.getId() == Integer.parseInt(gameID)) {
+              g.getEventLog().setReport(report);
+            }
+        }
     }
 }
