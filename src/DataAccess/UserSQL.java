@@ -1,6 +1,6 @@
 package DataAccess;
+import System.Users.*;
 
-import System.Users.User;
 import java.sql.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
+
 
 public class UserSQL implements DataBase<User> {
 
@@ -17,12 +18,12 @@ public class UserSQL implements DataBase<User> {
     public static UserSQL getInstance(){
         return instance;
     }
+    DBConnector dbc;
 
     private UserSQL() {
-        // users.add(new User("John", "john@domain.com"));
-        //users.add(new User("Susan", "susan@domain.com"));
+        dbc = DBConnector.getInstance();
+
     }
-    DBConnector dbc = DBConnector.getInstance();
     @Override
     public Optional<User> get(long id) {
         try {
@@ -90,31 +91,76 @@ public class UserSQL implements DataBase<User> {
 
     @Override
     public void save(User user)  {
-            try {
-                Connection connection = DBConnector.getConnection();
-                int id= user.getId();
-                String name= user.getName();
-                String userName=user.getUserName();
-                String pass=user.getPassword();
-                PreparedStatement ps=connection.prepareStatement("insert into users(id, fullName, UserName,password,Status,Pointet,UserTypeCode) "
-                        + "values (?,?,?,?,?,?,?)");
-                ps.setInt(1, 8);
-                ps.setString(2, "inbar");
-                ps.setString(3, "inbar1");
-                ps.setString(4, "123");
-                ps.setInt(5, 0);
-                ps.setInt(6, 0);
-                ps.setInt(7, 0);
+        try {
+            Connection connection = DBConnector.getConnection();
+            PreparedStatement ps=connection.prepareStatement("insert into users(id, fullName, UserName,password,Status,userTypeCode) "
+                    + "values ( user.getId(), user.getName(),user.getUserName(),user.getPassword(),?,?)");
+            if(user instanceof Fan){
+                ps.setInt(2,1);//
+            }else if(user instanceof Referee){
+                ps.setInt(2,2);//
+                saveReferee((Referee) user,connection);
 
+            }else if(user instanceof Coach){
+                ps.setInt(2,3);//
+                saveCoach((Coach) user);
 
-                ps.executeUpdate();
-                connection.close();
+            }
+            else if(user instanceof Player){
+                ps.setInt(2,4);//
+                savePlayer((Player) user);
+            }
+            else if(user instanceof FootballAssociation){
+                ps.setInt(2,5);// 1= fan
 
-            } catch (SQLException err) {
-                throw new RuntimeException("Error connecting to the database", err);
+            }
+            else if(user instanceof SystemManager){
+                ps.setInt(2,6);//
+            }
+            else if(user instanceof TeamOwner){
+                ps.setInt(2,7);//
+                saveTeamOwner((TeamOwner) user);
+
+            }
+            else if(user instanceof TeamManager){
+                ps.setInt(2,8);//
+                saveTeamManager((TeamManager) user);
             }
 
+
+            ps.executeUpdate();
+            connection.close();
+
+
+
+
+        } catch (SQLException err) {
+            throw new RuntimeException("Error connecting to the database", err);
         }
+
+    }
+
+    private void savePlayer(Player user) {
+        //table Player
+    }
+
+    private void saveTeamManager(TeamManager user) {
+        //table TeamManager
+    }
+
+
+    private void saveCoach(Coach user) {
+        //table Coach
+    }
+
+    private void saveReferee(Referee user ,Connection connection) {
+        //referee Table
+
+    }
+
+    private void saveTeamOwner(TeamOwner user) {
+        //table TeamOwner
+    }
 
 
     @Override
@@ -136,10 +182,14 @@ public class UserSQL implements DataBase<User> {
             PreparedStatement preparedStmt = con.prepareStatement(query);
             preparedStmt.setInt(1, id);
 
+
+
+
+
             // execute the preparedstatement
             preparedStmt.execute();
 
-           con.close();
+            con.close();
 
 
 
