@@ -6,6 +6,11 @@ public class Offense extends AEvent {
     public Offense(int minuteInTheGame, String playerName ,String teamName) {
         super(minuteInTheGame,playerName,teamName);
     }
-    //</editor-fold>
 
+
+    //</editor-fold>
+    @Override
+    public String getType() {
+        return "offense";
+    }
 }

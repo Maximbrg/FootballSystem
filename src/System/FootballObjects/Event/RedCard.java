@@ -6,6 +6,11 @@ public class RedCard extends AEvent {
     public RedCard(int minuteInTheGame, String playerName ,String teamName) {
         super(minuteInTheGame,playerName,teamName);
     }
+
     //</editor-fold>
 
+    @Override
+    public String getType() {
+        return "red card";
+    }
 }

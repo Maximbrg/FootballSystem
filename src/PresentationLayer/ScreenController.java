@@ -93,4 +93,11 @@ public class ScreenController {
             this.fanAlerts.put(userName,newAlerts);
         }
     }
+
+    public void removeAlert(String alert){
+        List<String> newList= this.fanAlerts.get(userName);
+        newList.removeIf(item->item.equals(alert));
+        fanAlerts.replace(userName,newList);
+
+    }
 }
