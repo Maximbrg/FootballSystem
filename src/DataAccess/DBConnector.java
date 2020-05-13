@@ -28,6 +28,10 @@ public class DBConnector {
             String uName = "root";
             String uPass = "root";
             Connection con = DriverManager.getConnection(host, uName, uPass);
+            //check connect
+            //testConnection(con);// if connect print:"1 default method"
+
+
 
             return con;
 
@@ -38,6 +42,29 @@ public class DBConnector {
      /**
          * Test Connection
          */
+     private static void testConnection( Connection con){
+         try {
+             Statement stat = con.createStatement();
+
+             String sql = "select * from Score_Policy";
+
+             ResultSet rs = stat.executeQuery(sql);
+
+             while (rs.next()) {
+                 int id_col = rs.getInt("code");
+                 String fullName = rs.getString("policyName");
+
+
+
+                 String p = id_col +  " " + fullName ;
+                 System.out.println(p);
+             }
+             con.close();
+
+         } catch (SQLException err) {
+             throw new RuntimeException("Error connecting to the database", err);
+         }
+     }
 
 
 }
