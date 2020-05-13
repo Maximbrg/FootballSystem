@@ -44,7 +44,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/junit-platform-commons-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../junit-platform-commons-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -53,7 +53,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/junit-jupiter-api-5.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../junit-jupiter-api-5.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -96,5 +96,14 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="hamcrest-junit-2.0.0.0" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../mysql-connector-java-8.0.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

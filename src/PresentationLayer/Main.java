@@ -37,7 +37,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         intiallieSystem();
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainFootballAssociationMenu.fxml"));
         ScreenController.getInstance().setPrimaryStage(primaryStage);
         primaryStage.setTitle("Football System");
         primaryStage.setScene(new Scene(root, 1440, 844));
